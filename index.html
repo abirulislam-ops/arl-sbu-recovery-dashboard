@@ -19,9 +19,11 @@
   body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Inter",Helvetica,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.5;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
   .wrap{max-width:1160px;margin:0 auto;padding:0 24px 64px}
 
-  header{position:relative;overflow:hidden;background:#0b1220;color:#fff;padding:26px 0 0}
+  header{position:sticky;top:0;z-index:60;overflow:hidden;background:#0b1220;color:#fff;transition:box-shadow .3s ease}
+  header.scrolled{box-shadow:0 8px 28px rgba(0,0,0,.38)}
   header::before{content:"";position:absolute;inset:0;background:radial-gradient(680px 240px at 10% -12%,rgba(99,102,241,.32),transparent 60%),radial-gradient(520px 220px at 92% -6%,rgba(14,116,144,.22),transparent 60%);pointer-events:none}
-  .hwrap{position:relative;max-width:1160px;margin:0 auto;padding:0 24px;display:flex;flex-wrap:wrap;gap:16px;align-items:flex-end;justify-content:space-between}
+  .hwrap{position:relative;max-width:1160px;margin:0 auto;padding:22px 24px 16px;display:flex;flex-wrap:wrap;gap:16px;align-items:flex-end;justify-content:space-between;max-height:240px;opacity:1;overflow:hidden;transition:max-height .45s cubic-bezier(.4,0,.2,1),opacity .3s ease,padding .45s cubic-bezier(.4,0,.2,1)}
+  header.scrolled .hwrap{max-height:0;opacity:0;padding-top:0;padding-bottom:0}
   .brand{display:flex;align-items:center;gap:13px}
   .logo{width:42px;height:42px;border-radius:12px;background:linear-gradient(135deg,#6366f1,#8b5cf6);display:grid;place-items:center;box-shadow:0 8px 22px rgba(99,102,241,.38);flex:none}
   .logo svg{width:22px;height:22px}
@@ -33,17 +35,16 @@
   .chip b{color:#fff;font-weight:700}
   .chip .live{width:7px;height:7px;border-radius:50%;background:#34d399;box-shadow:0 0 0 3px rgba(52,211,153,.18)}
 
-  nav{position:relative;margin-top:20px;border-top:1px solid rgba(255,255,255,.09)}
+  nav{position:relative;margin-top:18px;border-top:1px solid rgba(255,255,255,.09);transition:margin-top .45s cubic-bezier(.4,0,.2,1)}
+  header.scrolled nav{margin-top:0}
   .tabs{max-width:1160px;margin:0 auto;padding:0 24px;display:flex;gap:2px;overflow-x:auto}
-  .tab{position:relative;display:inline-flex;align-items:center;gap:8px;padding:13px 17px;background:none;border:none;border-bottom:2px solid transparent;font-size:13.5px;font-weight:600;color:#9aa7b6;cursor:pointer;white-space:nowrap;transition:.15s}
+  .tab{position:relative;display:inline-flex;align-items:center;gap:8px;padding:13px 17px;background:none;border:none;border-bottom:2px solid transparent;font-size:13.5px;font-weight:600;color:#9aa7b6;cursor:pointer;white-space:nowrap;transition:color .3s ease,border-color .3s ease,background .3s ease}
   .tab:hover{color:#fff}
   .tab.active{color:#fff;border-bottom-color:#818cf8}
   .tab .dot{width:8px;height:8px;border-radius:50%;flex:none;opacity:.9}
 
   main{max-width:1160px;margin:0 auto;padding:24px 24px 0}
-  .pane{display:none;animation:fade .22s ease}
-  .pane.active{display:block}
-  @keyframes fade{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+  .pane{display:block;scroll-margin-top:72px;margin-bottom:40px}
 
   .card{background:var(--card);border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow);padding:20px}
   .sec-head{display:flex;align-items:center;gap:10px;margin-bottom:14px}
@@ -190,7 +191,7 @@
 </header>
 
 <main>
-  <section class="pane active" id="pane-overview"></section>
+  <section class="pane" id="pane-overview"></section>
   <div id="sbu-panes"></div>
   <footer id="footer"></footer>
 </main>
@@ -328,14 +329,26 @@ function renderTabs(){
     const dot=s?`<span class="dot" style="background:${TONEC[s.verdict.tone]}"></span>`:'';
     return `<button class="tab${t.k==='overview'?' active':''}" data-t="${t.k}">${dot}${t.label}</button>`;
   }).join('');
-  document.querySelectorAll('.tab').forEach(b=>b.addEventListener('click',()=>switchTab(b.dataset.t)));
+  document.querySelectorAll('.tab').forEach(b=>b.addEventListener('click',()=>scrollToSection(b.dataset.t)));
 }
-function switchTab(k){
-  document.querySelectorAll('.tab').forEach(b=>b.classList.toggle('active',b.dataset.t===k));
-  if(k==='overview'){document.getElementById('pane-overview').classList.add('active');document.querySelectorAll('[id^="pane-sbu-"]').forEach(p=>p.classList.remove('active'));}
-  else{document.getElementById('pane-overview').classList.remove('active');document.querySelectorAll('[id^="pane-sbu-"]').forEach(p=>p.classList.toggle('active',p.id==='pane-sbu-'+k));}
-  window.scrollTo({top:0,behavior:'smooth'});
+function scrollToSection(k){
+  const el=document.getElementById(k==='overview'?'pane-overview':'pane-sbu-'+k);
+  if(el) el.scrollIntoView({behavior:'smooth',block:'start'});
 }
+let _spyTicking=false;
+function onScroll(){
+  document.querySelector('header').classList.toggle('scrolled', window.scrollY>60);
+  let cur='overview';
+  document.querySelectorAll('[id^="pane-"]').forEach(sec=>{
+    if(sec.getBoundingClientRect().top<=110) cur=sec.id==='pane-overview'?'overview':sec.id.replace('pane-sbu-','');
+  });
+  document.querySelectorAll('.tab').forEach(t=>t.classList.toggle('active',t.dataset.t===cur));
+}
+window.addEventListener('scroll',()=>{
+  if(_spyTicking) return;
+  _spyTicking=true;
+  requestAnimationFrame(()=>{onScroll();_spyTicking=false;});
+},{passive:true});
 
 /* ---- overview ---- */
 function renderOverview(){
@@ -543,7 +556,7 @@ function renderFooter(){
     <div class="f-note"><b>Note.</b> Revenue / deficit / loss are measured facts (ERP-verified). The acquisition–sales–degression diagnosis, Q2-profit judgement and recommendations are analyst interpretation (hypotheses), not ERP outputs. Customer counts in the GL journal are largely unpopulated, so acquisition is assessed from SBU-reported root causes and outlet/showroom data.</div>`;
 }
 
-renderTabs();renderOverview();renderSbu();renderFooter();initTips();
+renderTabs();renderOverview();renderSbu();renderFooter();initTips();onScroll();
 </script>
 </body>
 </html>
