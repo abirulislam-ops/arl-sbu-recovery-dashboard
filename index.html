@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AR · SBU Loss Recovery — Overview + SBU-wise</title>
+<style>
+  :root{
+    --bg:#f5f6fa; --card:#fff; --ink:#0f172a; --muted:#5b6779; --muted2:#8a97a8;
+    --line:#e8ecf3; --line2:#f2f5f9;
+    --brand:#4f46e5; --brand2:#4338ca; --brand-soft:#eef2ff;
+    --red:#dc2626; --orange:#ea580c; --amber:#d97706; --green:#16a34a; --gray:#64748b;
+    --shadow-sm:0 1px 2px rgba(16,24,40,.05);
+    --shadow:0 1px 2px rgba(16,24,40,.04),0 12px 30px -16px rgba(16,24,40,.18);
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0}
+  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Inter",Helvetica,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.5;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+  .wrap{max-width:1160px;margin:0 auto;padding:0 24px 64px}
+
+  header{position:relative;overflow:hidden;background:#0b1220;color:#fff;padding:26px 0 0}
+  header::before{content:"";position:absolute;inset:0;background:radial-gradient(680px 240px at 10% -12%,rgba(99,102,241,.32),transparent 60%),radial-gradient(520px 220px at 92% -6%,rgba(14,116,144,.22),transparent 60%);pointer-events:none}
+  .hwrap{position:relative;max-width:1160px;margin:0 auto;padding:0 24px;display:flex;flex-wrap:wrap;gap:16px;align-items:flex-end;justify-content:space-between}
+  .brand{display:flex;align-items:center;gap:13px}
+  .logo{width:42px;height:42px;border-radius:12px;background:linear-gradient(135deg,#6366f1,#8b5cf6);display:grid;place-items:center;box-shadow:0 8px 22px rgba(99,102,241,.38);flex:none}
+  .logo svg{width:22px;height:22px}
+  .kicker{font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:#a5b4fc;font-weight:700}
+  h1{font-size:22px;margin:2px 0 3px;font-weight:800;letter-spacing:-.02em;line-height:1.15}
+  .sub{color:#b9c2cf;font-size:13px;max-width:720px}
+  .hmeta{display:flex;gap:8px;flex-wrap:wrap}
+  .chip{display:inline-flex;align-items:center;gap:7px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);border-radius:999px;padding:5px 13px;font-size:12px;color:#e2e8f0;white-space:nowrap}
+  .chip b{color:#fff;font-weight:700}
+  .chip .live{width:7px;height:7px;border-radius:50%;background:#34d399;box-shadow:0 0 0 3px rgba(52,211,153,.18)}
+
+  nav{position:relative;margin-top:20px;border-top:1px solid rgba(255,255,255,.09)}
+  .tabs{max-width:1160px;margin:0 auto;padding:0 24px;display:flex;gap:2px;overflow-x:auto}
+  .tab{position:relative;display:inline-flex;align-items:center;gap:8px;padding:13px 17px;background:none;border:none;border-bottom:2px solid transparent;font-size:13.5px;font-weight:600;color:#9aa7b6;cursor:pointer;white-space:nowrap;transition:.15s}
+  .tab:hover{color:#fff}
+  .tab.active{color:#fff;border-bottom-color:#818cf8}
+  .tab .dot{width:8px;height:8px;border-radius:50%;flex:none;opacity:.9}
+
+  main{max-width:1160px;margin:0 auto;padding:24px 24px 0}
+  .pane{display:none;animation:fade .22s ease}
+  .pane.active{display:block}
+  @keyframes fade{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+
+  .card{background:var(--card);border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow);padding:20px}
+  .sec-head{display:flex;align-items:center;gap:10px;margin-bottom:14px}
+  .sec-head .bar{width:4px;height:18px;background:var(--brand);border-radius:99px}
+  .sec-head h2{font-size:15.5px;font-weight:700;letter-spacing:-.01em;margin:0}
+  .sec-head p{margin:0;font-size:12px;color:var(--muted2)}
+
+  .kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:24px 0}
+  @media(max-width:820px){.kpis{grid-template-columns:repeat(2,1fr)}}
+  .kpi{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px 18px;box-shadow:var(--shadow)}
+  .kpi .k-top{display:flex;align-items:center;gap:9px;margin-bottom:12px}
+  .kpi .k-ic{width:32px;height:32px;border-radius:9px;display:grid;place-items:center;flex:none}
+  .kpi .k-ic svg{width:16px;height:16px}
+  .kpi .lbl{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:var(--muted)}
+  .kpi .val{font-size:27px;font-weight:800;letter-spacing:-.02em;font-variant-numeric:tabular-nums;line-height:1.1}
+  .kpi .sub{font-size:12px;color:var(--muted2);margin-top:4px}
+
+  table{width:100%;border-collapse:separate;border-spacing:0;font-size:13px}
+  th{text-align:left;font-size:10.5px;text-transform:uppercase;letter-spacing:.05em;color:var(--muted2);padding:10px 14px;border-bottom:1px solid var(--line);font-weight:700;white-space:nowrap;background:var(--line2)}
+  th:first-child{border-top-left-radius:12px}
+  th:last-child{border-top-right-radius:12px}
+  td{padding:12px 14px;border-bottom:1px solid var(--line2);vertical-align:middle}
+  tr.clickable{cursor:pointer;transition:background .12s}
+  tr.clickable:hover{background:#f7f9fc}
+  tbody tr:last-child td{border-bottom:none}
+  .num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+  .neg{color:var(--red);font-weight:700} .pos{color:var(--green);font-weight:700}
+  .nm{font-weight:700} .code{color:var(--muted2);font-size:11px;font-weight:600}
+
+  .sev{display:inline-flex;align-items:center;gap:6px;padding:3px 10px;border-radius:999px;font-size:10.5px;font-weight:700;white-space:nowrap}
+  .sev::before{content:"";width:6px;height:6px;border-radius:50%;background:currentColor}
+  .sev.critical{color:var(--red);background:#fee2e2} .sev.high{color:var(--orange);background:#ffedd5}
+  .sev.medium{color:var(--amber);background:#fef3c7} .sev.low{color:var(--green);background:#dcfce7}
+  .sev.none{color:var(--gray);background:#f1f5f9}
+  .vbadge{display:inline-flex;padding:3px 11px;border-radius:999px;font-size:11px;font-weight:700;white-space:nowrap}
+  .vbadge.bad{color:#b91c1c;background:#fee2e2}.vbadge.warn{color:#b45309;background:#fef3c7}.vbadge.good{color:#15803d;background:#dcfce7}.vbadge.info{color:#1d4ed8;background:#eff6ff}
+
+  .grid{display:grid;gap:14px}
+  .g3{grid-template-columns:repeat(3,1fr)}
+  .g4{grid-template-columns:repeat(4,1fr)}
+  @media(max-width:1000px){.g4{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:560px){.g4{grid-template-columns:1fr}}
+  @media(max-width:860px){.g3{grid-template-columns:1fr}}
+  .problem{position:relative;border:1px solid var(--line);border-radius:14px;padding:15px;background:var(--card);box-shadow:var(--shadow-sm);overflow:hidden}
+  .problem::before{content:"";position:absolute;left:0;top:0;right:0;height:3px;background:var(--pc,var(--brand))}
+  .problem .ph{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:8px}
+  .problem .ph .t{font-weight:700;font-size:13px;display:flex;align-items:center;gap:7px}
+  .problem .ph .t svg{width:15px;height:15px;flex:none;color:var(--pc,var(--brand))}
+  .problem .hl{font-size:12.5px;font-weight:700;line-height:1.35;margin-bottom:7px}
+  .problem ul{margin:0;padding-left:16px}
+  .problem li{font-size:12px;margin:4px 0;color:#3f4b5f}
+  .metric{display:inline-flex;align-items:baseline;gap:5px;font-size:11px;color:var(--muted2);margin-top:8px;padding-top:8px;border-top:1px dashed var(--line)}
+  .metric b{font-size:18px;color:var(--ink);font-weight:800}
+
+  .sbuhd{display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between;margin-bottom:14px}
+  .sbuhd h2{font-size:20px;font-weight:800;letter-spacing:-.02em;margin:0}
+  .sbuhd .g{color:var(--muted2);font-size:12px;margin-top:3px}
+  .sbustats{display:flex;gap:10px;flex-wrap:wrap}
+  .sbustat{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:10px 16px;text-align:center;box-shadow:var(--shadow-sm)}
+  .sbustat .l{font-size:9.5px;text-transform:uppercase;letter-spacing:.05em;color:var(--muted2);font-weight:700}
+  .sbustat .v{font-size:17px;font-weight:800;font-variant-numeric:tabular-nums;margin-top:2px}
+  .sbustat .v.neg{color:var(--red)}.sbustat .v.pos{color:var(--green)}
+
+  .verdict{border-radius:14px;padding:15px 18px;border:1px solid;border-left-width:4px;margin:16px 0}
+  .verdict.bad{background:#fef2f2;border-color:#fecaca;border-left-color:var(--red)}
+  .verdict.warn{background:#fffbeb;border-color:#fde68a;border-left-color:var(--amber)}
+  .verdict.good{background:#f0fdf4;border-color:#bbf7d0;border-left-color:var(--green)}
+  .verdict.info{background:#eff6ff;border-color:#bfdbfe;border-left-color:#3b82f6}
+  .verdict h3{margin:0 0 5px;font-size:14.5px;font-weight:800;display:flex;align-items:center;gap:8px}
+  .verdict h3 svg{width:16px;height:16px;flex-shrink:0}
+  .verdict p{margin:0;font-size:13px;color:#374151}
+  .note{font-size:11.5px;color:var(--muted2);margin-top:10px;line-height:1.55}
+
+  .plan{background:var(--line2);border:1px solid var(--line);border-radius:12px;padding:13px 15px;font-size:13px;color:#3f4b5f}
+  .rec{border:1px solid var(--line);border-radius:14px;padding:15px;background:var(--card);margin-top:12px;box-shadow:var(--shadow-sm)}
+  .rec .unlock{font-size:13px;font-weight:700;color:#312e81;background:var(--brand-soft);border:1px solid #e0e7ff;border-radius:10px;padding:10px 12px;line-height:1.4;margin-bottom:10px}
+  .rec ul{margin:0;padding-left:17px}
+  .rec li{font-size:12.5px;margin:5px 0;color:#3f4b5f}
+
+  .chart{margin:8px auto 6px}
+  .chart svg{max-width:560px;height:auto;display:block;margin:0 auto}
+  .legend{display:flex;gap:16px;font-size:11px;color:var(--muted2);margin-top:6px;flex-wrap:wrap}
+  .legend span{display:inline-flex;align-items:center;gap:6px}
+  .lg{width:9px;height:9px;border-radius:3px;display:inline-block}
+
+  footer{margin-top:30px;padding:18px 20px;background:var(--card);border:1px solid var(--line);border-radius:14px;color:var(--muted);font-size:12px;line-height:1.6;box-shadow:var(--shadow-sm)}
+  footer b{color:var(--ink)}
+  .foot-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:10px 28px}
+  .f-item{display:flex;gap:12px;align-items:baseline}
+  .f-lbl{flex:none;width:84px;font-weight:700;color:var(--ink);font-size:10.5px;text-transform:uppercase;letter-spacing:.05em}
+  .f-val{font-size:12px;color:var(--muted)}
+  .f-note{margin-top:14px;padding-top:13px;border-top:1px dashed var(--line);font-size:11.5px;color:var(--muted);line-height:1.6}
+
+  /* Q2 profit-gap section */
+  .pg-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+  @media(max-width:860px){.pg-grid{grid-template-columns:1fr}}
+  .pg-chart h4{margin:0 0 12px;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.04em;color:var(--muted)}
+  .gap-head,.gap-row{display:grid;grid-template-columns:170px minmax(110px,1fr) 132px 50px;gap:10px;align-items:center}
+  .gap-row{margin:9px 0}
+  .gap-head{margin:2px 0 8px;padding-bottom:6px;border-bottom:1px solid var(--line);font-size:9.5px;text-transform:uppercase;letter-spacing:.05em;color:var(--muted2);font-weight:700}
+  .gap-sbu{font-weight:800;font-size:12.5px;line-height:1.25}
+  .gap-track{height:22px;background:#fee2e2;border:1px solid #fecaca;border-radius:6px;position:relative;overflow:hidden}
+  .gap-fill{height:100%;background:linear-gradient(90deg,#818cf8,#4f46e5);border-radius:5px;min-width:2px}
+  .gap-nums{text-align:right;font-size:11px;color:var(--muted);white-space:nowrap;font-variant-numeric:tabular-nums}
+  .gap-cov{text-align:right;font-weight:800;font-size:12.5px;font-variant-numeric:tabular-nums}
+  .gh-amt,.gh-cov{text-align:right}
+  .hint{margin-left:auto;flex:none;width:26px;height:26px;border-radius:50%;border:1px solid var(--line);background:var(--card);color:var(--muted);display:grid;place-items:center;cursor:pointer;transition:.15s}
+  .hint svg{width:14px;height:14px}
+  .hint:hover{color:var(--brand);border-color:var(--brand)}
+  .hint.open{color:#fff;border-color:var(--brand);background:var(--brand)}
+  .pg-whys{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:18px}
+  @media(max-width:860px){.pg-whys{grid-template-columns:1fr}}
+  .why{border:1px solid var(--line);border-radius:12px;padding:13px 14px;background:var(--line2)}
+  .why .w-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:6px}
+  .why .w-nm{font-weight:800;font-size:13px}
+  .why .w-cov{font-size:20px;font-weight:800;font-variant-numeric:tabular-nums}
+  .why p{margin:0;font-size:12px;color:#3f4b5f;line-height:1.5}
+
+  /* timeline + tooltip */
+  .mk{cursor:pointer}
+  .tip{position:fixed;z-index:99;max-width:320px;background:#0f172a;color:#fff;border-radius:10px;padding:10px 13px;font-size:12px;line-height:1.5;pointer-events:none;box-shadow:0 12px 30px rgba(16,24,40,.35);opacity:0;transform:translateY(5px);transition:opacity .14s,transform .14s}
+  .tip.show{opacity:1;transform:translateY(0)}
+  .tl-legend{display:flex;flex-wrap:wrap;gap:14px;font-size:11.5px;color:var(--muted);margin-top:10px}
+  .tl-legend span{display:inline-flex;align-items:center;gap:6px}
+</style>
+</head>
+<body>
+<header>
+  <div class="hwrap">
+    <div class="brand">
+      <div class="logo"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19 L10 9 L14 14 L20 4"/><circle cx="4" cy="19" r="1.4" fill="#fff"/><circle cx="20" cy="4" r="1.4" fill="#fff"/></svg></div>
+      <div class="t">
+        <div class="kicker">AKIJ Resource · Strategic Planning &amp; Analysis</div>
+        <h1>SBU Loss Recovery</h1>
+        <div class="sub">Internal problems (acquisition · sales · degression) from iBOSDDD · the recovery plan · and whether it reaches Q2 profit. Q1 FY2026-27 · BDT Cr.</div>
+      </div>
+    </div>
+    <div class="hmeta">
+      <span class="chip"><span class="live"></span>Period <b>Q1 (Jul–Sep 2026)</b></span>
+      <span class="chip">SBUs <b>6</b></span>
+    </div>
+  </div>
+  <nav><div class="tabs" id="tabs"></div></nav>
+</header>
+
+<main>
+  <section class="pane active" id="pane-overview"></section>
+  <div id="sbu-panes"></div>
+  <footer id="footer"></footer>
+</main>
+
+<div class="tip" id="tip"></div>
+
+<script>
+const SEV={critical:{label:'Critical',color:'#dc2626',bg:'#fee2e2'},high:{label:'High',color:'#ea580c',bg:'#ffedd5'},medium:{label:'Medium',color:'#d97706',bg:'#fef3c7'},low:{label:'Low',color:'#16a34a',bg:'#dcfce7'},none:{label:'Clear',color:'#64748b',bg:'#f1f5f9'}};
+const ICONS={
+  acquisition:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><line x1="19" y1="8" x2="19" y2="14"/><line x1="22" y1="11" x2="16" y2="11"/></svg>',
+  sales:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="20" x2="12" y2="10"/><line x1="18" y1="20" x2="18" y2="4"/><line x1="6" y1="20" x2="6" y2="16"/></svg>',
+  degression:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>',
+  target:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>',
+  warn:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>',
+  dealers:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>',
+  external:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>',
+  info:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>'
+};
+
+const SBUS=[
+ {code:'ACEL',name:'Consumer Electronics',group:'Others',rankRev:26,rankEat:22,
+  rev:{jul:{b:1.36,a:0.78},aug:{b:3.48,a:0.54},sep:{b:5.30,a:0.59},q1:{budget:10.14,actual:1.91,deficit:8.23,ach:'18.8%'}},
+  eatQ1:-0.96, deficit:8.24, loss:0.96, commit:1.0, scope:'Revenue + Loss', status:'In progress', verdict:{label:'Insufficient',tone:'bad'},
+  problems:{
+    acquisition:{sev:'critical',headline:'Only 4 showrooms open — zero stock at principal.',metric:{v:'4',l:'showrooms'},points:['Expansion 80% behind plan (funds + manpower)','No product to stock — principal inventory zero','Corporate / HVAC / Omni-channel unstaffed']},
+    sales:{sev:'critical',headline:"18.8% revenue achievement — can't convert without stock.",metric:{v:'18.8%',l:'Q1 ach.'},points:['Showrooms cannot sell what is not stocked','No working capital to replenish inventory','Omni-channel not yet live']},
+    degression:{sev:'critical',headline:'Revenue flat ~0.6 Cr while budget ramps to 5.3 Cr.',metric:{v:'0.59',l:'Sep actual Cr'},points:['Actual Jul 0.78 → Sep 0.59 Cr (not recovering)','Budget grew 1.36 → 5.30 Cr — gap widens monthly','No recovery trajectory while expansion is frozen']}},
+  dealers:{sev:'critical',headline:'No repeat base — new brand with no loyalty or CRM.',metric:{v:'0',l:'CRM'},points:['No CRM / loyalty program exists','Customer acquisition & follow-up weak','Showrooms cannot retain footfall without stock']},
+  external:{sev:'high',headline:'Supply blocked at source — zero stock at principal.',metric:{v:'0',l:'stock'},points:['Principal-level product unavailability','Funding shortage constrains procurement & replenishment']},
+  planShort:'Bank financing → restock → then accelerate showrooms; hire Corporate/HVAC/Omni leads.',
+  q2:{tone:'bad',label:'No — under-funded for Q2 profit',detail:'The 1 Cr commitment covers only ~12% of the 8.24 Cr deficit. Break-even is pushed to Apr-27 (Q4), so Q2 (Oct–Dec) stays loss-making.'},
+  rec:{priority:'high',unlock:'Sequence it right: financing → stock → then showrooms.',actions:['Secure bank financing & working capital first','Re-baseline Q2 — do not chase 8.24 Cr in one quarter','Hire the 3 channel leads (Corporate, HVAC, Omni) now']}},
+
+ {code:'ALL',name:'Logistics – Ex-CHA',group:'Others',rankRev:17,rankEat:21,
+  rev:{jul:{b:4.64,a:1.82},aug:{b:4.95,a:1.57},sep:{b:5.59,a:5.15},q1:{budget:15.18,actual:8.55,deficit:6.63,ach:'56.3%'}},
+  eatQ1:-0.85, deficit:6.64, loss:0.85, commit:5.0, scope:'Revenue + Loss', status:'In progress', verdict:{label:'Partial',tone:'warn'},
+  problems:{
+    acquisition:{sev:'high',headline:'4 salesmen short — no winter orders from Europe.',metric:{v:'4',l:'salesmen short'},points:['FF sales force not yet filled','War + power cuts slow export demand','Network membership under-used']},
+    sales:{sev:'critical',headline:'56.3% achievement — orders held or cancelled.',metric:{v:'56.3%',l:'Q1 ach.'},points:['High transport cost → delayed/cancelled orders','Power shortages stopped Aug production','Pipeline → shipment conversion slow']},
+    degression:{sev:'high',headline:'Volatile — Aug dip, Sep rebound on one shipment.',metric:{v:'5.15',l:'Sep actual Cr'},points:['Jul 1.82 → Aug 1.57 → Sep 5.15 Cr','Sep rebound is one shipment, not a stable base','War-dependent — not yet a durable recovery']}},
+  dealers:{sev:'high',headline:'No recurring nomination loop — network under-used.',metric:{v:'4',l:'salesmen short'},points:['WCA / JC Trans network not exploited','Orders held/cancelled → customers drift away','Too few salesmen to service accounts']},
+  external:{sev:'critical',headline:'War + shipping crisis — export slowdown and freight-cost spike.',metric:{v:'—',l:'war'},points:['Red Sea / Middle-East conflict disrupts export lanes','Elevated freight rates & BAF surcharges (2026)','Power/gas shortages delay production','Lack of winter orders from Europe']},
+  planShort:'Aggressive sales + pipeline conversion + 4 salesmen; recover by Q2 if war stops, else Q3.',
+  q2:{tone:'warn',label:'No — under-committed for Q2',detail:'5 Cr covers only ~75% of the 6.64 Cr deficit (a 1.64 Cr gap). Full recovery is pushed to end-Q3, so Q2 profit is not guaranteed and is war-dependent.'},
+  rec:{priority:'high',unlock:'Milk the already-secured Nov–Jan airfreight before chasing new wins.',actions:['Hire the 4 salesmen immediately','Convert the secured pipeline → shipment (skip re-acquisition)','De-risk war exposure with regional / domestic routes']}},
+
+ {code:'ALCL',name:'LifeCare – Pharmacy',group:'Others',rankRev:13,rankEat:28,
+  rev:{jul:{b:7.21,a:6.19},aug:{b:8.46,a:7.17},sep:{b:9.79,a:7.77},q1:{budget:25.45,actual:21.13,deficit:4.32,ach:'83.0%'}},
+  eatQ1:-2.39, deficit:4.32, loss:2.39, commit:4.32, scope:'Revenue + Loss', status:'On track', verdict:{label:'Adequate',tone:'good'},
+  problems:{
+    acquisition:{sev:'high',headline:'Outlet growth deliberately slowed — 34 outlets.',metric:{v:'34',l:'outlets'},points:['New stores slow to reach maturity','Neighborhood + online discount players take share']},
+    sales:{sev:'high',headline:'Thin 11.9% GP and no data — traffic isn\u2019t converting.',metric:{v:'11.9%',l:'Q1 GP'},points:['No customer segmentation yet','Small basket size, discount-led','Break-even needs ~13.7 Cr/month at current GP']},
+    degression:{sev:'high',headline:'Growing, but slower than budget — gap widening.',metric:{v:'7.77',l:'Sep actual Cr'},points:['Actual 6.19 → 7.17 → 7.77 Cr (growing 25%)','Budget grew 36% — gap widened 1.02→1.29→2.02 Cr','Sales grow, just slower than the plan assumed']}},
+  dealers:{sev:'critical',headline:'Repeat customers invisible — no CRM/refill/loyalty.',metric:{v:'0',l:'refill/CRM'},points:['POS cannot detect repeat customers','No SMS refill reminders or loyalty scheme','Discount-led competition erodes loyalty']},
+  external:{sev:'high',headline:'Online-pharmacy competition + DGDA regulation.',metric:{v:'—',l:'online'},points:['Online/discount pharmacies taking share (market growing fast)','DGDA clearance required for online medicine sales']},
+  planShort:'Same-store growth, GP% up to 13–14%, flat opex, credit purchasing; break-even Jun-27.',
+  q2:{tone:'warn',label:'Partly — Q1 recovered, Q2 still a loss',detail:'The 4.32 Cr commitment fully covers Q1, but the Q2 target is −1.6 Cr (still a loss) and monthly break-even is only Jun-27. Q2 profit is not reached.'},
+  pharmacy:{outlets:33, retail:31, note:'Expansion has stalled — the retail pharmacy network sits at ~31 outlets (33 records incl. corporate sales + central warehouse) versus the budgeted faster ramp. New stores are slow to mature, so new-store revenue lags budget.'},
+  rec:{priority:'medium',unlock:'Win same-store sales & data before adding outlets.',actions:['Fast-track POS CRM + loyalty + refill reminders','Hold the 3 levers: GP% up, opex flat, working capital down','Publish outlet-level P&L weekly']}},
+
+ {code:'AELTRD',name:'Essential – Trading',group:'Food',rankRev:6,rankEat:6,
+  rev:{jul:{b:17.42,a:34.49},aug:{b:0,a:138.62},sep:{b:95.79,a:12.60},q1:{budget:113.21,actual:185.71,deficit:-72.50,ach:'164.0%'}},
+  eatQ1:2.21, deficit:0, loss:0, commit:null, scope:'No recovery needed', status:'On track', verdict:{label:'Surplus (Sep cliff)',tone:'info'},
+  problems:{
+    acquisition:{sev:'high',headline:'No LC approval since July — cannot procure to sell.',metric:{v:'0',l:'LCs'},points:['Jul–Oct: zero management approval for LC / purchase','Only 302 MT wheat in stock at Noapara']},
+    sales:{sev:'medium',headline:'Single-commodity (wheat) dependence.',metric:{v:'1',l:'commodity'},points:['Reliant on Russian wheat','BI procurement decision model not yet live']},
+    degression:{sev:'high',headline:'Sep collapse — 138.6 Cr (Aug) → 12.6 Cr (Sep).',metric:{v:'13.2%',l:'Sep ach.'},points:['One-off Aug spike of 138.62 Cr masks the cliff','No LC → Sep revenue collapsed to 12.6 Cr','Exit-rate deteriorating into Q2']}},
+  dealers:{sev:'medium',headline:'Single-commodity B2B base — no customer diversification.',metric:{v:'1',l:'commodity'},points:['Reliant on Russian wheat','Only 302 MT in stock at Noapara']},
+  external:{sev:'high',headline:'Commodity/import exposure — wheat price + LC approval.',metric:{v:'13.2%',l:'Sep ach.'},points:['International wheat price volatility','Management LC approval stalled since July']},
+  planShort:'Procure trading items as per budget; build the BI procurement decision model.',
+  q2:{tone:'info',label:'Q1 surplus — watch Q2',detail:'No Q1 recovery needed (EAT +2.21 Cr), but September collapsed to 13.2% of budget. Immediate LC / procurement approval is required to protect the Q2 high-demand season.'},
+  rec:{priority:'high',unlock:'Get the LC / procurement approval NOW — Q2 demand is time-bound.',actions:['Escalate approval to management immediately','Finalize the BI procurement decision model','Diversify beyond single-commodity wheat']}},
+
+ {code:'NTL',name:'Nobayon',group:'Trading',rankRev:7,rankEat:4,
+  rev:{jul:{b:19.05,a:14.59},aug:{b:45.75,a:54.13},sep:{b:80.63,a:79.61},q1:{budget:145.43,actual:148.33,deficit:-2.90,ach:'102.0%'}},
+  eatQ1:5.18, deficit:0, loss:0, commit:null, scope:'No recovery needed', status:'On track', verdict:{label:'Surplus',tone:'good'},
+  problems:{
+    acquisition:{sev:'low',headline:'Floor-stock shortage of imported inventory.',metric:{v:'102%',l:'Q1 ach.'},points:['Monitor imported floor-stock vs budget']},
+    sales:{sev:'none',headline:'102% achievement — sales on plan.',metric:{v:'+5.18',l:'Q1 EAT Cr'},points:[]},
+    degression:{sev:'low',headline:'Rising strongly — 14.6 → 79.6 Cr.',metric:{v:'79.61',l:'Sep actual Cr'},points:['Jul 14.59 → Aug 54.13 → Sep 79.61 Cr','Sep nearly at budget (98.7%)','Healthy ramp, no degression']}},
+  dealers:{sev:'low',headline:'No loss issue — profitable and above budget.',metric:{v:'102%',l:'ach.'},points:['Monitor imported floor-stock vs budget']},
+  external:{sev:'low',headline:'Import supply timing — floor-stock shortage.',metric:{v:'—',l:'import'},points:['Budgeted imported-inventory floor-stock shortage']},
+  planShort:'N/A',
+  q2:{tone:'good',label:'Q1 surplus — no recovery needed',detail:'Profitable in Q1 (EAT +5.18 Cr) and above revenue budget. No recovery action required; monitor imported inventory levels.'},
+  rec:{priority:'low',unlock:'No action — monitor import inventory levels.',actions:['Track imported floor-stock against budget','No recovery plan required (surplus + profitable)']}},
+ {code:'NJL',name:'Next JobZ',group:'Others',rankRev:29,rankEat:25,
+  rev:{jul:{b:0.19,a:0.15},aug:{b:0.19,a:0.18},sep:{b:0.30,a:0.29},q1:{budget:0.68,actual:0.62,deficit:0.06,ach:'91.7%'}},
+  eatQ1:-1.80, deficit:0.06, loss:1.80, commit:0.06, scope:'Revenue + Loss', status:'In progress', verdict:{label:'Revenue + Loss',tone:'warn'},
+  problems:{
+    acquisition:{sev:'high',headline:'Core payroll/staffing pillar stalled — DIFE license + payroll infra still in setup.',metric:{v:'9/14',l:'streams idle'},points:['Payroll/staffing (68.3% of plan) delayed by DIFE license','9 of 14 revenue streams inactive through Q1','First staffing revenue only arrived in Aug']},
+    sales:{sev:'high',headline:'91.7% revenue — but mix collapsed to low-margin LinkedIn resale.',metric:{v:'91.7%',l:'Q1 ach.'},points:['~33% of revenue from low/zero-margin LinkedIn resale','Substitute mix ~61% training + ~33% resale','Employer-account monetization not yet scaled']},
+    degression:{sev:'critical',headline:'Gross-margin collapse — 96.8% → 1.5% GP across the quarter.',metric:{v:'1.5%',l:'Sep GP'},points:['GP% 96.8% (Jul) → 43.7% (Aug) → 1.5% (Sep)','Q1 blended GP just 36.7%','High-margin staffing not ramping to offset resale']}},
+  dealers:{sev:'high',headline:'Employer/client base not monetized — revenue concentrated and inactive.',metric:{v:'26%',l:'top client'},points:['9 of 14 revenue streams inactive (CV, BGV, posting, etc.)','Receivables concentrated (Auyan 26%) — cash risk','No CRM / client health score yet']},
+  external:{sev:'medium',headline:'Regulatory + competitive headwind — DIFE license and crowded job-tech market.',metric:{v:'DIFE',l:'license'},points:['DIFE license blocks the payroll/staffing pillar','Crowded job-tech market (Shomvob $1M, BDJobs, Prothom Alo Jobs)','LinkedIn resale margin is thin / platform-dependent']},
+  planShort:'Pivot to a Payroll/Staffing/Training-led engine; repair gross margin; collections sprint + cash-first sequencing; monetize employer accounts.',
+  q2:{tone:'info',label:'Fully funded — targets break-even by 31 Dec (Q2 end)',detail:'Commits 0.06 Cr revenue (100% of its deficit) and 1.80 Cr EAT (100% of its loss), target 31 Dec 2026. The only loss-maker fully funded on both lines and targeting break-even within Q2 — but to break-even, not profit.'},
+  rec:{priority:'medium',unlock:'Restore gross margin before scaling revenue — the loss is a margin problem, not a sales problem.',actions:['Shift mix back to staffing/payroll; cap LinkedIn resale ≤15%','Clear DIFE license + payroll infra to unlock the 68.3% pillar','Collections sprint + cash-first sequencing to protect working capital']}}
+];
+
+const n=v=>{const x=parseFloat(v);return isNaN(x)?0:x};
+const f=(v,d=2)=>(v<0?'−':'')+Math.abs(v).toLocaleString('en-US',{minimumFractionDigits:d,maximumFractionDigits:d});
+const lossMakers=SBUS.filter(s=>s.deficit>0);
+const TOT={def:n(lossMakers.reduce((a,s)=>a+s.deficit,0).toFixed(2)),loss:n(lossMakers.reduce((a,s)=>a+s.loss,0).toFixed(2)),commit:n(lossMakers.reduce((a,s)=>a+s.commit,0).toFixed(2))};
+TOT.cov=TOT.commit/TOT.def*100;
+const covOf=s=>s.commit==null?null:(s.commit/s.deficit*100);
+
+function svgTrend(s){
+  const w=250,h=122,padL=40,padB=20,padT=18,padR=6;
+  const keys=['jul','aug','sep'],labels=['Jul','Aug','Sep'];
+  const budgets=keys.map(k=>s.rev[k].b), actuals=keys.map(k=>s.rev[k].a);
+  const max=Math.max(...budgets,...actuals,1)*1.12;
+  const plotW=w-padL-padR,plotH=h-padT-padB;
+  const x=i=>padL+(i+0.5)*(plotW/3);
+  const y=v=>padT+plotH*(1-v/max);
+  const sv=v=>{const t=v<10?v.toFixed(2):v.toFixed(1);return t.replace(/\.?0+$/,'');};
+  let g=`<svg viewBox="0 0 ${w} ${h}" width="100%" role="img" aria-label="Monthly revenue budget vs actual">`;
+  for(let i=0;i<=3;i++){const gy=padT+plotH*i/3;g+=`<line x1="${padL}" y1="${gy}" x2="${w-padR}" y2="${gy}" stroke="#eef2f7"/>`;g+=`<text x="${padL-4}" y="${gy+3}" text-anchor="end" font-size="8" fill="#94a3b8">${(max*(1-i/3)).toFixed(0)} Cr</text>`;}
+  const bw=Math.min(20,plotW/3*0.22);
+  keys.forEach((k,i)=>{const cx=x(i);
+    g+=`<rect x="${cx-bw-2}" y="${y(budgets[i])}" width="${bw}" height="${plotH-(y(budgets[i])-padT)}" fill="#cbd5e1" rx="2"/>`;
+    g+=`<rect x="${cx+2}" y="${y(actuals[i])}" width="${bw}" height="${plotH-(y(actuals[i])-padT)}" fill="#0e7490" rx="2"/>`;
+    if(budgets[i]>0.01)g+=`<text x="${cx-2-bw/2}" y="${y(budgets[i])-3}" text-anchor="middle" font-size="6.5" fill="#94a3b8">${sv(budgets[i])}</text>`;
+    if(actuals[i]>0.01)g+=`<text x="${cx+2+bw/2}" y="${y(actuals[i])-3}" text-anchor="middle" font-size="6.5" font-weight="700" fill="#0e7490">${sv(actuals[i])}</text>`;
+    g+=`<text x="${cx}" y="${h-7}" text-anchor="middle" font-size="8" fill="#64748b">${labels[i]}</text>`;});
+  g+='</svg>';
+  return g;
+}
+
+/* ---- tabs ---- */
+const TABS=[{k:'overview',label:'Overview'},...SBUS.map(s=>({k:s.code,label:s.name}))];
+const TONEC={bad:'#f87171',warn:'#fbbf24',good:'#34d399',info:'#60a5fa'};
+function renderTabs(){
+  document.getElementById('tabs').innerHTML=TABS.map(t=>{
+    const s=SBUS.find(x=>x.code===t.k);
+    const dot=s?`<span class="dot" style="background:${TONEC[s.verdict.tone]}"></span>`:'';
+    return `<button class="tab${t.k==='overview'?' active':''}" data-t="${t.k}">${dot}${t.label}</button>`;
+  }).join('');
+  document.querySelectorAll('.tab').forEach(b=>b.addEventListener('click',()=>switchTab(b.dataset.t)));
+}
+function switchTab(k){
+  document.querySelectorAll('.tab').forEach(b=>b.classList.toggle('active',b.dataset.t===k));
+  if(k==='overview'){document.getElementById('pane-overview').classList.add('active');document.querySelectorAll('[id^="pane-sbu-"]').forEach(p=>p.classList.remove('active'));}
+  else{document.getElementById('pane-overview').classList.remove('active');document.querySelectorAll('[id^="pane-sbu-"]').forEach(p=>p.classList.toggle('active',p.id==='pane-sbu-'+k));}
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+
+/* ---- overview ---- */
+function renderOverview(){
+  const rows=SBUS.map(s=>{
+    const cov=covOf(s);
+    const covTxt=cov==null?'—':`<span class="${cov>=100?'pos':cov>=70?'neg':'neg'}">${cov.toFixed(0)}%</span>`;
+    const defTxt=s.deficit>0?`<span class="neg">−${f(s.deficit)}</span>`:'<span class="pos">surplus</span>';
+    const lossTxt=s.loss>0?`<span class="neg">−${f(s.loss)}</span>`:'<span class="pos">—</span>';
+    return `<tr class="clickable" onclick="switchTab('${s.code}')">
+      <td><div class="nm">${s.name}</div><div class="code">${s.code} · ${s.group}</div></td>
+      <td>${defTxt}</td>
+      <td class="num">${lossTxt}</td>
+      <td class="num">${s.commit!=null?f(s.commit):'—'}</td>
+      <td class="num">${covTxt}</td>
+      <td><span class="vbadge ${s.q2.tone}">${s.q2.label}</span></td>
+      <td><span class="sev ${s.verdict.tone==='bad'?'critical':s.verdict.tone==='warn'?'medium':s.verdict.tone==='good'?'low':'none'}">${s.verdict.label}</span></td>
+    </tr>`;
+  }).join('');
+  document.getElementById('pane-overview').innerHTML=`
+    <div class="kpis">
+      <div class="kpi"><div class="k-top"><span class="k-ic" style="background:#fee2e2;color:#dc2626">${ICONS.degression}</span><span class="lbl">Revenue deficit</span></div><div class="val" style="color:#dc2626">${f(TOT.def)} Cr</div><div class="sub">gross Q1 shortfall · 4 loss-makers</div></div>
+      <div class="kpi"><div class="k-top"><span class="k-ic" style="background:#fee2e2;color:#dc2626">${ICONS.warn}</span><span class="lbl">Net loss</span></div><div class="val" style="color:#dc2626">${f(TOT.loss)} Cr</div><div class="sub">EAT below zero</div></div>
+      <div class="kpi"><div class="k-top"><span class="k-ic" style="background:#eef2ff;color:#4f46e5">${ICONS.sales}</span><span class="lbl">Commitments</span></div><div class="val">${f(TOT.commit)} Cr</div><div class="sub">vs ${f(TOT.def)} Cr deficit</div></div>
+      <div class="kpi"><div class="k-top"><span class="k-ic" style="background:#fffbeb;color:#d97706">${ICONS.target}</span><span class="lbl">Coverage</span></div><div class="val" style="color:#d97706">${TOT.cov.toFixed(0)}%</div><div class="sub">commitment ÷ deficit</div></div>
+    </div>
+    ${profitGapHTML()}
+    <div class="card">
+      <div class="sec-head"><span class="bar"></span><div><h2>SBU scorecard</h2><p>Click a row to open that SBU.</p></div><button class="hint" data-tip="Rev Commitment (Cr) = each SBU's stated revenue-recovery commitment in its recovery plan (BA–BQ sheet). Coverage = commitment ÷ Q1 revenue deficit (e.g. LifeCare commits 4.32 Cr against a 4.32 Cr deficit = 100%). Q2 Profit? = whether the plan recovers Q1 and reaches profit within Q2.">${ICONS.info}</button></div>
+      <div style="overflow-x:auto"><table>
+        <thead><tr><th>SBU</th><th>Q1 Rev Deficit (Cr)</th><th class="num">Net Loss (Cr)</th><th class="num">Rev Commitment (Cr)</th><th class="num">Coverage</th><th>Q2 Profit?</th><th>Verdict</th></tr></thead>
+        <tbody>${rows}</tbody>
+      </table></div>
+    </div>`;
+}
+
+/* ---- SBU panes ---- */
+function renderSbu(){
+  const wrap=document.getElementById('sbu-panes');
+  wrap.innerHTML=SBUS.map(s=>{
+    const cov=covOf(s);
+    const prob=(obj,icon,title,pc)=>`<div class="problem" style="--pc:${pc}"><div class="ph"><span class="t">${icon} ${title}</span><span class="sev ${obj.sev}">${SEV[obj.sev].label}</span></div><div class="hl">${obj.headline}</div>${obj.points.length?`<ul>${obj.points.map(p=>`<li>${p}</li>`).join('')}</ul>`:''}<div class="metric"><b>${obj.metric.v}</b> ${obj.metric.l}</div></div>`;
+    return `<section class="pane" id="pane-sbu-${s.code}">
+      <div class="sbuhd">
+        <div><h2>${s.name}</h2><div class="g">${s.code} · ${s.group} · Revenue rank ${s.rankRev} · EAT rank ${s.rankEat}</div></div>
+        <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap"><span class="sev ${s.verdict.tone==='bad'?'critical':s.verdict.tone==='warn'?'medium':s.verdict.tone==='good'?'low':'none'}">${s.verdict.label}</span><span class="vbadge ${s.q2.tone}">${s.q2.label}</span></div>
+      </div>
+      <div class="sbustats">
+        <div class="sbustat"><div class="l">Q1 Rev Budget</div><div class="v">${f(s.rev.q1.budget)} Cr</div></div>
+        <div class="sbustat"><div class="l">Q1 Rev Actual</div><div class="v">${f(s.rev.q1.actual)} Cr</div></div>
+        <div class="sbustat"><div class="l">Deficit / (Surplus)</div><div class="v ${s.deficit>0?'neg':'pos'}">${s.deficit>0?'−'+f(s.deficit):'+'+f(-s.deficit)} Cr</div></div>
+        <div class="sbustat"><div class="l">Q1 EAT</div><div class="v ${s.eatQ1<0?'neg':'pos'}">${f(s.eatQ1)} Cr</div></div>
+        <div class="sbustat"><div class="l">Commitment</div><div class="v">${s.commit!=null?f(s.commit)+' Cr':'—'}</div></div>
+        <div class="sbustat"><div class="l">Coverage</div><div class="v ${cov==null?'':(cov>=100?'pos':'neg')}">${cov==null?'—':cov.toFixed(0)+'%'}</div></div>
+      </div>
+
+      <div class="sec-head" style="margin-top:18px"><span class="bar"></span><div><h2>Internal problems</h2><p>From iBOSDDD + SBU input.</p></div></div>
+      <div class="grid g4">
+        ${prob(s.problems.acquisition,ICONS.acquisition,'Customer acquisition',SEV[s.problems.acquisition.sev].color)}
+        ${prob(s.problems.sales,ICONS.sales,'Sales',SEV[s.problems.sales.sev].color)}
+        ${prob(s.problems.degression,ICONS.degression,'Business degression',SEV[s.problems.degression.sev].color)}
+        ${prob(s.dealers,ICONS.dealers,'Dealer / customer loss',SEV[s.dealers.sev].color)}
+      </div>
+
+      <div class="sec-head" style="margin-top:18px"><span class="bar" style="background:#7c3aed"></span><div><h2>External problems</h2><p>Market / regulatory / macro factors — from the root-cause notes and current web context.</p></div></div>
+      <div class="grid">
+        ${prob(s.external,ICONS.external,'External problems','#7c3aed')}
+      </div>
+
+      <div class="card" style="margin-top:14px">
+        <div class="sec-head"><span class="bar"></span><div><h2>Monthly revenue — budget vs actual</h2><p>Deagression trend (BDT Cr).</p></div></div>
+        <div class="chart">${svgTrend(s)}</div>
+        <div class="legend"><span><i class="lg" style="background:#cbd5e1"></i>Budget (BDT Cr)</span><span><i class="lg" style="background:#0e7490"></i>Actual (BDT Cr)</span></div>
+      </div>
+
+      ${s.pharmacy?`<div class="card" style="margin-top:14px"><div class="sec-head"><span class="bar"></span><div><h2>Pharmacy network — live</h2><p>Akij Pharmacy portal · akijpharma.ibos.io</p></div></div>
+        <div class="sbustats" style="margin-bottom:10px">
+          <div class="sbustat"><div class="l">Outlets (live)</div><div class="v">${s.pharmacy.outlets}</div></div>
+          <div class="sbustat"><div class="l">Retail pharmacies</div><div class="v">${s.pharmacy.retail}</div></div>
+        </div>
+        <div class="plan">${s.pharmacy.note}</div></div>`:''}
+
+      <div class="verdict ${s.q2.tone}" style="margin-top:14px"><h3>Can it make profit in Q2 with the Q1 recovery?</h3><p>${s.q2.detail}</p></div>
+
+      <div class="sec-head" style="margin-top:16px"><span class="bar"></span><div><h2>Recovery plan</h2></div></div>
+      <div class="plan">${s.planShort}</div>
+
+      <div class="sec-head" style="margin-top:16px"><span class="bar"></span><div><h2>Optimized recommendations</h2></div></div>
+      <div class="rec"><div class="unlock">${s.rec.unlock}</div><ul>${s.rec.actions.map(a=>`<li>${a}</li>`).join('')}</ul></div>
+    </section>`;
+  }).join('');
+}
+
+function profitGapHTML(){
+  const loss=SBUS.filter(s=>s.deficit>0);
+  const cov=s=>s.commit/s.deficit*100;
+  const gapHead=`<div class="gap-head"><span>SBU</span><span>Recovery</span><span class="gh-amt">Committed / Required (Cr)</span><span class="gh-cov">Coverage</span></div>`;
+  const gapRows=loss.map(s=>{
+    const c=cov(s);
+    return `<div class="gap-row">
+      <div class="gap-sbu">${s.name}</div>
+      <div class="gap-track"><div class="gap-fill" style="width:${c}%"></div></div>
+      <div class="gap-nums">${f(s.commit)} / ${f(s.deficit)}</div>
+      <div class="gap-cov" style="color:${c>=100?'var(--green)':c>=70?'var(--amber)':'var(--red)'}">${c.toFixed(0)}%</div>
+    </div>`;
+  }).join('');
+
+  const covTip=`<button class="hint" data-tip="Top-line (revenue) only. The red track is the Q1 revenue deficit; the indigo fill is the committed recovery. Coverage % = commitment ÷ deficit. 100% = the revenue deficit is fully committed — not that the SBU is profitable. Why only these 4: the Q2-profit question applies to the loss-makers (Consumer Electronics, Logistics – Ex-CHA, LifeCare – Pharmacy, Next JobZ). Essential – Trading (+2.21 Cr) and Nobayon (+5.18 Cr) were already profitable in Q1, so they are excluded.">${ICONS.info}</button>`;
+
+  const beTip=`<button class="hint" data-tip="Break-even = monthly EAT reaches 0 (bottom-line, full-year recovery — separate from the revenue recovery above). The red band is Q2 (Oct–Dec); the dashed line is 31 Dec (Q2 end). Each dot = when that SBU breaks even. Three land after 31 Dec; Next JobZ lands on it — so none profits within Q2. Earlier ≠ better: Logistics & Consumer Electronics break even sooner only because their losses are tiny and under-funded (75% / 12%); Next JobZ is genuinely early AND 100% funded; LifeCare is latest because its loss is the largest (2.39 Cr).">${ICONS.info}</button>`;
+
+  return `<div class="card" style="margin:0 0 18px">
+    <div class="sec-head"><span class="bar"></span><div><h2>Revenue recovery — committed vs required (Cr)</h2><p>How much of the Q1 revenue deficit each SBU commits to recover.</p></div>${covTip}</div>
+    ${gapHead}
+    ${gapRows}
+  </div>
+
+  <div class="card" style="margin:0 0 18px">
+    <div class="sec-head"><span class="bar"></span><div><h2>Break-even vs the Q2 window</h2><p>When each loss-maker reaches monthly break-even (EAT = 0).</p></div>${beTip}</div>
+    ${timelineSVG()}
+    <div class="tl-legend">
+      <span><i class="lg" style="background:#3b82f6"></i>Next JobZ · 31 Dec (Q2 end)</span>
+      <span><i class="lg" style="background:#fbbf24"></i>Logistics – Ex-CHA · end-Q3</span>
+      <span><i class="lg" style="background:#f87171"></i>Consumer Electronics · Apr-27</span>
+      <span><i class="lg" style="background:#34d399"></i>LifeCare – Pharmacy · Jun-27</span>
+      <span><i class="lg" style="background:#dc2626"></i>31 Dec = Q2 deadline</span>
+    </div>
+  </div>`;
+}
+
+function timelineSVG(){
+  const M=['Jul','Aug','Sep','Oct','Nov','Dec','Jan','Feb','Mar','Apr','May','Jun'];
+  const x0=34,slot=57,y=94,cx=i=>x0+(i+0.5)*slot;
+  const tips={
+    ALL:'Logistics – Ex-CHA — breaks even end-Q3 (31 Mar 2027). Earlier than LifeCare only because its Q1 loss is small (0.85 Cr) and the date is aspirational: just 75% of its revenue deficit is funded and recovery is war-dependent. Not healthier than LifeCare.',
+    ACEL:'Consumer Electronics — breaks even Apr-2027, but this is the least credible date: only 12% of its 8.24 Cr deficit is funded, so Apr-27 is a hope, not a funded plan. Its Q1 loss (0.96 Cr) is small, which is why break-even looks early.',
+    ALCL:'LifeCare – Pharmacy — breaks even latest (Jun-27) NOT because it is worse, but because its loss is the largest (2.39 Cr) and it is recovering it honestly (100% of revenue + a quantified 2.39 Cr EAT recovery).',
+    NJL:'Next JobZ — the only loss-maker targeting break-even by 31 Dec (the Q2 deadline), fully funded on BOTH lines (100% revenue + 100% EAT). Still break-even, not profit — its 1.80 Cr loss is a gross-margin problem, not a sales problem.'
+  };
+  const BE=[{k:'ALL',n:'Logistics – Ex-CHA',m:'break-even Mar-27',i:8,clr:'#fbbf24',up:true},{k:'ACEL',n:'Consumer Electronics',m:'break-even Apr-27',i:9,clr:'#f87171',up:false},{k:'ALCL',n:'LifeCare – Pharmacy',m:'break-even Jun-27',i:11,clr:'#34d399',up:true},{k:'NJL',n:'Next JobZ',m:'break-even 31 Dec',i:5.5,clr:'#3b82f6',up:false}];
+  let s='<svg viewBox="0 0 800 192" width="100%" height="auto" role="img" aria-label="Break-even timeline">';
+  const q=[{n:'Q1 · Jul–Sep',c:'#eef2ff',tc:'#475569'},{n:'Q2 · Oct–Dec (profit window)',c:'#fee2e2',tc:'#b91c1c'},{n:'Q3 · Jan–Mar',c:'#f1f5f9',tc:'#475569'},{n:'Q4 · Apr–Jun',c:'#f8fafc',tc:'#475569'}];
+  q.forEach((qq,i)=>{s+=`<rect x="${x0+i*3*slot}" y="20" width="${3*slot}" height="30" fill="${qq.c}" rx="5"/>`;s+=`<text x="${x0+i*3*slot+1.5*slot}" y="40" text-anchor="middle" font-size="10.5" font-weight="700" fill="${qq.tc}">${qq.n}</text>`;});
+  s+=`<line x1="${x0}" y1="${y}" x2="${x0+12*slot}" y2="${y}" stroke="#cbd5e1" stroke-width="1.5"/>`;
+  M.forEach((m,i)=>{const px=x0+i*slot;s+=`<line x1="${px}" y1="${y-4}" x2="${px}" y2="${y}" stroke="#cbd5e1"/>`;s+=`<text x="${cx(i)}" y="${y+18}" text-anchor="middle" font-size="9.5" fill="#64748b">${m}</text>`;});
+  const q2end=x0+6*slot;
+  s+=`<line x1="${q2end}" y1="56" x2="${q2end}" y2="${y+8}" stroke="#dc2626" stroke-width="2" stroke-dasharray="4 3"/>`;
+  s+=`<text x="${q2end}" y="68" text-anchor="middle" font-size="10" font-weight="800" fill="#dc2626">31 Dec · Q2 ends</text>`;
+  BE.forEach(b=>{
+    const px=cx(b.i);
+    s+=`<g class="mk" data-tip="${tips[b.k]}">`;
+    s+=`<line x1="${px}" y1="56" x2="${px}" y2="${y}" stroke="${b.clr}" stroke-width="1.2" opacity=".5"/>`;
+    s+=`<circle cx="${px}" cy="${y}" r="6.5" fill="${b.clr}" stroke="#fff" stroke-width="2"/>`;
+    s+=`<text x="${px}" y="${b.up?y-18:y+38}" text-anchor="middle" font-size="10" font-weight="800" fill="${b.clr}">${b.n}</text>`;
+    s+=`<text x="${px}" y="${b.up?y-7:y+50}" text-anchor="middle" font-size="9" fill="#64748b">${b.m}</text>`;
+    s+=`</g>`;
+  });
+  s+='</svg>';
+  return s;
+}
+
+function initTips(){
+  const tip=document.getElementById('tip');
+  const close=()=>{document.querySelectorAll('.hint').forEach(b=>b.classList.remove('open'));tip.classList.remove('show');};
+
+  // timeline markers: hover
+  document.querySelectorAll('.mk').forEach(g=>{
+    g.addEventListener('mouseenter',()=>{tip.textContent=g.getAttribute('data-tip');tip.classList.add('show');});
+    g.addEventListener('mousemove',e=>{tip.style.left=(e.clientX+16)+'px';tip.style.top=(e.clientY+16)+'px';tip.style.right='auto';});
+    g.addEventListener('mouseleave',()=>tip.classList.remove('show'));
+  });
+
+  // info buttons: click to popout
+  document.querySelectorAll('.hint').forEach(btn=>{
+    btn.addEventListener('click',e=>{
+      e.stopPropagation();
+      const wasOpen=btn.classList.contains('open');
+      close();
+      if(!wasOpen){
+        btn.classList.add('open');
+        tip.textContent=btn.getAttribute('data-tip');
+        tip.classList.add('show');
+        const r=btn.getBoundingClientRect();
+        tip.style.left='auto';
+        tip.style.right=(window.innerWidth-r.right)+'px';
+        tip.style.top=(r.bottom+10)+'px';
+      }
+    });
+  });
+
+  document.addEventListener('click',close);
+}
+
+
+function renderFooter(){
+  document.getElementById('footer').innerHTML=`
+    <div class="foot-grid">
+      <div class="f-item"><span class="f-lbl">Purpose</span><span class="f-val">Diagnose internal + external problems and the dealer/customer-loss reasons for the 6 SBUs, and judge whether their plans reach Q2 profit.</span></div>
+      <div class="f-item"><span class="f-lbl">Period</span><span class="f-val">Q1 FY2026-27 (Jul–Sep 2026)</span></div>
+      <div class="f-item"><span class="f-lbl">Sources</span><span class="f-val">iBOSDDD (fin.tblAccountingJournal, GL 3010001/2/5/6) · AR SBU Top-line &amp; Bottom-line Scorecard</span></div>
+      <div class="f-item"><span class="f-lbl">Cut-off</span><span class="f-val">25 Oct 2026</span></div>
+      <div class="f-item"><span class="f-lbl">Version</span><span class="f-val">v4 (Overview + SBU-wise)</span></div>
+      <div class="f-item"><span class="f-lbl">Preparer</span><span class="f-val">SPA (AI)</span></div>
+      <div class="f-item"><span class="f-lbl">Reviewer</span><span class="f-val">To be reviewed</span></div>
+    </div>
+    <div class="f-note"><b>Note.</b> Revenue / deficit / loss are measured facts (ERP-verified). The acquisition–sales–degression diagnosis, Q2-profit judgement and recommendations are analyst interpretation (hypotheses), not ERP outputs. Customer counts in the GL journal are largely unpopulated, so acquisition is assessed from SBU-reported root causes and outlet/showroom data.</div>`;
+}
+
+renderTabs();renderOverview();renderSbu();renderFooter();initTips();
+</script>
+</body>
+</html>
