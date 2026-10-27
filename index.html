@@ -393,10 +393,10 @@ function renderSbu(){
 
       <div class="sec-head" style="margin-top:18px"><span class="bar"></span><div><h2>Internal problems</h2><p>From iBOSDDD + SBU input.</p></div></div>
       <div class="grid g4">
-        ${prob(s.problems.acquisition,ICONS.acquisition,'Customer acquisition',SEV[s.problems.acquisition.sev].color)}
-        ${prob(s.problems.sales,ICONS.sales,'Sales',SEV[s.problems.sales.sev].color)}
+        ${prob(s.problems.acquisition,ICONS.acquisition,'Acquisition',SEV[s.problems.acquisition.sev].color)}
+        ${prob(s.problems.sales,ICONS.sales,'Conversion',SEV[s.problems.sales.sev].color)}
+        ${prob(s.dealers,ICONS.dealers,'Retention',SEV[s.dealers.sev].color)}
         ${prob(s.problems.degression,ICONS.degression,'Business degression',SEV[s.problems.degression.sev].color)}
-        ${prob(s.dealers,ICONS.dealers,'Dealer / customer loss',SEV[s.dealers.sev].color)}
       </div>
 
       <div class="sec-head" style="margin-top:18px"><span class="bar" style="background:#7c3aed"></span><div><h2>External problems</h2><p>Market / regulatory / macro factors — from the root-cause notes and current web context.</p></div></div>
