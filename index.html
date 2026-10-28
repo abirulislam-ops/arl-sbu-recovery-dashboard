@@ -187,7 +187,7 @@
     </div>
     <div class="hmeta">
       <span class="chip"><span class="live"></span>Period <b>Q1 (Jul–Sep 2026)</b></span>
-      <span class="chip">SBUs <b>6</b></span>
+      <span class="chip">SBUs <b>12</b></span>
     </div>
   </div>
   <nav><div class="tabs" id="tabs"></div></nav>
@@ -303,7 +303,67 @@ const SBUS=[
   external:{sev:'medium',headline:'Import dependency — recovery hinges on quality imported products.',metric:{v:'—',l:'import'},points:['Relies on imported quality products','Slow-moving stock built up from prior buying decisions']},
   planShort:'Import quality products and sell at profitable margins; recover the 2.10 Cr loss (1.5 Cr committed) within 1.5 years via pricing, sales performance and inventory management.',
   q2:{tone:'warn',label:'Loss-only — recovery targeted June 2028',detail:'Revenue is on budget, but EAT is −2.10 Cr from subsidised stock clearance. The plan commits 1.5 Cr of loss recovery within 1.5 years (target June 2028) — well beyond Q2.'},
-  rec:{priority:'medium',unlock:'Fix the margin, not the volume — stop subsidising slow stock.',actions:['Replace slow-moving stock with quality imported products','Price for margin and tighten dealer subsidies','Institute inventory discipline (aging + slow-mover review)']}}
+  rec:{priority:'medium',unlock:'Fix the margin, not the volume — stop subsidising slow stock.',actions:['Replace slow-moving stock with quality imported products','Price for margin and tighten dealer subsidies','Institute inventory discipline (aging + slow-mover review)']}},
+ {code:'AELOTH',name:'Essentials',group:'Food',rankRev:3,rankEat:33,
+  rev:{jul:{b:153.09,a:124.89},aug:{b:150.61,a:116.71},sep:{b:172.06,a:127.96},q1:{budget:475.76,actual:369.57,deficit:106.19,ach:'77.7%'}},
+  eatQ1:-20.91, deficit:106.20, loss:20.91, commit:106.19, scope:'Revenue + Loss', status:'Not Started', verdict:{label:'Revenue + Loss',tone:'bad'},
+  problems:{
+    acquisition:{sev:'critical',headline:'Raw-material & salt supply broke — pulses, Miniket paddy and salt.',metric:{v:'106.2',l:'deficit Cr'},points:['Raw-material shortages (lentils, chickpeas, yellow peas, paddy)','Salt supply disruption (Confidence CM agreed)','NPD not yet launched']},
+    sales:{sev:'critical',headline:'77.7% revenue achievement — channels underperform across the board.',metric:{v:'77.7%',l:'Q1 ach.'},points:['Consumer, Bulk Rice/Flour, Modern Trade, HORECA all soft','Tender business not yet converted','Chinigura demand reduced']},
+    degression:{sev:'critical',headline:'Revenue deficit 106.20 Cr — the widest in the portfolio.',metric:{v:'106.2',l:'deficit Cr'},points:['Jul 124.89 → Aug 116.71 → Sep 127.96 Cr (vs 153→172 budget)','Gap persisted all quarter']}},
+  dealers:{sev:'high',headline:'Lost customers + inactive outlets to recover.',metric:{v:'—',l:'lost'},points:['Recover lost customers','Activate productive outlets','Improve SR productivity & strike rate']},
+  external:{sev:'high',headline:'Commodity + salt supply-chain disruption.',metric:{v:'—',l:'supply'},points:['Raw-material (pulses, paddy) market shortage','Salt supply disruption','Chinigura rice demand shift']},
+  planShort:'30-day SKU/plant/customer recovery plan with weekly targets; prioritise Consumer, Corporate, Bulk Rice/Flour & Dal, Modern Trade, HORECA and Tender; secure raw materials (incl. Confidence salt CM).',
+  q2:{tone:'bad',label:'No — recovery targeted 31 Jan 2027',detail:'The largest deficit in the portfolio (106.20 Cr, 77.7% ach). Commits 106.19 Cr revenue + 20.91 Cr EAT, target 31 Jan 2027 — after Q2. Recovery is supply-driven (raw materials + salt).'},
+  rec:{priority:'high',unlock:'Secure raw-material + salt supply first — the deficit is supply-driven, not demand.',actions:['Lock raw-material and salt supply (CM agreement already done)','Launch the NPD already in budget','Set weekly channel/SKU targets with distributor-health monitoring']}},
+ {code:'ARMCL',name:'Ready Mix',group:'Building Solution',rankRev:8,rankEat:31,
+  rev:{jul:{b:38.98,a:27.18},aug:{b:41.37,a:36.19},sep:{b:41.37,a:32.57},q1:{budget:121.71,actual:95.94,deficit:25.77,ach:'78.8%'}},
+  eatQ1:-7.38, deficit:25.77, loss:7.38, commit:25.77, scope:'Revenue + Loss', status:'In progress', verdict:{label:'Revenue + Loss',tone:'warn'},
+  problems:{
+    acquisition:{sev:'high',headline:'Rainy season + no RMC plant in Dhaka — market access constrained.',metric:{v:'78.8%',l:'Q1 ach.'},points:['Rainy season (lean construction period)','No Dhaka-City plant limits coverage','Limited market penetration']},
+    sales:{sev:'high',headline:'78.8% revenue achievement — low capacity utilisation.',metric:{v:'78.8%',l:'Q1 ach.'},points:['Low volume vs high fixed-cost base','Under-utilisation of plant capacity','Unfavourable price-to-cost']},
+    degression:{sev:'high',headline:'Revenue deficit 25.77 Cr; September dipped to 32.57.',metric:{v:'25.77',l:'deficit Cr'},points:['Aug 36.19 → Sep 32.57 Cr','Deficit built across the quarter']}},
+  dealers:{sev:'high',headline:'Inactive customers + lost orders to recover.',metric:{v:'—',l:'lost'},points:['Reactivate inactive customers','Recover lost orders via customer-wise plan','Target developers, contractors, institutional customers']},
+  external:{sev:'high',headline:'Seasonal + construction-market cyclicality.',metric:{v:'—',l:'season'},points:['Rainy season suppresses construction demand','Higher-priced local inputs']},
+  planShort:'Volume-driven recovery: key-account management, new customers, recover lost orders, expand coverage and maximise plant utilisation; realise approved price increases.',
+  q2:{tone:'warn',label:'No — target 31 Dec 2026',detail:'Commits 25.77 Cr revenue (100%) + 8.38 Cr EAT, target 31 Dec 2026. Rainy-season and no-Dhaka-plant constraints. Recovery targets Q2-end break-even, not profit.'},
+  rec:{priority:'high',unlock:'Win volume + realise price — utilisation and price-cost are the levers.',actions:['Set weekly/monthly sales targets per exec/plant/territory','Prioritise large projects, developers and contractors','Realise approved selling-price increases']}},
+ {code:'ACL',name:'Commodities – F&B',group:'Trading',rankRev:12,rankEat:29,
+  rev:{jul:{b:1.62,a:21.82},aug:{b:1.66,a:5.01},sep:{b:3.97,a:7.55},q1:{budget:7.25,actual:34.38,deficit:-27.13,ach:'474.4%'}},
+  eatQ1:-2.40, deficit:0, loss:2.40, commit:null, scope:'Loss only', status:'In progress', verdict:{label:'Loss only',tone:'warn'},
+  problems:{
+    acquisition:{sev:'low',headline:'Revenue 474% of budget — demand/supply is not the issue.',metric:{v:'474.4%',l:'Q1 ach.'},points:['Revenue far above budget (34.38 Cr vs 7.25 Cr)','Top-line healthy']},
+    sales:{sev:'high',headline:'Revenue strong, but one-off import costs crush margin.',metric:{v:'−2.40',l:'Q1 EAT Cr'},points:['87L exceptional cost (demurrage + C&F reassessment)','Margin hidden by exceptional import shock']},
+    degression:{sev:'critical',headline:'EAT loss 2.40 Cr — non-recurring import shock, not structural.',metric:{v:'2.40',l:'loss (Cr)'},points:['PAT −1.49 Cr vs +0.30 Cr budget','Driven by held shipment + C&F error, not trading margin']}},
+  dealers:{sev:'medium',headline:'Two-account concentration — channel too narrow.',metric:{v:'2',l:'accounts'},points:['Run-rate dependent on two accounts','Needs channel widening']},
+  external:{sev:'medium',headline:'Import-line disruption — Malaysia/Thailand lines not opened.',metric:{v:'—',l:'import'},points:['Import lines not opened in Q1','Demurrage + customs reassessment']},
+  planShort:'Rebuild the range and hold a 2.50 Cr/month run-rate off the approved 5-LC import plan (17.97% GP); price every SKU off true landed cost and separate recurring margin from exceptional import cost.',
+  q2:{tone:'info',label:'Loss-only — targets monthly PAT breakeven Nov-26',detail:'Revenue is 474% of budget (surplus), but EAT is −2.40 Cr from one-off import costs (demurrage + C&F reassessment). The plan separates recurring margin from exceptional cost and targets monthly PAT breakeven by Nov-26 (within Q2).'},
+  rec:{priority:'medium',unlock:'Separate recurring margin from the one-off import shock, then price off landed cost.',actions:['SKU-level landed cost + mandatory price floor','Recover/waive the demurrage + contest the C&F reassessment','Widen the channel beyond two accounts']}},
+ {code:'ABSLASP',name:'ABSL – Asphalt',group:'Building Solution',rankRev:19,rankEat:27,
+  rev:{jul:{b:7.99,a:3.96},aug:{b:10.46,a:2.69},sep:{b:12.20,a:0.97},q1:{budget:30.65,actual:7.62,deficit:23.03,ach:'24.9%'}},
+  eatQ1:-2.15, deficit:23.03, loss:2.15, commit:23.03, scope:'Revenue + Loss', status:'In progress', verdict:{label:'Revenue + Loss',tone:'warn'},
+  problems:{
+    acquisition:{sev:'critical',headline:'LC bitumen unavailable — forced into higher-priced local bitumen.',metric:{v:'24.9%',l:'Q1 ach.'},points:['LC bitumen procurement blocked','Higher-priced local bitumen','Weak price competitiveness']},
+    sales:{sev:'critical',headline:'24.9% revenue achievement — order conversion collapsed.',metric:{v:'24.9%',l:'Q1 ach.'},points:['Order conversion reduced on price','Road construction slowed (rainy season)','Sep GP margin −9.9%']},
+    degression:{sev:'critical',headline:'Revenue deficit 23.03 Cr; Sep collapsed to 0.97 Cr.',metric:{v:'23.03',l:'deficit Cr'},points:['Jul 3.96 → Aug 2.69 → Sep 0.97 Cr (vs 12.20 budget)','Worsening every month']}},
+  dealers:{sev:'high',headline:'Lost customers + orders to recover.',metric:{v:'—',l:'lost'},points:['Recover lost customers/orders','Target RHD, LGED, City Corps, MES, contractors']},
+  external:{sev:'critical',headline:'Rainy season + LC/import dependency.',metric:{v:'—',l:'LC'},points:['Rainy season reduces road/asphalt demand','LC bitumen availability (import)']},
+  planShort:'Expedite LC bitumen procurement, recover lost orders, expand coverage (RHD/LGED/City Corps/MES/contractors) and improve price competitiveness + plant utilisation.',
+  q2:{tone:'warn',label:'No — target 31 Dec 2026',detail:'Commits 23.03 Cr revenue (100%) + 2.16 Cr EAT, target 31 Dec 2026. Rainy season + LC-bitumen shortage forced higher-priced local bitumen, collapsing order conversion (24.9% ach).'},
+  rec:{priority:'high',unlock:'Secure LC bitumen — the whole plan hinges on cheaper imported bitumen.',actions:['Expedite LC bitumen procurement with SCM + Finance','Recover lost customers/orders via customer-wise plans','Target major road + infrastructure projects']}},
+ {code:'AITL',name:'Infotech',group:'IT',rankRev:24,rankEat:24,
+  rev:{jul:{b:3.30,a:1.82},aug:{b:3.85,a:0.81},sep:{b:4.40,a:-0.04},q1:{budget:11.55,actual:2.59,deficit:8.96,ach:'22.4%'}},
+  eatQ1:-1.20, deficit:8.96, loss:1.20, commit:3.5, scope:'Revenue + Loss', status:'In progress', verdict:{label:'Revenue + Loss',tone:'warn'},
+  problems:{
+    acquisition:{sev:'high',headline:'Limited fresh orders — receivables, credit restrictions, aged inventory.',metric:{v:'22.4%',l:'Q1 ach.'},points:['Overdue receivables block new orders','Customer credit restrictions','Aged inventory + delayed projects']},
+    sales:{sev:'critical',headline:'22.4% revenue achievement — September went negative (−0.04 Cr).',metric:{v:'22.4%',l:'Q1 ach.'},points:['Sep revenue −0.04 Cr','Project conversions delayed','Order flow stalled']},
+    degression:{sev:'critical',headline:'Revenue deficit 8.96 Cr; steep decline Jul → Sep.',metric:{v:'8.96',l:'deficit Cr'},points:['Jul 1.82 → Aug 0.81 → Sep −0.04 Cr','Deteriorating each month']}},
+  dealers:{sev:'medium',headline:'Dealers to reactivate; aged stock to clear.',metric:{v:'—',l:'aged'},points:['Reactivate eligible dealers','Clear aged stock via bundles']},
+  external:{sev:'low',headline:'No major external factor — internal working-capital issue.',metric:{v:'—',l:'—'},points:['Driven by receivables + credit, not market']},
+  planShort:'Prioritise collectible accounts, sellable stock and confirmed B2B/project orders; close the Q1 shortfall through a weekly approved sales plan.',
+  q2:{tone:'warn',label:'No — commits 3.5 Cr vs 8.96 Cr (39%); target 31 Dec 2027',detail:'Commits 3.5 Cr revenue (only 39% of the 8.96 Cr deficit) + 2 Cr EAT, target 31 Dec 2027 — over a year out. Blocked by overdue receivables, credit restrictions and aged inventory.'},
+  rec:{priority:'high',unlock:'Unblock working capital (receivables + aged inventory) before chasing new orders.',actions:['Accelerate overdue AR + inventory recovery','Stop loss-making deals, review SKU margins','Clear aged stock and reactivate dealers']}}
 ];
 
 const n=v=>{const x=parseFloat(v);return isNaN(x)?0:x};
@@ -561,7 +621,7 @@ function initTips(){
 function renderFooter(){
   document.getElementById('footer').innerHTML=`
     <div class="foot-grid">
-      <div class="f-item"><span class="f-lbl">Purpose</span><span class="f-val">Diagnose internal + external problems and the dealer/customer-loss reasons for the 6 SBUs, and judge whether their plans reach Q2 profit.</span></div>
+      <div class="f-item"><span class="f-lbl">Purpose</span><span class="f-val">Diagnose internal + external problems and the dealer/customer-loss reasons for the 12 SBUs, and judge whether their plans reach Q2 profit.</span></div>
       <div class="f-item"><span class="f-lbl">Period</span><span class="f-val">Q1 FY2026-27 (Jul–Sep 2026)</span></div>
       <div class="f-item"><span class="f-lbl">Sources</span><span class="f-val">iBOSDDD (fin.tblAccountingJournal, GL 3010001/2/5/6) · AR SBU Top-line &amp; Bottom-line Scorecard</span></div>
       <div class="f-item"><span class="f-lbl">Cut-off</span><span class="f-val">25 Oct 2026</span></div>
