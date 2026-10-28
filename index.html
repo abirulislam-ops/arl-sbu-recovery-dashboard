@@ -560,7 +560,7 @@ function renderSbu(){
     const prob=(obj,icon,title,pc)=>`<div class="problem" style="--pc:${pc}"><div class="ph"><span class="t">${icon} ${title}</span><span class="sev ${obj.sev}">${SEV[obj.sev].label}</span></div><div class="hl">${obj.headline}</div>${obj.points.length?`<ul>${obj.points.map(p=>`<li>${p}</li>`).join('')}</ul>`:''}<div class="metric"><b>${obj.metric.v}</b> ${obj.metric.l}</div></div>`;
     return `<section class="pane" id="pane-sbu-${s.code}">
       <div class="sbuhd">
-        <div><h2>${s.name}</h2><div class="g">${s.code} · ${s.group} · Revenue rank ${s.rankRev} · EAT rank ${s.rankEat}</div><div class="g" style="margin-top:2px"><b style="color:var(--ink)">Head:</b> ${m.head||'—'} &nbsp;·&nbsp; <b style="color:var(--ink)">Region/district:</b> ${m.region||'—'}</div></div>
+        <div><h2>${s.name}</h2><div class="g">${s.code} · ${s.group} · Revenue rank ${s.rankRev} · EAT rank ${s.rankEat}</div><div class="g" style="margin-top:2px"><b style="color:var(--ink)">Head:</b> ${m.head||'—'} &nbsp;·&nbsp; <b style="color:var(--ink)">Loss region:</b> ${m.region||'—'}</div></div>
         <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap"><span class="sev ${s.verdict.tone==='bad'?'critical':s.verdict.tone==='warn'?'medium':s.verdict.tone==='good'?'low':'none'}">${s.verdict.label}</span><span class="vbadge ${s.q2.tone}">${s.q2.label}</span></div>
       </div>
       <div class="sbustats">
