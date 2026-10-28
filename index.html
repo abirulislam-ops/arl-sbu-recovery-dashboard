@@ -226,6 +226,7 @@
       </div>
     </header>
     <main>
+      <section id="pane-overview" class="pane"></section>
       <div id="sbu-panes"></div>
       <footer id="footer"></footer>
     </main>
@@ -429,20 +430,37 @@ const META={
  ALL:{head:'Bikash Bromha (FF) · Mohammad Tanvir Zaman (Air Ops)',region:'Dhaka (air) + Chattogram (sea)',avgOrder:'—',newCust:'—',revTxt:'5 Cr',eatTxt:'2 Cr',timeline:'End Q3',owner:'Bikash Bromha (FF Head), Mohammad Tanvir Zaman (Air Ops Head)',people:'Recruit more experienced sales people.',process:'Daily sales calls + nomination collection; overseas nomination visits.',tech:'No'},
  ALCL:{head:'Istiuck Ali Talukdar',region:'Dhaka + urban (retail pharmacy)',avgOrder:'—',newCust:'—',revTxt:'4.32 Cr (Q2 ≥25.5 Cr)',eatTxt:'2.39 Cr (Q2 −1.6 Cr)',timeline:'30 Jun 2027',owner:'Istiuck Ali Talukdar (CBO) + functional leads',people:'Leaner structure; incentive pay tied to GP/basket; dedicated CRM/tele-calling.',process:'Monthly outlet P&L; discount capping; auto-replenishment; credit purchasing; weekly review.',tech:'POS repeat-customer detection; outlet dashboard; SMS refill; online store.'},
  NJL:{head:'Shoeb Hassan',region:'Dhaka (digital job-tech)',avgOrder:'—',newCust:'—',revTxt:'0.06 Cr',eatTxt:'1.80 Cr',timeline:'31 Dec 2026',owner:'Shoeb Hossen — Chief Business Officer',people:'Name staffing deputy; hire Sales Manager; redirect from LinkedIn resale to staffing/posting.',process:'Collections cadence; cash-first sequencing; pricing lock; event gate.',tech:'GA4 + CRM + self-serve checkout; ghost-job purge; Metabase.'},
- ATL:{head:'Masud Al Amin Razib',region:'Dhaka (import / retail)',avgOrder:'0.65 Lac',newCust:'33',revTxt:'N/A (revenue achieved)',eatTxt:'1.5 Cr',timeline:'Jun 2028',owner:'Syaeed Muhammad Fuad',people:'Increase manpower.',process:'N/A',tech:'N/A'},
- AELOTH:{head:'MD Akterrul Alam Shah',region:'National — Dhaka, Chattogram, Narayanganj, Naogaon',avgOrder:'6.26 Lac',newCust:'355',revTxt:'106.19 Cr',eatTxt:'20.91 Cr',timeline:'31 Jan 2027',owner:'Sales Heads (Revenue) · CFO (EAT)',people:'Channel-wise recovery owners + SKU/plant/customer champions; performance-based accountability.',process:'Weekly recovery reviews; daily sales tracking; distributor-health monitoring; monthly P&L bridge.',tech:'Strengthen Sales Buddy + DMS; channel/SKU dashboards; distributor lifting alerts; order-to-delivery tracking.'},
- ARMCL:{head:'Anisur Rahman',region:'Dhaka, Gazipur, Chattogram',avgOrder:'12.63 Lac',newCust:'168',revTxt:'25.77 Cr',eatTxt:'8.38 Cr',timeline:'31 Dec 2026',owner:'Md. Anisur Rahman & Asadul Haque Sufyani (CEO & Cluster CEO)',people:'Individual KPIs + accountability; expand sales force in Gazipur/Dhaka/Chattogram.',process:'Weekly S&OP + monthly profitability review; customer-wise recovery tracker; credit control.',tech:'Real-time dashboard (ERP sales, fleet GPS, CRM, overdue alerts).'},
- ACL:{head:'Md. Imran Hossain',region:'Dhaka (import trading)',avgOrder:'19.15 Lac',newCust:'14',revTxt:'Q2 6.60 Cr (FY 24.70 Cr)',eatTxt:'Q2 PAT 0.00 Cr',timeline:'30 Nov 2026',owner:'Md. Imran Hossain, Head of Sales – ACL',people:'Dedicated F&B import specialist + C&F specialist; territory recovery plans.',process:'Import governance gate; SKU landed-cost price floor; AR sub-ledger; weekly PAT-bridge review.',tech:'Enable batch/expiry in ERP (WH 10738).'},
- ABSLASP:{head:'Anisur Rahman',region:'National roads (RHD/LGED/City Corps)',avgOrder:'3.57 Lac',newCust:'52',revTxt:'23.03 Cr',eatTxt:'2.16 Cr',timeline:'31 Dec 2026',owner:'Mohammad Ehsan Al Baqui (CSO), Md Mobassarul Alam (Sr. Manager)',people:'Measurable KPIs; strengthen project-based selling.',process:'Weekly S&OP; monthly profitability; customer-wise revenue tracking; bitumen procurement SOP.',tech:'Integrated dashboard (revenue, pipeline, inventory, plant utilisation, receivables alerts).'},
+ ATL:{head:'Masud Al Amin Razib',region:'Dhaka · Narayanganj (thin retail base)',avgOrder:'0.65 Lac',newCust:'33',revTxt:'N/A (revenue achieved)',eatTxt:'1.5 Cr',timeline:'Jun 2028',owner:'Syaeed Muhammad Fuad',people:'Increase manpower.',process:'N/A',tech:'N/A'},
+ AELOTH:{head:'MD Akterrul Alam Shah',region:'Chattogram · Dhaka · Narayanganj (national spread)',avgOrder:'6.26 Lac',newCust:'355',revTxt:'106.19 Cr',eatTxt:'20.91 Cr',timeline:'31 Jan 2027',owner:'Sales Heads (Revenue) · CFO (EAT)',people:'Channel-wise recovery owners + SKU/plant/customer champions; performance-based accountability.',process:'Weekly recovery reviews; daily sales tracking; distributor-health monitoring; monthly P&L bridge.',tech:'Strengthen Sales Buddy + DMS; channel/SKU dashboards; distributor lifting alerts; order-to-delivery tracking.'},
+ ARMCL:{head:'Anisur Rahman',region:'Greater Dhaka — Dhaka · Munshiganj · Gazipur · Narayanganj',avgOrder:'12.63 Lac',newCust:'168',revTxt:'25.77 Cr',eatTxt:'8.38 Cr',timeline:'31 Dec 2026',owner:'Md. Anisur Rahman & Asadul Haque Sufyani (CEO & Cluster CEO)',people:'Individual KPIs + accountability; expand sales force in Gazipur/Dhaka/Chattogram.',process:'Weekly S&OP + monthly profitability review; customer-wise recovery tracker; credit control.',tech:'Real-time dashboard (ERP sales, fleet GPS, CRM, overdue alerts).'},
+ ACL:{head:'Md. Imran Hossain',region:'Dhaka · Gazipur (two-account concentration)',avgOrder:'19.15 Lac',newCust:'14',revTxt:'Q2 6.60 Cr (FY 24.70 Cr)',eatTxt:'Q2 PAT 0.00 Cr',timeline:'30 Nov 2026',owner:'Md. Imran Hossain, Head of Sales – ACL',people:'Dedicated F&B import specialist + C&F specialist; territory recovery plans.',process:'Import governance gate; SKU landed-cost price floor; AR sub-ledger; weekly PAT-bridge review.',tech:'Enable batch/expiry in ERP (WH 10738).'},
+ ABSLASP:{head:'Anisur Rahman',region:'Dhaka (down 10.3 Cr QoQ) · Narayanganj · Chattogram',avgOrder:'3.57 Lac',newCust:'52',revTxt:'23.03 Cr',eatTxt:'2.16 Cr',timeline:'31 Dec 2026',owner:'Mohammad Ehsan Al Baqui (CSO), Md Mobassarul Alam (Sr. Manager)',people:'Measurable KPIs; strengthen project-based selling.',process:'Weekly S&OP; monthly profitability; customer-wise revenue tracking; bitumen procurement SOP.',tech:'Integrated dashboard (revenue, pipeline, inventory, plant utilisation, receivables alerts).'},
  AITL:{head:'ASM Shawkat Lillat',region:'Dhaka (IT / ERP clients)',avgOrder:'4.11 Lac',newCust:'11',revTxt:'3.5 Cr (Oct–Dec)',eatTxt:'2 Cr (Oct–Dec)',timeline:'31 Dec 2027',owner:'ASM Shawkat Lillat, Head of Business & Operations',people:'Replace/hire 4 KAM + 1 recovery personnel.',process:'KYC credit limits; approval controls; weekly AR/stock aging + order-to-collection.',tech:'Shared ERP dashboard (sales funnel, collections, inventory aging, margins).'},
- AIL:{head:'Shaibal Shaha',region:'National — Dhaka + Chattogram steel markets',avgOrder:'10.80 Lac',newCust:'113',revTxt:'7,052 MT volume gap (long-term)',eatTxt:'Losses to Jan 2027 (5-yr plan)',timeline:'Per yearly budget',owner:'Cluster CEO, Cluster CSO, Head of Sales, CPO',people:'New organogram + vehicle plan; Trade structure for territory coverage & penetration.',process:'N/A',tech:'N/A'},
+ AIL:{head:'Shaibal Shaha',region:'Dhaka (down 45.6 Cr QoQ) · Cumilla · Chattogram',avgOrder:'10.80 Lac',newCust:'113',revTxt:'7,052 MT volume gap (long-term)',eatTxt:'Losses to Jan 2027 (5-yr plan)',timeline:'Per yearly budget',owner:'Cluster CEO, Cluster CSO, Head of Sales, CPO',people:'New organogram + vehicle plan; Trade structure for territory coverage & penetration.',process:'N/A',tech:'N/A'},
  AMPL:{head:'Abu Zafor Iqbal Ahamed',region:'Dhaka (diagnostics)',avgOrder:'—',newCust:'—',revTxt:'1.63 Cr',eatTxt:'0.90 Cr',timeline:'31 Mar 2027',owner:'Branch Manager / HR / CBO+CFO / CBDO-CBO',people:'Onboard 2 more people within December.',process:'Operations + Sales.',tech:'New HIS, new machines (services).'}
+};
+
+/* Break-even month (monthly EAT = 0) per loss-maker, for the overview timeline. idx = month slot (0=Jul … 11=Jun); >11 = beyond Jun-27. */
+const BE={
+ ACEL:{i:9,l:'Apr-27',n:'Electronics'},
+ ALL:{i:8,l:'Mar-27',n:'Logistics'},
+ ALCL:{i:11,l:'Jun-27',n:'LifeCare'},
+ NJL:{i:5,l:'31 Dec',n:'Next JobZ'},
+ ATL:{i:23,l:'Jun-28',n:'Telecom'},
+ AELOTH:{i:6,l:'Jan-27',n:'Essentials'},
+ ARMCL:{i:5,l:'31 Dec',n:'Ready Mix'},
+ ACL:{i:4,l:'Nov-26',n:'Commodities'},
+ ABSLASP:{i:5,l:'31 Dec',n:'Asphalt'},
+ AITL:{i:17,l:'Dec-27',n:'Infotech'},
+ AIL:{i:6,l:'Jan-27',n:'Ispat'},
+ AMPL:{i:8,l:'Mar-27',n:'Mediplex'}
 };
 
 const n=v=>{const x=parseFloat(v);return isNaN(x)?0:x};
 const f=(v,d=2)=>(v<0?'−':'')+Math.abs(v).toLocaleString('en-US',{minimumFractionDigits:d,maximumFractionDigits:d});
 const lossMakers=SBUS.filter(s=>s.deficit>0);
-const TOT={def:n(lossMakers.reduce((a,s)=>a+s.deficit,0).toFixed(2)),loss:n(lossMakers.reduce((a,s)=>a+s.loss,0).toFixed(2)),commit:n(lossMakers.reduce((a,s)=>a+s.commit,0).toFixed(2))};
+const lossSBUs=SBUS.filter(s=>s.loss>0);
+const TOT={def:n(lossMakers.reduce((a,s)=>a+s.deficit,0).toFixed(2)),loss:n(lossSBUs.reduce((a,s)=>a+s.loss,0).toFixed(2)),commit:n(lossMakers.reduce((a,s)=>a+s.commit,0).toFixed(2))};
 TOT.cov=TOT.commit/TOT.def*100;
 const covOf=s=>s.commit==null?null:(s.commit/s.deficit*100);
 
@@ -473,12 +491,14 @@ SBUS.splice(0, SBUS.length, ...SBUS.filter(s=>s.loss>0)); // hide surplus (loss 
 SBUS.sort((a,b)=>b.loss-a.loss); // most loss-making first
 const TONEC={bad:'#f87171',warn:'#fbbf24',good:'#34d399',info:'#60a5fa'};
 function renderMenu(){
-  document.getElementById('menu').innerHTML=SBUS.map((s,i)=>{
+  const ov=`<button class="menu-item active" data-t="overview" title="Portfolio overview"><span class="serial">▦</span><span class="dot" style="background:#94a3b8"></span><span class="nm">Overview</span></button>`;
+  const items=SBUS.map((s,i)=>{
     const dot=`<span class="dot" style="background:${TONEC[s.verdict.tone]}"></span>`;
     const loss=s.loss>0?`<span class="loss">−${f(s.loss)}</span>`:'<span class="loss surplus">surplus</span>';
     const tip=`${s.name} — ${s.loss>0?'−'+s.loss.toFixed(2)+' Cr loss':'surplus'}`;
-    return `<button class="menu-item${i===0?' active':''}" data-t="${s.code}" title="${tip}"><span class="serial">${i+1}</span>${dot}<span class="nm">${s.name}</span>${loss}</button>`;
+    return `<button class="menu-item" data-t="${s.code}" title="${tip}"><span class="serial">${i+1}</span>${dot}<span class="nm">${s.name}</span>${loss}</button>`;
   }).join('');
+  document.getElementById('menu').innerHTML=ov+items;
   document.querySelectorAll('.menu-item').forEach(b=>b.addEventListener('click',()=>switchPage(b.dataset.t)));
   const btn=document.getElementById('collapseBtn');
   btn.addEventListener('click',()=>{
@@ -489,6 +509,8 @@ function renderMenu(){
 }
 function switchPage(k){
   document.querySelectorAll('.menu-item').forEach(b=>b.classList.toggle('active',b.dataset.t===k));
+  const ov=document.getElementById('pane-overview');
+  if(ov) ov.classList.toggle('active',k==='overview');
   document.querySelectorAll('[id^="pane-sbu-"]').forEach(p=>p.classList.toggle('active',p.id==='pane-sbu-'+k));
   window.scrollTo({top:0});
 }
@@ -497,11 +519,13 @@ function switchPage(k){
 function renderOverview(){
   const rows=SBUS.map(s=>{
     const cov=covOf(s);
-    const covTxt=cov==null?'—':`<span class="${cov>=100?'pos':cov>=70?'neg':'neg'}">${cov.toFixed(0)}%</span>`;
+    const m=META[s.code]||{};
+    const covTxt=cov==null?'—':`<span class="${cov>=100?'pos':'neg'}">${cov.toFixed(0)}%</span>`;
     const defTxt=s.deficit>0?`<span class="neg">−${f(s.deficit)}</span>`:'<span class="pos">surplus</span>';
     const lossTxt=s.loss>0?`<span class="neg">−${f(s.loss)}</span>`:'<span class="pos">—</span>';
-    return `<tr class="clickable" onclick="switchTab('${s.code}')">
+    return `<tr class="clickable" onclick="switchPage('${s.code}')">
       <td><div class="nm">${s.name}</div><div class="code">${s.code} · ${s.group}</div></td>
+      <td style="white-space:nowrap">${m.head||'—'}</td>
       <td>${defTxt}</td>
       <td class="num">${lossTxt}</td>
       <td class="num">${s.commit!=null?f(s.commit):'—'}</td>
@@ -512,8 +536,8 @@ function renderOverview(){
   }).join('');
   document.getElementById('pane-overview').innerHTML=`
     <div class="kpis">
-      <div class="kpi"><div class="k-top"><span class="k-ic" style="background:#fee2e2;color:#dc2626">${ICONS.degression}</span><span class="lbl">Revenue deficit</span></div><div class="val" style="color:#dc2626">${f(TOT.def)} Cr</div><div class="sub">gross Q1 shortfall · ${lossMakers.length} loss-makers</div></div>
-      <div class="kpi"><div class="k-top"><span class="k-ic" style="background:#fee2e2;color:#dc2626">${ICONS.warn}</span><span class="lbl">Net loss</span></div><div class="val" style="color:#dc2626">${f(TOT.loss)} Cr</div><div class="sub">EAT below zero</div></div>
+      <div class="kpi"><div class="k-top"><span class="k-ic" style="background:#fee2e2;color:#dc2626">${ICONS.degression}</span><span class="lbl">Revenue deficit</span></div><div class="val" style="color:#dc2626">${f(TOT.def)} Cr</div><div class="sub">gross Q1 shortfall · ${lossMakers.length} SBUs below budget</div></div>
+      <div class="kpi"><div class="k-top"><span class="k-ic" style="background:#fee2e2;color:#dc2626">${ICONS.warn}</span><span class="lbl">Net loss</span></div><div class="val" style="color:#dc2626">${f(TOT.loss)} Cr</div><div class="sub">EAT below zero · ${lossSBUs.length} loss-makers</div></div>
       <div class="kpi"><div class="k-top"><span class="k-ic" style="background:#eef2ff;color:#4f46e5">${ICONS.sales}</span><span class="lbl">Commitments</span></div><div class="val">${f(TOT.commit)} Cr</div><div class="sub">vs ${f(TOT.def)} Cr deficit</div></div>
       <div class="kpi"><div class="k-top"><span class="k-ic" style="background:#fffbeb;color:#d97706">${ICONS.target}</span><span class="lbl">Coverage</span></div><div class="val" style="color:#d97706">${TOT.cov.toFixed(0)}%</div><div class="sub">commitment ÷ deficit</div></div>
     </div>
@@ -521,7 +545,7 @@ function renderOverview(){
     <div class="card">
       <div class="sec-head"><span class="bar"></span><div><h2>SBU scorecard</h2><p>Click a row to open that SBU.</p></div><button class="hint" data-tip="Rev Commitment (Cr) = each SBU's stated revenue-recovery commitment in its recovery plan (BA–BQ sheet). Coverage = commitment ÷ Q1 revenue deficit (e.g. LifeCare commits 4.32 Cr against a 4.32 Cr deficit = 100%). Q2 Profit? = whether the plan recovers Q1 and reaches profit within Q2.">${ICONS.info}</button></div>
       <div style="overflow-x:auto"><table>
-        <thead><tr><th>SBU</th><th>Q1 Rev Deficit (Cr)</th><th class="num">Net Loss (Cr)</th><th class="num">Rev Commitment (Cr)</th><th class="num">Coverage</th><th>Q2 Profit?</th><th>Verdict</th></tr></thead>
+        <thead><tr><th>SBU</th><th>Business Head</th><th>Q1 Rev Deficit (Cr)</th><th class="num">Net Loss (Cr)</th><th class="num">Rev Commitment (Cr)</th><th class="num">Coverage</th><th>Q2 Profit?</th><th>Verdict</th></tr></thead>
         <tbody>${rows}</tbody>
       </table></div>
     </div>`;
@@ -600,21 +624,27 @@ function renderSbu(){
 
 function profitGapHTML(){
   const loss=SBUS.filter(s=>s.deficit>0);
-  const cov=s=>s.commit/s.deficit*100;
   const gapHead=`<div class="gap-head"><span>SBU</span><span>Recovery</span><span class="gh-amt">Committed / Required (Cr)</span><span class="gh-cov">Coverage</span></div>`;
   const gapRows=loss.map(s=>{
-    const c=cov(s);
+    const c=s.commit==null?null:(s.commit/s.deficit*100);
+    const covTxt=c==null?'—':c.toFixed(0)+'%';
+    const covClr=c==null?'var(--gray)':(c>=100?'var(--green)':c>=70?'var(--amber)':'var(--red)');
     return `<div class="gap-row">
       <div class="gap-sbu">${s.name}</div>
-      <div class="gap-track"><div class="gap-fill" style="width:${c}%"></div></div>
-      <div class="gap-nums">${f(s.commit)} / ${f(s.deficit)}</div>
-      <div class="gap-cov" style="color:${c>=100?'var(--green)':c>=70?'var(--amber)':'var(--red)'}">${c.toFixed(0)}%</div>
+      <div class="gap-track"><div class="gap-fill" style="width:${c==null?0:c}%"></div></div>
+      <div class="gap-nums">${s.commit==null?'—':f(s.commit)} / ${f(s.deficit)}</div>
+      <div class="gap-cov" style="color:${covClr}">${covTxt}</div>
     </div>`;
   }).join('');
 
-  const covTip=`<button class="hint" data-tip="Top-line (revenue) only. The red track is the Q1 revenue deficit; the indigo fill is the committed recovery. Coverage % = commitment ÷ deficit. 100% = the revenue deficit is fully committed — not that the SBU is profitable. Why only these 4: the Q2-profit question applies to the loss-makers (Consumer Electronics, Logistics – Ex-CHA, LifeCare – Pharmacy, Next JobZ). Essential – Trading (+2.21 Cr) and Nobayon (+5.18 Cr) were already profitable in Q1, so they are excluded.">${ICONS.info}</button>`;
+  const covTip=`<button class="hint" data-tip="Top-line (revenue) only. The red track is the Q1 revenue deficit; the indigo fill is the committed recovery. Coverage % = commitment ÷ deficit. 100% = the revenue deficit is fully committed — not that the SBU is profitable. Only the ${loss.length} revenue-deficit SBUs are shown; Telecom and Commodities–F&B are loss-only (revenue at/above budget) and excluded, and Ispat has no quantified Cr commitment (shows —).">${ICONS.info}</button>`;
 
-  const beTip=`<button class="hint" data-tip="Break-even = monthly EAT reaches 0 (bottom-line, full-year recovery — separate from the revenue recovery above). The red band is Q2 (Oct–Dec); the dashed line is 31 Dec (Q2 end). Each dot = when that SBU breaks even. Three land after 31 Dec; Next JobZ lands on it — so none profits within Q2. Earlier ≠ better: Logistics & Consumer Electronics break even sooner only because their losses are tiny and under-funded (75% / 12%); Next JobZ is genuinely early AND 100% funded; LifeCare is latest because its loss is the largest (2.39 Cr).">${ICONS.info}</button>`;
+  const beTip=`<button class="hint" data-tip="Break-even = monthly EAT reaches 0 (bottom-line, full-year recovery — separate from the revenue recovery above). The red band is Q2 (Oct–Dec); the dashed line is 31 Dec (Q2 end). Each dot = when that loss-maker breaks even; dots after 31 Dec do not profit within Q2. Colour: red = not recovered in Q2, amber = partial/late, blue = funded (break-even, not profit).">${ICONS.info}</button>`;
+
+  const beLegend=SBUS.filter(s=>s.loss>0).sort((a,b)=>(BE[a.code]||{i:11}).i-(BE[b.code]||{i:11}).i).map(s=>{
+    const b=BE[s.code]||{l:'—'};
+    return `<span><i class="lg" style="background:${TONEC[s.q2.tone]}"></i>${s.name} · ${b.l}</span>`;
+  }).join('');
 
   return `<div class="card" style="margin:0 0 18px">
     <div class="sec-head"><span class="bar"></span><div><h2>Revenue recovery — committed vs required (Cr)</h2><p>How much of the Q1 revenue deficit each SBU commits to recover.</p></div>${covTip}</div>
@@ -626,10 +656,7 @@ function profitGapHTML(){
     <div class="sec-head"><span class="bar"></span><div><h2>Break-even vs the Q2 window</h2><p>When each loss-maker reaches monthly break-even (EAT = 0).</p></div>${beTip}</div>
     ${timelineSVG()}
     <div class="tl-legend">
-      <span><i class="lg" style="background:#3b82f6"></i>Next JobZ · 31 Dec (Q2 end)</span>
-      <span><i class="lg" style="background:#fbbf24"></i>Logistics – Ex-CHA · end-Q3</span>
-      <span><i class="lg" style="background:#f87171"></i>Consumer Electronics · Apr-27</span>
-      <span><i class="lg" style="background:#34d399"></i>LifeCare – Pharmacy · Jun-27</span>
+      ${beLegend}
       <span><i class="lg" style="background:#dc2626"></i>31 Dec = Q2 deadline</span>
     </div>
   </div>`;
@@ -637,29 +664,31 @@ function profitGapHTML(){
 
 function timelineSVG(){
   const M=['Jul','Aug','Sep','Oct','Nov','Dec','Jan','Feb','Mar','Apr','May','Jun'];
-  const x0=34,slot=57,y=94,cx=i=>x0+(i+0.5)*slot;
-  const tips={
-    ALL:'Logistics – Ex-CHA — breaks even end-Q3 (31 Mar 2027). Earlier than LifeCare only because its Q1 loss is small (0.85 Cr) and the date is aspirational: just 75% of its revenue deficit is funded and recovery is war-dependent. Not healthier than LifeCare.',
-    ACEL:'Consumer Electronics — breaks even Apr-2027, but this is the least credible date: only 12% of its 8.24 Cr deficit is funded, so Apr-27 is a hope, not a funded plan. Its Q1 loss (0.96 Cr) is small, which is why break-even looks early.',
-    ALCL:'LifeCare – Pharmacy — breaks even latest (Jun-27) NOT because it is worse, but because its loss is the largest (2.39 Cr) and it is recovering it honestly (100% of revenue + a quantified 2.39 Cr EAT recovery).',
-    NJL:'Next JobZ — the only loss-maker targeting break-even by 31 Dec (the Q2 deadline), fully funded on BOTH lines (100% revenue + 100% EAT). Still break-even, not profit — its 1.80 Cr loss is a gross-margin problem, not a sales problem.'
-  };
-  const BE=[{k:'ALL',n:'Logistics – Ex-CHA',m:'break-even Mar-27',i:8,clr:'#fbbf24',up:true},{k:'ACEL',n:'Consumer Electronics',m:'break-even Apr-27',i:9,clr:'#f87171',up:false},{k:'ALCL',n:'LifeCare – Pharmacy',m:'break-even Jun-27',i:11,clr:'#34d399',up:true},{k:'NJL',n:'Next JobZ',m:'break-even 31 Dec',i:5.5,clr:'#3b82f6',up:false}];
-  let s='<svg viewBox="0 0 800 192" width="100%" height="auto" role="img" aria-label="Break-even timeline">';
+  const x0=34,slot=57,ax=180,cx=i=>x0+(i+0.5)*slot;
+  const dots=SBUS.filter(s=>s.loss>0).map(s=>{
+    const b=BE[s.code]||{i:11,l:'—',n:s.name};
+    const off=b.i>11;
+    return {name:b.n,label:b.l,idx:off?11.5:b.i,off,tone:s.q2.tone,tip:`${s.name} — break-even ${b.l}${off?' (beyond Jun-27)':''}`};
+  });
+  dots.sort((a,b)=>a.idx-b.idx);
+  const lane={};
+  dots.forEach(d=>{const k=Math.round(d.idx*2);lane[k]=(lane[k]||0)+1;d.lane=lane[k]-1;});
+  let s='<svg viewBox="0 0 800 220" width="100%" height="auto" role="img" aria-label="Break-even timeline">';
   const q=[{n:'Q1 · Jul–Sep',c:'#eef2ff',tc:'#475569'},{n:'Q2 · Oct–Dec (profit window)',c:'#fee2e2',tc:'#b91c1c'},{n:'Q3 · Jan–Mar',c:'#f1f5f9',tc:'#475569'},{n:'Q4 · Apr–Jun',c:'#f8fafc',tc:'#475569'}];
   q.forEach((qq,i)=>{s+=`<rect x="${x0+i*3*slot}" y="20" width="${3*slot}" height="30" fill="${qq.c}" rx="5"/>`;s+=`<text x="${x0+i*3*slot+1.5*slot}" y="40" text-anchor="middle" font-size="10.5" font-weight="700" fill="${qq.tc}">${qq.n}</text>`;});
-  s+=`<line x1="${x0}" y1="${y}" x2="${x0+12*slot}" y2="${y}" stroke="#cbd5e1" stroke-width="1.5"/>`;
-  M.forEach((m,i)=>{const px=x0+i*slot;s+=`<line x1="${px}" y1="${y-4}" x2="${px}" y2="${y}" stroke="#cbd5e1"/>`;s+=`<text x="${cx(i)}" y="${y+18}" text-anchor="middle" font-size="9.5" fill="#64748b">${m}</text>`;});
+  s+=`<line x1="${x0}" y1="${ax}" x2="${x0+12*slot}" y2="${ax}" stroke="#cbd5e1" stroke-width="1.5"/>`;
+  M.forEach((m,i)=>{const px=x0+i*slot;s+=`<line x1="${px}" y1="${ax-4}" x2="${px}" y2="${ax}" stroke="#cbd5e1"/>`;s+=`<text x="${cx(i)}" y="${ax+18}" text-anchor="middle" font-size="9.5" fill="#64748b">${m}</text>`;});
   const q2end=x0+6*slot;
-  s+=`<line x1="${q2end}" y1="56" x2="${q2end}" y2="${y+8}" stroke="#dc2626" stroke-width="2" stroke-dasharray="4 3"/>`;
+  s+=`<line x1="${q2end}" y1="56" x2="${q2end}" y2="${ax+8}" stroke="#dc2626" stroke-width="2" stroke-dasharray="4 3"/>`;
   s+=`<text x="${q2end}" y="68" text-anchor="middle" font-size="10" font-weight="800" fill="#dc2626">31 Dec · Q2 ends</text>`;
-  BE.forEach(b=>{
-    const px=cx(b.i);
-    s+=`<g class="mk" data-tip="${tips[b.k]}">`;
-    s+=`<line x1="${px}" y1="56" x2="${px}" y2="${y}" stroke="${b.clr}" stroke-width="1.2" opacity=".5"/>`;
-    s+=`<circle cx="${px}" cy="${y}" r="6.5" fill="${b.clr}" stroke="#fff" stroke-width="2"/>`;
-    s+=`<text x="${px}" y="${b.up?y-18:y+38}" text-anchor="middle" font-size="10" font-weight="800" fill="${b.clr}">${b.n}</text>`;
-    s+=`<text x="${px}" y="${b.up?y-7:y+50}" text-anchor="middle" font-size="9" fill="#64748b">${b.m}</text>`;
+  dots.forEach(d=>{
+    const clr=TONEC[d.tone];
+    const px=cx(d.idx);
+    const cy=ax-d.lane*18;
+    s+=`<g class="mk" data-tip="${d.tip}">`;
+    s+=`<line x1="${px}" y1="56" x2="${px}" y2="${cy}" stroke="${clr}" stroke-width="1.1" opacity=".4"/>`;
+    s+=`<circle cx="${px}" cy="${cy}" r="5.5" fill="${clr}" stroke="#fff" stroke-width="1.5"/>`;
+    s+=`<text x="${px}" y="${cy-9}" text-anchor="middle" font-size="8" font-weight="700" fill="${clr}">${d.name}${d.off?'→':''}</text>`;
     s+=`</g>`;
   });
   s+='</svg>';
@@ -714,8 +743,9 @@ function renderFooter(){
 }
 
 renderMenu();
+renderOverview();
 renderSbu();renderFooter();initTips();
-switchPage(SBUS[0].code);
+switchPage('overview');
 </script>
 </body>
 </html>
