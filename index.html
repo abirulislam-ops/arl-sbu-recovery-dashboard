@@ -776,21 +776,20 @@ function renderDm(code){
   const d=DEMARC[code];
   const el=document.getElementById('dmx-'+code);
   if(!el||!d||!d.divisions.length) return;
-  const st=dmState[code]||(dmState[code]=new Set());
-  if(!st.size&&d.divisions.length) st.add(d.divisions[0].n);
+  const st=dmState[code]||(dmState[code]={div:null,dist:null});
   const maxLoss=d.divisions.reduce((m,x)=>Math.max(m,x.loss),0)||1;
-  const colDiv=d.divisions.map(x=>dmNode(x.n,x.n,x.loss,maxLoss,st.has(x.n),false)).join('');
+  const colDiv=d.divisions.map(x=>dmNode(x.n,x.n,x.loss,maxLoss,st.div===x.n,false)).join('');
   let colDist='',colThana='',hasDist=false,hasThana=false;
-  d.divisions.forEach(dv=>{
-    if(!st.has(dv.n)) return;
-    dv.districts.forEach(dt=>{
-      const key=dv.n+'::'+dt.n;
-      const open=st.has(key);
+  const selDiv=d.divisions.find(x=>x.n===st.div);
+  if(selDiv){
+    selDiv.districts.forEach(dt=>{
+      const key=selDiv.n+'::'+dt.n;
+      const open=st.dist===key;
       hasDist=true;
       colDist+=dmNode(key,dt.n,dt.loss,maxLoss,open,dt.upz.length===0);
       if(open&&dt.upz.length){ hasThana=true; dt.upz.forEach(u=>{colThana+=dmNode('',u.n,u.loss,maxLoss,false,true);}); }
     });
-  });
+  }
   el.innerHTML=`<div class="dm-cols">`+
     `<div class="dm-col"><div class="dm-col-label">Division</div>${colDiv}</div>`+
     (hasDist?`<div class="dm-col"><div class="dm-col-label">District</div>${colDist}</div>`:'')+
@@ -802,10 +801,12 @@ function initDemarc(){
     el.addEventListener('click',e=>{
       const n=e.target.closest('.dm-node');
       if(!n||n.dataset.leaf) return;
-      const st=dmState[el.dataset.code]||(dmState[el.dataset.code]=new Set());
+      const code=el.dataset.code;
+      const st=dmState[code]||(dmState[code]={div:null,dist:null});
       const key=n.dataset.key;
-      if(st.has(key)) st.delete(key); else st.add(key);
-      renderDm(el.dataset.code);
+      if(key.indexOf('::')===-1){ st.div=(st.div===key)?null:key; st.dist=null; }
+      else { st.dist=(st.dist===key)?null:key; }
+      renderDm(code);
     });
   });
   SBUS.forEach(s=>{ if(DEMARC[s.code]&&DEMARC[s.code].divisions.length) renderDm(s.code); });
