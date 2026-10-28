@@ -244,7 +244,7 @@
       </div>
       <div class="hmeta">
         <span class="chip"><span class="live"></span>Period <b>Q1 (Jul–Sep 2026)</b></span>
-        <span class="chip">SBUs <b>12</b></span>
+        <span class="chip">SBUs <b>14</b></span>
       </div>
     </header>
     <main>
@@ -459,7 +459,9 @@ const META={
  ABSLASP:{head:'Anisur Rahman',region:'Dhaka (down 10.3 Cr QoQ) · Narayanganj · Chattogram',avgOrder:'3.57 Lac',newCust:'52',revTxt:'23.03 Cr',eatTxt:'2.16 Cr',timeline:'31 Dec 2026',owner:'Mohammad Ehsan Al Baqui (CSO), Md Mobassarul Alam (Sr. Manager)',people:'Measurable KPIs; strengthen project-based selling.',process:'Weekly S&OP; monthly profitability; customer-wise revenue tracking; bitumen procurement SOP.',tech:'Integrated dashboard (revenue, pipeline, inventory, plant utilisation, receivables alerts).'},
  AITL:{head:'ASM Shawkat Lillat',region:'Dhaka (IT / ERP clients)',avgOrder:'4.11 Lac',newCust:'11',revTxt:'3.5 Cr (Oct–Dec)',eatTxt:'2 Cr (Oct–Dec)',timeline:'31 Dec 2027',owner:'ASM Shawkat Lillat, Head of Business & Operations',people:'Replace/hire 4 KAM + 1 recovery personnel.',process:'KYC credit limits; approval controls; weekly AR/stock aging + order-to-collection.',tech:'Shared ERP dashboard (sales funnel, collections, inventory aging, margins).'},
  AIL:{head:'Shaibal Shaha',region:'Dhaka (down 45.6 Cr QoQ) · Cumilla · Chattogram',avgOrder:'10.80 Lac',newCust:'113',revTxt:'7,052 MT ≈ 62.7 Cr (at ~89,000/ton)',eatTxt:'Losses to Jan 2027 (5-yr plan)',timeline:'Per yearly budget',owner:'Cluster CEO, Cluster CSO, Head of Sales, CPO',people:'New organogram + vehicle plan; Trade structure for territory coverage & penetration.',process:'N/A',tech:'N/A'},
- AMPL:{head:'Abu Zafor Iqbal Ahamed',region:'Dhaka (diagnostics)',avgOrder:'—',newCust:'—',revTxt:'1.63 Cr',eatTxt:'0.90 Cr',timeline:'31 Mar 2027',owner:'Branch Manager / HR / CBO+CFO / CBDO-CBO',people:'Onboard 2 more people within December.',process:'Operations + Sales.',tech:'New HIS, new machines (services).'}
+ AMPL:{head:'Abu Zafor Iqbal Ahamed',region:'Dhaka (diagnostics)',avgOrder:'—',newCust:'—',revTxt:'1.63 Cr',eatTxt:'0.90 Cr',timeline:'31 Mar 2027',owner:'Branch Manager / HR / CBO+CFO / CBDO-CBO',people:'Onboard 2 more people within December.',process:'Operations + Sales.',tech:'New HIS, new machines (services).'},
+ AELTRD:{head:'MD Akterrul Alam Shah',region:'Dhaka (import trading)',avgOrder:'—',newCust:'—',revTxt:'As per budget (SCM procurement)',eatTxt:'EAT positive',timeline:'N/A',owner:'CSCM (Chief Supply Chain Management)',people:'N/A',process:'N/A',tech:'N/A'},
+ NTL:{head:'Mohammad Ehsan Al Baqui (CSCO)',region:'National (trading)',avgOrder:'—',newCust:'—',revTxt:'Not applicable (surplus)',eatTxt:'Not applicable (surplus)',timeline:'N/A',owner:'Mohammad Ehsan Al Baqui (CSCO)',people:'N/A',process:'N/A',tech:'N/A'}
 };
 
 /* Break-even month (monthly EAT = 0) per loss-maker, for the overview timeline. idx = month slot (0=Jul … 11=Jun); >11 = beyond Jun-27. */
@@ -511,8 +513,7 @@ function svgTrend(s){
 }
 
 /* ---- tabs ---- */
-SBUS.splice(0, SBUS.length, ...SBUS.filter(s=>s.loss>0)); // hide surplus (loss 0) SBUs — remove this line to unhide
-SBUS.sort((a,b)=>b.loss-a.loss); // most loss-making first
+SBUS.sort((a,b)=>(b.loss-a.loss)||(b.eatQ1-a.eatQ1)); // most loss first, then most profitable (surplus)
 const TONEC={bad:'#f87171',warn:'#fbbf24',good:'#34d399',info:'#60a5fa'};
 function renderMenu(){
   const ov=`<button class="menu-item active" data-t="overview" title="Portfolio overview"><span class="serial">▦</span><span class="dot" style="background:#94a3b8"></span><span class="nm">Overview</span></button>`;
@@ -763,7 +764,7 @@ const dmState={};
 function demarcHTML(s){
   const d=DEMARC[s.code];
   if(!d||!d.divisions.length){
-    return '<div class="plan">No geographic loss breakdown — this SBU does not sell through the order module (POS / service / freight), so a region · district · thana loss split cannot be attributed from order data.</div>';
+    return '<div class="plan">No loss demarcation — either this SBU has no order-level geography (POS / service / freight) or it did not decline in Q1.</div>';
   }
   return `<div class="dmx" id="dmx-${s.code}" data-code="${s.code}"></div>${d.unmapped>0?`<div class="dm-note"><b>+ ${d.unmapped.toFixed(2)} Cr</b> decline sits in unmapped districts (no district recorded).</div>`:''}`;
 }
@@ -820,7 +821,7 @@ function initDemarc(){
 function renderFooter(){
   document.getElementById('footer').innerHTML=`
     <div class="foot-grid">
-      <div class="f-item"><span class="f-lbl">Purpose</span><span class="f-val">Diagnose internal + external problems and the dealer/customer-loss reasons for the ${SBUS.length} loss-making SBUs, and judge whether their plans reach Q2 profit.</span></div>
+      <div class="f-item"><span class="f-lbl">Purpose</span><span class="f-val">Diagnose internal + external problems and the dealer/customer-loss reasons for the ${lossSBUs.length} loss-making SBUs, and judge whether their plans reach Q2 profit. ${SBUS.length-lossSBUs.length} surplus SBUs are shown for context.</span></div>
       <div class="f-item"><span class="f-lbl">Period</span><span class="f-val">Q1 FY2026-27 (Jul–Sep 2026)</span></div>
       <div class="f-item"><span class="f-lbl">Sources</span><span class="f-val">iBOSDDD (fin.tblAccountingJournal, GL 3010001/2/5/6 · oms.tblSalesOrderHeader) · AR SBU Top-line &amp; Bottom-line Scorecard</span></div>
       <div class="f-item"><span class="f-lbl">Cut-off</span><span class="f-val">25 Oct 2026</span></div>
