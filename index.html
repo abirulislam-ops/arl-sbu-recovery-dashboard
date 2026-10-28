@@ -222,7 +222,7 @@
       </div>
       <div class="hmeta">
         <span class="chip"><span class="live"></span>Period <b>Q1 (Jul–Sep 2026)</b></span>
-        <span class="chip">SBUs <b>12</b></span>
+        <span class="chip">SBUs <b>10</b></span>
       </div>
     </header>
     <main>
@@ -429,6 +429,7 @@ function svgTrend(s){
 }
 
 /* ---- tabs ---- */
+SBUS.splice(0, SBUS.length, ...SBUS.filter(s=>s.loss>0)); // hide surplus (loss 0) SBUs — remove this line to unhide
 SBUS.sort((a,b)=>b.loss-a.loss); // most loss-making first
 const TONEC={bad:'#f87171',warn:'#fbbf24',good:'#34d399',info:'#60a5fa'};
 function renderMenu(){
@@ -647,7 +648,7 @@ function initTips(){
 function renderFooter(){
   document.getElementById('footer').innerHTML=`
     <div class="foot-grid">
-      <div class="f-item"><span class="f-lbl">Purpose</span><span class="f-val">Diagnose internal + external problems and the dealer/customer-loss reasons for the 12 SBUs, and judge whether their plans reach Q2 profit.</span></div>
+      <div class="f-item"><span class="f-lbl">Purpose</span><span class="f-val">Diagnose internal + external problems and the dealer/customer-loss reasons for the 10 loss-making SBUs, and judge whether their plans reach Q2 profit.</span></div>
       <div class="f-item"><span class="f-lbl">Period</span><span class="f-val">Q1 FY2026-27 (Jul–Sep 2026)</span></div>
       <div class="f-item"><span class="f-lbl">Sources</span><span class="f-val">iBOSDDD (fin.tblAccountingJournal, GL 3010001/2/5/6) · AR SBU Top-line &amp; Bottom-line Scorecard</span></div>
       <div class="f-item"><span class="f-lbl">Cut-off</span><span class="f-val">25 Oct 2026</span></div>
