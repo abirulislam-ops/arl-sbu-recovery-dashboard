@@ -198,23 +198,25 @@
   .tl-legend{display:flex;flex-wrap:wrap;gap:14px;font-size:11.5px;color:var(--muted);margin-top:10px}
   .tl-legend span{display:inline-flex;align-items:center;gap:6px}
 
-  /* Loss demarcation tree */
-  .dm-tree{margin-top:2px}
-  .dm-tree details.dm-div{border:1px solid var(--line);border-radius:10px;margin:6px 0;background:var(--card);overflow:hidden}
-  .dm-tree summary{display:flex;align-items:center;gap:8px;cursor:pointer;padding:7px 12px;font-size:13px;font-weight:600;list-style:none;user-select:none}
-  .dm-tree summary::-webkit-details-marker{display:none}
-  .dm-tree summary:hover{background:var(--line2)}
-  .dm-tree .dm-caret{flex:none;width:12px;color:var(--muted2);font-size:11px;display:inline-block;transition:transform .15s}
-  .dm-tree details[open]>.dm-tree summary .dm-caret{transform:rotate(90deg)}
-  .dm-tree .dm-n{flex:1;min-width:0}
-  .dm-tree .dm-v{flex:none;color:var(--red);font-weight:700;font-variant-numeric:tabular-nums;font-size:12.5px}
-  .dm-tree .dm-dist{margin-left:16px;border-left:1px solid var(--line2);padding-left:8px}
-  .dm-tree .dm-dist summary{font-weight:500;font-size:12.5px}
-  .dm-tree ul.dm-upz{margin:2px 0 6px 26px;padding:0;list-style:none}
-  .dm-tree ul.dm-upz li{display:flex;justify-content:space-between;gap:12px;padding:3px 10px;font-size:12px;color:#3f4b5f;border-radius:6px}
-  .dm-tree ul.dm-upz li:hover{background:var(--line2)}
-  .dm-tree ul.dm-upz .dm-v{font-weight:600}
-  .dm-tree .dm-none{font-size:11.5px;color:var(--muted2);padding:0 10px 8px 26px}
+    /* Loss demarcation — Power BI-style decomposition tree */
+  .dmx{overflow-x:auto;padding:4px 2px}
+  .dm-cols{display:flex;gap:24px;align-items:flex-start;min-width:max-content}
+  .dm-col{display:flex;flex-direction:column;gap:8px;min-width:205px;position:relative}
+  .dm-col+.dm-col::before{content:"";position:absolute;left:-13px;top:27px;bottom:8px;width:2px;background:var(--line)}
+  .dm-col-label{font-size:10px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted2);font-weight:700;padding:0 2px 1px}
+  .dm-node{position:relative;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:9px 12px;cursor:pointer;transition:border-color .15s,box-shadow .15s,background .15s}
+  .dm-node:hover{border-color:var(--brand);box-shadow:var(--shadow-sm)}
+  .dm-node.open{background:var(--brand-soft);border-color:var(--brand)}
+  .dm-node.dm-leaf{cursor:default}
+  .dm-node.dm-leaf:hover{border-color:var(--line);box-shadow:none}
+  .dm-node-head{display:flex;align-items:center;justify-content:space-between;gap:8px}
+  .dm-node-name{font-weight:700;font-size:13px;line-height:1.25;color:var(--ink)}
+  .dm-toggle{flex:none;width:20px;height:20px;border-radius:50%;border:1px solid var(--line);background:var(--line2);color:var(--muted);font-size:13px;line-height:1;display:grid;place-items:center;transition:.15s}
+  .dm-node.open .dm-toggle{background:var(--brand);color:#fff;border-color:var(--brand)}
+  .dm-node-val{font-size:16px;font-weight:800;color:var(--red);font-variant-numeric:tabular-nums;margin-top:5px}
+  .dm-node-bar{height:5px;background:var(--line2);border-radius:99px;margin-top:8px;overflow:hidden}
+  .dm-node-bar i{display:block;height:100%;background:linear-gradient(90deg,#f87171,#dc2626);border-radius:99px}
+  .dm-node.dm-leaf .dm-node-bar i{background:linear-gradient(90deg,#fbbf24,#ea580c)}
   .dm-note{font-size:11.5px;color:var(--muted2);margin-top:8px;line-height:1.5}
 </style>
 </head>
@@ -608,7 +610,7 @@ function renderSbu(){
         ${prob(s.external,ICONS.external,'External problems','#7c3aed')}
       </div>
 
-      <div class="sec-head" style="margin-top:16px"><span class="bar" style="background:#0f766e"></span><div><h2>Loss demarcation — region · district · thana</h2><p>Where Q1 revenue fell vs the prior quarter (Apr–Jun), by division → district → thana. Only loss-making areas shown; click to expand.</p></div></div>
+      <div class="sec-head" style="margin-top:16px"><span class="bar" style="background:#0f766e"></span><div><h2>Loss demarcation — region · district · thana</h2><p>Where Q1 revenue fell vs the prior quarter (Apr–Jun). Only loss-making areas; click a node to expand to the right.</p></div></div>
       <div class="card">${demarcHTML(s)}</div>
 
       <div class="card" style="margin-top:14px">
@@ -753,23 +755,60 @@ function initTips(){
 
 
 
+const dmState={};
 function demarcHTML(s){
   const d=DEMARC[s.code];
   if(!d||!d.divisions.length){
     return '<div class="plan">No geographic loss breakdown — this SBU does not sell through the order module (POS / service / freight), so a region · district · thana loss split cannot be attributed from order data.</div>';
   }
-  const upz=arr=>arr.length?`<ul class="dm-upz">${arr.map(u=>`<li><span>${u.n}</span><span class="dm-v">−${u.loss.toFixed(2)} Cr</span></li>`).join('')}</ul>`:'';
-  const dists=d.divisions.map(div=>`
-    <details class="dm-div">
-      <summary><span class="dm-caret">›</span><span class="dm-n">${div.n} Division</span><span class="dm-v">−${div.loss.toFixed(2)} Cr</span></summary>
-      ${div.districts.map(dist=>`
-        <details class="dm-dist">
-          <summary><span class="dm-caret">›</span><span class="dm-n">${dist.n}</span><span class="dm-v">−${dist.loss.toFixed(2)} Cr</span></summary>
-          ${dist.upz.length?upz(dist.upz):'<div class="dm-none">District-level loss only (thana not attributed)</div>'}
-        </details>`).join('')}
-    </details>`).join('');
-  const unmapped=d.unmapped>0?`<div class="dm-note"><b>+ ${d.unmapped.toFixed(2)} Cr</b> decline sits in districts with no recorded district (unmapped). Total mapped decline ${d.total.toFixed(2)} Cr.</div>`:'';
-  return `<div class="dm-tree">${dists}</div>${unmapped}`;
+  return `<div class="dmx" id="dmx-${s.code}" data-code="${s.code}"></div>${d.unmapped>0?`<div class="dm-note"><b>+ ${d.unmapped.toFixed(2)} Cr</b> decline sits in unmapped districts (no district recorded).</div>`:''}`;
+}
+function dmNode(key,name,loss,max,open,leaf){
+  const pct=max>0?Math.round(loss/max*100):0;
+  const tgl=leaf?'':`<span class="dm-toggle">${open?'−':'+'}</span>`;
+  return `<div class="dm-node${open?' open':''}${leaf?' dm-leaf':''}" data-key="${key}"${leaf?' data-leaf="1"':''}>
+    <div class="dm-node-head"><span class="dm-node-name">${name}</span>${tgl}</div>
+    <div class="dm-node-val">−${loss.toFixed(2)} Cr</div>
+    <div class="dm-node-bar"><i style="width:${pct}%"></i></div>
+  </div>`;
+}
+function renderDm(code){
+  const d=DEMARC[code];
+  const el=document.getElementById('dmx-'+code);
+  if(!el||!d||!d.divisions.length) return;
+  const st=dmState[code]||(dmState[code]=new Set());
+  if(!st.size&&d.divisions.length) st.add(d.divisions[0].n);
+  const maxLoss=d.divisions.reduce((m,x)=>Math.max(m,x.loss),0)||1;
+  const colDiv=d.divisions.map(x=>dmNode(x.n,x.n,x.loss,maxLoss,st.has(x.n),false)).join('');
+  let colDist='',colThana='',hasDist=false,hasThana=false;
+  d.divisions.forEach(dv=>{
+    if(!st.has(dv.n)) return;
+    dv.districts.forEach(dt=>{
+      const key=dv.n+'::'+dt.n;
+      const open=st.has(key);
+      hasDist=true;
+      colDist+=dmNode(key,dt.n,dt.loss,maxLoss,open,dt.upz.length===0);
+      if(open&&dt.upz.length){ hasThana=true; dt.upz.forEach(u=>{colThana+=dmNode('',u.n,u.loss,maxLoss,false,true);}); }
+    });
+  });
+  el.innerHTML=`<div class="dm-cols">`+
+    `<div class="dm-col"><div class="dm-col-label">Division</div>${colDiv}</div>`+
+    (hasDist?`<div class="dm-col"><div class="dm-col-label">District</div>${colDist}</div>`:'')+
+    (hasThana?`<div class="dm-col"><div class="dm-col-label">Thana</div>${colThana}</div>`:'')+
+    `</div>`;
+}
+function initDemarc(){
+  document.querySelectorAll('.dmx').forEach(el=>{
+    el.addEventListener('click',e=>{
+      const n=e.target.closest('.dm-node');
+      if(!n||n.dataset.leaf) return;
+      const st=dmState[el.dataset.code]||(dmState[el.dataset.code]=new Set());
+      const key=n.dataset.key;
+      if(st.has(key)) st.delete(key); else st.add(key);
+      renderDm(el.dataset.code);
+    });
+  });
+  SBUS.forEach(s=>{ if(DEMARC[s.code]&&DEMARC[s.code].divisions.length) renderDm(s.code); });
 }
 
 function renderFooter(){
@@ -788,7 +827,7 @@ function renderFooter(){
 
 renderMenu();
 renderOverview();
-renderSbu();renderFooter();initTips();
+renderSbu();initDemarc();renderFooter();initTips();
 switchPage('overview');
 </script>
 </body>
