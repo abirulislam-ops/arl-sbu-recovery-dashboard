@@ -222,7 +222,7 @@
       </div>
       <div class="hmeta">
         <span class="chip"><span class="live"></span>Period <b>Q1 (Jul–Sep 2026)</b></span>
-        <span class="chip">SBUs <b>10</b></span>
+        <span class="chip">SBUs <b>11</b></span>
       </div>
     </header>
     <main>
@@ -396,7 +396,19 @@ const SBUS=[
   external:{sev:'low',headline:'No major external factor — internal working-capital issue.',metric:{v:'—',l:'—'},points:['Driven by receivables + credit, not market']},
   planShort:'Prioritise collectible accounts, sellable stock and confirmed B2B/project orders; close the Q1 shortfall through a weekly approved sales plan.',
   q2:{tone:'warn',label:'No — commits 3.5 Cr vs 8.96 Cr (39%); target 31 Dec 2027',detail:'Commits 3.5 Cr revenue (only 39% of the 8.96 Cr deficit) + 2 Cr EAT, target 31 Dec 2027 — over a year out. Blocked by overdue receivables, credit restrictions and aged inventory.'},
-  rec:{priority:'high',unlock:'Unblock working capital (receivables + aged inventory) before chasing new orders.',actions:['Accelerate overdue AR + inventory recovery','Stop loss-making deals, review SKU margins','Clear aged stock and reactivate dealers']}}
+  rec:{priority:'high',unlock:'Unblock working capital (receivables + aged inventory) before chasing new orders.',actions:['Accelerate overdue AR + inventory recovery','Stop loss-making deals, review SKU margins','Clear aged stock and reactivate dealers']}},
+ {code:'AIL',name:'Ispat',group:'Building Material',rankRev:5,rankEat:32,
+  rev:{jul:{b:124.44,a:76.57},aug:{b:120.57,a:93.07},sep:{b:126.28,a:105.77},q1:{budget:371.29,actual:275.41,deficit:95.88,ach:'74.2%'}},
+  eatQ1:-11.20, deficit:95.89, loss:11.20, commit:null, scope:'Revenue + Loss', status:'In progress', verdict:{label:'Revenue + Loss',tone:'bad'},
+  problems:{
+    acquisition:{sev:'critical',headline:'Weak demand + competitive pressure — price rises can\'t stick.',metric:{v:'74.2%',l:'Q1 ach.'},points:['Competition from top brands (BSRM, AKS, KSR)','Budgeted price rise not reflected in market','Existing dealer base to activate']},
+    sales:{sev:'critical',headline:'74.2% revenue achievement — 95.88 Cr deficit, pending orders to clear.',metric:{v:'95.88',l:'deficit Cr'},points:['Pending orders + delivery execution to improve','7,052 MT volume gap to recover','2nd-largest deficit in the portfolio']},
+    degression:{sev:'high',headline:'Revenue deficit 95.89 Cr, but recovering month on month.',metric:{v:'95.89',l:'deficit Cr'},points:['Jul 76.57 → Aug 93.07 → Sep 105.77 Cr (recovering)','Still far below 371.29 Cr Q1 budget','EAT loss 11.20 Cr']}},
+  dealers:{sev:'high',headline:'Dealer base to activate; overdue (OD) recovery needed.',metric:{v:'—',l:'OD'},points:['Activate existing dealer base','Stringent OD recovery','Reduce trade exposure']},
+  external:{sev:'critical',headline:'Cost inflation — electricity +18%, VAT up, and brand competition.',metric:{v:'—',l:'cost'},points:['~18% electricity cost increase','VAT raised BDT 3,300 → 3,900/MT','Competitive pressure from BSRM, AKS, KSR']},
+  planShort:'Clear pending orders, improve delivery, accelerate volume in peak season, activate dealers, progressively raise prices (BDT 1,600/MT done in Sep), and align COGS via Islam Metal + Saleh Steel agreements.',
+  q2:{tone:'bad',label:'No — losses until Jan 2027; long-term (5-yr) recovery',detail:'Revenue deficit 95.89 Cr (74.2% ach) + net loss 11.20 Cr. Cost inflation (electricity +18%, VAT) couldn\'t be passed through due to weak demand and competition. Recovery is long-term (5-year plan, BMRE project) with losses projected until Jan 2027.'},
+  rec:{priority:'high',unlock:'Align COGS with budget (Islam Metal + Saleh Steel) and pass through prices progressively.',actions:['Complete Islam Metal (Nov) + Saleh Steel (Dec) agreements to align COGS','Progressively increase price while protecting volume','Clear pending orders, activate dealers, recover OD']}}
 ];
 
 const n=v=>{const x=parseFloat(v);return isNaN(x)?0:x};
@@ -648,7 +660,7 @@ function initTips(){
 function renderFooter(){
   document.getElementById('footer').innerHTML=`
     <div class="foot-grid">
-      <div class="f-item"><span class="f-lbl">Purpose</span><span class="f-val">Diagnose internal + external problems and the dealer/customer-loss reasons for the 10 loss-making SBUs, and judge whether their plans reach Q2 profit.</span></div>
+      <div class="f-item"><span class="f-lbl">Purpose</span><span class="f-val">Diagnose internal + external problems and the dealer/customer-loss reasons for the 11 loss-making SBUs, and judge whether their plans reach Q2 profit.</span></div>
       <div class="f-item"><span class="f-lbl">Period</span><span class="f-val">Q1 FY2026-27 (Jul–Sep 2026)</span></div>
       <div class="f-item"><span class="f-lbl">Sources</span><span class="f-val">iBOSDDD (fin.tblAccountingJournal, GL 3010001/2/5/6) · AR SBU Top-line &amp; Bottom-line Scorecard</span></div>
       <div class="f-item"><span class="f-lbl">Cut-off</span><span class="f-val">25 Oct 2026</span></div>
