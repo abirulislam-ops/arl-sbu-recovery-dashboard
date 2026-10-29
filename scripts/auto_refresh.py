@@ -105,9 +105,10 @@ def summarise(series, is_share):
 def main():
     dry = "--dry-run" in sys.argv
     if not dry:
-        r = subprocess.run([sys.executable, os.path.join(BASE, "scripts", "refresh_sources.py")],
-                           cwd=BASE, capture_output=True, text=True)
-        print((r.stdout or "").strip()[:600])
+        for script in ("refresh_sources.py", "source_links.py"):
+            r = subprocess.run([sys.executable, os.path.join(BASE, "scripts", script)],
+                               cwd=BASE, capture_output=True, text=True)
+            print((r.stdout or "").strip()[:600])
     snap = json.load(open(os.path.join(DATA, "_source_snapshot.json"), encoding="utf-8"))
     result = {"generated_at": datetime.now().isoformat(timespec="seconds"),
               "period": "Q4 FY26 (Apr–Jun 26) vs Q1 FY27 (Jul–Sep 26)", "sbus": []}

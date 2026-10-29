@@ -28,6 +28,7 @@ FILES = {
     "health": "customer_health.json",
     "crm": "crm.json",
     "national": "market_national.json",
+    "links": "source_links.json",
     "lineage": "_lineage.json",
 }
 
