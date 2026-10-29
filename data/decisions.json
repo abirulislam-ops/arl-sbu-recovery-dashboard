@@ -4,14 +4,14 @@
   "sbu": "AELOTH",
   "rank": 1,
   "question": "Should Essentials get RM/LC approvals released this month?",
-  "brutal_fact": "Essentials lost 20.91 Cr in Q1 â€” the single largest loss in the portfolio â€” on raw-material shortage.",
+  "brutal_fact": "Essentials lost 20.91 Cr in Q1 — the single largest loss in the portfolio — on raw-material shortage.",
   "options": [
    {
     "name": "Approve the 30-day SKU/plant/customer recovery plan and release RM procurement",
     "revenue_impact_cr": null,
     "np_impact_cr": 20.91,
     "cost_cr": 0,
-    "time_to_impact": "30â€“60 days",
+    "time_to_impact": "30–60 days",
     "risk": "Working capital locked in inventory",
     "assumption": "SBU commitment (sheet col BN)"
    },
@@ -20,21 +20,21 @@
     "revenue_impact_cr": null,
     "np_impact_cr": 10.46,
     "cost_cr": 0,
-    "time_to_impact": "30â€“60 days",
+    "time_to_impact": "30–60 days",
     "risk": "Partial volume recovery",
     "assumption": "Assumed 50% of the committed recovery"
    },
    {
-    "name": "Do nothing â€” hold procurement as is",
+    "name": "Do nothing — hold procurement as is",
     "revenue_impact_cr": null,
     "np_impact_cr": 0,
     "cost_cr": 0,
-    "time_to_impact": "â€”",
+    "time_to_impact": "—",
     "risk": "Loss repeats at ~20.91 Cr/quarter",
     "assumption": "Run-rate continuation of the Q1 loss"
    }
   ],
-  "recommendation": "Approve the 30-day plan â€” the loss is supply-driven and the fix is an approval, not capital.",
+  "recommendation": "Approve the 30-day plan — the loss is supply-driven and the fix is an approval, not capital.",
   "why": "Root cause is RM shortage, not demand: revenue was 77.7% of budget and GP is 10.8%.",
   "confidence": "Medium",
   "data_ids": [
@@ -46,7 +46,7 @@
   "owner": "Revenue: Sales Heads. EAT: CFO. Individual initiative owners to be assigned by the respective functional heads.",
   "decide_by": "2026-11-05",
   "review_date": "2026-12-05",
-  "tracking_kpi": "Weekly revenue back to 125 Cr+/month; RM fill rate â‰¥ 95%",
+  "tracking_kpi": "Weekly revenue back to 125 Cr+/month; RM fill rate ≥ 95%",
   "kill_criterion": "If September run-rate is not recovered by 30 Nov, stop the plan and re-baseline",
   "status": "Proposed",
   "rec_index": 0,
@@ -64,7 +64,7 @@
     "revenue_impact_cr": null,
     "np_impact_cr": 11.2,
     "cost_cr": 0,
-    "time_to_impact": "1â€“2 quarters",
+    "time_to_impact": "1–2 quarters",
     "risk": "Volume loss if the market resists the price",
     "assumption": "Q1 loss elimination is the SBU's stated target (sheet col BN)"
    },
@@ -73,22 +73,22 @@
     "revenue_impact_cr": null,
     "np_impact_cr": 5.6,
     "cost_cr": 0,
-    "time_to_impact": "1â€“2 quarters",
+    "time_to_impact": "1–2 quarters",
     "risk": "COGS stays high for another quarter",
     "assumption": "Assumed 50% of the committed recovery"
    },
    {
-    "name": "Do nothing â€” wait for the BMRE project",
+    "name": "Do nothing — wait for the BMRE project",
     "revenue_impact_cr": null,
     "np_impact_cr": 0,
     "cost_cr": 0,
-    "time_to_impact": "â€”",
+    "time_to_impact": "—",
     "risk": "Loss continues until Jan-27",
     "assumption": "Q1 run-rate"
    }
   ],
   "recommendation": "Sign both now; the loss is a cost problem (electricity +18%, VAT up) and price has already moved +BDT 1,600/MT.",
-  "why": "Cost inflation, not volume, is the driver â€” GP fell even though achievement was 74%.",
+  "why": "Cost inflation, not volume, is the driver — GP fell even though achievement was 74%.",
   "confidence": "Medium",
   "data_ids": [
    "A1",
@@ -98,7 +98,7 @@
   "owner": "Cluster CEO, Cluster CSO, Head of Sales, CPO",
   "decide_by": "2026-11-15",
   "review_date": "2026-12-15",
-  "tracking_kpi": "COGS per MT down 5%; NP â‰¥ 0 by Mar-27",
+  "tracking_kpi": "COGS per MT down 5%; NP ≥ 0 by Mar-27",
   "kill_criterion": "If COGS/MT is not down 5% by 31 Dec, re-open the sourcing decision",
   "status": "Proposed",
   "rec_index": 0,
@@ -134,12 +134,12 @@
     "revenue_impact_cr": null,
     "np_impact_cr": 0,
     "cost_cr": 0,
-    "time_to_impact": "â€”",
+    "time_to_impact": "—",
     "risk": "Loss repeats at ~2.40 Cr/quarter",
     "assumption": "Q1 run-rate"
    }
   ],
-  "recommendation": "Price floor first, volume second â€” at 8% GP the volume plan cannot cover cost.",
+  "recommendation": "Price floor first, volume second — at 8% GP the volume plan cannot cover cost.",
   "why": "Thin margin plus import cost; the SBU's own plan already proposes a price floor from 1-Nov.",
   "confidence": "Medium",
   "data_ids": [
@@ -151,7 +151,7 @@
   "owner": "Md. Imran Hossen, Head of Sales – ACL (Imported Food Business), reporting to Md. Akterul Alam Shah, COO, Akij Essential.",
   "decide_by": "2026-11-10",
   "review_date": "2026-12-10",
-  "tracking_kpi": "GP â‰¥ 12% and monthly PAT â‰¥ 0 by 30 Nov",
+  "tracking_kpi": "GP ≥ 12% and monthly PAT ≥ 0 by 30 Nov",
   "kill_criterion": "If GP is below 10% by 30 Nov, exit the affected SKUs",
   "status": "Proposed",
   "rec_index": 0,
@@ -162,7 +162,7 @@
   "sbu": "ATL",
   "rank": 4,
   "question": "Should Telecom stop subsidised stock clearance and go to exit review?",
-  "brutal_fact": "Telecom GP is âˆ’36.6%: it lost 2.10 Cr on 2.88 Cr revenue.",
+  "brutal_fact": "Telecom GP is −36.6%: it lost 2.10 Cr on 2.88 Cr revenue.",
   "options": [
    {
     "name": "Stop clearance immediately; write off the residual stock",
@@ -187,13 +187,13 @@
     "revenue_impact_cr": null,
     "np_impact_cr": 0,
     "cost_cr": 0,
-    "time_to_impact": "â€”",
+    "time_to_impact": "—",
     "risk": "Every taka of sales adds loss",
     "assumption": "Q1 run-rate"
    }
   ],
-  "recommendation": "Stop clearance now and start exit review â€” negative gross margin cannot be fixed by volume.",
-  "why": "GP âˆ’36.6% is a structural price/cost gap, not a demand problem.",
+  "recommendation": "Stop clearance now and start exit review — negative gross margin cannot be fixed by volume.",
+  "why": "GP −36.6% is a structural price/cost gap, not a demand problem.",
   "confidence": "High",
   "data_ids": [
    "A1",
@@ -214,14 +214,14 @@
   "sbu": "ACEL",
   "rank": 5,
   "question": "Should Consumer Electronics get bank financing to restock, or pause?",
-  "brutal_fact": "Consumer Electronics achieved 18.8% of budget and lost 0.96 Cr â€” zero stock at the principal.",
+  "brutal_fact": "Consumer Electronics achieved 18.8% of budget and lost 0.96 Cr — zero stock at the principal.",
   "options": [
    {
     "name": "Secure working-capital financing and restock",
     "revenue_impact_cr": null,
     "np_impact_cr": 0.96,
     "cost_cr": null,
-    "time_to_impact": "1â€“2 quarters",
+    "time_to_impact": "1–2 quarters",
     "risk": "Debt service while demand is unproven",
     "assumption": "Q1 loss is the avoidable run-rate"
    },
@@ -239,12 +239,12 @@
     "revenue_impact_cr": null,
     "np_impact_cr": 0,
     "cost_cr": 0,
-    "time_to_impact": "â€”",
+    "time_to_impact": "—",
     "risk": "Fixed showroom cost with no stock",
     "assumption": "Q1 run-rate"
    }
   ],
-  "recommendation": "Financing first, showrooms second â€” the constraint is stock, not demand.",
+  "recommendation": "Financing first, showrooms second — the constraint is stock, not demand.",
   "why": "The SBU is supply-blocked; the 4 existing showrooms cannot sell what is not stocked.",
   "confidence": "Low",
   "data_ids": [
@@ -255,7 +255,7 @@
   "owner": "Md. Abu Tariq Zia Chowdhury, Chief Business Officer",
   "decide_by": "2026-11-30",
   "review_date": "2026-12-30",
-  "tracking_kpi": "Stock cover â‰¥ 45 days; revenue â‰¥ 3 Cr/month by Jan-27",
+  "tracking_kpi": "Stock cover ≥ 45 days; revenue ≥ 3 Cr/month by Jan-27",
   "kill_criterion": "If stock is not restored by 31 Dec, re-baseline to 4 showrooms",
   "status": "Proposed",
   "rec_index": 0,
@@ -266,7 +266,7 @@
   "sbu": null,
   "rank": null,
   "question": "Which competitor took our share in the lost-dealer regions?",
-  "brutal_fact": "622 dealers who bought in Q4 placed no order in Q1 â€” and we cannot yet say why.",
+  "brutal_fact": "622 dealers who bought in Q4 placed no order in Q1 — and we cannot yet say why.",
   "options": [],
   "recommendation": null,
   "why": null,
@@ -276,12 +276,12 @@
    "C2",
    "C3"
   ],
-  "reversibility": "â€”",
+  "reversibility": "—",
   "owner": "Marketing / Strategy",
   "decide_by": "2026-11-02",
   "review_date": null,
   "tracking_kpi": "C1/C2/C3 delivered",
-  "kill_criterion": "â€”",
+  "kill_criterion": "—",
   "status": "Waiting for data",
   "blocked_by": [
    "C1",
@@ -305,12 +305,12 @@
    "D4",
    "D5"
   ],
-  "reversibility": "â€”",
+  "reversibility": "—",
   "owner": "Sales Ops / IT",
   "decide_by": "2026-11-02",
   "review_date": null,
   "tracking_kpi": "CRM extract delivered",
-  "kill_criterion": "â€”",
+  "kill_criterion": "—",
   "status": "Waiting for data",
   "blocked_by": [
    "D2",
@@ -334,12 +334,12 @@
    "B1",
    "B2"
   ],
-  "reversibility": "â€”",
+  "reversibility": "—",
   "owner": "Finance / Sales Ops",
   "decide_by": "2026-11-07",
   "review_date": null,
   "tracking_kpi": "Dealer profit extract",
-  "kill_criterion": "â€”",
+  "kill_criterion": "—",
   "status": "Waiting for data",
   "blocked_by": [
    "A4",

@@ -121,7 +121,7 @@
  },
  {
   "sbu": "ACL",
-  "name": "Commodities â€“ F&B",
+  "name": "Commodities – F&B",
   "period": "Q1FY27",
   "revenue": 34.38,
   "budget_revenue": 7.25,
@@ -151,7 +151,7 @@
  },
  {
   "sbu": "ALCL",
-  "name": "LifeCare â€“ Pharmacy",
+  "name": "LifeCare – Pharmacy",
   "period": "Q1FY27",
   "revenue": 21.13,
   "budget_revenue": 25.45,
@@ -181,7 +181,7 @@
  },
  {
   "sbu": "ABSLASP",
-  "name": "ABSL â€“ Asphalt",
+  "name": "ABSL – Asphalt",
   "period": "Q1FY27",
   "revenue": 7.62,
   "budget_revenue": 30.65,
@@ -331,7 +331,7 @@
  },
  {
   "sbu": "ALL",
-  "name": "Logistics â€“ Ex-CHA",
+  "name": "Logistics – Ex-CHA",
   "period": "Q1FY27",
   "revenue": 8.55,
   "budget_revenue": 15.18,

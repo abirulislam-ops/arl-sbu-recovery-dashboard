@@ -24,14 +24,14 @@ SBU = {
     "AIL":    {"name": "Ispat",                  "bu": 224, "group": "Building material"},
     "ARMCL":  {"name": "Ready Mix",              "bu": 175, "group": "Building material"},
     "AMPL":   {"name": "Mediplex",               "bu": 255, "group": "Healthcare"},
-    "ACL":    {"name": "Commodities â€“ F&B",      "bu": 221, "group": "Food"},
-    "ALCL":   {"name": "LifeCare â€“ Pharmacy",    "bu": 239, "group": "Healthcare"},
-    "ABSLASP":{"name": "ABSL â€“ Asphalt",         "bu": 220, "group": "Building material"},
+    "ACL":    {"name": "Commodities – F&B",      "bu": 221, "group": "Food"},
+    "ALCL":   {"name": "LifeCare – Pharmacy",    "bu": 239, "group": "Healthcare"},
+    "ABSLASP":{"name": "ABSL – Asphalt",         "bu": 220, "group": "Building material"},
     "ATL":    {"name": "Telecom",                "bu": 241, "group": "Others"},
     "NJL":    {"name": "Next JobZ",              "bu": 252, "group": "Others"},
     "AITL":   {"name": "Infotech",               "bu": 138, "group": "Others"},
     "ACEL":   {"name": "Consumer Electronics",   "bu": 249, "group": "Others"},
-    "ALL":    {"name": "Logistics â€“ Ex-CHA",     "bu": 225, "group": "Others"},
+    "ALL":    {"name": "Logistics – Ex-CHA",     "bu": 225, "group": "Others"},
 }
 CODE_BY_BU = {v["bu"]: k for k, v in SBU.items()}
 
@@ -66,7 +66,7 @@ def clean(text, limit=None):
     if text is None:
         return None
     t = re.sub(r"\s+", " ", str(text)).strip()
-    return t[:limit].rstrip() + "â€¦" if limit and len(t) > limit else t
+    return t[:limit].rstrip() + "…" if limit and len(t) > limit else t
 
 
 def load_raw():
@@ -144,8 +144,8 @@ def direction(s, erp_pnl, is_service):
     if gp < 0.10 and loss_pct > 0.05:
         return "Refocus", "thin %.1f%% gross margin cannot carry fixed cost at a %.1f%% loss on revenue" % (gp * 100, loss_pct * 100), "Low"
     if ach >= 0.70 and loss_pct <= 0.12:
-        return "Fix & Recover", "%.1f%% of budget achieved and loss is %.1f%% of revenue â€” gap looks closable" % (ach * 100, loss_pct * 100), "Medium"
-    return "Fix & Recover", "loss is %.1f%% of revenue with %.1f%% gross margin â€” recovery depends on the stated supply/price fix" % (loss_pct * 100, gp * 100), "Low"
+        return "Fix & Recover", "%.1f%% of budget achieved and loss is %.1f%% of revenue — gap looks closable" % (ach * 100, loss_pct * 100), "Medium"
+    return "Fix & Recover", "loss is %.1f%% of revenue with %.1f%% gross margin — recovery depends on the stated supply/price fix" % (loss_pct * 100, gp * 100), "Low"
 
 
 def completeness(bu, brand_codes):
@@ -203,13 +203,13 @@ def main():
         })
     sbu_pnl.sort(key=lambda r: -(r["loss"] or 0))
 
-    # ---------- loss_bridge : needs qty/price/mix (A2) â€” not available ----------
+    # ---------- loss_bridge : needs qty/price/mix (A2) — not available ----------
     loss_bridge = [{"sbu": r["sbu"], "q4_np": None, "volume": None, "price": None, "mix": None,
                     "cost": None, "fixed": None, "unexplained": None, "q1_np": r["net_profit"],
                     "loss_type": None, "pending": ["A1", "A2", "A3"]} for r in sbu_pnl]
 
     # ---------- dealers / trend ----------
-    dealers = []  # dealer-level rows need B1/B2/D4 â€” not delivered
+    dealers = []  # dealer-level rows need B1/B2/D4 — not delivered
     dealer_trend = []
     for bu, series in trend.items():
         for m in series:
@@ -244,7 +244,7 @@ def main():
             "market_volume": None, "own_volume": None, "own_share": (own / 100 if own is not None else None),
             "own_share_text": b.get("share"), "competitors": comps,
             "source": "Brand Marketing Pack (akij-resource-brand-marketing-pack.pages.dev)", "is_proxy": True,
-            "note": "Brand-level share, not region Ã— quarter. C1/C2 (regional industry volume) still pending."})
+            "note": "Brand-level share, not region × quarter. C1/C2 (regional industry volume) still pending."})
         market_diagnosis.append({"sbu": code, "region": "National (brand level)",
                                  "own_share_q4": None, "own_share_q1": (own / 100 if own is not None else None),
                                  "pp_change": None, "market_change": None, "top_gainer": None,
@@ -276,12 +276,12 @@ def main():
         {"id": "H1", "title": "Market shrank", "verdict": "Insufficient data", "confidence": "Low",
          "impact_cr": None, "data_ids": ["C1", "C3", "I1", "I2"],
          "evidence": ev("No regional industry volume received (C1/C2/C3 all 'Pending' in the IT Data Link Tracker).",
-                        "Brand pack shows Akij Cement volume âˆ’8.85% YTD vs industry +1.30% â€” that pattern is share loss, not market shrink, but it is national and brand-level only."),
+                        "Brand pack shows Akij Cement volume −8.85% YTD vs industry +1.30% — that pattern is share loss, not market shrink, but it is national and brand-level only."),
          "verdict_note": "Cannot separate market shrink from share loss without C1/C2."},
         {"id": "H2", "title": "Competitor won on price/offer", "verdict": "Insufficient data", "confidence": "Low",
          "impact_cr": None, "data_ids": ["C2", "E1", "E2", "E3"],
          "evidence": ev("No competitor price list or offer log (E1/E2 pending).",
-                        "Brand pack names competitor shares (e.g. Cement: Shah ~17.25%, Fresh ~11.95%) but has no per-region Q4â†’Q1 movement."),
+                        "Brand pack names competitor shares (e.g. Cement: Shah ~17.25%, Fresh ~11.95%) but has no per-region Q4→Q1 movement."),
          "verdict_note": "Directionally consistent with dealer narratives; not evidenced."},
         {"id": "H3", "title": "Sales team did not engage", "verdict": "Insufficient data", "confidence": "Low",
          "impact_cr": None, "data_ids": ["D2", "D3", "D4", "D5"],
@@ -294,21 +294,21 @@ def main():
          "evidence": ev("Logistics: SBU plan states 4 salesmen needed immediately.",
                         "Infotech: plan states replace/hire 4 KAM and 1 recovery person.",
                         "Mediplex: plan states the sales team was abolished and the new team came late.",
-                        "No HRIS vacancy/attrition extract yet (D1/D6 pending) â€” self-reported, not measured."),
+                        "No HRIS vacancy/attrition extract yet (D1/D6 pending) — self-reported, not measured."),
          "verdict_note": "Self-reported in the SBU recovery plans."},
         {"id": "H5", "title": "Supply / service failure", "verdict": "Partial", "confidence": "Medium",
          "impact_cr": None, "data_ids": ["B8", "G2", "G3"],
-         "evidence": ev("Consumer Electronics: 'zero stock at principal' â€” revenue 18.8% of budget.",
+         "evidence": ev("Consumer Electronics: 'zero stock at principal' — revenue 18.8% of budget.",
                         "Essentials: lentils/chickpea/raw-material shortage; Miniket paddy shortage.",
                         "ABSL Asphalt: LC bitumen unavailable.",
-                        "Commodities F&B: no LC/purchase approval Julâ€“Oct.",
+                        "Commodities F&B: no LC/purchase approval Jul–Oct.",
                         "Ispat: BMRE shutdown, pending orders not delivered.",
-                        "No order-level short-supply extract (B8/G2/G3 pending) â€” self-reported."),
+                        "No order-level short-supply extract (B8/G2/G3 pending) — self-reported."),
          "verdict_note": "Strongest recurring cause; needs B8/G2/G3 to quantify."},
         {"id": "H6", "title": "Credit policy pushed dealers away", "verdict": "Partial", "confidence": "Low",
          "impact_cr": None, "data_ids": ["B7", "E2"],
          "evidence": ev("Infotech: root cause cites overdue receivables and customer credit restrictions.",
-                        "Next JobZ: DSO 60â†’45 days, receivable concentration 26%.",
+                        "Next JobZ: DSO 60→45 days, receivable concentration 26%.",
                         "No AR ageing / credit-block extract yet (B7 pending)."),
          "verdict_note": "Two SBUs only; B7 required for the rest."},
         {"id": "H7", "title": "Product / quality issue", "verdict": "Rejected", "confidence": "Low",
@@ -317,14 +317,14 @@ def main():
          "verdict_note": "No evidence in the submitted plans."},
         {"id": "H8", "title": "Margin-driven loss", "verdict": "Confirmed", "confidence": "Medium",
          "impact_cr": round(top2, 2), "data_ids": ["A1", "A2", "A5", "A7"],
-         "evidence": ev("Telecom GP âˆ’36.6%: stock cleared through dealers with higher subsidies.",
+         "evidence": ev("Telecom GP −36.6%: stock cleared through dealers with higher subsidies.",
                         "Commodities F&B GP 8.0%; Logistics Ex-CHA GP 2.8%; ABSL Asphalt GP 5.2%.",
                         "Essentials and Ispat together carry %.2f Cr of the %.2f Cr total loss." % (top2, tot_loss),
                         "GP is the gross-margin proxy; CM (after variable S&D) is not split out yet (A2/A5)."),
          "verdict_note": "GP-based. CM% still pending."},
         {"id": "H9", "title": "Went silent in market", "verdict": "Insufficient data", "confidence": "Low",
          "impact_cr": None, "data_ids": ["F4", "A5", "E4"],
-         "evidence": ev("Trade spend by SBU/region not received (A5); brand pack has ATL/BTL mix but no Q4â†’Q1 spend change."),
+         "evidence": ev("Trade spend by SBU/region not received (A5); brand pack has ATL/BTL mix but no Q4→Q1 spend change."),
          "verdict_note": "Needs A5 + E4."},
     ]
 
@@ -340,7 +340,7 @@ def main():
             "status": s["status"],
             "assumption": ("SBU's own commitment (sheet col BM/BN), not an independent estimate"
                            if (s["commit_rev"] or s["commit_loss"]) else
-                           "Not quantified in Cr by the SBU â€” impact shown as 'Data pending'"),
+                           "Not quantified in Cr by the SBU — impact shown as 'Data pending'"),
             "target_date": s["target_date"], "data_ids": ["A1", "A8"],
         })
 
@@ -380,32 +380,32 @@ def main():
     decisions = [
         {"id": "D1", "sbu": "AELOTH", "rank": 1,
          "question": "Should Essentials get RM/LC approvals released this month?",
-         "brutal_fact": "Essentials lost %.2f Cr in Q1 â€” the single largest loss in the portfolio â€” on raw-material shortage." % D["AELOTH"]["loss"],
+         "brutal_fact": "Essentials lost %.2f Cr in Q1 — the single largest loss in the portfolio — on raw-material shortage." % D["AELOTH"]["loss"],
          "options": [
-             opt("Approve the 30-day SKU/plant/customer recovery plan and release RM procurement", D["AELOTH"]["commit_loss"] or 20.91, 0, "30â€“60 days", "Working capital locked in inventory", "SBU commitment (sheet col BN)"),
-             opt("Release only the top-20 SKU lines", round((D["AELOTH"]["commit_loss"] or 20.91) * 0.5, 2), 0, "30â€“60 days", "Partial volume recovery", "Assumed 50% of the committed recovery"),
-             opt("Do nothing â€” hold procurement as is", 0, 0, "â€”", "Loss repeats at ~%.2f Cr/quarter" % D["AELOTH"]["loss"], "Run-rate continuation of the Q1 loss"),
+             opt("Approve the 30-day SKU/plant/customer recovery plan and release RM procurement", D["AELOTH"]["commit_loss"] or 20.91, 0, "30–60 days", "Working capital locked in inventory", "SBU commitment (sheet col BN)"),
+             opt("Release only the top-20 SKU lines", round((D["AELOTH"]["commit_loss"] or 20.91) * 0.5, 2), 0, "30–60 days", "Partial volume recovery", "Assumed 50% of the committed recovery"),
+             opt("Do nothing — hold procurement as is", 0, 0, "—", "Loss repeats at ~%.2f Cr/quarter" % D["AELOTH"]["loss"], "Run-rate continuation of the Q1 loss"),
          ],
-         "recommendation": "Approve the 30-day plan â€” the loss is supply-driven and the fix is an approval, not capital.",
+         "recommendation": "Approve the 30-day plan — the loss is supply-driven and the fix is an approval, not capital.",
          "why": "Root cause is RM shortage, not demand: revenue was 77.7% of budget and GP is 10.8%.",
          "confidence": "Medium", "data_ids": ["A1", "A8", "B8"], "reversibility": "Two-way door",
          "owner": D["AELOTH"]["owner"], "decide_by": "2026-11-05", "review_date": "2026-12-05",
-         "tracking_kpi": "Weekly revenue back to 125 Cr+/month; RM fill rate â‰¥ 95%",
+         "tracking_kpi": "Weekly revenue back to 125 Cr+/month; RM fill rate ≥ 95%",
          "kill_criterion": "If September run-rate is not recovered by 30 Nov, stop the plan and re-baseline",
          "status": "Proposed", "rec_index": 0, "blocked_by": []},
         {"id": "D2", "sbu": "AIL", "rank": 2,
          "question": "Should Ispat sign the Islam Metal and Saleh Steel agreements now?",
          "brutal_fact": "Ispat lost %.2f Cr in Q1 while revenue was only 74.2%% of budget; GP 13.5%%." % D["AIL"]["loss"],
          "options": [
-             opt("Sign both agreements and continue the progressive price increase", 11.20, 0, "1â€“2 quarters", "Volume loss if the market resists the price", "Q1 loss elimination is the SBU's stated target (sheet col BN)"),
-             opt("Sign Islam Metal only (Nov), defer Saleh Steel", 5.60, 0, "1â€“2 quarters", "COGS stays high for another quarter", "Assumed 50% of the committed recovery"),
-             opt("Do nothing â€” wait for the BMRE project", 0, 0, "â€”", "Loss continues until Jan-27", "Q1 run-rate"),
+             opt("Sign both agreements and continue the progressive price increase", 11.20, 0, "1–2 quarters", "Volume loss if the market resists the price", "Q1 loss elimination is the SBU's stated target (sheet col BN)"),
+             opt("Sign Islam Metal only (Nov), defer Saleh Steel", 5.60, 0, "1–2 quarters", "COGS stays high for another quarter", "Assumed 50% of the committed recovery"),
+             opt("Do nothing — wait for the BMRE project", 0, 0, "—", "Loss continues until Jan-27", "Q1 run-rate"),
          ],
          "recommendation": "Sign both now; the loss is a cost problem (electricity +18%, VAT up) and price has already moved +BDT 1,600/MT.",
-         "why": "Cost inflation, not volume, is the driver â€” GP fell even though achievement was 74%.",
+         "why": "Cost inflation, not volume, is the driver — GP fell even though achievement was 74%.",
          "confidence": "Medium", "data_ids": ["A1", "A6"], "reversibility": "One-way door",
          "owner": D["AIL"]["owner"], "decide_by": "2026-11-15", "review_date": "2026-12-15",
-         "tracking_kpi": "COGS per MT down 5%; NP â‰¥ 0 by Mar-27",
+         "tracking_kpi": "COGS per MT down 5%; NP ≥ 0 by Mar-27",
          "kill_criterion": "If COGS/MT is not down 5% by 31 Dec, re-open the sourcing decision",
          "status": "Proposed", "rec_index": 0, "blocked_by": []},
         {"id": "D3", "sbu": "ACL", "rank": 3,
@@ -414,25 +414,25 @@ def main():
          "options": [
              opt("Set a price floor off true landed cost and drop negative-SKU lines", 2.40, 0, "1 quarter", "Volume falls further in Q2", "Q1 loss elimination is the SBU's stated target"),
              opt("Hold prices, keep the 5-LC plan and grow volume", 1.20, 0, "2 quarters", "Margin stays thin; loss continues", "Assumed 50% of the committed recovery"),
-             opt("Do nothing", 0, 0, "â€”", "Loss repeats at ~%.2f Cr/quarter" % D["ACL"]["loss"], "Q1 run-rate"),
+             opt("Do nothing", 0, 0, "—", "Loss repeats at ~%.2f Cr/quarter" % D["ACL"]["loss"], "Q1 run-rate"),
          ],
-         "recommendation": "Price floor first, volume second â€” at 8% GP the volume plan cannot cover cost.",
+         "recommendation": "Price floor first, volume second — at 8% GP the volume plan cannot cover cost.",
          "why": "Thin margin plus import cost; the SBU's own plan already proposes a price floor from 1-Nov.",
          "confidence": "Medium", "data_ids": ["A1", "A3", "A5"], "reversibility": "Two-way door",
          "owner": D["ACL"]["owner"], "decide_by": "2026-11-10", "review_date": "2026-12-10",
-         "tracking_kpi": "GP â‰¥ 12% and monthly PAT â‰¥ 0 by 30 Nov",
+         "tracking_kpi": "GP ≥ 12% and monthly PAT ≥ 0 by 30 Nov",
          "kill_criterion": "If GP is below 10% by 30 Nov, exit the affected SKUs",
          "status": "Proposed", "rec_index": 0, "blocked_by": []},
         {"id": "D4", "sbu": "ATL", "rank": 4,
          "question": "Should Telecom stop subsidised stock clearance and go to exit review?",
-         "brutal_fact": "Telecom GP is âˆ’36.6%%: it lost %.2f Cr on %.2f Cr revenue." % (D["ATL"]["loss"], D["ATL"]["rev"]["q1"]["actual"]),
+         "brutal_fact": "Telecom GP is −36.6%%: it lost %.2f Cr on %.2f Cr revenue." % (D["ATL"]["loss"], D["ATL"]["rev"]["q1"]["actual"]),
          "options": [
              opt("Stop clearance immediately; write off the residual stock", 2.10, None, "Immediate", "Stock write-off hits this quarter", "Q1 loss is the avoidable run-rate"),
              opt("Wind down over 2 quarters while selling at positive contribution", 1.05, None, "2 quarters", "Subsidy continues one more quarter", "Assumed 50% of the Q1 loss avoided"),
-             opt("Do nothing", 0, 0, "â€”", "Every taka of sales adds loss", "Q1 run-rate"),
+             opt("Do nothing", 0, 0, "—", "Every taka of sales adds loss", "Q1 run-rate"),
          ],
-         "recommendation": "Stop clearance now and start exit review â€” negative gross margin cannot be fixed by volume.",
-         "why": "GP âˆ’36.6% is a structural price/cost gap, not a demand problem.",
+         "recommendation": "Stop clearance now and start exit review — negative gross margin cannot be fixed by volume.",
+         "why": "GP −36.6% is a structural price/cost gap, not a demand problem.",
          "confidence": "High", "data_ids": ["A1", "A3"], "reversibility": "One-way door",
          "owner": D["ATL"]["owner"], "decide_by": "2026-11-15", "review_date": "2026-12-15",
          "tracking_kpi": "No invoice below landed cost; residual stock cleared by 31 Dec",
@@ -440,40 +440,40 @@ def main():
          "status": "Proposed", "rec_index": 0, "blocked_by": []},
         {"id": "D5", "sbu": "ACEL", "rank": 5,
          "question": "Should Consumer Electronics get bank financing to restock, or pause?",
-         "brutal_fact": "Consumer Electronics achieved 18.8%% of budget and lost %.2f Cr â€” zero stock at the principal." % D["ACEL"]["loss"],
+         "brutal_fact": "Consumer Electronics achieved 18.8%% of budget and lost %.2f Cr — zero stock at the principal." % D["ACEL"]["loss"],
          "options": [
-             opt("Secure working-capital financing and restock", 0.96, None, "1â€“2 quarters", "Debt service while demand is unproven", "Q1 loss is the avoidable run-rate"),
+             opt("Secure working-capital financing and restock", 0.96, None, "1–2 quarters", "Debt service while demand is unproven", "Q1 loss is the avoidable run-rate"),
              opt("Pause expansion, run 4 showrooms cash-only", 0.48, 0, "1 quarter", "Revenue stays at ~0.7 Cr/month", "Assumed 50% of the Q1 loss avoided"),
-             opt("Do nothing", 0, 0, "â€”", "Fixed showroom cost with no stock", "Q1 run-rate"),
+             opt("Do nothing", 0, 0, "—", "Fixed showroom cost with no stock", "Q1 run-rate"),
          ],
-         "recommendation": "Financing first, showrooms second â€” the constraint is stock, not demand.",
+         "recommendation": "Financing first, showrooms second — the constraint is stock, not demand.",
          "why": "The SBU is supply-blocked; the 4 existing showrooms cannot sell what is not stocked.",
          "confidence": "Low", "data_ids": ["A1", "B8"], "reversibility": "One-way door",
          "owner": D["ACEL"]["owner"], "decide_by": "2026-11-30", "review_date": "2026-12-30",
-         "tracking_kpi": "Stock cover â‰¥ 45 days; revenue â‰¥ 3 Cr/month by Jan-27",
+         "tracking_kpi": "Stock cover ≥ 45 days; revenue ≥ 3 Cr/month by Jan-27",
          "kill_criterion": "If stock is not restored by 31 Dec, re-baseline to 4 showrooms",
          "status": "Proposed", "rec_index": 0, "blocked_by": []},
         {"id": "D6", "sbu": None, "rank": None,
          "question": "Which competitor took our share in the lost-dealer regions?",
-         "brutal_fact": "%d dealers who bought in Q4 placed no order in Q1 â€” and we cannot yet say why." % lost_total,
+         "brutal_fact": "%d dealers who bought in Q4 placed no order in Q1 — and we cannot yet say why." % lost_total,
          "options": [], "recommendation": None, "why": None, "confidence": "Low",
-         "data_ids": ["C1", "C2", "C3"], "reversibility": "â€”", "owner": "Marketing / Strategy",
+         "data_ids": ["C1", "C2", "C3"], "reversibility": "—", "owner": "Marketing / Strategy",
          "decide_by": "2026-11-02", "review_date": None, "tracking_kpi": "C1/C2/C3 delivered",
-         "kill_criterion": "â€”", "status": "Waiting for data", "blocked_by": ["C1", "C2", "C3"]},
+         "kill_criterion": "—", "status": "Waiting for data", "blocked_by": ["C1", "C2", "C3"]},
         {"id": "D7", "sbu": None, "rank": None,
          "question": "Did our own sales team stop calling on the lost dealers?",
          "brutal_fact": "No CRM visit/call log exists for Q1, so contact on the %d lost dealers is unknown." % lost_total,
          "options": [], "recommendation": None, "why": None, "confidence": "Low",
-         "data_ids": ["D2", "D3", "D4", "D5"], "reversibility": "â€”", "owner": "Sales Ops / IT",
+         "data_ids": ["D2", "D3", "D4", "D5"], "reversibility": "—", "owner": "Sales Ops / IT",
          "decide_by": "2026-11-02", "review_date": None, "tracking_kpi": "CRM extract delivered",
-         "kill_criterion": "â€”", "status": "Waiting for data", "blocked_by": ["D2", "D3", "D4", "D5"]},
+         "kill_criterion": "—", "status": "Waiting for data", "blocked_by": ["D2", "D3", "D4", "D5"]},
         {"id": "D8", "sbu": None, "rank": None,
          "question": "Which lost dealers are worth winning back?",
          "brutal_fact": "Dealer-level profit (A4) and lifting history (B2) are missing, so win-back cannot be prioritised by value.",
          "options": [], "recommendation": None, "why": None, "confidence": "Low",
-         "data_ids": ["A4", "B1", "B2"], "reversibility": "â€”", "owner": "Finance / Sales Ops",
+         "data_ids": ["A4", "B1", "B2"], "reversibility": "—", "owner": "Finance / Sales Ops",
          "decide_by": "2026-11-07", "review_date": None, "tracking_kpi": "Dealer profit extract",
-         "kill_criterion": "â€”", "status": "Waiting for data", "blocked_by": ["A4", "B1", "B2"]},
+         "kill_criterion": "—", "status": "Waiting for data", "blocked_by": ["A4", "B1", "B2"]},
     ]
 
     # ---------- insights ----------
@@ -483,17 +483,17 @@ def main():
         {"section": "MD Brief", "fact": "Essentials (%.2f Cr) and Ispat (%.2f Cr) carry %.0f%% of the total loss." % (D["AELOTH"]["loss"], D["AIL"]["loss"], 100 * top2 / tot_loss),
          "so_what": "Two decisions recover more than half the loss.", "data_ids": ["A1"]},
         {"section": "MD Brief", "fact": "%d dealers who bought in Q4 placed no order in Q1 in the 7 SBUs with order data." % lost_total,
-         "so_what": "Dealer churn is real but unexplained â€” no CRM log, no regional market data.", "data_ids": ["B3", "B4", "D3", "D4"]},
+         "so_what": "Dealer churn is real but unexplained — no CRM log, no regional market data.", "data_ids": ["B3", "B4", "D3", "D4"]},
         {"section": "Dealer Loss", "fact": "Essentials lost 295 of 1,129 Q4 dealers (26%%); Ready Mix lost 92 of 258 (36%%); Ispat lost 97 of 385 (25%%).",
-         "so_what": "Churn is concentrated in the two largest loss SBUs â€” win-back is the cheapest revenue.", "data_ids": ["B3", "B4"]},
+         "so_what": "Churn is concentrated in the two largest loss SBUs — win-back is the cheapest revenue.", "data_ids": ["B3", "B4"]},
         {"section": "Market Share", "fact": "No regional market-size or competitor-volume file has been delivered (C1/C2/C3 all pending in the IT tracker).",
          "so_what": "The MD's priority-1 question cannot be answered from data yet; only brand-level share exists.", "data_ids": ["C1", "C2", "C3"]},
         {"section": "Sales KPI", "fact": "No CRM extract exists, so lost-dealer contact, beat compliance and KPI achievement are unknown.",
-         "so_what": "The sales-engagement hypothesis stays untested; press IT for D2â€“D5.", "data_ids": ["D2", "D3", "D4", "D5"]},
+         "so_what": "The sales-engagement hypothesis stays untested; press IT for D2–D5.", "data_ids": ["D2", "D3", "D4", "D5"]},
         {"section": "Root Cause", "fact": "Supply failure is named as the root cause by 5 of 12 SBUs (Electronics, Essentials, Asphalt, Commodities, Ispat).",
          "so_what": "The largest cluster of causes is an approval/procurement problem the MD can clear this week.", "data_ids": ["B8", "G2", "A2"]},
         {"section": "Recovery", "fact": "Only 7 of 12 SBUs quantified a Cr commitment; Ispat and Telecom did not.",
-         "so_what": "Five recovery plans cannot be tracked â€” they need a number before approval.", "data_ids": ["A9"]},
+         "so_what": "Five recovery plans cannot be tracked — they need a number before approval.", "data_ids": ["A9"]},
     ]
 
     # ---------- write ----------
@@ -523,81 +523,81 @@ def main():
     lineage = {
         "generated_at": datetime.now().isoformat(timespec="seconds"),
         "as_of": AS_OF,
-        "period": "Q1 FY2026-27 (Julâ€“Sep 2026)",
+        "period": "Q1 FY2026-27 (Jul–Sep 2026)",
         "files": {
             "sbu_pnl.json": [
-                {"data_id": "A1", "mcp_server": "google-sheets (CSV export)", "location": "AKIJ Resource Â· SBU Top-line & Bottom-line Scorecard, gid 475852686", "extracted_at": AS_OF, "period": "Q1FY27", "notes": "Revenue, budget, GP%, EAT, deficit, loss, commitments. Q4 P&L not in this sheet."},
+                {"data_id": "A1", "mcp_server": "google-sheets (CSV export)", "location": "AKIJ Resource · SBU Top-line & Bottom-line Scorecard, gid 475852686", "extracted_at": AS_OF, "period": "Q1FY27", "notes": "Revenue, budget, GP%, EAT, deficit, loss, commitments. Q4 P&L not in this sheet."},
                 {"data_id": "A1 (cross-check)", "mcp_server": "enterprise-api-gateway", "location": "fin.tblAccountingJournal, GL 3010001/3010002/3010005/3010006", "extracted_at": AS_OF, "period": "Q1FY27, Q4FY26", "notes": "ERP revenue by BU and quarter; NP proxy includes COGS/S&D/admin/logistics/marketing/finance/tax but excludes depreciation and provisions."},
             ],
             "dealer_trend.json": [{"data_id": "B3", "mcp_server": "enterprise-api-gateway", "location": "oms.tblSalesOrderHeader", "extracted_at": AS_OF, "period": "2026-04..2026-09", "notes": "Distinct sold-to partner per month; 7 SBUs only."}],
-            "dealer_churn.json": [{"data_id": "B4", "mcp_server": "enterprise-api-gateway", "location": "oms.tblSalesOrderHeader (NOT EXISTS in Q1)", "extracted_at": AS_OF, "period": "Q4FY26â†’Q1FY27", "notes": "Q4 buyers with zero Q1 orders."}],
-            "market_share.json": [{"data_id": "C1/C2 (partial)", "mcp_server": "web (brand pack)", "location": "akij-resource-brand-marketing-pack.pages.dev", "extracted_at": AS_OF, "period": "latest brand-level", "notes": "National brand share and named competitor shares; no region, no Q4â†’Q1."}],
-            "se_commitment.json": [{"data_id": "A9", "mcp_server": "web (ALL SE dashboard)", "location": "arl-se-sbu-commitment.vercel.app (Google Sheet ALL SE / Sheet10)", "extracted_at": AS_OF, "period": "Julâ€“Oct 2026", "notes": "9 BUs only (AEL divisions, AIL, ARMCL, ACCL)."}],
+            "dealer_churn.json": [{"data_id": "B4", "mcp_server": "enterprise-api-gateway", "location": "oms.tblSalesOrderHeader (NOT EXISTS in Q1)", "extracted_at": AS_OF, "period": "Q4FY26→Q1FY27", "notes": "Q4 buyers with zero Q1 orders."}],
+            "market_share.json": [{"data_id": "C1/C2 (partial)", "mcp_server": "web (brand pack)", "location": "akij-resource-brand-marketing-pack.pages.dev", "extracted_at": AS_OF, "period": "latest brand-level", "notes": "National brand share and named competitor shares; no region, no Q4→Q1."}],
+            "se_commitment.json": [{"data_id": "A9", "mcp_server": "web (ALL SE dashboard)", "location": "arl-se-sbu-commitment.vercel.app (Google Sheet ALL SE / Sheet10)", "extracted_at": AS_OF, "period": "Jul–Oct 2026", "notes": "9 BUs only (AEL divisions, AIL, ARMCL, ACCL)."}],
             "_source_map.md": [{"data_id": "all", "mcp_server": "see _source_map.md", "location": "-", "extracted_at": AS_OF, "period": "-", "notes": "-"}],
         },
         "pending": {
-            "C1": "Total market size by region â€” owner Marketing/Strategy, IT promise 2026-11-02",
-            "C2": "Competitor volume by region â€” owner Marketing/Strategy, 2026-11-02",
-            "C3": "Own volume aligned to market definition â€” Sales Ops, 2026-11-02",
-            "D2": "KPI target vs achievement â€” Sales Ops, 2026-11-02",
-            "D3": "CRM call & visit log â€” Sales Ops/IT, 2026-11-02",
-            "D4": "Last contact with lost dealers â€” Sales Ops/IT, 2026-11-02",
-            "A3": "SKU-wise profitability â€” Finance, 2026-11-02",
-            "A4": "Profit per dealer/region â€” Finance, 2026-11-07",
-            "B2": "Dealer-wise monthly lifting â€” Sales Ops, 2026-11-02",
-            "B7": "Credit & receivables â€” Credit Control, 2026-11-02",
+            "C1": "Total market size by region — owner Marketing/Strategy, IT promise 2026-11-02",
+            "C2": "Competitor volume by region — owner Marketing/Strategy, 2026-11-02",
+            "C3": "Own volume aligned to market definition — Sales Ops, 2026-11-02",
+            "D2": "KPI target vs achievement — Sales Ops, 2026-11-02",
+            "D3": "CRM call & visit log — Sales Ops/IT, 2026-11-02",
+            "D4": "Last contact with lost dealers — Sales Ops/IT, 2026-11-02",
+            "A3": "SKU-wise profitability — Finance, 2026-11-02",
+            "A4": "Profit per dealer/region — Finance, 2026-11-07",
+            "B2": "Dealer-wise monthly lifting — Sales Ops, 2026-11-02",
+            "B7": "Credit & receivables — Credit Control, 2026-11-02",
         },
     }
     w("_lineage.json", lineage)
 
-    rows_md = ["# Source map â€” Data ID â†’ source â†’ status", "",
-               "Period: Q1 FY2026-27 (Julâ€“Sep 2026) Â· BDT Cr Â· as of %s" % AS_OF, "",
+    rows_md = ["# Source map — Data ID → source → status", "",
+               "Period: Q1 FY2026-27 (Jul–Sep 2026) · BDT Cr · as of %s" % AS_OF, "",
                "| Data ID | Item | Source found | Status | Owner | Freshness |",
                "|---|---|---|---|---|---|"]
     src = {
         "A1": ("SBU P&L", "Google Sheet (recovery scorecard) + ERP GL", "Partial", "Finance", "Q1 only"),
         "A2": ("Revenue bridge inputs", "ERP GL revenue only", "Partial", "Finance/Sales Ops", AS_OF),
-        "A3": ("SKU profitability", "â€”", "MISSING", "Finance", "â€”"),
-        "A4": ("Profit per dealer/region", "â€”", "MISSING", "Finance", "â€”"),
-        "A5": ("Trade spend & schemes", "â€”", "MISSING", "Marketing/Finance", "â€”"),
-        "A6": ("RM & production cost", "â€”", "MISSING", "Supply Chain", "â€”"),
+        "A3": ("SKU profitability", "—", "MISSING", "Finance", "—"),
+        "A4": ("Profit per dealer/region", "—", "MISSING", "Finance", "—"),
+        "A5": ("Trade spend & schemes", "—", "MISSING", "Marketing/Finance", "—"),
+        "A6": ("RM & production cost", "—", "MISSING", "Supply Chain", "—"),
         "A7": ("Logistics cost", "ERP GL logistics total only", "Partial", "Logistics", AS_OF),
         "A8": ("Budget vs actual", "Google Sheet", "OK (revenue/EAT)", "Finance", "Q1"),
         "A9": ("Fixed cost & break-even", "ALL SE dashboard", "Partial (2 of 12 SBUs)", "Finance", "Oct MTD"),
-        "B1": ("Dealer master", "â€”", "MISSING", "Sales Ops", "â€”"),
-        "B2": ("Dealer monthly lifting", "â€”", "MISSING", "Sales Ops", "â€”"),
+        "B1": ("Dealer master", "—", "MISSING", "Sales Ops", "—"),
+        "B2": ("Dealer monthly lifting", "—", "MISSING", "Sales Ops", "—"),
         "B3": ("Active dealer count", "ERP sales orders", "Partial (7 SBUs)", "Sales Ops", AS_OF),
         "B4": ("Lost dealers", "ERP sales orders", "Partial (7 SBUs, count only)", "Sales Ops", AS_OF),
-        "B5": ("Declining dealers", "â€”", "MISSING", "Sales Ops", "â€”"),
-        "B6": ("New dealers", "â€”", "MISSING", "Sales Ops", "â€”"),
-        "B7": ("Credit & receivables", "â€”", "MISSING", "Credit Control", "â€”"),
-        "B8": ("Unfulfilled orders", "â€”", "MISSING", "Supply Chain", "â€”"),
-        "B9": ("Complaints/claims", "â€”", "MISSING", "QA", "â€”"),
-        "C1": ("Market size by region", "â€”", "MISSING", "Marketing/Strategy", "â€”"),
-        "C2": ("Competitor volume by region", "â€”", "MISSING", "Marketing/Strategy", "â€”"),
-        "C3": ("Own volume (market definition)", "â€”", "MISSING", "Sales Ops", "â€”"),
-        "C4": ("Dealer share-of-wallet", "â€”", "MISSING", "Sales", "â€”"),
-        "C5": ("Distribution coverage", "â€”", "MISSING", "Marketing", "â€”"),
-        "D1": ("Org structure & vacancies", "â€”", "MISSING", "HR/Sales Ops", "â€”"),
-        "D2": ("KPI target vs achievement", "â€”", "MISSING", "Sales Ops", "â€”"),
-        "D3": ("CRM call & visit log", "â€”", "MISSING", "Sales Ops/IT", "â€”"),
-        "D4": ("Last contact with lost dealers", "â€”", "MISSING", "Sales Ops/IT", "â€”"),
-        "D5": ("Beat compliance", "â€”", "MISSING", "Sales Ops", "â€”"),
-        "D6": ("Attrition & transfers", "â€”", "MISSING", "HR", "â€”"),
-        "E1": ("Competitor price list", "â€”", "MISSING", "Sales/Marketing", "â€”"),
-        "E2": ("Competitor offers", "â€”", "MISSING", "Sales", "â€”"),
-        "E3": ("Lost dealer â†’ competitor", "â€”", "MISSING", "Sales", "â€”"),
+        "B5": ("Declining dealers", "—", "MISSING", "Sales Ops", "—"),
+        "B6": ("New dealers", "—", "MISSING", "Sales Ops", "—"),
+        "B7": ("Credit & receivables", "—", "MISSING", "Credit Control", "—"),
+        "B8": ("Unfulfilled orders", "—", "MISSING", "Supply Chain", "—"),
+        "B9": ("Complaints/claims", "—", "MISSING", "QA", "—"),
+        "C1": ("Market size by region", "—", "MISSING", "Marketing/Strategy", "—"),
+        "C2": ("Competitor volume by region", "—", "MISSING", "Marketing/Strategy", "—"),
+        "C3": ("Own volume (market definition)", "—", "MISSING", "Sales Ops", "—"),
+        "C4": ("Dealer share-of-wallet", "—", "MISSING", "Sales", "—"),
+        "C5": ("Distribution coverage", "—", "MISSING", "Marketing", "—"),
+        "D1": ("Org structure & vacancies", "—", "MISSING", "HR/Sales Ops", "—"),
+        "D2": ("KPI target vs achievement", "—", "MISSING", "Sales Ops", "—"),
+        "D3": ("CRM call & visit log", "—", "MISSING", "Sales Ops/IT", "—"),
+        "D4": ("Last contact with lost dealers", "—", "MISSING", "Sales Ops/IT", "—"),
+        "D5": ("Beat compliance", "—", "MISSING", "Sales Ops", "—"),
+        "D6": ("Attrition & transfers", "—", "MISSING", "HR", "—"),
+        "E1": ("Competitor price list", "—", "MISSING", "Sales/Marketing", "—"),
+        "E2": ("Competitor offers", "—", "MISSING", "Sales", "—"),
+        "E3": ("Lost dealer → competitor", "—", "MISSING", "Sales", "—"),
         "F4": ("Promotion (own)", "Brand pack ATL/BTL mix", "Partial", "Marketing", "FY plan"),
-        "G2": ("Stock-outs", "â€”", "MISSING", "Supply Chain", "â€”"),
-        "G3": ("OTIF", "â€”", "MISSING", "Supply Chain", "â€”"),
-        "H1": ("Dealer exit interviews", "â€”", "MISSING", "Sales", "â€”"),
+        "G2": ("Stock-outs", "—", "MISSING", "Supply Chain", "—"),
+        "G3": ("OTIF", "—", "MISSING", "Supply Chain", "—"),
+        "H1": ("Dealer exit interviews", "—", "MISSING", "Sales", "—"),
         "I1": ("Macro events", "SBU root-cause notes (qualitative)", "Partial", "Strategy", "Q1"),
     }
     for k in sorted(src, key=lambda x: (x[0], int(re.sub(r"\D", "", x) or 0))):
         item, found, status, owner, fresh = src[k]
         rows_md.append("| %s | %s | %s | %s | %s | %s |" % (k, item, found, status, owner, fresh))
     rows_md += ["", "**IT Data Link Tracker:** column K (Data Link) is empty for all 54 rows and all link statuses read",
-                "'Pending' / 'Not checked'. No IT file has been shared yet â€” the tracker confirms the MISSING items above.",
+                "'Pending' / 'Not checked'. No IT file has been shared yet — the tracker confirms the MISSING items above.",
                 "", "**Note:** DWH (203.202.241.211) was unreachable on %s, so fin/oms DWH mirrors could not be used." % AS_OF]
     with open(os.path.join(DATA, "_source_map.md"), "w", encoding="utf-8") as f:
         f.write("\n".join(rows_md))

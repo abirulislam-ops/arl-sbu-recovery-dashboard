@@ -26,7 +26,7 @@
   ],
   "source": "Brand Marketing Pack (akij-resource-brand-marketing-pack.pages.dev)",
   "is_proxy": true,
-  "note": "Brand-level share, not region Ã— quarter. C1/C2 (regional industry volume) still pending."
+  "note": "Brand-level share, not region × quarter. C1/C2 (regional industry volume) still pending."
  },
  {
   "sbu": "ARMCL",
@@ -50,7 +50,7 @@
   ],
   "source": "Brand Marketing Pack (akij-resource-brand-marketing-pack.pages.dev)",
   "is_proxy": true,
-  "note": "Brand-level share, not region Ã— quarter. C1/C2 (regional industry volume) still pending."
+  "note": "Brand-level share, not region × quarter. C1/C2 (regional industry volume) still pending."
  },
  {
   "sbu": "ACEL",
@@ -79,7 +79,7 @@
   ],
   "source": "Brand Marketing Pack (akij-resource-brand-marketing-pack.pages.dev)",
   "is_proxy": true,
-  "note": "Brand-level share, not region Ã— quarter. C1/C2 (regional industry volume) still pending."
+  "note": "Brand-level share, not region × quarter. C1/C2 (regional industry volume) still pending."
  },
  {
   "sbu": "NJL",
@@ -108,7 +108,7 @@
   ],
   "source": "Brand Marketing Pack (akij-resource-brand-marketing-pack.pages.dev)",
   "is_proxy": true,
-  "note": "Brand-level share, not region Ã— quarter. C1/C2 (regional industry volume) still pending."
+  "note": "Brand-level share, not region × quarter. C1/C2 (regional industry volume) still pending."
  },
  {
   "sbu": "ALCL",
@@ -132,7 +132,7 @@
   ],
   "source": "Brand Marketing Pack (akij-resource-brand-marketing-pack.pages.dev)",
   "is_proxy": true,
-  "note": "Brand-level share, not region Ã— quarter. C1/C2 (regional industry volume) still pending."
+  "note": "Brand-level share, not region × quarter. C1/C2 (regional industry volume) still pending."
  },
  {
   "sbu": "AMPL",
@@ -161,6 +161,6 @@
   ],
   "source": "Brand Marketing Pack (akij-resource-brand-marketing-pack.pages.dev)",
   "is_proxy": true,
-  "note": "Brand-level share, not region Ã— quarter. C1/C2 (regional industry volume) still pending."
+  "note": "Brand-level share, not region × quarter. C1/C2 (regional industry volume) still pending."
  }
 ]

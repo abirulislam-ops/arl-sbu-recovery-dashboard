@@ -37,7 +37,7 @@
  },
  {
   "sbu": "ACL",
-  "name": "Commodities â€“ F&B",
+  "name": "Commodities – F&B",
   "q4_active": 55,
   "q1_active": 44,
   "q4_orders": 216,
@@ -49,7 +49,7 @@
  },
  {
   "sbu": "ABSLASP",
-  "name": "ABSL â€“ Asphalt",
+  "name": "ABSL – Asphalt",
   "q4_active": 130,
   "q1_active": 120,
   "q4_orders": 424,

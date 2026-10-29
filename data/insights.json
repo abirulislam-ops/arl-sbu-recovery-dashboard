@@ -19,7 +19,7 @@
  {
   "section": "MD Brief",
   "fact": "622 dealers who bought in Q4 placed no order in Q1 in the 7 SBUs with order data.",
-  "so_what": "Dealer churn is real but unexplained â€” no CRM log, no regional market data.",
+  "so_what": "Dealer churn is real but unexplained — no CRM log, no regional market data.",
   "data_ids": [
    "B3",
    "B4",
@@ -30,7 +30,7 @@
  {
   "section": "Dealer Loss",
   "fact": "Essentials lost 295 of 1,129 Q4 dealers (26%%); Ready Mix lost 92 of 258 (36%%); Ispat lost 97 of 385 (25%%).",
-  "so_what": "Churn is concentrated in the two largest loss SBUs â€” win-back is the cheapest revenue.",
+  "so_what": "Churn is concentrated in the two largest loss SBUs — win-back is the cheapest revenue.",
   "data_ids": [
    "B3",
    "B4"
@@ -49,7 +49,7 @@
  {
   "section": "Sales KPI",
   "fact": "No CRM extract exists, so lost-dealer contact, beat compliance and KPI achievement are unknown.",
-  "so_what": "The sales-engagement hypothesis stays untested; press IT for D2â€“D5.",
+  "so_what": "The sales-engagement hypothesis stays untested; press IT for D2–D5.",
   "data_ids": [
    "D2",
    "D3",
@@ -70,7 +70,7 @@
  {
   "section": "Recovery",
   "fact": "Only 7 of 12 SBUs quantified a Cr commitment; Ispat and Telecom did not.",
-  "so_what": "Five recovery plans cannot be tracked â€” they need a number before approval.",
+  "so_what": "Five recovery plans cannot be tracked — they need a number before approval.",
   "data_ids": [
    "A9"
   ]
