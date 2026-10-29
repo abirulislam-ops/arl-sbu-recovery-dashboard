@@ -1030,7 +1030,8 @@ function renderMarket(){
           <td>${gainer.brand||'—'}</td><td class="num" style="color:${(gainer.dpp||0)>0?'#b91c1c':'#166534'}">${gainer.dpp!=null?(gainer.dpp>0?'+':'')+gainer.dpp.toFixed(2):'—'}</td>
           <td style="color:var(--muted2)">${x.basis||''}</td></tr>`;}).join('')||'<tr><td colspan="9" style="color:var(--muted)">No market-share file parsed yet — the other SBU files are not in a monthly grid, so they stay "needs review".</td></tr>'}</tbody>
       </table></div>
-      <div class="src">Source: Marketing tracker (Google Sheet) → column G per SBU · converted from rupee/MT volume to share · as of ${MD.as_of}.</div></div>
+      <div class="src">Source: Marketing tracker (Google Sheet) → column G per SBU · converted from volume to share · as of ${MD.as_of} · auto-refreshed hourly.</div>
+      <div style="display:flex;flex-wrap:wrap;gap:6px;margin-top:8px">${(MD.national?.sbus||[]).map(x=>`<span class="tag" style="font-size:10.5px;padding:3px 8px;border-radius:999px;background:${x.status==='ok'?'#dcfce7':'#fef3c7'};color:${x.status==='ok'?'#166534':'#92400e'}">${x.sbu} · ${x.status==='ok'?'parsed':'needs review'}</span>`).join('')}</div></div>
 
     <div class="sec-head" style="margin-top:18px"><span class="bar" style="background:#0f172a"></span><div><h2>Market leadership by region</h2><p>Who leads in each division, what their benchmark is, and whether Akij can take the lead there.</p></div>
       <button class="hint" data-tip="A region is contestable when (leader share − our share) ≤ 5 pp. Leader benchmark = the five metrics that make them #1: price index (ours = 100), credit days, numeric distribution %, scheme spend % of sales, service lead time. All measured in the same quarter, same category definition.">${ICONS.info}</button></div>
