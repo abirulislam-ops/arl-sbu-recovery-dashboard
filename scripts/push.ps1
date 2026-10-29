@@ -21,7 +21,7 @@ public class CredAuto2 {
 "@
 if (-not ("CredAuto2" -as [type])) { Add-Type -TypeDefinition $src }
 $ptr = [IntPtr]::Zero
-if (-not [CredAuto2]::CredRead("git:https://sabbiriron@github.com", 1, 0, [ref]$ptr)) {
+if (-not [CredAuto2]::CredRead("git:https://github.com", 1, 0, [ref]$ptr)) {
   Write-Output "no stored credential - skip push"; exit 0
 }
 $c = [Runtime.InteropServices.Marshal]::PtrToStructure($ptr, [type][CredAuto2+CREDENTIAL])
@@ -56,3 +56,4 @@ Pop-Location
 Remove-Item $ap -Force -ErrorAction SilentlyContinue
 ($out | Out-String) -replace "https://[^ ]*", "https://<redacted>"
 $env:GH_PAT = $null; $env:GH_USER = $null
+
