@@ -125,13 +125,13 @@
  "detail": {
   "Ready Mix": {
    "visit_status": {
+    "Completed": 8,
     "Planned": 13,
-    "Completed": 6,
-    "Checked-in": 2
+    "Checked-in": 1
    },
-   "visits_productive": 4,
+   "visits_productive": 6,
    "visit_types": {
-    "Field Visit": 12,
+    "Field Visit": 13,
     "Meeting": 9
    },
    "lead_status": {
@@ -153,8 +153,11 @@
    "cases_overdue": 5,
    "pipeline_cr": 0.84,
    "pipeline_outlier_cr": 3953.0,
-   "pipeline_note": "5 opportunities hold 0.84 Cr; a 6th is keyed at 3,953 Cr (105.5 M CFT) - a data-entry error",
-   "leads_worked": 0
+   "leads_worked": 0,
+   "visits_total": 22,
+   "leads_total": 586,
+   "cases_total": 5,
+   "opps_total": 6
   }
  }
 }
