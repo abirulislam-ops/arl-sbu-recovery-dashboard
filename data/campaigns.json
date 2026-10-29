@@ -1,0 +1,182 @@
+[
+ {
+  "sbu": "ACCL",
+  "total_campaigns": 6,
+  "our_campaigns": 1,
+  "brands": [
+   {
+    "brand": "Akij Cement",
+    "campaigns": 1,
+    "ours": true,
+    "theme": "Thematic campaign based on product USP which is Iron Slag Based Cement"
+   },
+   {
+    "brand": "Shah Cement",
+    "campaigns": 1,
+    "ours": false,
+    "theme": "Brand Ambassador Based, Football world cup ticket campaign"
+   },
+   {
+    "brand": "Seven Rings",
+    "campaigns": 1,
+    "ours": false,
+    "theme": "Consequences of using bad quality product"
+   },
+   {
+    "brand": "Crown Cement",
+    "campaigns": 1,
+    "ours": false,
+    "theme": "Safety of constrution workers across Bangladesh"
+   },
+   {
+    "brand": "Supercrete Cement",
+    "campaigns": 1,
+    "ours": false,
+    "theme": "Casting and fair face USP of the product"
+   },
+   {
+    "brand": "Scan Cement",
+    "campaigns": 1,
+    "ours": false,
+    "theme": "Focuses on 52.5N Grade PCC Max"
+   }
+  ],
+  "source": "Competitor campaign file (AKIJ X & Competitors)"
+ },
+ {
+  "sbu": "AIL",
+  "total_campaigns": 5,
+  "our_campaigns": 1,
+  "brands": [
+   {
+    "brand": "AKij Ispat",
+    "campaigns": 1,
+    "ours": true,
+    "theme": "Thematic Campaign with USP Placement"
+   },
+   {
+    "brand": "BSRM",
+    "campaigns": 1,
+    "ours": false,
+    "theme": "Thematic Campaign "
+   },
+   {
+    "brand": "GPH Ispat",
+    "campaigns": 1,
+    "ours": false,
+    "theme": "Brand Image Campaign"
+   },
+   {
+    "brand": "AKS",
+    "campaigns": 1,
+    "ours": false,
+    "theme": "Brand Image Positioning"
+   },
+   {
+    "brand": "Anowar Ispat",
+    "campaigns": 1,
+    "ours": false,
+    "theme": "Product Positioning"
+   }
+  ],
+  "source": "Competitor campaign file (AKIJ X & Competitors)"
+ },
+ {
+  "sbu": "ALEL",
+  "total_campaigns": 2,
+  "our_campaigns": 0,
+  "brands": [
+   {
+    "brand": "Safe",
+    "campaigns": 1,
+    "ours": false,
+    "theme": "To focus on energy efficiency"
+   },
+   {
+    "brand": "Click",
+    "campaigns": 1,
+    "ours": false,
+    "theme": "The theme is completely based on recent national election"
+   }
+  ],
+  "source": "Competitor campaign file (AKIJ X & Competitors)"
+ },
+ {
+  "sbu": "ALCL",
+  "total_campaigns": 3,
+  "our_campaigns": 1,
+  "brands": [
+   {
+    "brand": "AKIJ Pharmacy",
+    "campaigns": 1,
+    "ours": true,
+    "theme": "CP Offer"
+   },
+   {
+    "brand": "AKS Pharmacy",
+    "campaigns": 1,
+    "ours": false,
+    "theme": "BOGO Offer & 50% discount"
+   },
+   {
+    "brand": "Aster Pharmacy",
+    "campaigns": 1,
+    "ours": false,
+    "theme": "NO"
+   }
+  ],
+  "source": "Competitor campaign file (AKIJ X & Competitors)"
+ },
+ {
+  "sbu": "ACEL",
+  "total_campaigns": 4,
+  "our_campaigns": 0,
+  "brands": [
+   {
+    "brand": "Transcom Digital",
+    "campaigns": 1,
+    "ours": false,
+    "theme": "Premium home appliance experience"
+   },
+   {
+    "brand": "Rangs eMart",
+    "campaigns": 1,
+    "ours": false,
+    "theme": "Mega Eid discount campaign"
+   },
+   {
+    "brand": "Best Electronics",
+    "campaigns": 1,
+    "ours": false,
+    "theme": "Increase Eid seasonal sales"
+   },
+   {
+    "brand": "General Electronics / Sharp / Panasonic",
+    "campaigns": 1,
+    "ours": false,
+    "theme": "Eid festival electronics shopping with major discounts"
+   }
+  ],
+  "source": "Competitor campaign file (AKIJ X & Competitors)"
+ },
+ {
+  "sbu": "ABSLASP",
+  "total_campaigns": 2,
+  "our_campaigns": 0,
+  "brands": [
+   {
+    "brand": "MOBIL",
+    "campaigns": 1,
+    "ours": false,
+    "theme": "Journey of Legacy"
+   },
+   {
+    "brand": "Shell",
+    "campaigns": 1,
+    "ours": false,
+    "theme": "Consumer Promotion "
+   }
+  ],
+  "source": "Competitor campaign file (AKIJ X & Competitors)"
+ }
+]

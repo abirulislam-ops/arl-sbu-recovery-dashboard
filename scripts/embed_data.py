@@ -35,6 +35,7 @@ FILES = {
     "seven_p": "seven_p.json",
     "bcg": "bcg.json",
     "brand_audit": "brand_audit.json",
+    "campaigns": "campaigns.json",
     "lineage": "_lineage.json",
 }
 
