@@ -1,0 +1,82 @@
+[
+ {
+  "sbu": "ACCL",
+  "tab": "Akij Cement Company Ltd.",
+  "custodian": "Tariqul Hossain Tishad",
+  "audit_date": "28/09/2026",
+  "questions": 35,
+  "yes": 17,
+  "score_pct": 48.6,
+  "source": "Brand Maturity Audit workbook · 28-Sep-2026"
+ },
+ {
+  "sbu": "AIL",
+  "tab": "Akij Ispat",
+  "custodian": "MD. Siam Sarowar",
+  "audit_date": "28/09/2026",
+  "questions": 35,
+  "yes": 19,
+  "score_pct": 54.3,
+  "source": "Brand Maturity Audit workbook · 28-Sep-2026"
+ },
+ {
+  "sbu": "AELOTH",
+  "tab": "Akij Essentials LTD",
+  "custodian": "Mohammad Imtiaz Hossain",
+  "audit_date": "28/09/2026",
+  "questions": 35,
+  "yes": 25,
+  "score_pct": 71.4,
+  "source": "Brand Maturity Audit workbook · 28-Sep-2026"
+ },
+ {
+  "sbu": "ACEL",
+  "tab": "Akij Consumer Electronics Limit",
+  "custodian": "Saydur Rahman Khan",
+  "audit_date": "28/09/2026",
+  "questions": 35,
+  "yes": 22,
+  "score_pct": 62.9,
+  "source": "Brand Maturity Audit workbook · 28-Sep-2026"
+ },
+ {
+  "sbu": "ARMCL",
+  "tab": "AKIJ Ready Mix Concrete",
+  "custodian": "Md. Nasim Uddin",
+  "audit_date": "28/09/2026",
+  "questions": 35,
+  "yes": 19,
+  "score_pct": 54.3,
+  "source": "Brand Maturity Audit workbook · 28-Sep-2026"
+ },
+ {
+  "sbu": "ALCL",
+  "tab": "AKIJ Pharmacy",
+  "custodian": "Faiza Afrin Haque",
+  "audit_date": "28/09/2026",
+  "questions": 35,
+  "yes": 13,
+  "score_pct": 37.1,
+  "source": "Brand Maturity Audit workbook · 28-Sep-2026"
+ },
+ {
+  "sbu": "AMPL",
+  "tab": "Akij Mediplex",
+  "custodian": "Abhijit Das",
+  "audit_date": "28/09/2026",
+  "questions": 35,
+  "yes": 16,
+  "score_pct": 45.7,
+  "source": "Brand Maturity Audit workbook · 28-Sep-2026"
+ },
+ {
+  "sbu": "ABSLASP",
+  "tab": "ABSL - Benzol Lubricants",
+  "custodian": "Md. Yusuf",
+  "audit_date": "28/09/2026",
+  "questions": 35,
+  "yes": 16,
+  "score_pct": 45.7,
+  "source": "Brand Maturity Audit workbook · 28-Sep-2026"
+ }
+]
