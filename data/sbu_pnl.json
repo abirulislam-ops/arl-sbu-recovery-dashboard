@@ -27,7 +27,13 @@
   "erp_revenue_q4": 499.559,
   "erp_np_proxy_q1": -8.266,
   "erp_np_proxy_q4": -26.365,
-  "data_completeness": 0.165
+  "data_completeness": 0.165,
+  "root_cause_rev": "Sales underachievement across priority channels due to Lentils, chickpeas, yellow peas, raw martials shortage, Miniket paddy shortage and taking some strategic call for go slow in AMS. Chinigura rice demand reduced in Market. Still not inject NPD, which was included in budget and Disruption salt supply.",
+  "root_cause_loss": "After maintaining more than 11% GP it can not be negative. Finance cost Matter.",
+  "plan_rev": "Develop a 30-day SKU/plant/customer recovery plan with weekly revenue and volume targets. Prioritize Consumer and Corporate recovery, Bulk Rice, Bulk Flour & Dal, Modern Trade, HORECA, and conversion of pending Tender business.",
+  "plan_loss": "Introduce/ Lunching high margin products.",
+  "owner_text": "Revenue: Sales Heads. EAT: CFO. Individual initiative owners to be assigned by the respective functional heads.",
+  "target_date": "31 January 2027, with weekly checkpoints and monthly management reviews."
  },
  {
   "sbu": "AIL",
@@ -57,7 +63,13 @@
   "erp_revenue_q4": 364.079,
   "erp_np_proxy_q1": 21.659,
   "erp_np_proxy_q4": 55.427,
-  "data_completeness": 0.177
+  "data_completeness": 0.177,
+  "root_cause_rev": "The budget rate was set considering the anticipated increase in key cost components, including approximately 18% increase in electricity cost and VAT increase from BDT 3,300 to BDT 3,900/MT. However, the expected price increase could not be fully reflected in the market due to weak demand and competitive pressure from top Brands like BSRM, AKS, KSRM and GPH Ispat. Additionally, The volume shortfall was primarily influenced by the overall industry-wide de-growth during Jul–Sep 2026.",
+  "root_cause_loss": "The budget rate was set considering the anticipated increase in key cost components, including approximately 18% increase in electricity cost and VAT increase from BDT 3,300 to BDT 3,900/MT. However, the expected price increase could not be fully reflected in the market due to weak demand and competitive pressure from top Brands like BSRM, AKS, KSRM and GPH Ispat. We are currently sourcing materials from Shahriar Steel and Rani Mills at a cost approximately BDT 2,500–3,000 per MT higher than our current cost from Mohammadi Steel.",
+  "plan_rev": "Our immediate priority is to clear the existing pending orders, improve delivery execution, and then accelerate volume recovery during the upcoming peak season. The combination of pending-order clearance, improved delivery execution, activation of the existing dealer base, gradual price improvement, stringent OD recovery, reduced Trade exposure, and the proposed market-potential-based Trade Organogram is expected to strengthen the monthly run-rate. Besides, immediate takeover of another CM factory will be a great advantage for us to increase market presence and ensure achieving both budget and revenue target gaps.",
+  "plan_loss": "We expect to complete our agreement with Islam Metal by November and with Saleh Steel by December. Following the completion of these agreements, our overall Cost of Goods Sold (COGS) is expected to align with the approved budget.",
+  "owner_text": "Cluster CEO, Cluster CSO, Head of Sales, CPO",
+  "target_date": "As Per Yearly Budget"
  },
  {
   "sbu": "ARMCL",
@@ -87,7 +99,13 @@
   "erp_revenue_q4": 73.933,
   "erp_np_proxy_q1": 12.48,
   "erp_np_proxy_q4": 4.717,
-  "data_completeness": 0.177
+  "data_completeness": 0.177,
+  "root_cause_rev": "Q1 revenue underperformance was primarily attributable to the rainy season, which traditionally represents a lean period for the construction materials industry, resulting in lower sales volume and reduced capacity utilization. Limited market penetration and the absence of an RMC plant within Dhaka City further constrained market access and increased logistics and distribution costs. Additionally, competitive pricing pressure, lower conversion of sales leads into confirmed orders, and challenges in acquiring new customers and retaining existing ones contributed to the shortfall against the budgeted revenue target.",
+  "root_cause_loss": "The Q1 net loss resulted from inadequate revenue and volume absorption against a high fixed-cost base, low and fluctuating gross margins, high logistics and distribution expenses, manufacturing overhead, and substantial financial expenses. Lower capacity utilization and unfavorable selling-price-to-cost relationships further weakened profitability. The September deterioration in GP margin and the continuing negative EBIT demonstrate the need for immediate cost and margin correction.",
+  "plan_rev": "Implement a focused, volume-driven revenue recovery strategy by strengthening key-account management, acquiring new customers, recovering lost orders, expanding market coverage in high-potential areas, and maximizing plant utilization. Ensure the realization of approved selling-price increases and eliminate unjustified lower prices for 3,000 PSI, 3,500 PSI, 4,000 PSI, and 4,500 PSI concrete grades. The key objectives are to achieve 100% of the approved monthly revenue budget, ensure sustainable sales volume growth, and progressively recover the Q1 revenue shortfall of Tk 25.77 Cr.",
+  "plan_loss": "Execute a profitability-led turnaround focused on improving contribution per CFT, reducing material and logistics costs, increasing plant utilization, controlling overhead, and reducing financing costs through stronger receivables collection and working-capital management. Target positive monthly EBIT and EAT, sustainable gross-margin improvement, and achievement of at least the approved EAT budget. Eliminate the Q1 adverse EAT budget gap of Tk 8.38 Cr through validated incremental contribution and cost savings.",
+  "owner_text": "The following responsibility matrix can be used in the ARMCL turnaround plan. Names should be confirmed against the current organizational structure before final submission. Sl. Supportive Functions Action Owner Name Action Owner Designation Key Responsibilities 1 Plant Operations Md. Shakhawat Hossain Manager, Plant Operations Optimize manufacturing cost per CFT; improve plant capacity utilization and productivity; control manpower, power, maintenance, wastage, and production losses. 2 Logistics and Distribution Md. Firoz Kabir Logistics & Distribution Lead, ARMCL Reduce logistics cost per CFT; optimize fuel consumption, MRO expenses, fleet utilization, vehicle downtime, routing, and delivery efficiency. 3 Supply Chain Management (SCM) Md. Mobassarul Alam SCM Lead, ARMCL Ensure competitive procurement of cement, stone, sand, admixtures, and other raw materials through strategic sourcing, supplier negotiations, and effective inventory planning. 4 Sales Md. Jahid Hassan Head of Sales, ARMCL Achieve 100% of approved sales and revenue targets; increase sales volume, strengthen customer acquisition and retention, enforce approved selling prices, and improve customer-wise contribution. 5 Finance Pankaj Chandra Bhowmick Cluster FC Reduce financial expenses, improve working-capital efficiency, accelerate receivables collection, control overdue balances, and optimize financing costs and cash flow. 6 Human Resource Md. Ariful Islam HR BP Optimize manpower deployment, improve workforce productivity, support plant-level restructuring, and facilitate recruitment of additional sales personnel where needed. 7 Overall coordination & accountability Md. Anisur Rahman and Asadul Haque Sufyani CEO & Cluster CEO Lead the turnaround program, coordinate all functional heads, review progress against agreed KPIs, resolve cross-functional issues, and ensure delivery of profitability targets.",
+  "target_date": "31 December 2026 — proposed deadline to implement the turnaround measures and achieve the agreed revenue and profitability recovery milestones, subject to Finance validation and management approval."
  },
  {
   "sbu": "AMPL",
@@ -117,7 +135,13 @@
   "erp_revenue_q4": 0.028,
   "erp_np_proxy_q1": -1.689,
   "erp_np_proxy_q4": -1.451,
-  "data_completeness": 0.102
+  "data_completeness": 0.102,
+  "root_cause_rev": "Referral policy not equivalent to competitors; doctors confused about entitlement Referral payments delayed by approval issues Sales team abolished; new team late Sales coverage incomplete Star doctors not available; no celebrity USG doctor Star doctors not available for practicing Services absent: OPG, endoscopy, colonoscopy, EEG, EMG, ETT Marketing not up to the mark Low street-level awareness; competitors 30+ years in market Cost base ahead of volume",
+  "root_cause_loss": "Referral policy not equivalent to competitors; doctors confused about entitlement Referral payments delayed by approval issues Sales team abolished; new team late Sales coverage incomplete Star doctors not available; no celebrity USG doctor Star doctors not available for practising Services absent: OPG, endoscopy, colonoscopy, EEG, EMG, ETT Marketing not up to the mark Low street-level awareness; competitors 30+ years in market Cost base ahead of volume",
+  "plan_rev": "Move from market-building to volume. Build a Tier A/B referral base, activate B2B and corporate accounts for stable non-referral revenue, and run tracked health camps as acquisition funnels. Target state: Mar-27 monthly revenue at or above budget run-rate, with Sep exit (0.30 Cr) at least tripled.",
+  "plan_loss": "Move from market-building to volume. Build a Tier A/B referral base, activate B2B and corporate accounts for stable non-referral revenue, and run tracked health camps as acquisition funnels. Target state: Mar-27 monthly revenue at or above budget run-rate, with Sep exit (0.30 Cr) at least tripled.",
+  "owner_text": "Branch Manager HR CBO + CFO CBDO/CBO",
+  "target_date": "31-Mar-2027"
  },
  {
   "sbu": "ACL",
@@ -147,7 +171,13 @@
   "erp_revenue_q4": 44.763,
   "erp_np_proxy_q1": -12.214,
   "erp_np_proxy_q4": -5.295,
-  "data_completeness": 0.165
+  "data_completeness": 0.165,
+  "root_cause_rev": "Q1 FY26-27 net revenue BDT 3.09 Cr against a BDT 7.25 Cr budget — a shortfall of BDT 4.16 Cr (43% achievement): Jul 1.465 vs 1.62 (90%), Aug 0.543 vs 1.66 (33%), Sep 1.085 vs 3.97 (27%). The deficit is supply-driven, not demand-driven. The Malaysia and Thailand import lines that carry the core range were not opened in the quarter, so 56% of finished-goods SKUs (82 of 146) sat at zero stock and three new categories budgeted at BDT 1.64 Cr never traded. A customs branch lock on one Thailand shipment held ~BDT 2.18 Cr of sellable stock for most of July, and a C&F transition that was not F&B-ready produced clearance delays and misdeclared HS codes on 3 of 18 lines. Sell-in was further constrained by credit holds on the two customers who represent ~78% of revenue. Demand was intact — July hit 90% of budget and collections ran at 81% — the business simply had nothing to sell.",
+  "root_cause_loss": "PAT −BDT 1.49 Cr against a budgeted profit of BDT 0.30 Cr — adverse BDT 1.79 Cr (Jul −0.357, Aug −0.866, Sep −0.264); EBITDA −1.09 Cr against +1.01 Cr budget. Most of the loss is non-recurring import shock: BDT 87L exceptional cost (BDT 37L demurrage and penalties on a held shipment, BDT 50L from a C&F assessment error that raised Gatorade from USD 1.50 to 7.92) plus a BDT 38.83L NRV write-down. The remainder is structural: volume at 43% of plan cannot absorb fixed cost — August COGS exceeded revenue — gross margin was negative to thin in July–August and only recovered in September.",
+  "plan_rev": "Rebuild the range, then hold a steady BDT 2.50 Cr monthly run-rate. Supply is anchored on the approved 5-LC import plan of BDT 10.82 Cr landed (24,185 cartons, 157 SKUs), which carries 17.97% gross margin and 4.19% net margin and is already in execution under CEO approval. Alongside that, widen the channel so the run-rate is not dependent on two accounts: Modern Trade, HORECA, Akij Essential retail, sole distributorship of high-demand lines and demand-led local purchase. Target state: BDT 2.50 Cr/month sustained from November, ~95% availability on the top-20 SKUs, 60%+ of 69 accounts active against 14 today, top-2 customer concentration below 50%, blended GP 18%, and monthly PAT positive. FY27 revenue lands at ~BDT 24.70 Cr against the BDT 36.61 Cr ABP, which is re-baselined with the Board rather than left as an unachievable number.",
+  "plan_loss": "Separate recurring trading margin from exceptional import cost, then price every SKU off true landed cost so a BDT 2.50 Cr run-rate produces a positive bottom line. At the approved import plan's 17.97% GP and 4.19% NP, BDT 2.50 Cr/month yields roughly BDT 0.10 Cr PAT per month. Target state: blended GP 18%, monthly PAT breakeven from November-26, Q3 and Q4 each contributing ~BDT 0.30 Cr, FY27 loss contained to ≤BDT 0.90 Cr against a −5.96 Cr annualized Q1 run-rate, DIO cut from 59 to 45 days, and the BDT 1.49 Cr Q1 loss recovered through trading margin and cost, not one-off gains.",
+  "owner_text": "Md. Imran Hossen, Head of Sales – ACL (Imported Food Business), reporting to Md. Akterul Alam Shah, COO, Akij Essential.",
+  "target_date": "30-Nov-2026 for monthly PAT breakeven; 31-Mar-2027 for a sustained BDT 2.50 Cr run-rate and completion of the recovery plan."
  },
  {
   "sbu": "ALCL",
@@ -177,7 +207,13 @@
   "erp_revenue_q4": 14.163,
   "erp_np_proxy_q1": -2.144,
   "erp_np_proxy_q4": -2.354,
-  "data_completeness": 0.102
+  "data_completeness": 0.102,
+  "root_cause_rev": "1. Expansion was slower than budgeted. Outlet growth was deliberately slowed (34 outlets now), and new outlets take longer to reach maturity, so revenue from new stores lagged the budget. 2. The budget assumed a steeper ramp than the network delivered. Budget grew 36% from July to September (7.21 → 9.79). Actual sales grew 25% (6.19 → 7.77). The monthly gap widened from 1.02 to 1.29 to 2.02 Cr. Actual sales are growing; they are just growing more slowly than budget assumed. 3. Competitive pressure is high. Neighborhood pharmacies and online players (discount-led) are taking sales.",
+  "root_cause_loss": "1. GP is too thin to cover the cost base. GP of 11.9% (11.6% in September, falling) yields about 2.5 Cr per quarter against about 4.9 Cr of costs. 2. Fixed costs are high relative to current sales. Outlet rent, staff and head-office overhead were sized for the budgeted network and volume. Sales per outlet are only about 23 lakh a month. 3. The margin is being diluted. Customer discounts are given to compete, high-margin categories are a small share of sales, and supplier terms for trade discounts and bonuses are weak. 4. Working capital costs are rising. Mostly cash purchasing, inventory build-up, and some expiry or slow-moving stock add finance cost. Note: EAT came in 0.12 Cr better than budget, so cost control is working. The gap is structural, driven by revenue and margin.",
+  "plan_rev": "Approach: grow same-store sales first, through repeat customers, bigger baskets and better mix, rather than new outlets. Use data and segmentation at outlet level. Add online sales as an extra channel. Target state: monthly net sales grow about 5% month on month, from 7.77 Cr (September) to 12.41 Cr by June 2027. Q2 (Oct–Dec) sales reach at least 25.5 Cr, which equals Q1’s budget and is 4.3 Cr above Q1 actual.",
+  "plan_loss": "Approach: work on three levers together- 1. Raise GP% through mix, purchasing terms and discount discipline. 2. Hold the cost base flat while sales grow (operating leverage). 3. Cut working-capital and finance costs. Target state: 1. GP rises to about 13% by December and to 14% or more by June 2027. 2. Opex as a share of sales falls from about 23% to about 14%. 3. Q2 loss falls to 1.6 Cr or less. 4. Monthly EAT breaks even by June 2027.",
+  "owner_text": "Overall: Istiuck Ali Talukdar, CBO Revenue and outlets: Saidur Rahman, Assistant Operation Manager Purchasing, GP and inventory: Sujon Ghosh, Head of Operations and Category Management Marketing, CRM and campaigns: Faiza Afrin Haque, Brand Custodian Online channel: E-commerce / Digital lead. Finance and the outlet-level P&L: Aynanul Hoque, FC People changes: Md. Arif Rahman, HRBP.",
+  "target_date": "Interim milestones by 31 Dec 2026: credit purchasing in place, GP around 13%, Q2 targets met. Full recovery by 30 Jun 2027."
  },
  {
   "sbu": "ABSLASP",
@@ -207,7 +243,13 @@
   "erp_revenue_q4": 32.9,
   "erp_np_proxy_q1": 2.571,
   "erp_np_proxy_q4": 7.525,
-  "data_completeness": 0.165
+  "data_completeness": 0.165,
+  "root_cause_rev": "The revenue shortfall was mainly caused by the rainy season, which reduced road construction activities and asphalt demand, and the unavailability of LC bitumen, forcing the company to purchase higher priced local bitumen. This weakened price competitiveness and reduced order conversion. Q1 revenue was Tk 7.62 Cr against a budget of Tk 30.65 Cr, resulting in a deficit of Tk 23.03 Cr (75.1%).",
+  "root_cause_loss": "Low revenue and sales volume resulted in inadequate absorption of fixed costs. Higher priced local bitumen, Lower sales demand, and increased sales price weakened profitability. GP margin declined to -9.9% in September. Consequently, Q1 EAT was a loss of Tk 2.15 Cr against a budgeted profit of Tk 0.01 Cr, creating an adverse gap of Tk 2.16 Cr.",
+  "plan_rev": "Ensure timely LC bitumen procurement, strengthen customer acquisition, recover lost orders, and expand market coverage among RHD, LGED, City Corporations, MES and other contractors and infrastructure projects. Improve price competitiveness and plant utilization to achieve 100% of the approved monthly revenue budget and progressively recover the Tk 23.03 Cr shortfall.",
+  "plan_loss": "Improve contribution per MT through competitive bitumen procurement, better selling price realization and strict cost control. Optimize working capital to achieve positive monthly EBIT and EAT and recover the Tk 2.16 Cr adverse EAT budget gap.",
+  "owner_text": "Primary: Mohammad Ehsan Al Baqui, Chief Supply Chain Officer ; Md Mobassarul Alam, Senior Manager. Supporting: Md. Jahid Hassan, Deputy General Manager; Md. Mustaq Ahmed, Chief Financial Officer.",
+  "target_date": "31 December 2026, subject to management approval and Finance validation."
  },
  {
   "sbu": "ATL",
@@ -237,7 +279,13 @@
   "erp_revenue_q4": 1.217,
   "erp_np_proxy_q1": -2.1,
   "erp_np_proxy_q4": -1.305,
-  "data_completeness": 0.165
+  "data_completeness": 0.165,
+  "root_cause_rev": "Revenue Achieved",
+  "root_cause_loss": "To clear the old and slow-moving stock, we sold products to dealers with higher subsidies. As a result, the company incurred financial losses.",
+  "plan_rev": "N/A (Revenue Achieved)",
+  "plan_loss": "We plan to import quality products and sell them at profitable margins. Through effective pricing, improved sales performance, and proper inventory management, we aim to gradually recover the losses incurred previously and achieve sustainable business growth.",
+  "owner_text": "Syaeed Muhammad Fuad",
+  "target_date": "June 2028"
  },
  {
   "sbu": "NJL",
@@ -267,7 +315,13 @@
   "erp_revenue_q4": 0.169,
   "erp_np_proxy_q1": -1.365,
   "erp_np_proxy_q4": -0.986,
-  "data_completeness": 0.102
+  "data_completeness": 0.102,
+  "root_cause_rev": "Q1 revenue = 91.7% of budget (0.62 Cr vs 0.68 Cr; −0.06 Cr; Jul 80.2% → Aug 95.0% → Sep 96.8%, Sep = 3.17M = 100.1% of budget). Root causes: (1) the 68.3%-planned Payroll/Staffing pillar was still in setup most of Q1 (DIFE license + payroll-disbursement infra; first staffing revenue only in Aug at ৳1.03M), so the quarter ran on a substitute mix of ~61% Training + ~33% LinkedIn resale; (2) 9 of 14 revenue streams stayed inactive (CV/Career Services, BGV, Salary Survey, Employer Branding, Assessment, CV Bank, International/Remote, RMS/ATS SaaS, Premium Subscription = ৳0); (3) employer accounts barely monetized — 7,343 accounts but only 636 verified and ~23–35 paid posts/mo; (4) weak demand conversion — 86% of 'active' flags expired, ~200–232 genuinely live jobs, no self-serve checkout / CRM / GA4 value events.",
+  "root_cause_loss": "Q1 EAT = BDT −1.80 Cr (vs −2.92 Cr budget, favourable by 1.12 Cr, but worsening Jul→Sep). Root causes: (1) gross-margin collapse — GP% 96.8% (Jul) → 43.7% (Aug) → 1.5% (Sep); Q1 blended 36.7%; Sep's ~1.5% GP on 0.29 Cr revenue is the driver as mix shifted to low/zero-margin LinkedIn resale + one-off training while the high-margin payroll/staffing pillar was still ramping; (2) marketing overspend — Q1 ~BDT 16.19M vs ~10.11M budget (160%), S&M ~3.8× revenue; (3) broken unit economics — CAC ≈ ৳126,400 vs LTV ≈ ৳29,900 (LTV:CAC 0.24 vs 11.67× plan); (4) fixed cost base built ahead of revenue, with 9 of 14 streams inactive and the 68.3% pillar producing ~BDT 0 until Aug.",
+  "plan_rev": "Pivot to a Payroll-Staffing-Training-led engine, amplify employer-account monetization, and convert the 9 inactive revenue streams to active. (1) Scale Payroll/Staffing/RPO (68.3% pillar) on 3 models — % of payroll disbursement (4–10%), per-head ৳600–1,200, prepaid per-position ৳500–700 (Model 3) — to ≥৳9.5L/mo (stretch ৳15L). (2) Rebuild Training (corporate + public + government) to ≥৳13L/mo. (3) Monetize the 7,343 employer accounts (636 verified → 1,000+) to ≥৳4L/mo and 300 paid posts/mo. (4) Activate ≥6 of 9 inactive streams (CV, BGV, Salary Survey, Employer Branding, Assessment, CV Bank, International, RMS/ATS, Premium) with first revenue. Target by Dec-26: 20–30L/mo exit run-rate, LTV:CAC 0.24 → ≥0.45, employer retention 18% → 40%, staffing-led high-GP mix.",
+  "plan_loss": "Cash-first sequencing + gross-margin repair + spend discipline. (1) Protect working capital first: collections sprint, DSO 60→45 days, receivables 4.0M→≤2.2M, Group salary-float facility term sheet by 31 Oct. (2) Repair margin: shift mix to staffing (VAT on fee-only), pricing lock, commission redesign (2× staffing/posting/CV/BGV, 0.5× LinkedIn resale), cap LinkedIn ≤15% of mix. (3) Discipline spend: freeze paid jobseeker acquisition while LTV:CAC <1; tier-gated marketing. Target state: EAT loss ≤ budget and trending to breakeven; GP% restored toward 60%+; LTV:CAC ≥0.45 by Dec (path ≥1 by Jun-27).",
+  "owner_text": "Shoeb Hossen — Chief Business Officer (CBO), Nextjobz Limited",
+  "target_date": "31 December 2026"
  },
  {
   "sbu": "AITL",
@@ -297,7 +351,13 @@
   "erp_revenue_q4": 2.761,
   "erp_np_proxy_q1": -1.18,
   "erp_np_proxy_q4": -1.52,
-  "data_completeness": 0.165
+  "data_completeness": 0.165,
+  "root_cause_rev": "Limited fresh orders due to overdue receivables, customer credit restrictions, aged inventory and delayed project conversions.",
+  "root_cause_loss": "Revenue and gross profit below plan, combined with fixed operating costs, slow-moving inventory and financing/credit exposure.",
+  "plan_rev": "Prioritize collectible accounts, sellable stock and confirmed B2B/project orders; close the Q1 shortfall through a weekly approved sales plan.",
+  "plan_loss": "Improve gross margin, reduce avoidable operating costs, release blocked working capital and target monthly operating break-even.",
+  "owner_text": "ASM Shawkat Millat, Head of Business & Operations",
+  "target_date": "31 December 2027 (proposed; subject to management approval)."
  },
  {
   "sbu": "ACEL",
@@ -327,7 +387,13 @@
   "erp_revenue_q4": 2.917,
   "erp_np_proxy_q1": -0.683,
   "erp_np_proxy_q4": -0.521,
-  "data_completeness": 0.102
+  "data_completeness": 0.102,
+  "root_cause_rev": "We are significantly behind our original expansion plan due to a shortage of funds and manpower. So far, we have successfully opened four showrooms, with another scheduled to open by 30 October 2026. The delay in showroom openings has negatively impacted business performance, resulting in a decline in sales. In addition, product availability has been severely affected due to zero stock at the principal level. Furthermore, our ability to procure and replenish the available products has been constrained by the ongoing funding shortage. These challenges have collectively hindered our planned business growth and expansion.",
+  "root_cause_loss": "Net loss in Q1 was primarily driven by delayed showroom openings, resulting in lower-than-planned revenue, product shortages due to principal stock unavailability, and limited working capital to support inventory and business operations. High operating costs relative to sales further impacted profitability.",
+  "plan_rev": "We are prioritizing fund availability by exploring bank financing options to address our current financial constraints. At the same time, we are accelerating showroom expansion and ensuring faster execution of the remaining expansion plans. Additionally, we are prioritizing the immediate recruitment of manpower to strengthen our Corporate Sales and HVAC businesses, while also expanding our Omni-channel operations to enhance market coverage, improve sales performance, and drive sustainable business growth.",
+  "plan_loss": "Recover losses by accelerating showroom expansion, securing bank financing to ensure adequate product availability, and recruiting key manpower for Corporate Sales, HVAC, and Omni-channel operations. The target state is to achieve sustainable revenue growth, improve operational efficiency, optimize costs, and restore profitability.",
+  "owner_text": "Md. Abu Tariq Zia Chowdhury, Chief Business Officer",
+  "target_date": "May 2027"
  },
  {
   "sbu": "ALL",
@@ -357,6 +423,12 @@
   "erp_revenue_q4": 14.554,
   "erp_np_proxy_q1": 28.342,
   "erp_np_proxy_q4": 12.338,
-  "data_completeness": 0.09
+  "data_completeness": 0.09,
+  "root_cause_rev": "1. War Situation, causing slowdown in export trend 2. Power (Electricity and Gas Shortages) delayed production specially in August'26 3. Lack of Winter order specially from Europe 4. High Transportation cost due war, resulting in delayed delivery and order hold and cancellation 5. FF Salesmen requirement not fulfilled",
+  "root_cause_loss": "1. Drop in revenue due War Situation, causing slowdown in export trend 2. Power (Electricity and Gas Shortages) delayed production specially in August'26 3. Lack of Winter order specially from Europe 4. High Transportation cost due war, resulting in delayed delivery and order hold and cancellation 5. FF Salesmen requirement not fulfilled",
+  "plan_rev": "1. Aggressive sales approach 2. Pipeline conversion resulting into shipment (already in progress) 3. Salesmen hiring in process 4. 1st Quarter Revenue loss to be fully recovered by second quarter if war in the middle east stops, otherwise it will take first half of 3rd Quarter 5. Second Quarter first two months (SEP,OCT) already over budget, recovering 1st Quarter revenue",
+  "plan_loss": "1. Aggressive sales approach 2. Pipeline conversion resulting into shipment (already in progress) 3. Salesmen hiring in process 4. 1st Quarter Revenue loss to be fully recovered by second quarter if war in the middle east stops, otherwise it will take first half of 3rd Quarter 5. Second Quarter first two months (SEP,OCT) already over budget, recovering 1st Quarter revenue",
+  "owner_text": "Bikash Bromha (FF Head), Mohammad Tanvir Zaman (Air Ops Head)",
+  "target_date": "Last day of 3rd Quarter (ultimate)"
  }
 ]

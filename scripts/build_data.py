@@ -200,6 +200,9 @@ def main():
             "erp_np_proxy_q4": (round(q4["rev"] + q4["cogs"] + q4["selling"] + q4["admin"] + q4["logistics"]
                                       + q4["marketing"] + q4["finance"] + q4["other"] + q4["tax"], 3) if q4 else None),
             "data_completeness": completeness(bu, brand_codes),
+            "root_cause_rev": s["root_rev"], "root_cause_loss": s["root_loss"],
+            "plan_rev": s["plan_rev"], "plan_loss": s["plan_loss"],
+            "owner_text": s["owner"], "target_date": s["target_date"],
         })
     sbu_pnl.sort(key=lambda r: -(r["loss"] or 0))
 
