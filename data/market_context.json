@@ -1,0 +1,65 @@
+{
+ "sbus": [
+  {
+   "sbu": "ABSLASP",
+   "name": "ABSL – Asphalt",
+   "source": "Data Request sheet · asks 44–46",
+   "facts": [
+    {
+     "label": "National annual demand",
+     "value": "~5.0–5.5 lakh tonnes",
+     "status": "Researched",
+     "evidence": "TBS News"
+    },
+    {
+     "label": "Demand growth",
+     "value": "10–12% a year",
+     "status": "Researched",
+     "evidence": "Trade sources"
+    },
+    {
+     "label": "Supply mix",
+     "value": "~90% imported (historically)",
+     "status": "Researched",
+     "evidence": "TBS News"
+    },
+    {
+     "label": "Eastern Refinery (BPC)",
+     "value": "60,000–70,000 t capacity",
+     "status": "Researched",
+     "evidence": "TBS News"
+    },
+    {
+     "label": "Bashundhara Bitumen Plant",
+     "value": "first private bitumen plant",
+     "status": "Researched",
+     "evidence": "TBS News"
+    },
+    {
+     "label": "PHP Group",
+     "value": "private refined bitumen producer",
+     "status": "Researched",
+     "evidence": "TBS News"
+    },
+    {
+     "label": "Region-wise market size (Q4 FY26 / Q1 FY27)",
+     "value": "not published — field data required",
+     "status": "DATA REQUIRED",
+     "evidence": "internal request"
+    },
+    {
+     "label": "Competitor volume by region",
+     "value": "not public — field intelligence required",
+     "status": "DATA REQUIRED",
+     "evidence": "internal request"
+    },
+    {
+     "label": "Q1 FY27 result",
+     "value": "loss BDT 2.15 Cr",
+     "status": "Researched",
+     "evidence": "scorecard"
+    }
+   ]
+  }
+ ]
+}

@@ -30,6 +30,7 @@ FILES = {
     "national": "market_national.json",
     "links": "source_links.json",
     "regional": "regional_logistics.json",
+    "context": "market_context.json",
     "lineage": "_lineage.json",
 }
 
