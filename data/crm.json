@@ -6,7 +6,7 @@
    "leads": 586,
    "opps": 6,
    "cases": 5,
-   "cases_overdue": null,
+   "cases_overdue": 5,
    "window_from": null,
    "window_to": null,
    "source": "ARL CRM (arlcrm.ibos.agency) · totalCount · auto"

@@ -94,6 +94,10 @@ def refresh_crm():
         print("crm: login failed %s — snapshot kept" % r.status_code); return
     d = r.json(); tok = d.get("accessToken") or (d.get("data") or {}).get("accessToken")
     cov, detail = [], {}
+    old = {}
+    _p = os.path.join(DATA, "crm.json")
+    if os.path.exists(_p):
+        old = json.load(open(_p, encoding="utf-8"))
     for name, bu in BU.items():
         sw = requests.post(CRM + "/crm/Auth/SwitchBusinessUnit", json={"businessUnitId": bu},
                            headers={**H, "Authorization": "Bearer " + tok}, timeout=45).json()
@@ -107,8 +111,18 @@ def refresh_crm():
                 c[key] = j.get("totalCount", 0)
             except Exception:
                 c[key] = None
+        overdue = None
+        if c["cases"]:
+            try:
+                jc = requests.get(CRM + "/crm/ServiceCase/GetCaseList?pageNumber=1&pageSize=100",
+                                  headers=HH, timeout=40).json()
+                overdue = sum(1 for x in (jc.get("data") or []) if x.get("isOverdue"))
+            except Exception:
+                overdue = None
+        prev = next((x for x in (old.get("coverage") or []) if x.get("sbu") == name), {})
         cov.append({"sbu": name, "visits": c["visits"], "leads": c["leads"], "opps": c["opps"],
-                    "cases": c["cases"], "cases_overdue": None, "window_from": None, "window_to": None,
+                    "cases": c["cases"], "cases_overdue": overdue,
+                    "window_from": prev.get("window_from"), "window_to": prev.get("window_to"),
                     "source": "ARL CRM (arlcrm.ibos.agency) · totalCount · auto"})
     old = {}
     p = os.path.join(DATA, "crm.json")
