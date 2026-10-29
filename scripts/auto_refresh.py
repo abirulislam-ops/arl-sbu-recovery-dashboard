@@ -10,6 +10,11 @@ Safety rules (because the MD reads this):
 Usage: python scripts/auto_refresh.py [--dry-run]
 """
 import csv, io, json, os, re, subprocess, sys, urllib.request
+
+try:
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+except Exception:
+    pass
 from datetime import datetime
 
 SHEET_ID = "1OXLfEnEdKVsTERVLZWtaaiUfTVaeTU_zhZcmEZCo6JQ"
@@ -129,7 +134,7 @@ def main():
     for s in result["sbus"]:
         top = s["rows"][:3]
         print("  %-6s %-9s %s" % (s["sbu"], s["status"],
-              " | ".join("%s %.1f→%.1f (%+.1f)" % (r["brand"][:14], r["q4"], r["q1"], r["dpp"]) for r in top))[:150])
+              " | ".join("%s %.1f->%.1f (%+.1f)" % (r["brand"][:14], r["q4"], r["q1"], r["dpp"]) for r in top))[:150])
     if dry:
         return 0
     if not ok:
