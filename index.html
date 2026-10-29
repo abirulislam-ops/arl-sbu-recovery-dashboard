@@ -742,7 +742,7 @@ function sbuExtras(code,name){
   if(bc){
     const cls=q=>q==='Star'?'verdict-C':(q==='Cash cow'?'verdict-P':(q==='Question mark'?'verdict-I':'verdict-R'));
     h+=`<div class="card"><div style="overflow-x:auto"><table class="mini"><thead><tr><th>Product</th><th class="num">Market (BDT Cr)</th><th class="num">Growth %</th><th class="num">Our share %</th><th>Quadrant</th></tr></thead><tbody>
-      ${bc.products.map(p=>`<tr><td>${p.product}</td><td class="num">${p.market_cr.toLocaleString()}</td><td class="num" style="color:${p.growth_pct>=0?'#166534':'#b91c1c'}">${p.growth_pct}</td><td class="num">${p.own_share_pct}</td><td><span class="vtag ${cls(p.quadrant)}">${p.quadrant}</span></td></tr>`).join('')}</tbody></table></div>
+      ${bc.products.map(p=>`<tr><td>${p.product}</td><td class="num">${p.market_cr!=null?p.market_cr.toLocaleString():(p.market_qty!=null?p.market_qty.toLocaleString()+" qty":"—")}</td><td class="num" style="color:${p.growth_pct>=0?'#166534':'#b91c1c'}">${p.growth_pct}</td><td class="num">${p.own_share_pct}</td><td><span class="vtag ${cls(p.quadrant)}">${p.quadrant}</span></td></tr>`).join('')}</tbody></table></div>
       <div class="src">${bc.basis}. ${bc.note}</div></div>`;
   }else{
     h+=`<div class="empty"><span class="dp">A3 · C1 · C3</span><br>BCG needs product-level market size, growth and our share. Only Essentials has that file today.</div>`;
