@@ -3,3 +3,6 @@ data/_raw/
 _discovery/
 __pycache__/
 *.pyc
+logs/
+*.log
+

@@ -1,7 +1,0 @@
-git : Everything up-to-date
-At C:\Users\wajeehan computer\Documents\Default Project\arl-sbu-recovery-dashboard\scripts\push.ps1:39 char:8
-+ $out = git -c core.askPass="$ap" push origin main 2>&1
-+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    + CategoryInfo          : NotSpecified: (Everything up-to-date:String) [], RemoteException
-    + FullyQualifiedErrorId : NativeCommandError
- 
