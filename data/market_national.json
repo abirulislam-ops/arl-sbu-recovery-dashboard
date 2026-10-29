@@ -1,0 +1,202 @@
+{
+ "generated_at": "2026-10-29T14:16:11",
+ "period": "Q4 FY26 (Apr–Jun 26) vs Q1 FY27 (Jul–Sep 26)",
+ "sbus": [
+  {
+   "sbu": "ACCL",
+   "source": "https://docs.google.com/spreadsheets/d/12MDXGyK5UquAnrEVW4nnO2ROeSBg7qK6kqPF2ax4dW0/edit?usp=sharing",
+   "file": "ACCL_Market Share2",
+   "status": "ok",
+   "rows": [
+    {
+     "brand": "Shah & Asha",
+     "q4": 17.85,
+     "q1": 17.04,
+     "dpp": -0.81
+    },
+    {
+     "brand": "Crown",
+     "q4": 11.15,
+     "q1": 11.85,
+     "dpp": 0.7
+    },
+    {
+     "brand": "Seven Rings",
+     "q4": 12.23,
+     "q1": 11.63,
+     "dpp": -0.6
+    },
+    {
+     "brand": "Fresh",
+     "q4": 11.49,
+     "q1": 11.24,
+     "dpp": -0.25
+    },
+    {
+     "brand": "Premier",
+     "q4": 9.28,
+     "q1": 9.41,
+     "dpp": 0.13
+    },
+    {
+     "brand": "Supercrete & Holcim",
+     "q4": 6.13,
+     "q1": 7.27,
+     "dpp": 1.14
+    },
+    {
+     "brand": "Akij",
+     "q4": 4.33,
+     "q1": 4.66,
+     "dpp": 0.33
+    },
+    {
+     "brand": "Scan & Ruby",
+     "q4": 3.88,
+     "q1": 4.07,
+     "dpp": 0.19
+    },
+    {
+     "brand": "Aman",
+     "q4": 3.33,
+     "q1": 3.44,
+     "dpp": 0.11
+    },
+    {
+     "brand": "Bashundhara & King",
+     "q4": 4.52,
+     "q1": 2.98,
+     "dpp": -1.54
+    },
+    {
+     "brand": "Confidence",
+     "q4": 2.25,
+     "q1": 2.84,
+     "dpp": 0.59
+    },
+    {
+     "brand": "Anwar",
+     "q4": 2.32,
+     "q1": 2.65,
+     "dpp": 0.33
+    },
+    {
+     "brand": "Five Rings",
+     "q4": 2.15,
+     "q1": 2.3,
+     "dpp": 0.15
+    },
+    {
+     "brand": "Dimond",
+     "q4": 1.71,
+     "q1": 1.68,
+     "dpp": -0.03
+    },
+    {
+     "brand": "Seven Horse",
+     "q4": 1.26,
+     "q1": 1.4,
+     "dpp": 0.14
+    },
+    {
+     "brand": "Insee",
+     "q4": 1.06,
+     "q1": 1.24,
+     "dpp": 0.18
+    },
+    {
+     "brand": "Royal",
+     "q4": 1.06,
+     "q1": 1.17,
+     "dpp": 0.11
+    },
+    {
+     "brand": "Elephant",
+     "q4": 1.1,
+     "q1": 0.94,
+     "dpp": -0.16
+    },
+    {
+     "brand": "Tiger",
+     "q4": 0.77,
+     "q1": 0.78,
+     "dpp": 0.01
+    },
+    {
+     "brand": "NGS",
+     "q4": 0.71,
+     "q1": 0.73,
+     "dpp": 0.02
+    },
+    {
+     "brand": "Metrocem",
+     "q4": 0.4,
+     "q1": 0.47,
+     "dpp": 0.07
+    },
+    {
+     "brand": "Mir",
+     "q4": 0.17,
+     "q1": 0.13,
+     "dpp": -0.04
+    },
+    {
+     "brand": "Bengal",
+     "q4": 0.03,
+     "q1": 0.04,
+     "dpp": 0.01
+    }
+   ],
+   "basis": "volume-derived share"
+  },
+  {
+   "sbu": "AELOTH",
+   "source": "https://docs.google.com/spreadsheets/d/1b3-azLLw5Ta9mUW_0L9mxUoX4ejCaT3W39iT2PVOZGc/edit?usp=sharing",
+   "file": "Martket Share Dat H1 2025-26 2",
+   "status": "unparsed",
+   "rows": []
+  },
+  {
+   "sbu": "ARMCL",
+   "source": "https://docs.google.com/spreadsheets/d/1z5HYpCUKvU2M0StckBUZHExepOkqhEKEg76ePcrypYc/edit?usp=sharing",
+   "file": "Month wise sales comparison2",
+   "status": "unparsed",
+   "rows": []
+  },
+  {
+   "sbu": "ACEL",
+   "source": "https://docs.google.com/spreadsheets/d/1EnHPU5buG04E_ucOxUC23YpeH-aTK-CP/edit?usp=sharing&ouid=102379184973159093862&rtpof=true&sd=true",
+   "file": "Copy of Competitor_Market_Share__2026.xlsx",
+   "status": "unparsed",
+   "rows": []
+  },
+  {
+   "sbu": "AMPL",
+   "source": "https://docs.google.com/spreadsheets/d/1Qgx4ihzvPyK_ZRdpsLuTJrq2le_YMCk4/edit?usp=sharing&ouid=102379184973159093862&rtpof=true&sd=true",
+   "file": "Competitor Information2.xlsx",
+   "status": "unparsed",
+   "rows": []
+  },
+  {
+   "sbu": "ALCL",
+   "source": "https://docs.google.com/spreadsheets/d/16YZgsvuzSp41EMgej219KrwEW4Y93fJ8cEXlN4NXGFc/edit?usp=sharing",
+   "file": "Market / Industry Sales & Share (competitor-wise monthly)2",
+   "status": "unparsed",
+   "rows": []
+  },
+  {
+   "sbu": "NJL",
+   "source": "https://docs.google.com/spreadsheets/d/1OR1tGvIqQlo_Rs6vOczqL9gEAGMUdw7QfC7mBTT23h8/edit?usp=sharing",
+   "file": "Nextjobz Strategic Marketing Analysis — Source Files FY26-272",
+   "status": "unparsed",
+   "rows": []
+  },
+  {
+   "sbu": "AASL",
+   "source": "https://docs.google.com/spreadsheets/d/18e3iDlj3DhBwlI_dNNaxfxBxVwjc0JoiVQyfQb201l4/edit?usp=sharing",
+   "file": "Market Share 2",
+   "status": "unparsed",
+   "rows": []
+  }
+ ]
+}

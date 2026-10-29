@@ -1,0 +1,395 @@
+{
+ "digest": "cf4a8f8a7b8ec9ac9a134b321cdff34f1c28b4e97c29a552a2d4c916349c06d9",
+ "checked_at": "2026-10-29T14:14:05",
+ "columns": {
+  "C": "Sales Forecast & Collection Monthly (SKU wise if possible)",
+  "D": "Budget vs Actual (Target vs Revenue)",
+  "E": "Annual Marketing Budget Planner FY26-27",
+  "F": "Marketing Activity Status (Campaign wise & Month wise)",
+  "G": "Market / Industry Sales & Share (competitor-wise monthly)",
+  "H": "Competitor Digital & Activity Data",
+  "I": "Competitor Offline marketing Activity Data",
+  "J": "Strategic Marketing Analysis Dashboard link by Brand Custodian",
+  "K": "Strategic Marketing Analysis Dashboard link by Strategic Planning & Analysis Team"
+ },
+ "links": {
+  "Akij Cement Company LTD|C": {
+   "sbu": "Akij Cement Company LTD",
+   "column": "Sales Forecast & Collection Monthly (SKU wise if possible)",
+   "label": "Customer Wise Target Set [FY 2026-27] 01.07.26 V2",
+   "url": "https://docs.google.com/spreadsheets/d/1o8W29q0m_XR6JX6QBJbsBaykCB0ss7QSUYc24k_SFW0/edit?usp=sharing"
+  },
+  "Akij Cement Company LTD|D": {
+   "sbu": "Akij Cement Company LTD",
+   "column": "Budget vs Actual (Target vs Revenue)",
+   "label": "ACCL_Budget vs Actual (Target vs Revenue)2",
+   "url": "https://docs.google.com/spreadsheets/d/1-34gQPgCxKhxvdw-cXBmyRWnTpdV8V_D7yUMEVfbA_Y/edit?usp=sharing"
+  },
+  "Akij Cement Company LTD|E": {
+   "sbu": "Akij Cement Company LTD",
+   "column": "Annual Marketing Budget Planner FY26-27",
+   "label": "Copy of ACCL Marketing Budget_2026-27  V-1",
+   "url": "https://docs.google.com/spreadsheets/d/1jBJEhyn75vsiKc1TKnpyOxVR3YM87gmUKK8P3I6906g/edit?usp=sharing"
+  },
+  "Akij Cement Company LTD|G": {
+   "sbu": "Akij Cement Company LTD",
+   "column": "Market / Industry Sales & Share (competitor-wise monthly)",
+   "label": "ACCL_Market Share2",
+   "url": "https://docs.google.com/spreadsheets/d/12MDXGyK5UquAnrEVW4nnO2ROeSBg7qK6kqPF2ax4dW0/edit?usp=sharing"
+  },
+  "Akij Cement Company LTD|H": {
+   "sbu": "Akij Cement Company LTD",
+   "column": "Competitor Digital & Activity Data",
+   "label": "1. Cement Competitors Digital Media Frequency\n2. Copy of Cement Competitors Digital Media Frequency",
+   "url": "https://docs.google.com/spreadsheets/d/1gOu261NC2vAyLrHuA-NCDZZ9EkngY6RkOomzJE7rnb8/edit?usp=sharing"
+  },
+  "Akij Cement Company LTD|J": {
+   "sbu": "Akij Cement Company LTD",
+   "column": "Strategic Marketing Analysis Dashboard link by Brand Custodian",
+   "label": "https://accl-marketing-analysis.vercel.app/",
+   "url": "https://accl-marketing-analysis.vercel.app/"
+  },
+  "Akij Essentials LTD|C": {
+   "sbu": "Akij Essentials LTD",
+   "column": "Sales Forecast & Collection Monthly (SKU wise if possible)",
+   "label": "AEL Sales Forecast & Collection Monthly 2",
+   "url": "https://docs.google.com/spreadsheets/d/18x3atbnVWvh9JPwm8ldtgUvMbXdZ6FM_PUc68JuTPSk/edit?usp=sharing"
+  },
+  "Akij Essentials LTD|D": {
+   "sbu": "Akij Essentials LTD",
+   "column": "Budget vs Actual (Target vs Revenue)",
+   "label": "AEL Brand TGT vs ACH 2",
+   "url": "https://docs.google.com/spreadsheets/d/154F49B0UutFL5EsfoQ8xu6OzJiupjabz_de_2A50PmI/edit?usp=sharing"
+  },
+  "Akij Essentials LTD|F": {
+   "sbu": "Akij Essentials LTD",
+   "column": "Marketing Activity Status (Campaign wise & Month wise)",
+   "label": "AEL Marketing Gantt Chart FY 2026-27 2",
+   "url": "https://docs.google.com/spreadsheets/d/1oaqCeEGqehAFvPtHOR6sfJV5X_gfKNQLpfjfiF__qaQ/edit?usp=sharing"
+  },
+  "Akij Essentials LTD|G": {
+   "sbu": "Akij Essentials LTD",
+   "column": "Market / Industry Sales & Share (competitor-wise monthly)",
+   "label": "Martket Share Dat H1 2025-26 2",
+   "url": "https://docs.google.com/spreadsheets/d/1b3-azLLw5Ta9mUW_0L9mxUoX4ejCaT3W39iT2PVOZGc/edit?usp=sharing"
+  },
+  "Akij Essentials LTD|H": {
+   "sbu": "Akij Essentials LTD",
+   "column": "Competitor Digital & Activity Data",
+   "label": "Akij Essential Data",
+   "url": "https://docs.google.com/spreadsheets/d/1w5_ZKmTAUAveWfpJMuoavRj1c7Ro495PgPfdhTkOztQ/edit?usp=sharing"
+  },
+  "Akij Essentials LTD|J": {
+   "sbu": "Akij Essentials LTD",
+   "column": "Strategic Marketing Analysis Dashboard link by Brand Custodian",
+   "label": "https://ael-strategic-marketing-analysis.vercel.app/",
+   "url": "https://ael-strategic-marketing-analysis.vercel.app/"
+  },
+  "Akij Agro Feed LTD|K": {
+   "sbu": "Akij Agro Feed LTD",
+   "column": "Strategic Marketing Analysis Dashboard link by Strategic Planning & Analysis Team",
+   "label": "https://aafl-marketing-analysis-ql1m.vercel.app/",
+   "url": "https://aafl-marketing-analysis-ql1m.vercel.app/"
+  },
+  "Akij Ispat|C": {
+   "sbu": "Akij Ispat",
+   "column": "Sales Forecast & Collection Monthly (SKU wise if possible)",
+   "label": "Copy of AIL_Dealer Wise Target vs Achv._FY 26-27",
+   "url": "https://docs.google.com/spreadsheets/d/13_zbvVnp7JVx1NPsHdAXREiPJNsqvcHE8gyj8bktRRg/edit?usp=sharing"
+  },
+  "Akij Ispat|D": {
+   "sbu": "Akij Ispat",
+   "column": "Budget vs Actual (Target vs Revenue)",
+   "label": "AIL_2nd Quarter Planning of FY 2026-272",
+   "url": "https://docs.google.com/spreadsheets/d/13vcA5hphrTww20FRDue5f9xJjk9aMkly1yCFLzaRIQA/edit?usp=sharing"
+  },
+  "Akij Ispat|F": {
+   "sbu": "Akij Ispat",
+   "column": "Marketing Activity Status (Campaign wise & Month wise)",
+   "label": "Marketing Budget.AIL.26-27 (First Version)2",
+   "url": "https://docs.google.com/spreadsheets/d/1u_lKuhqQaXv7Gw3nMTql6H2gD_N3S6G7ef_F4jtg4R0/edit?usp=sharing"
+  },
+  "Akij Ispat|H": {
+   "sbu": "Akij Ispat",
+   "column": "Competitor Digital & Activity Data",
+   "label": "Steel (TMT) Competitors Digital Media Frequency2g",
+   "url": "https://docs.google.com/spreadsheets/d/15dolkJdFN3tLOUVUyUnjDxvh_Nr-jVpVeOzWOQQJQdM/edit?usp=sharing"
+  },
+  "Akij Ispat|I": {
+   "sbu": "Akij Ispat",
+   "column": "Competitor Offline marketing Activity Data",
+   "label": "Akij Ispat Competitor Analysis.2",
+   "url": "https://docs.google.com/spreadsheets/d/10MuEvDYq8kS9HL_oNdi9ZiTmlRfyjc4LWnSTMiUFEgw/edit?usp=sharing"
+  },
+  "Akij Ispat|J": {
+   "sbu": "Akij Ispat",
+   "column": "Strategic Marketing Analysis Dashboard link by Brand Custodian",
+   "label": "https://ail-marketing-analysis.vercel.app/",
+   "url": "https://ail-marketing-analysis.vercel.app/"
+  },
+  "AKIJ Ready Mix Concrete|D": {
+   "sbu": "AKIJ Ready Mix Concrete",
+   "column": "Budget vs Actual (Target vs Revenue)",
+   "label": "ARMCL & ABSL Sales Target Achievement Status at October' 262",
+   "url": "https://docs.google.com/spreadsheets/d/1w1-J_1MfRk8JR3W4_fFagoUS-Nw_4sderPWniFzgTVw/edit?usp=sharing"
+  },
+  "AKIJ Ready Mix Concrete|E": {
+   "sbu": "AKIJ Ready Mix Concrete",
+   "column": "Annual Marketing Budget Planner FY26-27",
+   "label": "ARMCL Brand Budget_2026-27 2",
+   "url": "https://docs.google.com/spreadsheets/d/1EsGJHL1sR9t7h89KpyI9b8nY3rI9TENCacEWUWponWQ/edit?usp=sharing"
+  },
+  "AKIJ Ready Mix Concrete|F": {
+   "sbu": "AKIJ Ready Mix Concrete",
+   "column": "Marketing Activity Status (Campaign wise & Month wise)",
+   "label": "ARMCL Brand Budget_2026-27 2",
+   "url": "https://docs.google.com/spreadsheets/d/1EsGJHL1sR9t7h89KpyI9b8nY3rI9TENCacEWUWponWQ/edit?usp=sharing"
+  },
+  "AKIJ Ready Mix Concrete|G": {
+   "sbu": "AKIJ Ready Mix Concrete",
+   "column": "Market / Industry Sales & Share (competitor-wise monthly)",
+   "label": "Month wise sales comparison2",
+   "url": "https://docs.google.com/spreadsheets/d/1z5HYpCUKvU2M0StckBUZHExepOkqhEKEg76ePcrypYc/edit?usp=sharing"
+  },
+  "AKIJ Ready Mix Concrete|H": {
+   "sbu": "AKIJ Ready Mix Concrete",
+   "column": "Competitor Digital & Activity Data",
+   "label": "Competitor_Digital_Media_Activity_Sheet_Oct202632.xlsx",
+   "url": "https://docs.google.com/spreadsheets/d/1SO4RRj2ZgbPFXlih9OIpM13_X_KDB2dl/edit?usp=sharing&ouid=102379184973159093862&rtpof=true&sd=true"
+  },
+  "AKIJ Ready Mix Concrete|J": {
+   "sbu": "AKIJ Ready Mix Concrete",
+   "column": "Strategic Marketing Analysis Dashboard link by Brand Custodian",
+   "label": "https://armcl-marketing-analysis.vercel.app/",
+   "url": "https://armcl-marketing-analysis.vercel.app/"
+  },
+  "Akij Consumer Electronics Limited|C": {
+   "sbu": "Akij Consumer Electronics Limited",
+   "column": "Sales Forecast & Collection Monthly (SKU wise if possible)",
+   "label": "ACEL Forecast 2027 Showroom2.xlsx",
+   "url": "https://docs.google.com/spreadsheets/d/1EMPGl8mZHT6U3MR0j4JQy1Qpst4Z1Y8n/edit?usp=sharing&ouid=102379184973159093862&rtpof=true&sd=true"
+  },
+  "Akij Consumer Electronics Limited|D": {
+   "sbu": "Akij Consumer Electronics Limited",
+   "column": "Budget vs Actual (Target vs Revenue)",
+   "label": "ORCA Sales Status_19 Oct 20262.xlsx",
+   "url": "https://docs.google.com/spreadsheets/d/1hjsKjMhbmklnPzsSP7RqihgMtGv-BqGw/edit?usp=sharing&ouid=102379184973159093862&rtpof=true&sd=true"
+  },
+  "Akij Consumer Electronics Limited|E": {
+   "sbu": "Akij Consumer Electronics Limited",
+   "column": "Annual Marketing Budget Planner FY26-27",
+   "label": "Approved_ORCA_Monthly_LineItem_Budget_FY2026-27 (2).xlsx",
+   "url": "https://docs.google.com/spreadsheets/d/1VPkXIH2MeRlsyg4uIl_uoD1KMWNl3LcJ/edit?usp=sharing&ouid=102379184973159093862&rtpof=true&sd=true"
+  },
+  "Akij Consumer Electronics Limited|F": {
+   "sbu": "Akij Consumer Electronics Limited",
+   "column": "Marketing Activity Status (Campaign wise & Month wise)",
+   "label": "Copy of ORCA budget tracker",
+   "url": "https://docs.google.com/spreadsheets/d/1OrX8AAJRwaXU5Lvb8AlRWW565-vgxi22ctqO_YGmbPE/edit?usp=sharing"
+  },
+  "Akij Consumer Electronics Limited|G": {
+   "sbu": "Akij Consumer Electronics Limited",
+   "column": "Market / Industry Sales & Share (competitor-wise monthly)",
+   "label": "Copy of Competitor_Market_Share__2026.xlsx",
+   "url": "https://docs.google.com/spreadsheets/d/1EnHPU5buG04E_ucOxUC23YpeH-aTK-CP/edit?usp=sharing&ouid=102379184973159093862&rtpof=true&sd=true"
+  },
+  "Akij Consumer Electronics Limited|H": {
+   "sbu": "Akij Consumer Electronics Limited",
+   "column": "Competitor Digital & Activity Data",
+   "label": "Akij Consumer Electronics Limited2",
+   "url": "https://docs.google.com/spreadsheets/d/1YcP8c93KWt6U799MAGfvMXW2WuruhZqntfMbpz-oOc4/edit?usp=sharing"
+  },
+  "Akij Consumer Electronics Limited|J": {
+   "sbu": "Akij Consumer Electronics Limited",
+   "column": "Strategic Marketing Analysis Dashboard link by Brand Custodian",
+   "label": "https://acel-strategic-marketing-analysis.first-tyrannosaurus-f5e.workers.dev/",
+   "url": "https://acel-strategic-marketing-analysis.first-tyrannosaurus-f5e.workers.dev/"
+  },
+  "Akij Mediplex|C": {
+   "sbu": "Akij Mediplex",
+   "column": "Sales Forecast & Collection Monthly (SKU wise if possible)",
+   "label": "AKIJ_Mediplex Sales Data2",
+   "url": "https://docs.google.com/spreadsheets/d/1on6NHNy3sfoEI3_pD0WS-HnJe8BlMD1Xkj3nZqxXNyQ/edit?usp=sharing"
+  },
+  "Akij Mediplex|D": {
+   "sbu": "Akij Mediplex",
+   "column": "Budget vs Actual (Target vs Revenue)",
+   "label": "AKIJ_Mediplex_Budget_vs_Actual_Jul-Sep_20262",
+   "url": "https://docs.google.com/spreadsheets/d/1NgPBBUkOdrnTw0h1Ne30CzmrAhANNVVbJSzXKcgzptQ/edit?usp=sharing"
+  },
+  "Akij Mediplex|E": {
+   "sbu": "Akij Mediplex",
+   "column": "Annual Marketing Budget Planner FY26-27",
+   "label": "Mediplex_Mirpur_Proposed_New_Budget_Planner 26-272.xlsx",
+   "url": "https://docs.google.com/spreadsheets/d/1a8VWfd4IcZrY6ZIn4s10lpMb8JVF7MyN/edit?usp=sharing&ouid=102379184973159093862&rtpof=true&sd=true"
+  },
+  "Akij Mediplex|F": {
+   "sbu": "Akij Mediplex",
+   "column": "Marketing Activity Status (Campaign wise & Month wise)",
+   "label": "AKIJ_Mediplex_Marketing_Budget_Tracker_FY2026-272",
+   "url": "https://docs.google.com/spreadsheets/d/1Y3z69DtmROD5k8FppPps68oY5AloVhm9VHXOOhZ9oQE/edit?usp=sharing"
+  },
+  "Akij Mediplex|G": {
+   "sbu": "Akij Mediplex",
+   "column": "Market / Industry Sales & Share (competitor-wise monthly)",
+   "label": "Competitor Information2.xlsx",
+   "url": "https://docs.google.com/spreadsheets/d/1Qgx4ihzvPyK_ZRdpsLuTJrq2le_YMCk4/edit?usp=sharing&ouid=102379184973159093862&rtpof=true&sd=true"
+  },
+  "Akij Mediplex|H": {
+   "sbu": "Akij Mediplex",
+   "column": "Competitor Digital & Activity Data",
+   "label": "Akij Mediplex2",
+   "url": "https://docs.google.com/spreadsheets/d/1kgyuRK4MmCm6LqQz0vQJ7da_hkpq7uqCbq_9SK9FwQM/edit?usp=sharing"
+  },
+  "Akij Mediplex|I": {
+   "sbu": "Akij Mediplex",
+   "column": "Competitor Offline marketing Activity Data",
+   "label": "Competitor Information21.xlsx",
+   "url": "https://docs.google.com/spreadsheets/d/1iPEVK27YOnYciHpC4orjbjZQrTEJY155/edit?usp=sharing&ouid=102379184973159093862&rtpof=true&sd=true"
+  },
+  "Akij Mediplex|J": {
+   "sbu": "Akij Mediplex",
+   "column": "Strategic Marketing Analysis Dashboard link by Brand Custodian",
+   "label": "https://mediplex-strategic-marketing-analys.vercel.app/",
+   "url": "https://mediplex-strategic-marketing-analys.vercel.app/"
+  },
+  "AKIJ Pharmacy|C": {
+   "sbu": "AKIJ Pharmacy",
+   "column": "Sales Forecast & Collection Monthly (SKU wise if possible)",
+   "label": "Sales Growth Analysis on Outlet Wise2.xlsx",
+   "url": "https://docs.google.com/spreadsheets/d/1bARXrII1JAs9VeKWVb6iFm5graARk5_F/edit?usp=sharing&ouid=102379184973159093862&rtpof=true&sd=true"
+  },
+  "AKIJ Pharmacy|D": {
+   "sbu": "AKIJ Pharmacy",
+   "column": "Budget vs Actual (Target vs Revenue)",
+   "label": "Budget_vs_Actual_Target_vs_Revenue2.xlsx",
+   "url": "https://docs.google.com/spreadsheets/d/1C5cKh_zWCfmry0FnYbdJvk4S_2OzkIoo/edit?usp=sharing&ouid=102379184973159093862&rtpof=true&sd=true"
+  },
+  "AKIJ Pharmacy|E": {
+   "sbu": "AKIJ Pharmacy",
+   "column": "Annual Marketing Budget Planner FY26-27",
+   "label": "AKIJ Pharmacy Mkt Budget (26-27)1.xlsx",
+   "url": "https://docs.google.com/spreadsheets/d/1bAqIpuhSkxZ3KW34Ol09hnIHn9ClKrBY/edit?usp=sharing&ouid=102379184973159093862&rtpof=true&sd=true"
+  },
+  "AKIJ Pharmacy|F": {
+   "sbu": "AKIJ Pharmacy",
+   "column": "Marketing Activity Status (Campaign wise & Month wise)",
+   "label": "AKIJ Pharmacy Mkt Budget (26-27)2.xlsx",
+   "url": "https://docs.google.com/spreadsheets/d/1hwf8gR-5gx3vEOVvNJpjhlSzqY7RpFtq/edit?usp=sharing&ouid=102379184973159093862&rtpof=true&sd=true"
+  },
+  "AKIJ Pharmacy|G": {
+   "sbu": "AKIJ Pharmacy",
+   "column": "Market / Industry Sales & Share (competitor-wise monthly)",
+   "label": "Market / Industry Sales & Share (competitor-wise monthly)2",
+   "url": "https://docs.google.com/spreadsheets/d/16YZgsvuzSp41EMgej219KrwEW4Y93fJ8cEXlN4NXGFc/edit?usp=sharing"
+  },
+  "AKIJ Pharmacy|H": {
+   "sbu": "AKIJ Pharmacy",
+   "column": "Competitor Digital & Activity Data",
+   "label": "AKIJ_Pharmacy_Competitor_Data2.xlsx",
+   "url": "https://docs.google.com/spreadsheets/d/1l9Do8pPc2-EfRvArYBQdP2XYnezVz7p1/edit?usp=sharing&ouid=102379184973159093862&rtpof=true&sd=true"
+  },
+  "AKIJ Pharmacy|J": {
+   "sbu": "AKIJ Pharmacy",
+   "column": "Strategic Marketing Analysis Dashboard link by Brand Custodian",
+   "label": "https://akij-pharmacy-marketing-analysis.vercel.app/",
+   "url": "https://akij-pharmacy-marketing-analysis.vercel.app/"
+  },
+  "Nextjobz|C": {
+   "sbu": "Nextjobz",
+   "column": "Sales Forecast & Collection Monthly (SKU wise if possible)",
+   "label": "Nextjobz Strategic Marketing Analysis — Source Files FY26-272",
+   "url": "https://docs.google.com/spreadsheets/d/1OR1tGvIqQlo_Rs6vOczqL9gEAGMUdw7QfC7mBTT23h8/edit?usp=sharing"
+  },
+  "Nextjobz|D": {
+   "sbu": "Nextjobz",
+   "column": "Budget vs Actual (Target vs Revenue)",
+   "label": "Nextjobz Strategic Marketing Analysis — Source Files FY26-272",
+   "url": "https://docs.google.com/spreadsheets/d/1OR1tGvIqQlo_Rs6vOczqL9gEAGMUdw7QfC7mBTT23h8/edit?usp=sharing"
+  },
+  "Nextjobz|E": {
+   "sbu": "Nextjobz",
+   "column": "Annual Marketing Budget Planner FY26-27",
+   "label": "Nextjobz Strategic Marketing Analysis — Source Files FY26-272",
+   "url": "https://docs.google.com/spreadsheets/d/1OR1tGvIqQlo_Rs6vOczqL9gEAGMUdw7QfC7mBTT23h8/edit?usp=sharing"
+  },
+  "Nextjobz|F": {
+   "sbu": "Nextjobz",
+   "column": "Marketing Activity Status (Campaign wise & Month wise)",
+   "label": "Nextjobz Strategic Marketing Analysis — Source Files FY26-272",
+   "url": "https://docs.google.com/spreadsheets/d/1OR1tGvIqQlo_Rs6vOczqL9gEAGMUdw7QfC7mBTT23h8/edit?usp=sharing"
+  },
+  "Nextjobz|G": {
+   "sbu": "Nextjobz",
+   "column": "Market / Industry Sales & Share (competitor-wise monthly)",
+   "label": "Nextjobz Strategic Marketing Analysis — Source Files FY26-272",
+   "url": "https://docs.google.com/spreadsheets/d/1OR1tGvIqQlo_Rs6vOczqL9gEAGMUdw7QfC7mBTT23h8/edit?usp=sharing"
+  },
+  "Nextjobz|H": {
+   "sbu": "Nextjobz",
+   "column": "Competitor Digital & Activity Data",
+   "label": "Nextjobz Strategic Marketing Analysis — Source Files FY26-272",
+   "url": "https://docs.google.com/spreadsheets/d/1OR1tGvIqQlo_Rs6vOczqL9gEAGMUdw7QfC7mBTT23h8/edit?usp=sharing"
+  },
+  "Nextjobz|I": {
+   "sbu": "Nextjobz",
+   "column": "Competitor Offline marketing Activity Data",
+   "label": "Nextjobz Strategic Marketing Analysis — Source Files FY26-272",
+   "url": "https://docs.google.com/spreadsheets/d/1OR1tGvIqQlo_Rs6vOczqL9gEAGMUdw7QfC7mBTT23h8/edit?usp=sharing"
+  },
+  "Nextjobz|J": {
+   "sbu": "Nextjobz",
+   "column": "Strategic Marketing Analysis Dashboard link by Brand Custodian",
+   "label": "https://nextjobz-marketing-analysis.vercel.app/",
+   "url": "https://nextjobz-marketing-analysis.vercel.app/"
+  },
+  "AKIJ AIR|C": {
+   "sbu": "AKIJ AIR",
+   "column": "Sales Forecast & Collection Monthly (SKU wise if possible)",
+   "label": "Q1 Sales Data 2",
+   "url": "https://docs.google.com/spreadsheets/d/1Rm6mlYpqwWprmy_wzg7UxfJ_BcvaIC8aGkq44lMlmdI/edit?usp=sharing"
+  },
+  "AKIJ AIR|D": {
+   "sbu": "AKIJ AIR",
+   "column": "Budget vs Actual (Target vs Revenue)",
+   "label": "1. Budget vs Actual2 \n2. 14. Akij Air Services Ltd_Budget 2026-20272.xlsx",
+   "url": "https://docs.google.com/spreadsheets/d/1u_cHUwKzD0Qo13pDYwu-9AIZ7muAzVXcFVdzEGzdh-0/edit?usp=sharing"
+  },
+  "AKIJ AIR|E": {
+   "sbu": "AKIJ AIR",
+   "column": "Annual Marketing Budget Planner FY26-27",
+   "label": "AKIJ_Air_Budget_Planner2",
+   "url": "https://docs.google.com/spreadsheets/d/1fnO6oFz-hJZUQPB1tm_D8uccImaY4s7rxc7Z8B2rgqU/edit?usp=sharing"
+  },
+  "AKIJ AIR|F": {
+   "sbu": "AKIJ AIR",
+   "column": "Marketing Activity Status (Campaign wise & Month wise)",
+   "label": "AKIJ_Air_Budget_Planner22",
+   "url": "https://docs.google.com/spreadsheets/d/1mFe2PXuVkLSFjKXwKfOHh8BjkxlxjY24PXkHCXs2XgI/edit?usp=sharing"
+  },
+  "AKIJ AIR|G": {
+   "sbu": "AKIJ AIR",
+   "column": "Market / Industry Sales & Share (competitor-wise monthly)",
+   "label": "Market Share 2",
+   "url": "https://docs.google.com/spreadsheets/d/18e3iDlj3DhBwlI_dNNaxfxBxVwjc0JoiVQyfQb201l4/edit?usp=sharing"
+  },
+  "AKIJ AIR|H": {
+   "sbu": "AKIJ AIR",
+   "column": "Competitor Digital & Activity Data",
+   "label": "AKIJ AIR",
+   "url": "https://docs.google.com/spreadsheets/d/12_VqF-7VkWOc29PpbkLgBEqO758P-iu_Aptjb4fGihI/edit?usp=sharing"
+  },
+  "AKIJ AIR|I": {
+   "sbu": "AKIJ AIR",
+   "column": "Competitor Offline marketing Activity Data",
+   "label": "OTA Competitor  Analysis 2",
+   "url": "https://docs.google.com/spreadsheets/d/1KhlrthNMH_2FepakfZQDPTLZ2e0GeiFAgx60OnD1Z9g/edit?usp=sharing"
+  },
+  "AKIJ AIR|J": {
+   "sbu": "AKIJ AIR",
+   "column": "Strategic Marketing Analysis Dashboard link by Brand Custodian",
+   "label": "https://akij-air-strategic-marketing-analys.vercel.app/",
+   "url": "https://akij-air-strategic-marketing-analys.vercel.app/"
+  }
+ }
+}
