@@ -1,0 +1,38 @@
+[
+ {
+  "kpi": "Customer Satisfaction Score (CSAT)",
+  "code": "C1",
+  "target": 90.0,
+  "uom": "Index (0–100)",
+  "polarity": "Higher is better",
+  "months": {
+   "jun": 93.39,
+   "jul": 87.0,
+   "aug": 85.8,
+   "sep": 91.0
+  },
+  "q1_avg": 87.93,
+  "ytd_achievement": 0.98,
+  "status": "On Track",
+  "weight": 0.1,
+  "source": "CBDO KPI & Tracking FY2026-27 (C1), Google Sheet"
+ },
+ {
+  "kpi": "Brand Health Score",
+  "code": "C2",
+  "target": 80.0,
+  "uom": "Index (0–100)",
+  "polarity": "Higher is better",
+  "months": {
+   "jun": 78.93,
+   "jul": 78.93,
+   "aug": 78.93,
+   "sep": 78.93
+  },
+  "q1_avg": 78.93,
+  "ytd_achievement": 0.9733,
+  "status": "On Track",
+  "weight": 0.15,
+  "source": "CBDO KPI & Tracking FY2026-27 (C2), Google Sheet"
+ }
+]

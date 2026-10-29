@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+﻿#!/usr/bin/env python3
 """Embed the JSON snapshots into index.html between the MDDATA markers.
 
 The site is a single static HTML file; Vercel cannot call MCP at runtime, so the
@@ -18,12 +18,15 @@ FILES = {
     "decisions": "decisions.json",
     "hyp": "hypotheses.json",
     "market": "market_share.json",
+    "leadership": "market_leadership.json",
     "diagnosis": "market_diagnosis.json",
     "se": "se_commitment.json",
     "churn": "dealer_churn.json",
     "trend": "dealer_trend.json",
     "recovery": "recovery.json",
     "insights": "insights.json",
+    "health": "customer_health.json",
+    "crm": "crm.json",
     "lineage": "_lineage.json",
 }
 
@@ -71,3 +74,6 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
+

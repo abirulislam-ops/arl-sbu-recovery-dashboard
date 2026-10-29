@@ -1,0 +1,72 @@
+{
+ "coverage": [
+  {
+   "sbu": "Ready Mix",
+   "visits": 19,
+   "leads": 600,
+   "opps": 6,
+   "cases": 5,
+   "cases_overdue": 5,
+   "window_from": "2026-10",
+   "window_to": "2026-11",
+   "source": "ARL CRM (arlcrm.ibos.agency) · read via API · as of 29-Oct-2026"
+  },
+  {
+   "sbu": "Consumer Electronics",
+   "visits": 0,
+   "leads": 600,
+   "opps": 0,
+   "cases": 0,
+   "cases_overdue": 0,
+   "window_from": "2026-10",
+   "window_to": "2026-10",
+   "source": "ARL CRM (arlcrm.ibos.agency) · read via API · as of 29-Oct-2026"
+  },
+  {
+   "sbu": "Next JobZ",
+   "visits": 0,
+   "leads": 400,
+   "opps": 0,
+   "cases": 0,
+   "cases_overdue": 0,
+   "window_from": "2026-10",
+   "window_to": "2026-10",
+   "source": "ARL CRM (arlcrm.ibos.agency) · read via API · as of 29-Oct-2026"
+  }
+ ],
+ "detail": {
+  "Ready Mix": {
+   "visit_status": {
+    "Completed": 5,
+    "Planned": 13,
+    "Checked-in": 1
+   },
+   "visits_productive": 3,
+   "visit_types": {
+    "Meeting": 9,
+    "Field Visit": 10
+   },
+   "lead_status": {
+    "New": 600
+   },
+   "lead_sources": {
+    "Direct Sales Visit": 597,
+    "Customer Referral": 3
+   },
+   "lead_value_cr": 1.86,
+   "case_categories": {
+    "Product Quality": 4,
+    "Delivery Delay": 1
+   },
+   "case_status": {
+    "Investigating": 1,
+    "Open": 4
+   },
+   "cases_overdue": 5,
+   "pipeline_cr": 0.84,
+   "pipeline_outlier_cr": 3953.0,
+   "pipeline_note": "5 opportunities hold 0.84 Cr; a 6th is keyed at 3,953 Cr (105.5 M CFT) — a data-entry error that would inflate the funnel 4,700x",
+   "leads_worked": 0
+  }
+ }
+}
