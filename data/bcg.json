@@ -1,153 +1,169 @@
 {
  "sbus": [
   {
-   "sbu": "AELOTH",
-   "name": "Essentials",
-   "basis": "Marketing market-share file (H1 2025-26): market size BDT Cr, growth 2025, own share",
-   "median_growth": 0.4,
+   "sbu": "ACCL",
+   "name": "ACCL",
+   "basis": "Product market-share file — our volume 2024-25 vs 2025-26 against market size",
+   "median_growth": 25.6,
    "products": [
     {
-     "product": "Rice (Bulk+Consumer)",
-     "market_cr": 137781.0,
-     "growth_pct": 0.02,
-     "own_share_pct": 3.04,
-     "quadrant": "Dog"
+     "product": "Cement",
+     "market_cr": null,
+     "market_qty": 39170000.0,
+     "own_share_pct": 5.61,
+     "growth_pct": 25.6,
+     "quadrant": "Star"
+    }
+   ],
+   "note": "Growth = our own volume change; strong = own share 5% or more"
+  },
+  {
+   "sbu": "AIL",
+   "name": "AIL",
+   "basis": "Product market-share file — our volume 2024-25 vs 2025-26 against market size",
+   "median_growth": 30.3,
+   "products": [
+    {
+     "product": "Steel (MT)",
+     "market_cr": null,
+     "market_qty": 5600000.0,
+     "own_share_pct": 3.38,
+     "growth_pct": 30.3,
+     "quadrant": "Question mark"
+    }
+   ],
+   "note": "Growth = our own volume change; strong = own share 5% or more"
+  },
+  {
+   "sbu": "AELOTH",
+   "name": "AELOTH",
+   "basis": "Product market-share file — our volume 2024-25 vs 2025-26 against market size",
+   "median_growth": 98.6,
+   "products": [
+    {
+     "product": "Rice ( Table Consumer)",
+     "market_cr": null,
+     "market_qty": 24000.0,
+     "own_share_pct": 24.62,
+     "growth_pct": -12.7,
+     "quadrant": "Cash cow"
     },
     {
-     "product": "Rice Bulk",
-     "market_cr": 136375.0,
-     "growth_pct": 0.0,
-     "own_share_pct": 0.26,
-     "quadrant": "Dog"
-    },
-    {
-     "product": "Wheat (Import)",
-     "market_cr": 25460.0,
-     "growth_pct": 1.06,
-     "own_share_pct": 8.6,
+     "product": "Flour (Consumer)",
+     "market_cr": null,
+     "market_qty": 523300.0,
+     "own_share_pct": 7.09,
+     "growth_pct": 327.7,
      "quadrant": "Star"
     },
     {
-     "product": "Flour (Bulk+Consumer)",
-     "market_cr": 18142.0,
-     "growth_pct": -5.46,
-     "own_share_pct": 2.5,
+     "product": "M. Oil",
+     "market_cr": null,
+     "market_qty": 30000.0,
+     "own_share_pct": 6.67,
+     "growth_pct": 118.1,
+     "quadrant": "Star"
+    },
+    {
+     "product": "Rice (Aromatic Consumer)",
+     "market_cr": null,
+     "market_qty": 67320.0,
+     "own_share_pct": 4.18,
+     "growth_pct": -14.1,
      "quadrant": "Dog"
     },
     {
-     "product": "Flour Bulk",
-     "market_cr": 15668.0,
-     "growth_pct": -4.72,
-     "own_share_pct": 2.3,
+     "product": "Flour (Bulk)",
+     "market_cr": null,
+     "market_qty": 3558000.0,
+     "own_share_pct": 3.43,
+     "growth_pct": 98.6,
+     "quadrant": "Question mark"
+    },
+    {
+     "product": "Salt",
+     "market_cr": null,
+     "market_qty": 865000.0,
+     "own_share_pct": 0.88,
+     "growth_pct": 135.5,
+     "quadrant": "Question mark"
+    },
+    {
+     "product": "Puffed Rice",
+     "market_cr": null,
+     "market_qty": 45000.0,
+     "own_share_pct": 0.29,
+     "growth_pct": 377.2,
+     "quadrant": "Question mark"
+    },
+    {
+     "product": "Rice (Bulk)",
+     "market_cr": null,
+     "market_qty": 18000000.0,
+     "own_share_pct": 0.14,
+     "growth_pct": -47.2,
      "quadrant": "Dog"
     },
     {
-     "product": "Lentil (Consumer + Bulk)",
-     "market_cr": 6532.0,
-     "growth_pct": -0.87,
-     "own_share_pct": 1.08,
+     "product": "Semai",
+     "market_cr": null,
+     "market_qty": 32000.0,
+     "own_share_pct": 0.1,
+     "growth_pct": 97.5,
      "quadrant": "Dog"
-    },
-    {
-     "product": "Lentil Bulk",
-     "market_cr": 6417.0,
-     "growth_pct": -0.86,
-     "own_share_pct": 1.01,
-     "quadrant": "Dog"
-    },
-    {
-     "product": "Tea (Consumer)",
-     "market_cr": 4704.0,
-     "growth_pct": 2.08,
-     "own_share_pct": 0.02,
-     "quadrant": "Question mark"
-    },
-    {
-     "product": "Canola (Import)",
-     "market_cr": 4067.0,
-     "growth_pct": 58.73,
-     "own_share_pct": 1.78,
-     "quadrant": "Question mark"
-    },
-    {
-     "product": "Lentil Import",
-     "market_cr": 3855.0,
-     "growth_pct": -67.92,
-     "own_share_pct": 11.5,
-     "quadrant": "Cash cow"
-    },
-    {
-     "product": "Mustard Oil (Consumer + Bulk)",
-     "market_cr": 3403.0,
-     "growth_pct": 1.05,
-     "own_share_pct": 0.11,
-     "quadrant": "Question mark"
-    },
-    {
-     "product": "Salt (Consumers)",
-     "market_cr": 3264.0,
-     "growth_pct": -1.23,
-     "own_share_pct": 0.47,
-     "quadrant": "Dog"
-    },
-    {
-     "product": "Mustard Oil Bulk",
-     "market_cr": 2717.0,
-     "growth_pct": 0.78,
-     "own_share_pct": 0.84,
-     "quadrant": "Question mark"
-    },
-    {
-     "product": "Flour Consumer",
-     "market_cr": 2474.0,
-     "growth_pct": -10.81,
-     "own_share_pct": 4.3,
-     "quadrant": "Dog"
-    },
-    {
-     "product": "Check Peas Import",
-     "market_cr": 2173.0,
-     "growth_pct": 45.83,
-     "own_share_pct": 2.48,
-     "quadrant": "Question mark"
-    },
-    {
-     "product": "Spices (Consumer)",
-     "market_cr": 1500.0,
-     "growth_pct": 6.67,
-     "own_share_pct": 0.05,
-     "quadrant": "Question mark"
-    },
-    {
-     "product": "Rice Consumer (Chinigura)",
-     "market_cr": 907.0,
-     "growth_pct": 4.35,
-     "own_share_pct": 2.01,
-     "quadrant": "Question mark"
-    },
-    {
-     "product": "Mustard Oil (Consumer)",
-     "market_cr": 686.0,
-     "growth_pct": 2.56,
-     "own_share_pct": 0.02,
-     "quadrant": "Question mark"
-    },
-    {
-     "product": "Rice Consumer (Non Chinigura)",
-     "market_cr": 498.0,
-     "growth_pct": 4.35,
-     "own_share_pct": 3.62,
-     "quadrant": "Question mark"
-    },
-    {
-     "product": "Lentil Consumer",
-     "market_cr": 115.2,
-     "growth_pct": -1.23,
-     "own_share_pct": 6.29,
-     "quadrant": "Cash cow"
     }
    ],
-   "note": "High growth = at or above the median of these products; strong = own share 5% or more."
+   "note": "Growth = our own volume change; strong = own share 5% or more"
+  },
+  {
+   "sbu": "AAFL",
+   "name": "AAFL",
+   "basis": "Product market-share file — our volume 2024-25 vs 2025-26 against market size",
+   "median_growth": 480.5,
+   "products": [
+    {
+     "product": "Cattle",
+     "market_cr": null,
+     "market_qty": 770520.0,
+     "own_share_pct": 3.33,
+     "growth_pct": 397.2,
+     "quadrant": "Dog"
+    },
+    {
+     "product": "Poultry",
+     "market_cr": null,
+     "market_qty": 4919964.0,
+     "own_share_pct": 2.15,
+     "growth_pct": 480.5,
+     "quadrant": "Question mark"
+    },
+    {
+     "product": "Aquaculture",
+     "market_cr": null,
+     "market_qty": 1440888.0,
+     "own_share_pct": 1.66,
+     "growth_pct": 561.0,
+     "quadrant": "Question mark"
+    }
+   ],
+   "note": "Growth = our own volume change; strong = own share 5% or more"
+  },
+  {
+   "sbu": "ABSLASP",
+   "name": "ABSLASP",
+   "basis": "Product market-share file — our volume 2024-25 vs 2025-26 against market size",
+   "median_growth": -23.9,
+   "products": [
+    {
+     "product": "Lube Oil",
+     "market_cr": null,
+     "market_qty": 120000.0,
+     "own_share_pct": 0.21,
+     "growth_pct": -23.9,
+     "quadrant": "Question mark"
+    }
+   ],
+   "note": "Growth = our own volume change; strong = own share 5% or more"
   }
  ]
 }
