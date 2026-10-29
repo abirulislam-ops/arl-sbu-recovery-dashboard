@@ -2,55 +2,143 @@
  "coverage": [
   {
    "sbu": "Ready Mix",
-   "visits": 19,
-   "leads": 600,
+   "visits": 21,
+   "leads": 586,
    "opps": 6,
    "cases": 5,
-   "cases_overdue": 5,
-   "window_from": "2026-10",
-   "window_to": "2026-11",
-   "source": "ARL CRM (arlcrm.ibos.agency) · read via API · as of 29-Oct-2026"
+   "cases_overdue": null,
+   "window_from": null,
+   "window_to": null,
+   "source": "ARL CRM (arlcrm.ibos.agency) · totalCount · auto"
   },
   {
    "sbu": "Consumer Electronics",
    "visits": 0,
-   "leads": 600,
+   "leads": 506,
    "opps": 0,
    "cases": 0,
-   "cases_overdue": 0,
-   "window_from": "2026-10",
-   "window_to": "2026-10",
-   "source": "ARL CRM (arlcrm.ibos.agency) · read via API · as of 29-Oct-2026"
+   "cases_overdue": null,
+   "window_from": null,
+   "window_to": null,
+   "source": "ARL CRM (arlcrm.ibos.agency) · totalCount · auto"
   },
   {
    "sbu": "Next JobZ",
    "visits": 0,
-   "leads": 400,
+   "leads": 273,
    "opps": 0,
    "cases": 0,
-   "cases_overdue": 0,
-   "window_from": "2026-10",
-   "window_to": "2026-10",
-   "source": "ARL CRM (arlcrm.ibos.agency) · read via API · as of 29-Oct-2026"
+   "cases_overdue": null,
+   "window_from": null,
+   "window_to": null,
+   "source": "ARL CRM (arlcrm.ibos.agency) · totalCount · auto"
+  },
+  {
+   "sbu": "Essentials",
+   "visits": 0,
+   "leads": 0,
+   "opps": 0,
+   "cases": 0,
+   "cases_overdue": null,
+   "window_from": null,
+   "window_to": null,
+   "source": "ARL CRM (arlcrm.ibos.agency) · totalCount · auto"
+  },
+  {
+   "sbu": "Ispat",
+   "visits": 0,
+   "leads": 0,
+   "opps": 0,
+   "cases": 0,
+   "cases_overdue": null,
+   "window_from": null,
+   "window_to": null,
+   "source": "ARL CRM (arlcrm.ibos.agency) · totalCount · auto"
+  },
+  {
+   "sbu": "Mediplex",
+   "visits": 0,
+   "leads": 0,
+   "opps": 0,
+   "cases": 0,
+   "cases_overdue": null,
+   "window_from": null,
+   "window_to": null,
+   "source": "ARL CRM (arlcrm.ibos.agency) · totalCount · auto"
+  },
+  {
+   "sbu": "Commodities",
+   "visits": 0,
+   "leads": 0,
+   "opps": 0,
+   "cases": 0,
+   "cases_overdue": null,
+   "window_from": null,
+   "window_to": null,
+   "source": "ARL CRM (arlcrm.ibos.agency) · totalCount · auto"
+  },
+  {
+   "sbu": "LifeCare",
+   "visits": 0,
+   "leads": 0,
+   "opps": 0,
+   "cases": 0,
+   "cases_overdue": null,
+   "window_from": null,
+   "window_to": null,
+   "source": "ARL CRM (arlcrm.ibos.agency) · totalCount · auto"
+  },
+  {
+   "sbu": "Telecom",
+   "visits": 0,
+   "leads": 0,
+   "opps": 0,
+   "cases": 0,
+   "cases_overdue": null,
+   "window_from": null,
+   "window_to": null,
+   "source": "ARL CRM (arlcrm.ibos.agency) · totalCount · auto"
+  },
+  {
+   "sbu": "Infotech",
+   "visits": 0,
+   "leads": 0,
+   "opps": 0,
+   "cases": 0,
+   "cases_overdue": null,
+   "window_from": null,
+   "window_to": null,
+   "source": "ARL CRM (arlcrm.ibos.agency) · totalCount · auto"
+  },
+  {
+   "sbu": "Logistics",
+   "visits": 0,
+   "leads": 0,
+   "opps": 0,
+   "cases": 0,
+   "cases_overdue": null,
+   "window_from": null,
+   "window_to": null,
+   "source": "ARL CRM (arlcrm.ibos.agency) · totalCount · auto"
   }
  ],
  "detail": {
   "Ready Mix": {
    "visit_status": {
-    "Completed": 5,
     "Planned": 13,
-    "Checked-in": 1
+    "Completed": 6,
+    "Checked-in": 2
    },
-   "visits_productive": 3,
+   "visits_productive": 4,
    "visit_types": {
-    "Meeting": 9,
-    "Field Visit": 10
+    "Field Visit": 12,
+    "Meeting": 9
    },
    "lead_status": {
-    "New": 600
+    "New": 586
    },
    "lead_sources": {
-    "Direct Sales Visit": 597,
+    "Direct Sales Visit": 583,
     "Customer Referral": 3
    },
    "lead_value_cr": 1.86,
@@ -65,7 +153,7 @@
    "cases_overdue": 5,
    "pipeline_cr": 0.84,
    "pipeline_outlier_cr": 3953.0,
-   "pipeline_note": "5 opportunities hold 0.84 Cr; a 6th is keyed at 3,953 Cr (105.5 M CFT) — a data-entry error that would inflate the funnel 4,700x",
+   "pipeline_note": "5 opportunities hold 0.84 Cr; a 6th is keyed at 3,953 Cr (105.5 M CFT) - a data-entry error",
    "leads_worked": 0
   }
  }

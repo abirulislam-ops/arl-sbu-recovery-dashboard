@@ -12,10 +12,10 @@
    "sep": 91.0
   },
   "q1_avg": 87.93,
-  "ytd_achievement": 0.98,
+  "ytd_achievement": null,
   "status": "On Track",
   "weight": 0.1,
-  "source": "CBDO KPI & Tracking FY2026-27 (C1), Google Sheet"
+  "source": "CBDO KPI & Tracking FY2026-27"
  },
  {
   "kpi": "Brand Health Score",
@@ -30,9 +30,9 @@
    "sep": 78.93
   },
   "q1_avg": 78.93,
-  "ytd_achievement": 0.9733,
+  "ytd_achievement": null,
   "status": "On Track",
   "weight": 0.15,
-  "source": "CBDO KPI & Tracking FY2026-27 (C2), Google Sheet"
+  "source": "CBDO KPI & Tracking FY2026-27"
  }
 ]
