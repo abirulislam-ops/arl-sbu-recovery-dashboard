@@ -1,0 +1,153 @@
+{
+ "sbus": [
+  {
+   "sbu": "AELOTH",
+   "name": "Essentials",
+   "basis": "Marketing market-share file (H1 2025-26): market size BDT Cr, growth 2025, own share",
+   "median_growth": 0.4,
+   "products": [
+    {
+     "product": "Rice (Bulk+Consumer)",
+     "market_cr": 137781.0,
+     "growth_pct": 0.02,
+     "own_share_pct": 3.04,
+     "quadrant": "Dog"
+    },
+    {
+     "product": "Rice Bulk",
+     "market_cr": 136375.0,
+     "growth_pct": 0.0,
+     "own_share_pct": 0.26,
+     "quadrant": "Dog"
+    },
+    {
+     "product": "Wheat (Import)",
+     "market_cr": 25460.0,
+     "growth_pct": 1.06,
+     "own_share_pct": 8.6,
+     "quadrant": "Star"
+    },
+    {
+     "product": "Flour (Bulk+Consumer)",
+     "market_cr": 18142.0,
+     "growth_pct": -5.46,
+     "own_share_pct": 2.5,
+     "quadrant": "Dog"
+    },
+    {
+     "product": "Flour Bulk",
+     "market_cr": 15668.0,
+     "growth_pct": -4.72,
+     "own_share_pct": 2.3,
+     "quadrant": "Dog"
+    },
+    {
+     "product": "Lentil (Consumer + Bulk)",
+     "market_cr": 6532.0,
+     "growth_pct": -0.87,
+     "own_share_pct": 1.08,
+     "quadrant": "Dog"
+    },
+    {
+     "product": "Lentil Bulk",
+     "market_cr": 6417.0,
+     "growth_pct": -0.86,
+     "own_share_pct": 1.01,
+     "quadrant": "Dog"
+    },
+    {
+     "product": "Tea (Consumer)",
+     "market_cr": 4704.0,
+     "growth_pct": 2.08,
+     "own_share_pct": 0.02,
+     "quadrant": "Question mark"
+    },
+    {
+     "product": "Canola (Import)",
+     "market_cr": 4067.0,
+     "growth_pct": 58.73,
+     "own_share_pct": 1.78,
+     "quadrant": "Question mark"
+    },
+    {
+     "product": "Lentil Import",
+     "market_cr": 3855.0,
+     "growth_pct": -67.92,
+     "own_share_pct": 11.5,
+     "quadrant": "Cash cow"
+    },
+    {
+     "product": "Mustard Oil (Consumer + Bulk)",
+     "market_cr": 3403.0,
+     "growth_pct": 1.05,
+     "own_share_pct": 0.11,
+     "quadrant": "Question mark"
+    },
+    {
+     "product": "Salt (Consumers)",
+     "market_cr": 3264.0,
+     "growth_pct": -1.23,
+     "own_share_pct": 0.47,
+     "quadrant": "Dog"
+    },
+    {
+     "product": "Mustard Oil Bulk",
+     "market_cr": 2717.0,
+     "growth_pct": 0.78,
+     "own_share_pct": 0.84,
+     "quadrant": "Question mark"
+    },
+    {
+     "product": "Flour Consumer",
+     "market_cr": 2474.0,
+     "growth_pct": -10.81,
+     "own_share_pct": 4.3,
+     "quadrant": "Dog"
+    },
+    {
+     "product": "Check Peas Import",
+     "market_cr": 2173.0,
+     "growth_pct": 45.83,
+     "own_share_pct": 2.48,
+     "quadrant": "Question mark"
+    },
+    {
+     "product": "Spices (Consumer)",
+     "market_cr": 1500.0,
+     "growth_pct": 6.67,
+     "own_share_pct": 0.05,
+     "quadrant": "Question mark"
+    },
+    {
+     "product": "Rice Consumer (Chinigura)",
+     "market_cr": 907.0,
+     "growth_pct": 4.35,
+     "own_share_pct": 2.01,
+     "quadrant": "Question mark"
+    },
+    {
+     "product": "Mustard Oil (Consumer)",
+     "market_cr": 686.0,
+     "growth_pct": 2.56,
+     "own_share_pct": 0.02,
+     "quadrant": "Question mark"
+    },
+    {
+     "product": "Rice Consumer (Non Chinigura)",
+     "market_cr": 498.0,
+     "growth_pct": 4.35,
+     "own_share_pct": 3.62,
+     "quadrant": "Question mark"
+    },
+    {
+     "product": "Lentil Consumer",
+     "market_cr": 115.2,
+     "growth_pct": -1.23,
+     "own_share_pct": 6.29,
+     "quadrant": "Cash cow"
+    }
+   ],
+   "note": "High growth = at or above the median of these products; strong = own share 5% or more."
+  }
+ ]
+}

@@ -32,6 +32,8 @@ FILES = {
     "regional": "regional_logistics.json",
     "context": "market_context.json",
     "people": "people.json",
+    "seven_p": "seven_p.json",
+    "bcg": "bcg.json",
     "lineage": "_lineage.json",
 }
 
