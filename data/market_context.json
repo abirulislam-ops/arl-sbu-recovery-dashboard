@@ -1,12 +1,87 @@
 {
  "sbus": [
   {
-   "sbu": "ABSLASP",
-   "name": "ABSL – Asphalt",
-   "source": "Data Request sheet · asks 44–46",
+   "sbu": "AIL",
+   "name": "Ispat",
+   "source": "Brand pack + market-share file",
    "facts": [
     {
-     "label": "National annual demand",
+     "label": "National rebar market (implied)",
+     "value": "~5.4 Mn MT",
+     "status": "Derived",
+     "evidence": "160,613 MT sold at 2.95% share (FY25-26)"
+    },
+    {
+     "label": "Our volume FY25-26",
+     "value": "160,613 MT (+10.7%)",
+     "status": "Researched",
+     "evidence": "Brand pack"
+    },
+    {
+     "label": "Region-wise market size",
+     "value": "not public",
+     "status": "DATA REQUIRED",
+     "evidence": "industry data not published"
+    }
+   ]
+  },
+  {
+   "sbu": "ARMCL",
+   "name": "Ready Mix",
+   "source": "Market benchmark file (ask 43)",
+   "facts": [
+    {
+     "label": "National RMC market",
+     "value": "85.05 Mn BDT / month",
+     "status": "Researched",
+     "evidence": "8-player benchmark, Sep-26"
+    },
+    {
+     "label": "Our share",
+     "value": "9.99% (5th)",
+     "status": "Researched",
+     "evidence": "same file"
+    },
+    {
+     "label": "Leader",
+     "value": "Shah 22.93%",
+     "status": "Researched",
+     "evidence": "same file"
+    }
+   ]
+  },
+  {
+   "sbu": "ACEL",
+   "name": "Consumer Electronics",
+   "source": "Brand pack",
+   "facts": [
+    {
+     "label": "Market size",
+     "value": "~BDT 24,120 Cr",
+     "status": "Researched",
+     "evidence": "brand pack (estimate)"
+    },
+    {
+     "label": "ORCA share",
+     "value": "<0.1%",
+     "status": "Researched",
+     "evidence": "brand pack"
+    },
+    {
+     "label": "Region-wise split",
+     "value": "not public",
+     "status": "DATA REQUIRED",
+     "evidence": "—"
+    }
+   ]
+  },
+  {
+   "sbu": "ABSLASP",
+   "name": "ABSL – Asphalt",
+   "source": "ABSL 44–46 files",
+   "facts": [
+    {
+     "label": "National demand",
      "value": "~5.0–5.5 lakh tonnes",
      "status": "Researched",
      "evidence": "TBS News"
@@ -15,49 +90,159 @@
      "label": "Demand growth",
      "value": "10–12% a year",
      "status": "Researched",
-     "evidence": "Trade sources"
+     "evidence": "trade sources"
     },
     {
      "label": "Supply mix",
-     "value": "~90% imported (historically)",
+     "value": "~90% imported",
      "status": "Researched",
      "evidence": "TBS News"
     },
     {
-     "label": "Eastern Refinery (BPC)",
-     "value": "60,000–70,000 t capacity",
-     "status": "Researched",
-     "evidence": "TBS News"
-    },
-    {
-     "label": "Bashundhara Bitumen Plant",
-     "value": "first private bitumen plant",
-     "status": "Researched",
-     "evidence": "TBS News"
-    },
-    {
-     "label": "PHP Group",
-     "value": "private refined bitumen producer",
-     "status": "Researched",
-     "evidence": "TBS News"
-    },
-    {
-     "label": "Region-wise market size (Q4 FY26 / Q1 FY27)",
-     "value": "not published — field data required",
+     "label": "Region-wise size",
+     "value": "not published",
      "status": "DATA REQUIRED",
      "evidence": "internal request"
-    },
+    }
+   ]
+  },
+  {
+   "sbu": "ALL",
+   "name": "Logistics – Ex-CHA",
+   "source": "Market size by trade lane (ask 44)",
+   "facts": [
     {
-     "label": "Competitor volume by region",
-     "value": "not public — field intelligence required",
-     "status": "DATA REQUIRED",
-     "evidence": "internal request"
-    },
-    {
-     "label": "Q1 FY27 result",
-     "value": "loss BDT 2.15 Cr",
+     "label": "Market covered by lanes",
+     "value": "USD 21.4 bn (Q1 FY25)",
      "status": "Researched",
-     "evidence": "scorecard"
+     "evidence": "file totals, air+sea, export+import"
+    },
+    {
+     "label": "Our volume (FY26)",
+     "value": "2,397 CBM",
+     "status": "Researched",
+     "evidence": "shipment register"
+    },
+    {
+     "label": "Biggest gap",
+     "value": "East Asia 17.8% of market, we are 2.2%",
+     "status": "Derived",
+     "evidence": "lane mix"
+    }
+   ]
+  },
+  {
+   "sbu": "AELOTH",
+   "name": "Essentials",
+   "source": "Marketing market-share file",
+   "facts": [
+    {
+     "label": "Rice market (bulk+consumer)",
+     "value": "BDT 1,37,781 Cr",
+     "status": "Researched",
+     "evidence": "market-share file"
+    },
+    {
+     "label": "Flour market",
+     "value": "BDT 18,142 Cr",
+     "status": "Researched",
+     "evidence": "same"
+    },
+    {
+     "label": "Our rice share",
+     "value": "3.04%",
+     "status": "Researched",
+     "evidence": "same"
+    }
+   ]
+  },
+  {
+   "sbu": "ACL",
+   "name": "Commodities – F&B",
+   "source": "No public source",
+   "facts": [
+    {
+     "label": "Market size",
+     "value": "not public",
+     "status": "DATA REQUIRED",
+     "evidence": "imported F&B, no published split"
+    }
+   ]
+  },
+  {
+   "sbu": "ALCL",
+   "name": "LifeCare – Pharmacy",
+   "source": "Brand pack",
+   "facts": [
+    {
+     "label": "Pharmacy retail",
+     "value": "no published size",
+     "status": "DATA REQUIRED",
+     "evidence": "trust-led niche"
+    },
+    {
+     "label": "Outlets",
+     "value": "~34",
+     "status": "Researched",
+     "evidence": "SBU plan"
+    }
+   ]
+  },
+  {
+   "sbu": "AMPL",
+   "name": "Mediplex",
+   "source": "No public source",
+   "facts": [
+    {
+     "label": "Diagnostics market",
+     "value": "not public",
+     "status": "DATA REQUIRED",
+     "evidence": "—"
+    }
+   ]
+  },
+  {
+   "sbu": "ATL",
+   "name": "Telecom",
+   "source": "No public source",
+   "facts": [
+    {
+     "label": "Handset market",
+     "value": "not public at this cut",
+     "status": "DATA REQUIRED",
+     "evidence": "—"
+    }
+   ]
+  },
+  {
+   "sbu": "NJL",
+   "name": "Next JobZ",
+   "source": "Brand pack",
+   "facts": [
+    {
+     "label": "Applications Jul–Sep 26",
+     "value": "86k → 301k",
+     "status": "Researched",
+     "evidence": "brand pack"
+    },
+    {
+     "label": "Market size",
+     "value": "not published",
+     "status": "DATA REQUIRED",
+     "evidence": "—"
+    }
+   ]
+  },
+  {
+   "sbu": "AITL",
+   "name": "Infotech",
+   "source": "No public source",
+   "facts": [
+    {
+     "label": "Market size",
+     "value": "not public",
+     "status": "DATA REQUIRED",
+     "evidence": "—"
     }
    ]
   }
