@@ -1,6 +1,6 @@
 {
  "generated_at": "2026-10-29T14:21:36",
- "as_of": "2026-10-28",
+ "as_of": "2026-10-29",
  "period": "Q1 FY2026-27 (Jul–Sep 2026)",
  "files": {
   "sbu_pnl.json": [
@@ -73,15 +73,11 @@
   ]
  },
  "pending": {
-  "C1": "Total market size by region — owner Marketing/Strategy, IT promise 2026-11-02",
-  "C2": "Competitor volume by region — owner Marketing/Strategy, 2026-11-02",
-  "C3": "Own volume aligned to market definition — Sales Ops, 2026-11-02",
-  "D2": "KPI target vs achievement — Sales Ops, 2026-11-02",
-  "D3": "CRM call & visit log — Sales Ops/IT, 2026-11-02",
-  "D4": "Last contact with lost dealers — Sales Ops/IT, 2026-11-02",
-  "A3": "SKU-wise profitability — Finance, 2026-11-02",
-  "A4": "Profit per dealer/region — Finance, 2026-11-07",
-  "B2": "Dealer-wise monthly lifting — Sales Ops, 2026-11-02",
-  "B7": "Credit & receivables — Credit Control, 2026-11-02"
+  "C1": "Market size by region - Marketing/Strategy (external, not in ERP)",
+  "C2": "Competitor volume by region - Marketing/Strategy (external)",
+  "C3": "Own volume aligned to market definition - Sales Ops (external)",
+  "A4": "Profit per dealer/region - Finance (dealer/region revenue pulled; profit needs cost allocation)",
+  "D3": "CRM call & visit log - Sales Ops/IT (confirmed not in ERP for the 14 SBUs)",
+  "D4": "Last contact with lost dealers - Sales Ops/IT (manual / exit interview)"
  }
 }
