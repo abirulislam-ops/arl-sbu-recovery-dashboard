@@ -31,6 +31,7 @@ FILES = {
     "links": "source_links.json",
     "regional": "regional_logistics.json",
     "context": "market_context.json",
+    "people": "people.json",
     "lineage": "_lineage.json",
 }
 

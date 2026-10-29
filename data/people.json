@@ -1,0 +1,98 @@
+[
+ {
+  "sbu": "AELOTH",
+  "headcount": 1075,
+  "monthly_ctc_cr": 3.33,
+  "ctc_pct_revenue": 2.08,
+  "period_np_cr": -10.75,
+  "source": "PeopleDesk payroll via ctc-mcp · SBU summary"
+ },
+ {
+  "sbu": "AIL",
+  "headcount": 706,
+  "monthly_ctc_cr": 2.79,
+  "ctc_pct_revenue": 3.59,
+  "period_np_cr": 5.27,
+  "source": "PeopleDesk payroll via ctc-mcp · SBU summary"
+ },
+ {
+  "sbu": "ARMCL",
+  "headcount": 799,
+  "monthly_ctc_cr": 1.85,
+  "ctc_pct_revenue": 6.22,
+  "period_np_cr": -2.97,
+  "source": "PeopleDesk payroll via ctc-mcp · SBU summary"
+ },
+ {
+  "sbu": "AMPL",
+  "headcount": 64,
+  "monthly_ctc_cr": 0.19,
+  "ctc_pct_revenue": 212.92,
+  "period_np_cr": -0.75,
+  "source": "PeopleDesk payroll via ctc-mcp · SBU summary"
+ },
+ {
+  "sbu": "ACL",
+  "headcount": 24,
+  "monthly_ctc_cr": 0.25,
+  "ctc_pct_revenue": 1.12,
+  "period_np_cr": -0.2,
+  "source": "PeopleDesk payroll via ctc-mcp · SBU summary"
+ },
+ {
+  "sbu": "ALCL",
+  "headcount": 262,
+  "monthly_ctc_cr": 0.65,
+  "ctc_pct_revenue": 10.57,
+  "period_np_cr": -0.85,
+  "source": "PeopleDesk payroll via ctc-mcp · SBU summary"
+ },
+ {
+  "sbu": "ABSLASP",
+  "headcount": 151,
+  "monthly_ctc_cr": 0.71,
+  "ctc_pct_revenue": 10.73,
+  "period_np_cr": -0.42,
+  "source": "PeopleDesk payroll via ctc-mcp · SBU summary"
+ },
+ {
+  "sbu": "ATL",
+  "headcount": 26,
+  "monthly_ctc_cr": 0.16,
+  "ctc_pct_revenue": 21.46,
+  "period_np_cr": -0.61,
+  "source": "PeopleDesk payroll via ctc-mcp · SBU summary"
+ },
+ {
+  "sbu": "NJL",
+  "headcount": 27,
+  "monthly_ctc_cr": 0.17,
+  "ctc_pct_revenue": 109.65,
+  "period_np_cr": -0.47,
+  "source": "PeopleDesk payroll via ctc-mcp · SBU summary"
+ },
+ {
+  "sbu": "AITL",
+  "headcount": 12,
+  "monthly_ctc_cr": 0.12,
+  "ctc_pct_revenue": 6.83,
+  "period_np_cr": -0.46,
+  "source": "PeopleDesk payroll via ctc-mcp · SBU summary"
+ },
+ {
+  "sbu": "ACEL",
+  "headcount": 31,
+  "monthly_ctc_cr": 0.2,
+  "ctc_pct_revenue": 23.62,
+  "period_np_cr": -0.31,
+  "source": "PeopleDesk payroll via ctc-mcp · SBU summary"
+ },
+ {
+  "sbu": "ALL",
+  "headcount": 58,
+  "monthly_ctc_cr": 0.59,
+  "ctc_pct_revenue": 5.21,
+  "period_np_cr": -0.09,
+  "source": "PeopleDesk payroll via ctc-mcp · SBU summary"
+ }
+]
