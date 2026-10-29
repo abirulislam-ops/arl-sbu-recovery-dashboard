@@ -1,0 +1,206 @@
+[
+ {
+  "sbu": "AELOTH",
+  "q4_np": null,
+  "volume": null,
+  "price": null,
+  "mix": null,
+  "cost": null,
+  "fixed": null,
+  "unexplained": null,
+  "q1_np": -20.91,
+  "loss_type": null,
+  "pending": [
+   "A1",
+   "A2",
+   "A3"
+  ]
+ },
+ {
+  "sbu": "AIL",
+  "q4_np": null,
+  "volume": null,
+  "price": null,
+  "mix": null,
+  "cost": null,
+  "fixed": null,
+  "unexplained": null,
+  "q1_np": -11.2,
+  "loss_type": null,
+  "pending": [
+   "A1",
+   "A2",
+   "A3"
+  ]
+ },
+ {
+  "sbu": "ARMCL",
+  "q4_np": null,
+  "volume": null,
+  "price": null,
+  "mix": null,
+  "cost": null,
+  "fixed": null,
+  "unexplained": null,
+  "q1_np": -7.38,
+  "loss_type": null,
+  "pending": [
+   "A1",
+   "A2",
+   "A3"
+  ]
+ },
+ {
+  "sbu": "AMPL",
+  "q4_np": null,
+  "volume": null,
+  "price": null,
+  "mix": null,
+  "cost": null,
+  "fixed": null,
+  "unexplained": null,
+  "q1_np": -2.43,
+  "loss_type": null,
+  "pending": [
+   "A1",
+   "A2",
+   "A3"
+  ]
+ },
+ {
+  "sbu": "ACL",
+  "q4_np": null,
+  "volume": null,
+  "price": null,
+  "mix": null,
+  "cost": null,
+  "fixed": null,
+  "unexplained": null,
+  "q1_np": -2.4,
+  "loss_type": null,
+  "pending": [
+   "A1",
+   "A2",
+   "A3"
+  ]
+ },
+ {
+  "sbu": "ALCL",
+  "q4_np": null,
+  "volume": null,
+  "price": null,
+  "mix": null,
+  "cost": null,
+  "fixed": null,
+  "unexplained": null,
+  "q1_np": -2.39,
+  "loss_type": null,
+  "pending": [
+   "A1",
+   "A2",
+   "A3"
+  ]
+ },
+ {
+  "sbu": "ABSLASP",
+  "q4_np": null,
+  "volume": null,
+  "price": null,
+  "mix": null,
+  "cost": null,
+  "fixed": null,
+  "unexplained": null,
+  "q1_np": -2.15,
+  "loss_type": null,
+  "pending": [
+   "A1",
+   "A2",
+   "A3"
+  ]
+ },
+ {
+  "sbu": "ATL",
+  "q4_np": null,
+  "volume": null,
+  "price": null,
+  "mix": null,
+  "cost": null,
+  "fixed": null,
+  "unexplained": null,
+  "q1_np": -2.1,
+  "loss_type": null,
+  "pending": [
+   "A1",
+   "A2",
+   "A3"
+  ]
+ },
+ {
+  "sbu": "NJL",
+  "q4_np": null,
+  "volume": null,
+  "price": null,
+  "mix": null,
+  "cost": null,
+  "fixed": null,
+  "unexplained": null,
+  "q1_np": -1.8,
+  "loss_type": null,
+  "pending": [
+   "A1",
+   "A2",
+   "A3"
+  ]
+ },
+ {
+  "sbu": "AITL",
+  "q4_np": null,
+  "volume": null,
+  "price": null,
+  "mix": null,
+  "cost": null,
+  "fixed": null,
+  "unexplained": null,
+  "q1_np": -1.2,
+  "loss_type": null,
+  "pending": [
+   "A1",
+   "A2",
+   "A3"
+  ]
+ },
+ {
+  "sbu": "ACEL",
+  "q4_np": null,
+  "volume": null,
+  "price": null,
+  "mix": null,
+  "cost": null,
+  "fixed": null,
+  "unexplained": null,
+  "q1_np": -0.96,
+  "loss_type": null,
+  "pending": [
+   "A1",
+   "A2",
+   "A3"
+  ]
+ },
+ {
+  "sbu": "ALL",
+  "q4_np": null,
+  "volume": null,
+  "price": null,
+  "mix": null,
+  "cost": null,
+  "fixed": null,
+  "unexplained": null,
+  "q1_np": -0.85,
+  "loss_type": null,
+  "pending": [
+   "A1",
+   "A2",
+   "A3"
+  ]
+ }
+]

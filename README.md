@@ -46,9 +46,18 @@ because their loss = 0.)*
 
 ```
 arl-sbu-recovery-dashboard/
-├── index.html      # the entire dashboard (edit THIS)
-├── README.md       # this file
-└── AGENTS.md       # short working rules for OpenCode agents
+├── index.html            # the entire dashboard (renders MD Brief first)
+├── data/                 # validated JSON snapshots — the source of truth for numbers
+│   ├── sbu_pnl.json, sbu_direction.json, decisions.json, hypotheses.json …
+│   ├── _lineage.json     # every file → Data ID → MCP server → extraction time
+│   ├── _source_map.md    # Data ID → source → status → owner
+│   └── _raw/             # raw extracts (sheet CSV, ERP, brand pack, ALL SE) — not deployed
+├── scripts/
+│   ├── build_data.py     # rebuilds data/*.json from data/_raw/*
+│   ├── validate_data.py  # schema + reconciliation checks (must be 0 errors)
+│   └── embed_data.py     # inlines the JSON into index.html (site has no runtime API)
+├── README.md
+└── AGENTS.md
 ```
 
 > **There is no build step.** Edit `index.html` → commit → push → Vercel redeploys.

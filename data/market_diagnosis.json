@@ -1,0 +1,206 @@
+[
+ {
+  "sbu": "AIL",
+  "region": "National (brand level)",
+  "own_share_q4": null,
+  "own_share_q1": 0.029500000000000002,
+  "pp_change": null,
+  "market_change": null,
+  "top_gainer": null,
+  "gainer_pp": null,
+  "diagnosis": "Insufficient data",
+  "pending": [
+   "C1",
+   "C2",
+   "C3"
+  ],
+  "note": "FY25-26 160,613 MT (+10.7%); Sep MTD 82% of target"
+ },
+ {
+  "sbu": "ARMCL",
+  "region": "National (brand level)",
+  "own_share_q4": null,
+  "own_share_q1": 0.08,
+  "pp_change": null,
+  "market_change": null,
+  "top_gainer": null,
+  "gainer_pp": null,
+  "diagnosis": "Insufficient data",
+  "pending": [
+   "C1",
+   "C2",
+   "C3"
+  ],
+  "note": "Revenue flat +0.1% YTD; volume −15.7%"
+ },
+ {
+  "sbu": "ACEL",
+  "region": "National (brand level)",
+  "own_share_q4": null,
+  "own_share_q1": 0.001,
+  "pp_change": null,
+  "market_change": null,
+  "top_gainer": null,
+  "gainer_pp": null,
+  "diagnosis": "Insufficient data",
+  "pending": [
+   "C1",
+   "C2",
+   "C3"
+  ],
+  "note": "FY25-26 BDT 4.03 Cr (launched Feb 2026); retail ~0.5 Cr/mo"
+ },
+ {
+  "sbu": "NJL",
+  "region": "National (brand level)",
+  "own_share_q4": null,
+  "own_share_q1": null,
+  "pp_change": null,
+  "market_change": null,
+  "top_gainer": null,
+  "gainer_pp": null,
+  "diagnosis": "Insufficient data",
+  "pending": [
+   "C1",
+   "C2",
+   "C3"
+  ],
+  "note": "Applications 86k→301k (Jul–Sep 26); revenue capture broken"
+ },
+ {
+  "sbu": "ALCL",
+  "region": "National (brand level)",
+  "own_share_q4": null,
+  "own_share_q1": null,
+  "pp_change": null,
+  "market_change": null,
+  "top_gainer": null,
+  "gainer_pp": null,
+  "diagnosis": "Insufficient data",
+  "pending": [
+   "C1",
+   "C2",
+   "C3"
+  ],
+  "note": "Early-stage scale-up (34 outlets); YTD ~44 Cr (pack) / 21.4 Cr (DWH GL)"
+ },
+ {
+  "sbu": "AMPL",
+  "region": "National (brand level)",
+  "own_share_q4": null,
+  "own_share_q1": null,
+  "pp_change": null,
+  "market_change": null,
+  "top_gainer": null,
+  "gainer_pp": null,
+  "diagnosis": "Insufficient data",
+  "pending": [
+   "C1",
+   "C2",
+   "C3"
+  ],
+  "note": "New brand (opened Jun 2026); 2× patient run-rate target"
+ },
+ {
+  "sbu": "AELOTH",
+  "region": null,
+  "own_share_q4": null,
+  "own_share_q1": null,
+  "pp_change": null,
+  "market_change": null,
+  "top_gainer": null,
+  "gainer_pp": null,
+  "diagnosis": "Insufficient data",
+  "pending": [
+   "C1",
+   "C2",
+   "C3"
+  ],
+  "note": "No brand-pack entry"
+ },
+ {
+  "sbu": "ACL",
+  "region": null,
+  "own_share_q4": null,
+  "own_share_q1": null,
+  "pp_change": null,
+  "market_change": null,
+  "top_gainer": null,
+  "gainer_pp": null,
+  "diagnosis": "Insufficient data",
+  "pending": [
+   "C1",
+   "C2",
+   "C3"
+  ],
+  "note": "No brand-pack entry"
+ },
+ {
+  "sbu": "ABSLASP",
+  "region": null,
+  "own_share_q4": null,
+  "own_share_q1": null,
+  "pp_change": null,
+  "market_change": null,
+  "top_gainer": null,
+  "gainer_pp": null,
+  "diagnosis": "Insufficient data",
+  "pending": [
+   "C1",
+   "C2",
+   "C3"
+  ],
+  "note": "No brand-pack entry"
+ },
+ {
+  "sbu": "ATL",
+  "region": null,
+  "own_share_q4": null,
+  "own_share_q1": null,
+  "pp_change": null,
+  "market_change": null,
+  "top_gainer": null,
+  "gainer_pp": null,
+  "diagnosis": "Insufficient data",
+  "pending": [
+   "C1",
+   "C2",
+   "C3"
+  ],
+  "note": "No brand-pack entry"
+ },
+ {
+  "sbu": "AITL",
+  "region": null,
+  "own_share_q4": null,
+  "own_share_q1": null,
+  "pp_change": null,
+  "market_change": null,
+  "top_gainer": null,
+  "gainer_pp": null,
+  "diagnosis": "Insufficient data",
+  "pending": [
+   "C1",
+   "C2",
+   "C3"
+  ],
+  "note": "No brand-pack entry"
+ },
+ {
+  "sbu": "ALL",
+  "region": null,
+  "own_share_q4": null,
+  "own_share_q1": null,
+  "pp_change": null,
+  "market_change": null,
+  "top_gainer": null,
+  "gainer_pp": null,
+  "diagnosis": "Insufficient data",
+  "pending": [
+   "C1",
+   "C2",
+   "C3"
+  ],
+  "note": "No brand-pack entry"
+ }
+]

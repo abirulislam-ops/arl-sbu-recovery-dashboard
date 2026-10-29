@@ -1,0 +1,5 @@
+# Local-only extracts (contain the full Google Sheet + tracker dumps)
+data/_raw/
+_discovery/
+__pycache__/
+*.pyc

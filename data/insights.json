@@ -1,0 +1,78 @@
+[
+ {
+  "section": "MD Brief",
+  "fact": "12 loss-making SBUs lost 55.77 Cr in Q1 on 821.14 Cr revenue (6.8% of revenue).",
+  "so_what": "The portfolio-wide hole is a margin problem, not a top-line problem.",
+  "data_ids": [
+   "A1",
+   "A8"
+  ]
+ },
+ {
+  "section": "MD Brief",
+  "fact": "Essentials (20.91 Cr) and Ispat (11.20 Cr) carry 58% of the total loss.",
+  "so_what": "Two decisions recover more than half the loss.",
+  "data_ids": [
+   "A1"
+  ]
+ },
+ {
+  "section": "MD Brief",
+  "fact": "622 dealers who bought in Q4 placed no order in Q1 in the 7 SBUs with order data.",
+  "so_what": "Dealer churn is real but unexplained â€” no CRM log, no regional market data.",
+  "data_ids": [
+   "B3",
+   "B4",
+   "D3",
+   "D4"
+  ]
+ },
+ {
+  "section": "Dealer Loss",
+  "fact": "Essentials lost 295 of 1,129 Q4 dealers (26%%); Ready Mix lost 92 of 258 (36%%); Ispat lost 97 of 385 (25%%).",
+  "so_what": "Churn is concentrated in the two largest loss SBUs â€” win-back is the cheapest revenue.",
+  "data_ids": [
+   "B3",
+   "B4"
+  ]
+ },
+ {
+  "section": "Market Share",
+  "fact": "No regional market-size or competitor-volume file has been delivered (C1/C2/C3 all pending in the IT tracker).",
+  "so_what": "The MD's priority-1 question cannot be answered from data yet; only brand-level share exists.",
+  "data_ids": [
+   "C1",
+   "C2",
+   "C3"
+  ]
+ },
+ {
+  "section": "Sales KPI",
+  "fact": "No CRM extract exists, so lost-dealer contact, beat compliance and KPI achievement are unknown.",
+  "so_what": "The sales-engagement hypothesis stays untested; press IT for D2â€“D5.",
+  "data_ids": [
+   "D2",
+   "D3",
+   "D4",
+   "D5"
+  ]
+ },
+ {
+  "section": "Root Cause",
+  "fact": "Supply failure is named as the root cause by 5 of 12 SBUs (Electronics, Essentials, Asphalt, Commodities, Ispat).",
+  "so_what": "The largest cluster of causes is an approval/procurement problem the MD can clear this week.",
+  "data_ids": [
+   "B8",
+   "G2",
+   "A2"
+  ]
+ },
+ {
+  "section": "Recovery",
+  "fact": "Only 7 of 12 SBUs quantified a Cr commitment; Ispat and Telecom did not.",
+  "so_what": "Five recovery plans cannot be tracked â€” they need a number before approval.",
+  "data_ids": [
+   "A9"
+  ]
+ }
+]

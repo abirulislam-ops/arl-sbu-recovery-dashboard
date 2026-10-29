@@ -1,0 +1,87 @@
+{
+ "generated_at": "2026-10-28T17:13:48",
+ "as_of": "2026-10-28",
+ "period": "Q1 FY2026-27 (Julâ€“Sep 2026)",
+ "files": {
+  "sbu_pnl.json": [
+   {
+    "data_id": "A1",
+    "mcp_server": "google-sheets (CSV export)",
+    "location": "AKIJ Resource Â· SBU Top-line & Bottom-line Scorecard, gid 475852686",
+    "extracted_at": "2026-10-28",
+    "period": "Q1FY27",
+    "notes": "Revenue, budget, GP%, EAT, deficit, loss, commitments. Q4 P&L not in this sheet."
+   },
+   {
+    "data_id": "A1 (cross-check)",
+    "mcp_server": "enterprise-api-gateway",
+    "location": "fin.tblAccountingJournal, GL 3010001/3010002/3010005/3010006",
+    "extracted_at": "2026-10-28",
+    "period": "Q1FY27, Q4FY26",
+    "notes": "ERP revenue by BU and quarter; NP proxy includes COGS/S&D/admin/logistics/marketing/finance/tax but excludes depreciation and provisions."
+   }
+  ],
+  "dealer_trend.json": [
+   {
+    "data_id": "B3",
+    "mcp_server": "enterprise-api-gateway",
+    "location": "oms.tblSalesOrderHeader",
+    "extracted_at": "2026-10-28",
+    "period": "2026-04..2026-09",
+    "notes": "Distinct sold-to partner per month; 7 SBUs only."
+   }
+  ],
+  "dealer_churn.json": [
+   {
+    "data_id": "B4",
+    "mcp_server": "enterprise-api-gateway",
+    "location": "oms.tblSalesOrderHeader (NOT EXISTS in Q1)",
+    "extracted_at": "2026-10-28",
+    "period": "Q4FY26â†’Q1FY27",
+    "notes": "Q4 buyers with zero Q1 orders."
+   }
+  ],
+  "market_share.json": [
+   {
+    "data_id": "C1/C2 (partial)",
+    "mcp_server": "web (brand pack)",
+    "location": "akij-resource-brand-marketing-pack.pages.dev",
+    "extracted_at": "2026-10-28",
+    "period": "latest brand-level",
+    "notes": "National brand share and named competitor shares; no region, no Q4â†’Q1."
+   }
+  ],
+  "se_commitment.json": [
+   {
+    "data_id": "A9",
+    "mcp_server": "web (ALL SE dashboard)",
+    "location": "arl-se-sbu-commitment.vercel.app (Google Sheet ALL SE / Sheet10)",
+    "extracted_at": "2026-10-28",
+    "period": "Julâ€“Oct 2026",
+    "notes": "9 BUs only (AEL divisions, AIL, ARMCL, ACCL)."
+   }
+  ],
+  "_source_map.md": [
+   {
+    "data_id": "all",
+    "mcp_server": "see _source_map.md",
+    "location": "-",
+    "extracted_at": "2026-10-28",
+    "period": "-",
+    "notes": "-"
+   }
+  ]
+ },
+ "pending": {
+  "C1": "Total market size by region â€” owner Marketing/Strategy, IT promise 2026-11-02",
+  "C2": "Competitor volume by region â€” owner Marketing/Strategy, 2026-11-02",
+  "C3": "Own volume aligned to market definition â€” Sales Ops, 2026-11-02",
+  "D2": "KPI target vs achievement â€” Sales Ops, 2026-11-02",
+  "D3": "CRM call & visit log â€” Sales Ops/IT, 2026-11-02",
+  "D4": "Last contact with lost dealers â€” Sales Ops/IT, 2026-11-02",
+  "A3": "SKU-wise profitability â€” Finance, 2026-11-02",
+  "A4": "Profit per dealer/region â€” Finance, 2026-11-07",
+  "B2": "Dealer-wise monthly lifting â€” Sales Ops, 2026-11-02",
+  "B7": "Credit & receivables â€” Credit Control, 2026-11-02"
+ }
+}

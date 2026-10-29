@@ -1,0 +1,166 @@
+[
+ {
+  "id": "H1",
+  "title": "Market shrank",
+  "verdict": "Insufficient data",
+  "confidence": "Low",
+  "impact_cr": null,
+  "data_ids": [
+   "C1",
+   "C3",
+   "I1",
+   "I2"
+  ],
+  "evidence": [
+   "No regional industry volume received (C1/C2/C3 all 'Pending' in the IT Data Link Tracker).",
+   "Brand pack shows Akij Cement volume âˆ’8.85% YTD vs industry +1.30% â€” that pattern is share loss, not market shrink, but it is national and brand-level only."
+  ],
+  "verdict_note": "Cannot separate market shrink from share loss without C1/C2."
+ },
+ {
+  "id": "H2",
+  "title": "Competitor won on price/offer",
+  "verdict": "Insufficient data",
+  "confidence": "Low",
+  "impact_cr": null,
+  "data_ids": [
+   "C2",
+   "E1",
+   "E2",
+   "E3"
+  ],
+  "evidence": [
+   "No competitor price list or offer log (E1/E2 pending).",
+   "Brand pack names competitor shares (e.g. Cement: Shah ~17.25%, Fresh ~11.95%) but has no per-region Q4â†’Q1 movement."
+  ],
+  "verdict_note": "Directionally consistent with dealer narratives; not evidenced."
+ },
+ {
+  "id": "H3",
+  "title": "Sales team did not engage",
+  "verdict": "Insufficient data",
+  "confidence": "Low",
+  "impact_cr": null,
+  "data_ids": [
+   "D2",
+   "D3",
+   "D4",
+   "D5"
+  ],
+  "evidence": [
+   "622 dealers bought in Q4 and placed no order in Q1 across the 7 SBUs with order data.",
+   "No CRM visit/call log exists in the workspace (D3/D4 pending) so contact on those dealers is unknown.",
+   "The MD's own hypothesis is stated in the brief; it is unproven either way."
+  ],
+  "verdict_note": "Test = lost-dealer contact % from CRM for Q1."
+ },
+ {
+  "id": "H4",
+  "title": "Sales team instability",
+  "verdict": "Partial",
+  "confidence": "Low",
+  "impact_cr": null,
+  "data_ids": [
+   "D1",
+   "D6",
+   "D2"
+  ],
+  "evidence": [
+   "Logistics: SBU plan states 4 salesmen needed immediately.",
+   "Infotech: plan states replace/hire 4 KAM and 1 recovery person.",
+   "Mediplex: plan states the sales team was abolished and the new team came late.",
+   "No HRIS vacancy/attrition extract yet (D1/D6 pending) â€” self-reported, not measured."
+  ],
+  "verdict_note": "Self-reported in the SBU recovery plans."
+ },
+ {
+  "id": "H5",
+  "title": "Supply / service failure",
+  "verdict": "Partial",
+  "confidence": "Medium",
+  "impact_cr": null,
+  "data_ids": [
+   "B8",
+   "G2",
+   "G3"
+  ],
+  "evidence": [
+   "Consumer Electronics: 'zero stock at principal' â€” revenue 18.8% of budget.",
+   "Essentials: lentils/chickpea/raw-material shortage; Miniket paddy shortage.",
+   "ABSL Asphalt: LC bitumen unavailable.",
+   "Commodities F&B: no LC/purchase approval Julâ€“Oct.",
+   "Ispat: BMRE shutdown, pending orders not delivered.",
+   "No order-level short-supply extract (B8/G2/G3 pending) â€” self-reported."
+  ],
+  "verdict_note": "Strongest recurring cause; needs B8/G2/G3 to quantify."
+ },
+ {
+  "id": "H6",
+  "title": "Credit policy pushed dealers away",
+  "verdict": "Partial",
+  "confidence": "Low",
+  "impact_cr": null,
+  "data_ids": [
+   "B7",
+   "E2"
+  ],
+  "evidence": [
+   "Infotech: root cause cites overdue receivables and customer credit restrictions.",
+   "Next JobZ: DSO 60â†’45 days, receivable concentration 26%.",
+   "No AR ageing / credit-block extract yet (B7 pending)."
+  ],
+  "verdict_note": "Two SBUs only; B7 required for the rest."
+ },
+ {
+  "id": "H7",
+  "title": "Product / quality issue",
+  "verdict": "Rejected",
+  "confidence": "Low",
+  "impact_cr": null,
+  "data_ids": [
+   "B9",
+   "F1",
+   "H1"
+  ],
+  "evidence": [
+   "No complaint or quality escalation appears in any of the 12 SBU root-cause notes."
+  ],
+  "verdict_note": "No evidence in the submitted plans."
+ },
+ {
+  "id": "H8",
+  "title": "Margin-driven loss",
+  "verdict": "Confirmed",
+  "confidence": "Medium",
+  "impact_cr": 32.11,
+  "data_ids": [
+   "A1",
+   "A2",
+   "A5",
+   "A7"
+  ],
+  "evidence": [
+   "Telecom GP âˆ’36.6%: stock cleared through dealers with higher subsidies.",
+   "Commodities F&B GP 8.0%; Logistics Ex-CHA GP 2.8%; ABSL Asphalt GP 5.2%.",
+   "Essentials and Ispat together carry 32.11 Cr of the 55.77 Cr total loss.",
+   "GP is the gross-margin proxy; CM (after variable S&D) is not split out yet (A2/A5)."
+  ],
+  "verdict_note": "GP-based. CM% still pending."
+ },
+ {
+  "id": "H9",
+  "title": "Went silent in market",
+  "verdict": "Insufficient data",
+  "confidence": "Low",
+  "impact_cr": null,
+  "data_ids": [
+   "F4",
+   "A5",
+   "E4"
+  ],
+  "evidence": [
+   "Trade spend by SBU/region not received (A5); brand pack has ATL/BTL mix but no Q4â†’Q1 spend change."
+  ],
+  "verdict_note": "Needs A5 + E4."
+ }
+]

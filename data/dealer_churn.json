@@ -1,0 +1,86 @@
+[
+ {
+  "sbu": "AELOTH",
+  "name": "Essentials",
+  "q4_active": 1129,
+  "q1_active": 1189,
+  "q4_orders": 8525,
+  "q1_orders": 8771,
+  "lost": 295,
+  "new": null,
+  "lost_revenue_cr": null,
+  "source": "ERP oms.tblSalesOrderHeader"
+ },
+ {
+  "sbu": "AIL",
+  "name": "Ispat",
+  "q4_active": 385,
+  "q1_active": 401,
+  "q4_orders": 2756,
+  "q1_orders": 3132,
+  "lost": 97,
+  "new": null,
+  "lost_revenue_cr": null,
+  "source": "ERP oms.tblSalesOrderHeader"
+ },
+ {
+  "sbu": "ARMCL",
+  "name": "Ready Mix",
+  "q4_active": 258,
+  "q1_active": 334,
+  "q4_orders": 873,
+  "q1_orders": 1381,
+  "lost": 92,
+  "new": null,
+  "lost_revenue_cr": null,
+  "source": "ERP oms.tblSalesOrderHeader"
+ },
+ {
+  "sbu": "ACL",
+  "name": "Commodities â€“ F&B",
+  "q4_active": 55,
+  "q1_active": 44,
+  "q4_orders": 216,
+  "q1_orders": 190,
+  "lost": 25,
+  "new": null,
+  "lost_revenue_cr": null,
+  "source": "ERP oms.tblSalesOrderHeader"
+ },
+ {
+  "sbu": "ABSLASP",
+  "name": "ABSL â€“ Asphalt",
+  "q4_active": 130,
+  "q1_active": 120,
+  "q4_orders": 424,
+  "q1_orders": 426,
+  "lost": 62,
+  "new": null,
+  "lost_revenue_cr": null,
+  "source": "ERP oms.tblSalesOrderHeader"
+ },
+ {
+  "sbu": "ATL",
+  "name": "Telecom",
+  "q4_active": 68,
+  "q1_active": 77,
+  "q4_orders": 267,
+  "q1_orders": 452,
+  "lost": 24,
+  "new": null,
+  "lost_revenue_cr": null,
+  "source": "ERP oms.tblSalesOrderHeader"
+ },
+ {
+  "sbu": "AITL",
+  "name": "Infotech",
+  "q4_active": 44,
+  "q1_active": 28,
+  "q4_orders": 115,
+  "q1_orders": 69,
+  "lost": 27,
+  "new": null,
+  "lost_revenue_cr": null,
+  "source": "ERP oms.tblSalesOrderHeader"
+ }
+]

@@ -1,0 +1,296 @@
+[
+ {
+  "sbu": "AITL",
+  "region": null,
+  "month": "2026-04",
+  "active_dealers": 30,
+  "lifting": 1.534
+ },
+ {
+  "sbu": "AITL",
+  "region": null,
+  "month": "2026-05",
+  "active_dealers": 17,
+  "lifting": 0.678
+ },
+ {
+  "sbu": "AITL",
+  "region": null,
+  "month": "2026-06",
+  "active_dealers": 18,
+  "lifting": 0.74
+ },
+ {
+  "sbu": "AITL",
+  "region": null,
+  "month": "2026-07",
+  "active_dealers": 17,
+  "lifting": 1.834
+ },
+ {
+  "sbu": "AITL",
+  "region": null,
+  "month": "2026-08",
+  "active_dealers": 14,
+  "lifting": 0.814
+ },
+ {
+  "sbu": "AITL",
+  "region": null,
+  "month": "2026-09",
+  "active_dealers": 8,
+  "lifting": 0.191
+ },
+ {
+  "sbu": "AELOTH",
+  "region": null,
+  "month": "2026-04",
+  "active_dealers": 766,
+  "lifting": 213.328
+ },
+ {
+  "sbu": "AELOTH",
+  "region": null,
+  "month": "2026-05",
+  "active_dealers": 763,
+  "lifting": 113.537
+ },
+ {
+  "sbu": "AELOTH",
+  "region": null,
+  "month": "2026-06",
+  "active_dealers": 799,
+  "lifting": 141.325
+ },
+ {
+  "sbu": "AELOTH",
+  "region": null,
+  "month": "2026-07",
+  "active_dealers": 826,
+  "lifting": 180.542
+ },
+ {
+  "sbu": "AELOTH",
+  "region": null,
+  "month": "2026-08",
+  "active_dealers": 783,
+  "lifting": 242.492
+ },
+ {
+  "sbu": "AELOTH",
+  "region": null,
+  "month": "2026-09",
+  "active_dealers": 823,
+  "lifting": 125.789
+ },
+ {
+  "sbu": "ARMCL",
+  "region": null,
+  "month": "2026-04",
+  "active_dealers": 126,
+  "lifting": 33.602
+ },
+ {
+  "sbu": "ARMCL",
+  "region": null,
+  "month": "2026-05",
+  "active_dealers": 183,
+  "lifting": 46.955
+ },
+ {
+  "sbu": "ARMCL",
+  "region": null,
+  "month": "2026-06",
+  "active_dealers": 99,
+  "lifting": 30.425
+ },
+ {
+  "sbu": "ARMCL",
+  "region": null,
+  "month": "2026-07",
+  "active_dealers": 185,
+  "lifting": 56.367
+ },
+ {
+  "sbu": "ARMCL",
+  "region": null,
+  "month": "2026-08",
+  "active_dealers": 213,
+  "lifting": 56.178
+ },
+ {
+  "sbu": "ARMCL",
+  "region": null,
+  "month": "2026-09",
+  "active_dealers": 192,
+  "lifting": 61.857
+ },
+ {
+  "sbu": "ABSLASP",
+  "region": null,
+  "month": "2026-04",
+  "active_dealers": 68,
+  "lifting": 20.573
+ },
+ {
+  "sbu": "ABSLASP",
+  "region": null,
+  "month": "2026-05",
+  "active_dealers": 56,
+  "lifting": 9.183
+ },
+ {
+  "sbu": "ABSLASP",
+  "region": null,
+  "month": "2026-06",
+  "active_dealers": 63,
+  "lifting": 11.396
+ },
+ {
+  "sbu": "ABSLASP",
+  "region": null,
+  "month": "2026-07",
+  "active_dealers": 55,
+  "lifting": 7.435
+ },
+ {
+  "sbu": "ABSLASP",
+  "region": null,
+  "month": "2026-08",
+  "active_dealers": 61,
+  "lifting": 3.172
+ },
+ {
+  "sbu": "ABSLASP",
+  "region": null,
+  "month": "2026-09",
+  "active_dealers": 63,
+  "lifting": 4.621
+ },
+ {
+  "sbu": "ACL",
+  "region": null,
+  "month": "2026-04",
+  "active_dealers": 38,
+  "lifting": 34.618
+ },
+ {
+  "sbu": "ACL",
+  "region": null,
+  "month": "2026-05",
+  "active_dealers": 29,
+  "lifting": 4.679
+ },
+ {
+  "sbu": "ACL",
+  "region": null,
+  "month": "2026-06",
+  "active_dealers": 20,
+  "lifting": 8.252
+ },
+ {
+  "sbu": "ACL",
+  "region": null,
+  "month": "2026-07",
+  "active_dealers": 26,
+  "lifting": 22.995
+ },
+ {
+  "sbu": "ACL",
+  "region": null,
+  "month": "2026-08",
+  "active_dealers": 25,
+  "lifting": 5.122
+ },
+ {
+  "sbu": "ACL",
+  "region": null,
+  "month": "2026-09",
+  "active_dealers": 20,
+  "lifting": 8.272
+ },
+ {
+  "sbu": "AIL",
+  "region": null,
+  "month": "2026-04",
+  "active_dealers": 291,
+  "lifting": 144.651
+ },
+ {
+  "sbu": "AIL",
+  "region": null,
+  "month": "2026-05",
+  "active_dealers": 187,
+  "lifting": 93.251
+ },
+ {
+  "sbu": "AIL",
+  "region": null,
+  "month": "2026-06",
+  "active_dealers": 247,
+  "lifting": 135.574
+ },
+ {
+  "sbu": "AIL",
+  "region": null,
+  "month": "2026-07",
+  "active_dealers": 215,
+  "lifting": 77.334
+ },
+ {
+  "sbu": "AIL",
+  "region": null,
+  "month": "2026-08",
+  "active_dealers": 260,
+  "lifting": 100.648
+ },
+ {
+  "sbu": "AIL",
+  "region": null,
+  "month": "2026-09",
+  "active_dealers": 298,
+  "lifting": 160.343
+ },
+ {
+  "sbu": "ATL",
+  "region": null,
+  "month": "2026-04",
+  "active_dealers": 12,
+  "lifting": 0.143
+ },
+ {
+  "sbu": "ATL",
+  "region": null,
+  "month": "2026-05",
+  "active_dealers": 46,
+  "lifting": 0.581
+ },
+ {
+  "sbu": "ATL",
+  "region": null,
+  "month": "2026-06",
+  "active_dealers": 43,
+  "lifting": 0.606
+ },
+ {
+  "sbu": "ATL",
+  "region": null,
+  "month": "2026-07",
+  "active_dealers": 48,
+  "lifting": 0.749
+ },
+ {
+  "sbu": "ATL",
+  "region": null,
+  "month": "2026-08",
+  "active_dealers": 44,
+  "lifting": 0.892
+ },
+ {
+  "sbu": "ATL",
+  "region": null,
+  "month": "2026-09",
+  "active_dealers": 49,
+  "lifting": 1.28
+ }
+]

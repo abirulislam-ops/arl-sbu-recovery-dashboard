@@ -1,0 +1,166 @@
+[
+ {
+  "sbu": "AIL",
+  "region": "National (brand level)",
+  "period": "Q1FY27",
+  "market_volume": null,
+  "own_volume": null,
+  "own_share": 0.029500000000000002,
+  "own_share_text": "2.95% (8th position)",
+  "competitors": [
+   {
+    "name": "BSRM",
+    "volume": null,
+    "share": 0.278
+   },
+   {
+    "name": "AKS",
+    "volume": null,
+    "share": 0.182
+   },
+   {
+    "name": "GPH",
+    "volume": null,
+    "share": 0.09300000000000001
+   }
+  ],
+  "source": "Brand Marketing Pack (akij-resource-brand-marketing-pack.pages.dev)",
+  "is_proxy": true,
+  "note": "Brand-level share, not region Ã— quarter. C1/C2 (regional industry volume) still pending."
+ },
+ {
+  "sbu": "ARMCL",
+  "region": "National (brand level)",
+  "period": "Q1FY27",
+  "market_volume": null,
+  "own_volume": null,
+  "own_share": 0.08,
+  "own_share_text": "~8% (no DWH source)",
+  "competitors": [
+   {
+    "name": "Local unbranded RMC (price)",
+    "volume": null,
+    "share": null
+   },
+   {
+    "name": "Other branded RMC suppliers",
+    "volume": null,
+    "share": null
+   }
+  ],
+  "source": "Brand Marketing Pack (akij-resource-brand-marketing-pack.pages.dev)",
+  "is_proxy": true,
+  "note": "Brand-level share, not region Ã— quarter. C1/C2 (regional industry volume) still pending."
+ },
+ {
+  "sbu": "ACEL",
+  "region": "National (brand level)",
+  "period": "Q1FY27",
+  "market_volume": null,
+  "own_volume": null,
+  "own_share": 0.001,
+  "own_share_text": "<0.1% (e) of ~BDT 24,120 Cr market",
+  "competitors": [
+   {
+    "name": "Transcom Digital (78 stores)",
+    "volume": null,
+    "share": null
+   },
+   {
+    "name": "RANGS eMart (37 stores)",
+    "volume": null,
+    "share": null
+   },
+   {
+    "name": "Daraz/Pickaboo (discount)",
+    "volume": null,
+    "share": null
+   }
+  ],
+  "source": "Brand Marketing Pack (akij-resource-brand-marketing-pack.pages.dev)",
+  "is_proxy": true,
+  "note": "Brand-level share, not region Ã— quarter. C1/C2 (regional industry volume) still pending."
+ },
+ {
+  "sbu": "NJL",
+  "region": "National (brand level)",
+  "period": "Q1FY27",
+  "market_volume": null,
+  "own_volume": null,
+  "own_share": null,
+  "own_share_text": "Not available",
+  "competitors": [
+   {
+    "name": "Bdjobs",
+    "volume": null,
+    "share": null
+   },
+   {
+    "name": "LinkedIn",
+    "volume": null,
+    "share": null
+   },
+   {
+    "name": "Shomvob",
+    "volume": null,
+    "share": null
+   }
+  ],
+  "source": "Brand Marketing Pack (akij-resource-brand-marketing-pack.pages.dev)",
+  "is_proxy": true,
+  "note": "Brand-level share, not region Ã— quarter. C1/C2 (regional industry volume) still pending."
+ },
+ {
+  "sbu": "ALCL",
+  "region": "National (brand level)",
+  "period": "Q1FY27",
+  "market_volume": null,
+  "own_volume": null,
+  "own_share": null,
+  "own_share_text": "Not available (trust-led niche)",
+  "competitors": [
+   {
+    "name": "ASK Pharmacy",
+    "volume": null,
+    "share": null
+   },
+   {
+    "name": "Aster Pharmacy",
+    "volume": null,
+    "share": null
+   }
+  ],
+  "source": "Brand Marketing Pack (akij-resource-brand-marketing-pack.pages.dev)",
+  "is_proxy": true,
+  "note": "Brand-level share, not region Ã— quarter. C1/C2 (regional industry volume) still pending."
+ },
+ {
+  "sbu": "AMPL",
+  "region": "National (brand level)",
+  "period": "Q1FY27",
+  "market_volume": null,
+  "own_volume": null,
+  "own_share": null,
+  "own_share_text": "Not available",
+  "competitors": [
+   {
+    "name": "Popular Diagnostic",
+    "volume": null,
+    "share": null
+   },
+   {
+    "name": "Ibn Sina",
+    "volume": null,
+    "share": null
+   },
+   {
+    "name": "Labaid",
+    "volume": null,
+    "share": null
+   }
+  ],
+  "source": "Brand Marketing Pack (akij-resource-brand-marketing-pack.pages.dev)",
+  "is_proxy": true,
+  "note": "Brand-level share, not region Ã— quarter. C1/C2 (regional industry volume) still pending."
+ }
+]

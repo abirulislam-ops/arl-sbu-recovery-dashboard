@@ -1,0 +1,206 @@
+[
+ {
+  "lever": "Revenue recovery plan",
+  "sbu": "AELOTH",
+  "region": null,
+  "action": "Develop a 30-day SKU/plant/customer recovery plan with weekly revenue and volume targets. Prioritize Consumer and Corporate recovery, Bulk Rice, Bulk Flour & Dal, Modern Trade, HORECA, and conversion of pending Tender business.",
+  "owner": "Revenue: Sales Heads. EAT: CFO. Individual initiative owners to be assigned by the respective functional heads.",
+  "start": "2026-10-28",
+  "revenue_impact_cr": 106.19,
+  "np_impact_cr": 20.91,
+  "status": "Not Started",
+  "assumption": "SBU's own commitment (sheet col BM/BN), not an independent estimate",
+  "target_date": "31 January 2027, with weekly checkpoints and monthly management reviews.",
+  "data_ids": [
+   "A1",
+   "A8"
+  ]
+ },
+ {
+  "lever": "Revenue recovery plan",
+  "sbu": "AIL",
+  "region": null,
+  "action": "Our immediate priority is to clear the existing pending orders, improve delivery execution, and then accelerate volume recovery during the upcoming peak season. The combination of pending-order clearance, improved delivery execution, activation of the existing dealer base, gradual price improvement, stringent OD recovery, reduced Trade exposure, and the proposed market-potential-based Trade Organogram is expected to strengthen the monthly run-rate. Besides, immediate takeover of another CM factory will be a great advantage for us to increase market presence and ensure achieving both budget and revenue target gaps.",
+  "owner": "Cluster CEO, Cluster CSO, Head of Sales, CPO",
+  "start": "2026-10-28",
+  "revenue_impact_cr": null,
+  "np_impact_cr": null,
+  "status": "In progress",
+  "assumption": "Not quantified in Cr by the SBU â€” impact shown as 'Data pending'",
+  "target_date": "As Per Yearly Budget",
+  "data_ids": [
+   "A1",
+   "A8"
+  ]
+ },
+ {
+  "lever": "Revenue recovery plan",
+  "sbu": "ARMCL",
+  "region": null,
+  "action": "Implement a focused, volume-driven revenue recovery strategy by strengthening key-account management, acquiring new customers, recovering lost orders, expanding market coverage in high-potential areas, and maximizing plant utilization. Ensure the realization of approved selling-price increases and eliminate unjustified lower prices for 3,000 PSI, 3,500 PSI, 4,000 PSI, and 4,500 PSI concrete grades. The key objectives are to achieve 100% of the approved monthly revenue budget, ensure sustainable sales volume growth, and progressively recover the Q1 revenue shortfall of Tk 25.77 Cr.",
+  "owner": "The following responsibility matrix can be used in the ARMCL turnaround plan. Names should be confirmed against the current organizational structure before final submission. Sl. Supportive Functions Action Owner Name Action Owner Designation Key Responsibilities 1 Plant Operations Md. Shakhawat Hossain Manager, Plant Operations Optimize manufacturing cost per CFT; improve plant capacity utilization and productivity; control manpower, power, maintenance, wastage, and production losses. 2 Logistics and Distribution Md. Firoz Kabir Logistics & Distribution Lead, ARMCL Reduce logistics cost per CFT; optimize fuel consumption, MRO expenses, fleet utilization, vehicle downtime, routing, and delivery efficiency. 3 Supply Chain Management (SCM) Md. Mobassarul Alam SCM Lead, ARMCL Ensure competitive procurement of cement, stone, sand, admixtures, and other raw materials through strategic sourcing, supplier negotiations, and effective inventory planning. 4 Sales Md. Jahid Hassan Head of Sales, ARMCL Achieve 100% of approved sales and revenue targets; increase sales volume, strengthen customer acquisition and retention, enforce approved selling prices, and improve customer-wise contribution. 5 Finance Pankaj Chandra Bhowmick Cluster FC Reduce financial expenses, improve working-capital efficiency, accelerate receivables collection, control overdue balances, and optimize financing costs and cash flow. 6 Human Resource Md. Ariful Islam HR BP Optimize manpower deployment, improve workforce productivity, support plant-level restructuring, and facilitate recruitment of additional sales personnel where needed. 7 Overall coordination & accountability Md. Anisur Rahman and Asadul Haque Sufyani CEO & Cluster CEO Lead the turnaround program, coordinate all functional heads, review progress against agreed KPIs, resolve cross-functional issues, and ensure delivery of profitability targets.",
+  "start": "2026-10-28",
+  "revenue_impact_cr": 25.77,
+  "np_impact_cr": 8.38,
+  "status": "In progress",
+  "assumption": "SBU's own commitment (sheet col BM/BN), not an independent estimate",
+  "target_date": "31 December 2026 — proposed deadline to implement the turnaround measures and achieve the agreed revenue and profitability recovery milestones, subject to Finance validation and management approval.",
+  "data_ids": [
+   "A1",
+   "A8"
+  ]
+ },
+ {
+  "lever": "Revenue recovery plan",
+  "sbu": "ACL",
+  "region": null,
+  "action": "Rebuild the range, then hold a steady BDT 2.50 Cr monthly run-rate. Supply is anchored on the approved 5-LC import plan of BDT 10.82 Cr landed (24,185 cartons, 157 SKUs), which carries 17.97% gross margin and 4.19% net margin and is already in execution under CEO approval. Alongside that, widen the channel so the run-rate is not dependent on two accounts: Modern Trade, HORECA, Akij Essential retail, sole distributorship of high-demand lines and demand-led local purchase. Target state: BDT 2.50 Cr/month sustained from November, ~95% availability on the top-20 SKUs, 60%+ of 69 accounts active against 14 today, top-2 customer concentration below 50%, blended GP 18%, and monthly PAT positive. FY27 revenue lands at ~BDT 24.70 Cr against the BDT 36.61 Cr ABP, which is re-baselined with the Board rather than left as an unachievable number.",
+  "owner": "Md. Imran Hossen, Head of Sales – ACL (Imported Food Business), reporting to Md. Akterul Alam Shah, COO, Akij Essential.",
+  "start": "2026-10-28",
+  "revenue_impact_cr": 6.6,
+  "np_impact_cr": 0.0,
+  "status": "In progress",
+  "assumption": "SBU's own commitment (sheet col BM/BN), not an independent estimate",
+  "target_date": "30-Nov-2026 for monthly PAT breakeven; 31-Mar-2027 for a sustained BDT 2.50 Cr run-rate and completion of the recovery plan.",
+  "data_ids": [
+   "A1",
+   "A8"
+  ]
+ },
+ {
+  "lever": "Revenue recovery plan",
+  "sbu": "ALCL",
+  "region": null,
+  "action": "Approach: grow same-store sales first, through repeat customers, bigger baskets and better mix, rather than new outlets. Use data and segmentation at outlet level. Add online sales as an extra channel. Target state: monthly net sales grow about 5% month on month, from 7.77 Cr (September) to 12.41 Cr by June 2027. Q2 (Oct–Dec) sales reach at least 25.5 Cr, which equals Q1’s budget and is 4.3 Cr above Q1 actual.",
+  "owner": "Overall: Istiuck Ali Talukdar, CBO Revenue and outlets: Saidur Rahman, Assistant Operation Manager Purchasing, GP and inventory: Sujon Ghosh, Head of Operations and Category Management Marketing, CRM and campaigns: Faiza Afrin Haque, Brand Custodian Online channel: E-commerce / Digital lead. Finance and the outlet-level P&L: Aynanul Hoque, FC People changes: Md. Arif Rahman, HRBP.",
+  "start": "2026-10-28",
+  "revenue_impact_cr": 4.32,
+  "np_impact_cr": 2.39,
+  "status": "On track",
+  "assumption": "SBU's own commitment (sheet col BM/BN), not an independent estimate",
+  "target_date": "Interim milestones by 31 Dec 2026: credit purchasing in place, GP around 13%, Q2 targets met. Full recovery by 30 Jun 2027.",
+  "data_ids": [
+   "A1",
+   "A8"
+  ]
+ },
+ {
+  "lever": "Revenue recovery plan",
+  "sbu": "ALL",
+  "region": null,
+  "action": "1. Aggressive sales approach 2. Pipeline conversion resulting into shipment (already in progress) 3. Salesmen hiring in process 4. 1st Quarter Revenue loss to be fully recovered by second quarter if war in the middle east stops, otherwise it will take first half of 3rd Quarter 5. Second Quarter first two months (SEP,OCT) already over budget, recovering 1st Quarter revenue",
+  "owner": "Bikash Bromha (FF Head), Mohammad Tanvir Zaman (Air Ops Head)",
+  "start": "2026-10-28",
+  "revenue_impact_cr": 5.0,
+  "np_impact_cr": 2.0,
+  "status": "In progress",
+  "assumption": "SBU's own commitment (sheet col BM/BN), not an independent estimate",
+  "target_date": "Last day of 3rd Quarter (ultimate)",
+  "data_ids": [
+   "A1",
+   "A8"
+  ]
+ },
+ {
+  "lever": "Revenue recovery plan",
+  "sbu": "ABSLASP",
+  "region": null,
+  "action": "Ensure timely LC bitumen procurement, strengthen customer acquisition, recover lost orders, and expand market coverage among RHD, LGED, City Corporations, MES and other contractors and infrastructure projects. Improve price competitiveness and plant utilization to achieve 100% of the approved monthly revenue budget and progressively recover the Tk 23.03 Cr shortfall.",
+  "owner": "Primary: Mohammad Ehsan Al Baqui, Chief Supply Chain Officer ; Md Mobassarul Alam, Senior Manager. Supporting: Md. Jahid Hassan, Deputy General Manager; Md. Mustaq Ahmed, Chief Financial Officer.",
+  "start": "2026-10-28",
+  "revenue_impact_cr": 23.03,
+  "np_impact_cr": 2.16,
+  "status": "In progress",
+  "assumption": "SBU's own commitment (sheet col BM/BN), not an independent estimate",
+  "target_date": "31 December 2026, subject to management approval and Finance validation.",
+  "data_ids": [
+   "A1",
+   "A8"
+  ]
+ },
+ {
+  "lever": "Revenue recovery plan",
+  "sbu": "ATL",
+  "region": null,
+  "action": "N/A (Revenue Achieved)",
+  "owner": "Syaeed Muhammad Fuad",
+  "start": "2026-10-28",
+  "revenue_impact_cr": null,
+  "np_impact_cr": 1.5,
+  "status": "In progress",
+  "assumption": "SBU's own commitment (sheet col BM/BN), not an independent estimate",
+  "target_date": "June 2028",
+  "data_ids": [
+   "A1",
+   "A8"
+  ]
+ },
+ {
+  "lever": "Revenue recovery plan",
+  "sbu": "AITL",
+  "region": null,
+  "action": "Prioritize collectible accounts, sellable stock and confirmed B2B/project orders; close the Q1 shortfall through a weekly approved sales plan.",
+  "owner": "ASM Shawkat Millat, Head of Business & Operations",
+  "start": "2026-10-28",
+  "revenue_impact_cr": 3.5,
+  "np_impact_cr": 2.0,
+  "status": "In progress",
+  "assumption": "SBU's own commitment (sheet col BM/BN), not an independent estimate",
+  "target_date": "31 December 2027 (proposed; subject to management approval).",
+  "data_ids": [
+   "A1",
+   "A8"
+  ]
+ },
+ {
+  "lever": "Revenue recovery plan",
+  "sbu": "ACEL",
+  "region": null,
+  "action": "We are prioritizing fund availability by exploring bank financing options to address our current financial constraints. At the same time, we are accelerating showroom expansion and ensuring faster execution of the remaining expansion plans. Additionally, we are prioritizing the immediate recruitment of manpower to strengthen our Corporate Sales and HVAC businesses, while also expanding our Omni-channel operations to enhance market coverage, improve sales performance, and drive sustainable business growth.",
+  "owner": "Md. Abu Tariq Zia Chowdhury, Chief Business Officer",
+  "start": "2026-10-28",
+  "revenue_impact_cr": 1.0,
+  "np_impact_cr": null,
+  "status": "In progress",
+  "assumption": "SBU's own commitment (sheet col BM/BN), not an independent estimate",
+  "target_date": "May 2027",
+  "data_ids": [
+   "A1",
+   "A8"
+  ]
+ },
+ {
+  "lever": "Revenue recovery plan",
+  "sbu": "NJL",
+  "region": null,
+  "action": "Pivot to a Payroll-Staffing-Training-led engine, amplify employer-account monetization, and convert the 9 inactive revenue streams to active. (1) Scale Payroll/Staffing/RPO (68.3% pillar) on 3 models — % of payroll disbursement (4–10%), per-head ৳600–1,200, prepaid per-position ৳500–700 (Model 3) — to ≥৳9.5L/mo (stretch ৳15L). (2) Rebuild Training (corporate + public + government) to ≥৳13L/mo. (3) Monetize the 7,343 employer accounts (636 verified → 1,000+) to ≥৳4L/mo and 300 paid posts/mo. (4) Activate ≥6 of 9 inactive streams (CV, BGV, Salary Survey, Employer Branding, Assessment, CV Bank, International, RMS/ATS, Premium) with first revenue. Target by Dec-26: 20–30L/mo exit run-rate, LTV:CAC 0.24 → ≥0.45, employer retention 18% → 40%, staffing-led high-GP mix.",
+  "owner": "Shoeb Hossen — Chief Business Officer (CBO), Nextjobz Limited",
+  "start": "2026-10-28",
+  "revenue_impact_cr": null,
+  "np_impact_cr": null,
+  "status": "In progress",
+  "assumption": "Not quantified in Cr by the SBU â€” impact shown as 'Data pending'",
+  "target_date": "31 December 2026",
+  "data_ids": [
+   "A1",
+   "A8"
+  ]
+ },
+ {
+  "lever": "Revenue recovery plan",
+  "sbu": "AMPL",
+  "region": null,
+  "action": "Move from market-building to volume. Build a Tier A/B referral base, activate B2B and corporate accounts for stable non-referral revenue, and run tracked health camps as acquisition funnels. Target state: Mar-27 monthly revenue at or above budget run-rate, with Sep exit (0.30 Cr) at least tripled.",
+  "owner": "Branch Manager HR CBO + CFO CBDO/CBO",
+  "start": "2026-10-28",
+  "revenue_impact_cr": null,
+  "np_impact_cr": null,
+  "status": "In progress",
+  "assumption": "Not quantified in Cr by the SBU â€” impact shown as 'Data pending'",
+  "target_date": "31-Mar-2027",
+  "data_ids": [
+   "A1",
+   "A8"
+  ]
+ }
+]
