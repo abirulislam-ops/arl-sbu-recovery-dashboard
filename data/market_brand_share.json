@@ -1,0 +1,106 @@
+[
+ {
+  "sbu": "ACCL",
+  "name": "Cement",
+  "ours": 5.61,
+  "leader": "Shah / Crown group",
+  "leader_share": null,
+  "basis": "Product share file · FY26 volume vs market"
+ },
+ {
+  "sbu": "AELOTH",
+  "name": "Essentials",
+  "ours": 24.62,
+  "leader": "Teer / Fresh",
+  "leader_share": null,
+  "basis": "Table rice product line · FY26"
+ },
+ {
+  "sbu": "AIL",
+  "name": "Ispat",
+  "ours": 3.38,
+  "leader": "BSRM",
+  "leader_share": 27.8,
+  "basis": "Steel volume vs market · brand pack leader"
+ },
+ {
+  "sbu": "ARMCL",
+  "name": "Ready Mix",
+  "ours": 9.99,
+  "leader": "Shah Cement RMC",
+  "leader_share": 22.93,
+  "basis": "Market benchmark · Sep-26 monthly"
+ },
+ {
+  "sbu": "ABSLASP",
+  "name": "ABSL – Asphalt",
+  "ours": 0.21,
+  "leader": "Eastern Refinery (BPC)",
+  "leader_share": null,
+  "basis": "Lube oil line only"
+ },
+ {
+  "sbu": "ACEL",
+  "name": "Consumer Electronics",
+  "ours": 0.1,
+  "leader": "Transcom Digital",
+  "leader_share": 23.0,
+  "basis": "Brand pack · ORCA <0.1%"
+ },
+ {
+  "sbu": "ACL",
+  "name": "Commodities – F&B",
+  "ours": null,
+  "leader": null,
+  "leader_share": null,
+  "basis": "no share file"
+ },
+ {
+  "sbu": "ALCL",
+  "name": "LifeCare – Pharmacy",
+  "ours": null,
+  "leader": "ASK / Aster",
+  "leader_share": null,
+  "basis": "no share file"
+ },
+ {
+  "sbu": "AMPL",
+  "name": "Mediplex",
+  "ours": null,
+  "leader": "Popular Diagnostic",
+  "leader_share": null,
+  "basis": "no share file"
+ },
+ {
+  "sbu": "ATL",
+  "name": "Telecom",
+  "ours": null,
+  "leader": null,
+  "leader_share": null,
+  "basis": "no share file"
+ },
+ {
+  "sbu": "NJL",
+  "name": "Next JobZ",
+  "ours": null,
+  "leader": "Bdjobs",
+  "leader_share": null,
+  "basis": "no share file"
+ },
+ {
+  "sbu": "AITL",
+  "name": "Infotech",
+  "ours": null,
+  "leader": null,
+  "leader_share": null,
+  "basis": "no share file"
+ },
+ {
+  "sbu": "ALL",
+  "name": "Logistics – Ex-CHA",
+  "ours": null,
+  "leader": null,
+  "leader_share": null,
+  "basis": "lane mix only (see block above)"
+ }
+]
