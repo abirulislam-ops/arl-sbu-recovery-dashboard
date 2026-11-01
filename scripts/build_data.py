@@ -17,7 +17,12 @@ from datetime import datetime
 BASE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA = os.path.join(BASE, "data")
 RAW = os.path.join(DATA, "_raw")
-AS_OF = "2026-10-28"
+AS_OF = "2026-11-01"
+
+# Fixed cost (A9) per BU, Cr — fin.tblAccountingJournal GL 4110001+4510001+4610001, Q1 FY27.
+# Pulled 2026-11-01 via enterprise-api-gateway MCP (SUM(numAmount)/1e7). All 12 loss SBUs.
+FIXED_COST = {138: 1.42, 144: 65.19, 175: 10.74, 220: 2.47, 221: 4.30, 224: 12.03,
+              225: 2.42, 239: 4.99, 241: 0.71, 249: 1.81, 252: 0.95, 255: 6.83}
 
 SBU = {
     "AELOTH": {"name": "Essentials",             "bu": 144, "group": "Food"},
@@ -188,7 +193,7 @@ def main():
             "finance_cost": abs(e["finance"]) if e else None,
             "net_profit": s["eat"]["q1_actual"],
             "budget_np": s["eat"]["q1_budget"],
-            "fixed_cost": None, "cm_pct": None, "breakeven_sales": None,
+            "fixed_cost": FIXED_COST.get(bu), "cm_pct": None, "breakeven_sales": None,
             "deficit": s["deficit"], "loss": s["loss"], "scope": s["scope"],
             "status": s["status"], "commit_rev": s["commit_rev"], "commit_loss": s["commit_loss"],
             "erp_revenue_q1": round(rev.get(bu, {}).get("2026-07", 0) + rev.get(bu, {}).get("2026-08", 0)
@@ -543,12 +548,9 @@ def main():
             "C2": "Competitor volume by region — owner Marketing/Strategy, 2026-11-02",
             "C3": "Own volume aligned to market definition — Sales Ops, 2026-11-02",
             "D2": "KPI target vs achievement — Sales Ops, 2026-11-02",
-            "D3": "CRM visit log — connected; 21 records total and none in Q1, so Q1 contact cannot be proven",
-            "D4": "Last contact with lost dealers — Sales Ops/IT, 2026-11-02",
-            "A3": "SKU-wise profitability — Finance, 2026-11-02",
-            "A4": "Profit per dealer/region — Finance, 2026-11-07",
+            "D3": "CRM visit log — oms.tblViciDialApiCallLog connected but last call 28-Aug-2025 (none in Q1)",
+            "D4": "Last contact with lost dealers — oms.tblViciDialFeedBack has 118 rows but none in Q1",
             "B2": "Dealer-wise monthly lifting — Sales Ops, 2026-11-02",
-            "B7": "Credit & receivables — Credit Control, 2026-11-02",
         },
     }
     w("_lineage.json", lineage)
@@ -559,23 +561,23 @@ def main():
                "|---|---|---|---|---|---|"]
     src = {
         "A1": ("SBU P&L (Q1)", "Scorecard sheet + ERP GL", "OK (Q1)", "Finance", "auto"),
-        "A2": ("Revenue bridge inputs", "ERP GL revenue + oms orders", "Partial (no qty/price split)", "Finance/Sales Ops", "auto"),
-        "A3": ("SKU profitability", "—", "MISSING", "Finance", "—"),
-        "A4": ("Profit per dealer/region", "—", "MISSING", "Finance", "—"),
-        "A5": ("Trade spend & schemes", "GL 4210001 (total only)", "Partial", "Marketing/Finance", "auto"),
-        "A6": ("RM & production cost", "mes cost sheet", "Partial", "Supply Chain", "—"),
-        "A7": ("Logistics cost", "GL 4410001 + order freight", "Partial", "Logistics", "auto"),
-        "A8": ("Budget vs actual", "Scorecard sheet", "OK", "Finance", "auto"),
-        "A9": ("Fixed cost & break-even", "ALL SE dashboard (9 BUs)", "Partial (2 of 12 SBUs)", "Finance", "auto"),
+        "A2": ("Revenue bridge inputs", "ERP GL revenue + oms.tblSalesOrderRow (qty × price)", "OK", "Finance/Sales Ops", "mcp"),
+        "A3": ("SKU profitability", "mes.tblBillOfMaterialHeader + tblCostSheetHeader + pro purchase", "Partial (mfg SBUs only)", "Finance", "mcp"),
+        "A4": ("Profit per dealer/region", "oms.tblSalesOrderHeader + fin GL + oms.tblDistributorPerfromanceScore", "Partial (scorecard Oct-25 only)", "Finance", "mcp"),
+        "A5": ("Trade spend & schemes", "GL 4210001 + region dimension (join partner district)", "Partial", "Marketing/Finance", "auto"),
+        "A6": ("RM & production cost", "mes.tblBillOfMaterialHeader + tblCostSheetHeader + pro purchase", "Partial (conversion cost needs MOH config)", "Supply Chain", "mcp"),
+        "A7": ("Logistics cost", "GL 4410001 + sms.tblDeliveryHeader/Row", "Partial", "Logistics", "auto"),
+        "A8": ("Budget vs actual", "bgt.tblBudgetIncomeExpenseHeader + Row (FY 26-27) + scorecard", "OK", "Finance", "mcp"),
+        "A9": ("Fixed cost & break-even", "fin GL 4110001/4510001/4610001", "OK (all SBUs)", "Finance", "mcp"),
         "B1": ("Dealer master", "prt.tblBusinessPartner", "Partial (thana on 17% of partners)", "Sales Ops", "auto"),
         "B2": ("Dealer monthly lifting", "oms orders", "Partial (7 SBUs)", "Sales Ops", "auto"),
         "B3": ("Active dealer count", "oms orders (derived)", "Partial (7 SBUs)", "Sales Ops", "auto"),
         "B4": ("Lost dealers", "oms orders (derived)", "Partial (7 SBUs, 622 dealers)", "Sales Ops", "auto"),
         "B5": ("Declining dealers", "oms orders (derivable)", "Partial", "Sales Ops", "—"),
         "B6": ("New dealers", "first order date", "Partial", "Sales Ops", "—"),
-        "B7": ("Credit & receivables", "fin AR", "Partial", "Credit Control", "—"),
+        "B7": ("Credit & receivables", "fin.tblAccountingJournal (GL 1120001 AR)", "OK", "Credit Control", "mcp"),
         "B8": ("Unfulfilled orders", "oms undelivered value (pulled)", "Pulled — value shows a unit error (Essentials 93,745 Cr vs 555 Cr revenue)", "Supply Chain", "mcp"),
-        "B9": ("Complaints/claims", "ARL CRM service cases (5)", "Partial (Ready Mix only)", "QA", "auto"),
+        "B9": ("Complaints/claims", "prt.tblSiteComplainInfo + tblSiteComplainInfoDetails", "Partial (Ready Mix only)", "QA", "auto"),
         "C1": ("Market size by region", "Marketing files: Cement + Ready Mix national", "Partial (2 of 8)", "Marketing Data Head", "auto"),
         "C2": ("Competitor volume by region", "Marketing files (brand volumes)", "Partial (national only)", "Marketing Data Head", "auto"),
         "C3": ("Own volume (market definition)", "—", "MISSING", "Sales Ops", "—"),
@@ -583,8 +585,8 @@ def main():
         "C5": ("Distribution coverage", "rtm outlet + Retail Outlet file", "Partial", "Marketing", "auto"),
         "D1": ("Org structure & vacancies", "PeopleDesk DB (72 tables)", "Available — not yet pulled", "HR", "mcp"),
         "D2": ("KPI target vs achievement", "hr/kpi-target-achievement", "Available — not yet pulled", "Sales Ops", "mcp"),
-        "D3": ("CRM call & visit log", "ARL CRM API", "Delivered — but empty for Q1 (22 visits, all Oct-26)", "Sales Ops/IT", "auto"),
-        "D4": ("Last contact with lost dealers", "ARL CRM API", "Delivered — no Q1 records exist", "Sales Ops/IT", "auto"),
+        "D3": ("CRM call & visit log", "oms.tblViciDialApiCallLog + tblCustomerVisit", "Delivered — empty for Q1 (last call 28-Aug-2025)", "Sales Ops/IT", "mcp"),
+        "D4": ("Last contact with lost dealers", "oms.tblViciDialFeedBack", "Delivered — no Q1 records (last 15-Nov-2025)", "Sales Ops/IT", "mcp"),
         "D5": ("Beat compliance", "rtm tour plan + sitevisit", "Available — not yet pulled", "Sales Ops", "mcp"),
         "D6": ("Attrition & transfers", "PeopleDesk DB", "Available — not yet pulled", "HR", "mcp"),
         "E1": ("Competitor price list", "Ready Mix benchmark (ASP by brand)", "Partial (1 SBU)", "Sales/Marketing", "auto"),
@@ -594,7 +596,7 @@ def main():
         "F4": ("Promotion (own)", "Brand pack ATL/BTL mix", "Partial", "Marketing", "auto"),
         "G2": ("Stock-outs", "wms stock + movement", "Available — not yet pulled", "Supply Chain", "mcp"),
         "G3": ("OTIF / fill rate", "oms order vs delivered qty (pulled)", "Pulled — but qty is mixed UOM (MT/bag/pc), so the % is not usable yet", "Supply Chain", "mcp"),
-        "H1": ("Dealer exit interviews", "—", "MISSING", "Sales", "—"),
+        "H1": ("Dealer exit interviews", "oms.tblViciDialFeedBack (call-center feedback)", "Partial (118 rows, none in Q1)", "Sales", "mcp"),
         "I1": ("Macro events", "SBU root-cause notes (qualitative)", "Partial", "Strategy", "manual"),
         "P1": ("People cost by SBU", "PeopleDesk payroll via ctc-mcp", "OK", "HR / Finance", "auto"),
         "P2": ("CSAT & brand health", "CBDO KPI sheet", "OK", "Marketing", "auto"),
