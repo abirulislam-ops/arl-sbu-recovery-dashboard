@@ -1,56 +1,101 @@
 [
  {
   "sbu": "AIL",
-  "region": "National (brand level)",
+  "region": "National (TMT rebar)",
   "period": "Q1FY27",
-  "market_volume": null,
-  "own_volume": null,
-  "own_share": 0.029500000000000002,
-  "own_share_text": "2.95% (8th position)",
+  "market_volume": 5600000,
+  "own_volume": 121060,
+  "own_share": 0.035,
+  "own_share_text": "3.5% (6th) · +13.2% YoY volume",
   "competitors": [
    {
     "name": "BSRM",
     "volume": null,
-    "share": 0.278
+    "share": 0.33
    },
    {
     "name": "AKS",
     "volume": null,
-    "share": 0.182
+    "share": 0.136
+   },
+   {
+    "name": "KSRM",
+    "volume": null,
+    "share": 0.105
    },
    {
     "name": "GPH",
     "volume": null,
-    "share": 0.09300000000000001
+    "share": 0.045
+   },
+   {
+    "name": "ANWAR ISPAT",
+    "volume": null,
+    "share": 0.029
+   },
+   {
+    "name": "Rahim Steel",
+    "volume": null,
+    "share": 0.028
+   },
+   {
+    "name": "Others",
+    "volume": null,
+    "share": 0.292
    }
   ],
-  "source": "Brand Marketing Pack (akij-resource-brand-marketing-pack.pages.dev)",
-  "is_proxy": true,
-  "note": "Brand-level share, not region × quarter. C1/C2 (regional industry volume) still pending."
+  "source": "Marketing Google Sheet — Ispat share-of-wallet benchmark (item 50)",
+  "is_proxy": false,
+  "note": "Mar'26 vs Jul'25: BSRM 22.6→33.0%, AKS 20.2→13.6%, KSRM 5.9→10.5%, GPH 12.7→4.5%, Akij 2.6→3.5%. Market 56 Lac t (2024)→105 Lac t (2027e), ~BDT 50,000 Cr. Regional split still field intelligence."
  },
  {
   "sbu": "ARMCL",
-  "region": "National (brand level)",
+  "region": "National (RMC)",
   "period": "Q1FY27",
-  "market_volume": null,
-  "own_volume": null,
-  "own_share": 0.08,
-  "own_share_text": "~8% (no DWH source)",
+  "market_volume": 9447710,
+  "own_volume": 944444,
+  "own_share": 0.112,
+  "own_share_text": "11.2% (5th) — Sep'26 · 9.99% FY26",
   "competitors": [
    {
-    "name": "Local unbranded RMC (price)",
-    "volume": null,
-    "share": null
+    "name": "Shah Cement RMC",
+    "volume": 2166600,
+    "share": 0.228
    },
    {
-    "name": "Other branded RMC suppliers",
-    "volume": null,
-    "share": null
+    "name": "NDE",
+    "volume": 1705000,
+    "share": 0.182
+   },
+   {
+    "name": "Bashundhara RMC",
+    "volume": 1611111,
+    "share": 0.175
+   },
+   {
+    "name": "Crown RMC",
+    "volume": 1555555,
+    "share": 0.173
+   },
+   {
+    "name": "ABC RMC",
+    "volume": 633000,
+    "share": 0.063
+   },
+   {
+    "name": "Concord RMC",
+    "volume": 555000,
+    "share": 0.067
+   },
+   {
+    "name": "Mir RMC",
+    "volume": 277000,
+    "share": 0.029
    }
   ],
-  "source": "Brand Marketing Pack (akij-resource-brand-marketing-pack.pages.dev)",
-  "is_proxy": true,
-  "note": "Brand-level share, not region × quarter. C1/C2 (regional industry volume) still pending."
+  "source": "Marketing Google Sheet — Ready Mix competitor benchmark (item 44/47)",
+  "is_proxy": false,
+  "note": "Total market 85.05 Mn cft (9.45 Mn/month). Akij ASP 369 BDT/cft (highest). Sep'26: Shah 22.8%, NDE 18.2%, Bashundhara 17.5%, Crown 17.3%, Akij 11.2%, ABC 6.3%, Concord 6.7%."
  },
  {
   "sbu": "ACEL",

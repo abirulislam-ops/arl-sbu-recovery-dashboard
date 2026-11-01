@@ -3,50 +3,62 @@
   {
    "sbu": "AIL",
    "name": "Ispat",
-   "source": "Brand pack + market-share file",
+   "source": "Marketing Google Sheet (items 45/50/51)",
    "facts": [
     {
-     "label": "National rebar market (implied)",
-     "value": "~5.4 Mn MT",
-     "status": "Derived",
-     "evidence": "160,613 MT sold at 2.95% share (FY25-26)"
+     "label": "National rebar market",
+     "value": "56 Lac t (2024) → 105 Lac t (2027e)",
+     "status": "Researched",
+     "evidence": "value ~BDT 50,000 Cr; industry capacity 90 Lac t (2025)"
     },
     {
-     "label": "Our volume FY25-26",
-     "value": "160,613 MT (+10.7%)",
+     "label": "Our share (Mar'26)",
+     "value": "3.5% (6th) · +0.87 pts vs Jul'25",
      "status": "Researched",
-     "evidence": "Brand pack"
+     "evidence": "BSRM 33.0% · AKS 13.6% · KSRM 10.5% · GPH 4.5%"
+    },
+    {
+     "label": "Our volume",
+     "value": "121,060 MT (+13.2% YoY)",
+     "status": "Researched",
+     "evidence": "FY25-26 YTD Mar'26; peak 145,051 MT (FY24-25)"
     },
     {
      "label": "Region-wise market size",
      "value": "not public",
      "status": "DATA REQUIRED",
-     "evidence": "industry data not published"
+     "evidence": "field intelligence / dealer invoices required"
     }
    ]
   },
   {
    "sbu": "ARMCL",
    "name": "Ready Mix",
-   "source": "Market benchmark file (ask 43)",
+   "source": "Marketing Google Sheet (items 44/47) + expansion strategy slides (item 55)",
    "facts": [
     {
      "label": "National RMC market",
-     "value": "85.05 Mn BDT / month",
+     "value": "85.05 Mn cft / yr (9.45 Mn/month)",
      "status": "Researched",
-     "evidence": "8-player benchmark, Sep-26"
+     "evidence": "8-player benchmark, Jul'25–Mar'26"
     },
     {
      "label": "Our share",
-     "value": "9.99% (5th)",
+     "value": "11.2% (5th) — Sep'26",
      "status": "Researched",
-     "evidence": "same file"
+     "evidence": "9.99% FY26 · ASP 369 BDT/cft (highest)"
     },
     {
      "label": "Leader",
-     "value": "Shah 22.93%",
+     "value": "Shah 22.8% (Sep'26)",
      "status": "Researched",
-     "evidence": "same file"
+     "evidence": "NDE 18.2% · Bashundhara 17.5% · Crown 17.3%"
+    },
+    {
+     "label": "Demand hubs (slides)",
+     "value": "Purbachal · Jolshiri · Jhilmil · BSMSN · Payra",
+     "status": "Researched",
+     "evidence": "expansion strategy: 4 plants (Dhk-3, Ctg-1), 96 mixers"
     }
    ]
   },
@@ -109,7 +121,7 @@
   {
    "sbu": "ALL",
    "name": "Logistics – Ex-CHA",
-   "source": "Market size by trade lane (ask 44)",
+   "source": "Marketing Google Sheet (items 44–60) + 7P/price xlsx",
    "facts": [
     {
      "label": "Market covered by lanes",
@@ -122,6 +134,12 @@
      "value": "2,397 CBM",
      "status": "Researched",
      "evidence": "shipment register"
+    },
+    {
+     "label": "Competitor sea-export share",
+     "value": "Maersk 9.99% · KN 8.38% · MGH 7.41% · DSV 6.12%",
+     "status": "Researched",
+     "evidence": "item 50 competitor profiles (TEU volumes)"
     },
     {
      "label": "Biggest gap",

@@ -1,0 +1,122 @@
+[
+ {
+  "sbu": "AELOTH",
+  "name": "Essentials",
+  "skus": 1043,
+  "revenue_cr": 559.087,
+  "cogs_cr": 496.745,
+  "gp_pct": 10.8,
+  "cm_pct": 8.5,
+  "cost_path": "BOM (1,204) x RM price + conversion"
+ },
+ {
+  "sbu": "AIL",
+  "name": "Ispat",
+  "skus": 75,
+  "revenue_cr": 281.776,
+  "cogs_cr": 237.393,
+  "gp_pct": 13.5,
+  "cm_pct": 12.2,
+  "cost_path": "BOM (185) x billet/scrap + conversion"
+ },
+ {
+  "sbu": "ARMCL",
+  "name": "Ready Mix",
+  "skus": 214,
+  "revenue_cr": 106.212,
+  "cogs_cr": 76.163,
+  "gp_pct": 12.7,
+  "cm_pct": 20.2,
+  "cost_path": "Cost sheet (214 production orders) - direct"
+ },
+ {
+  "sbu": "AMPL",
+  "name": "Mediplex",
+  "skus": null,
+  "revenue_cr": 0.538,
+  "cogs_cr": null,
+  "gp_pct": 16.0,
+  "cm_pct": 53.7,
+  "cost_path": "Purchase price (290 POs)"
+ },
+ {
+  "sbu": "ACL",
+  "name": "Commodities – F&B",
+  "skus": 180,
+  "revenue_cr": 34.944,
+  "cogs_cr": 42.098,
+  "gp_pct": 8.0,
+  "cm_pct": -22.3,
+  "cost_path": "Purchase price (691 POs)"
+ },
+ {
+  "sbu": "ALCL",
+  "name": "LifeCare – Pharmacy",
+  "skus": 2,
+  "revenue_cr": 21.132,
+  "cogs_cr": 18.683,
+  "gp_pct": 11.9,
+  "cm_pct": 10.8,
+  "cost_path": "Pharmacy portal purchase (98,333 POs)"
+ },
+ {
+  "sbu": "ABSLASP",
+  "name": "ABSL – Asphalt",
+  "skus": 94,
+  "revenue_cr": 16.126,
+  "cogs_cr": 9.156,
+  "gp_pct": 5.2,
+  "cm_pct": 28.8,
+  "cost_path": "BOM (91) x bitumen + conversion"
+ },
+ {
+  "sbu": "ATL",
+  "name": "Telecom",
+  "skus": 197,
+  "revenue_cr": 2.884,
+  "cogs_cr": 3.939,
+  "gp_pct": -36.6,
+  "cm_pct": -53.0,
+  "cost_path": "Purchase price (169 POs)"
+ },
+ {
+  "sbu": "NJL",
+  "name": "Next JobZ",
+  "skus": null,
+  "revenue_cr": 0.658,
+  "cogs_cr": null,
+  "gp_pct": 36.7,
+  "cm_pct": 86.6,
+  "cost_path": "Service sales (587) - people/platform"
+ },
+ {
+  "sbu": "AITL",
+  "name": "Infotech",
+  "skus": 390,
+  "revenue_cr": 2.601,
+  "cogs_cr": 2.241,
+  "gp_pct": 13.3,
+  "cm_pct": 2.4,
+  "cost_path": "People/overhead cost (IT service)"
+ },
+ {
+  "sbu": "ACEL",
+  "name": "Consumer Electronics",
+  "skus": null,
+  "revenue_cr": 2.165,
+  "cogs_cr": 1.662,
+  "gp_pct": 13.0,
+  "cm_pct": 13.6,
+  "cost_path": "Purchase price (338 POs)"
+ },
+ {
+  "sbu": "ALL",
+  "name": "Logistics – Ex-CHA",
+  "skus": null,
+  "revenue_cr": 30.35,
+  "cogs_cr": null,
+  "gp_pct": 2.8,
+  "cm_pct": 98.3,
+  "cost_path": "TMS freight cost (10,034 shipment rates)"
+ }
+]

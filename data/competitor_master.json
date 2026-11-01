@@ -1,0 +1,9 @@
+{
+  "collected_at": "2026-11-01",
+  "source": "oms.tblCompetitor (competitor master)",
+  "note": "Competitor CANDIDATE list per SBU. The specific 'which competitor won each lost dealer' (E3) is a field survey — this list + national share narrows it.",
+  "sbus": [
+    {"sbu": "Essentials", "competitors": 53, "national_leader": "Meghna Group", "key_competitors": ["City Group", "T.K.Group", "ACI Foods", "Basundhara Group", "PRAN Group", "Square Group", "Bangladesh Edible Oil", "Sena Kallan"]},
+    {"sbu": "Ispat", "competitors": 25, "national_leader": "BSRM", "key_competitors": ["Abul Khair Steel", "GPH Ispat", "Kabir Steel (KSRM)", "Anwar Ispat", "Rahim Steel", "Metrocem Ispat", "Bandar Steel"]}
+  ]
+}

@@ -18,17 +18,17 @@
  {
   "sbu": "AIL",
   "name": "Ispat",
-  "ours": 3.38,
+  "ours": 3.5,
   "leader": "BSRM",
-  "leader_share": 27.8,
-  "basis": "Steel volume vs market · brand pack leader"
+  "leader_share": 33.0,
+  "basis": "Marketing sheet Mar'26 benchmark (Jul'25 2.6% → Mar'26 3.5%)"
  },
  {
   "sbu": "ARMCL",
   "name": "Ready Mix",
-  "ours": 9.99,
+  "ours": 11.2,
   "leader": "Shah Cement RMC",
-  "leader_share": 22.93,
+  "leader_share": 22.8,
   "basis": "Market benchmark · Sep-26 monthly"
  },
  {
@@ -99,8 +99,8 @@
   "sbu": "ALL",
   "name": "Logistics – Ex-CHA",
   "ours": null,
-  "leader": null,
-  "leader_share": null,
-  "basis": "lane mix only (see block above)"
+  "leader": "Maersk Logistics",
+  "leader_share": 9.99,
+  "basis": "sea-export forwarder share (item 50: Maersk 9.99% · KN 8.38% · MGH 7.41%)"
  }
 ]

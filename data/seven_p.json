@@ -26,5 +26,20 @@
  {"sbu":"ATL","p":"Promotion","own":null,"comp":"4/5 benchmark","note":"Own Pending — campaign reach, dealer schemes.","status":"open"},
  {"sbu":"ATL","p":"People","own":null,"comp":"4/5 benchmark","note":"Own Pending — sales coverage, product knowledge.","status":"open"},
  {"sbu":"ATL","p":"Process","own":null,"comp":"4/5 benchmark","note":"Own Pending — fulfilment, warranty, CRM.","status":"open"},
- {"sbu":"ATL","p":"Physical evidence","own":null,"comp":"4/5 benchmark","note":"Own Pending — store presence, branding, cert.","status":"open"}
+ {"sbu":"ATL","p":"Physical evidence","own":null,"comp":"4/5 benchmark","note":"Own Pending — store presence, branding, cert.","status":"open"},
+ {"sbu":"AELOTH","p":"Product","own_q4":5,"own":5,"comp":"Radhuni 5 · Fresh 4 · Teer 5 · PRAN 3 · ACI 4","note":"Marketing 7P file (item 50).","status":"evidence"},
+ {"sbu":"AELOTH","p":"Price","own_q4":3,"own":3,"comp":"Radhuni 5 · Fresh 5 · Teer 4 · PRAN 4 · ACI 4","note":"Marketing 7P file (item 50).","status":"evidence"},
+ {"sbu":"AELOTH","p":"Place","own_q4":3,"own":3,"comp":"Radhuni 5 · Fresh 5 · Teer 4 · PRAN 5 · ACI 4","note":"Marketing 7P file (item 50).","status":"evidence"},
+ {"sbu":"AELOTH","p":"Promotion","own_q4":3,"own":3,"comp":"Radhuni 5 · Fresh 5 · Teer 5 · PRAN 4 · ACI 4","note":"Marketing 7P file (item 50).","status":"evidence"},
+ {"sbu":"AELOTH","p":"People","own_q4":3,"own":3,"comp":"Radhuni 3 · Fresh 3 · Teer 3 · PRAN 3 · ACI 3","note":"Marketing 7P file (item 50).","status":"evidence"},
+ {"sbu":"AELOTH","p":"Process","own_q4":5,"own":5,"comp":"Radhuni 4 · Fresh 4 · Teer 4 · PRAN 4 · ACI 4","note":"Marketing 7P file (item 50).","status":"evidence"},
+ {"sbu":"AELOTH","p":"Physical evidence","own_q4":3,"own":3,"comp":"Radhuni 4 · Fresh 4 · Teer 4 · PRAN 4 · ACI 4","note":"Marketing 7P file (item 50).","status":"evidence"},
+ {"sbu":"AIL","p":"Product","own_q4":3,"own":3,"comp":"BSRM 4 · AKS 4 · KSRM 4 · GPH 3","note":"Own FY25-26 → FY26-27 target (item 51). 700MPa QuakeShield; 28/32mm under-performing.","status":"evidence"},
+ {"sbu":"AIL","p":"Price","own_q4":3,"own":3,"comp":"BSRM 5 · AKS 4 · KSRM 4 · GPH 4","note":"ASP 93,200–98,000 (budget avg 95,861). Share 3.49% vs BSRM 33% = price-led.","status":"evidence"},
+ {"sbu":"AIL","p":"Place","own_q4":3,"own":3,"comp":"BSRM 5 · AKS 4 · KSRM 4 · GPH 3","note":"1 plant; 8 regions but 62% of sales from 3.","status":"evidence"},
+ {"sbu":"AIL","p":"Promotion","own_q4":4,"own":4,"comp":"BSRM 4 · AKS 3 · KSRM 3 · GPH 3","note":"TVC 15 ch (2.49 Cr); Meta 7.53M; 49 mason programs.","status":"evidence"},
+ {"sbu":"AIL","p":"People","own_q4":3,"own":3,"comp":"BSRM 4 · AKS 4 · KSRM 3 · GPH 3","note":"~40% monthly dealer defection.","status":"evidence"},
+ {"sbu":"AIL","p":"Process","own_q4":2,"own":3,"comp":"BSRM 4 · AKS 4 · KSRM 3 · GPH 3","note":"Retention 27%→72.4%→75.2%; no OTIF dashboard; no min stock policy.","status":"evidence"},
+ {"sbu":"AIL","p":"Physical evidence","own_q4":4,"own":4,"comp":"BSRM 5 · AKS 4 · KSRM 4 · GPH 3","note":"175/175 light boxes, 320 shop branding, 13 billboards.","status":"evidence"},
+ {"sbu":"AIL","p":"Weighted score (out of 5)","own_q4":3.15,"own":3.25,"comp":"BSRM 4.45 · AKS 3.85 · KSRM 3.65 · GPH 3.20","note":"Widest gaps vs BSRM: place, physical evidence, process.","status":"evidence"}
 ]

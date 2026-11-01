@@ -1,0 +1,14 @@
+{
+  "collected_at": "2026-11-01",
+  "note": "On-time = delivered <= schedule date (sms.tblDeliveryHeader). Fill rate = delivered/ordered by VALUE (Q1 FY27, avoids mixed-UOM). Primary UOM per SBU set below.",
+  "sbus": [
+    {"sbu": "Essentials", "uom": "Bag", "ontime_pct": 98.5, "fill_pct": 96.8},
+    {"sbu": "Ispat", "uom": "Metric Tons", "ontime_pct": 98.7, "fill_pct": 82.8},
+    {"sbu": "Ready Mix", "uom": "Cubic Foot", "ontime_pct": 100.0, "fill_pct": 73.1},
+    {"sbu": "Asphalt", "uom": "Square meter", "ontime_pct": 98.8, "fill_pct": 91.1},
+    {"sbu": "Commodities F&B", "uom": "Carton", "ontime_pct": 94.7, "fill_pct": 99.7},
+    {"sbu": "Telecom", "uom": "Pieces", "ontime_pct": 100.0, "fill_pct": 100.0},
+    {"sbu": "Infotech", "uom": "Pieces", "ontime_pct": 100.0, "fill_pct": 91.9},
+    {"sbu": "Nobayon", "uom": "Kilogram", "ontime_pct": 100.0, "fill_pct": 98.9}
+  ]
+}

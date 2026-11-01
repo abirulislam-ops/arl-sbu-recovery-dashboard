@@ -1,0 +1,14 @@
+{
+  "collected_at": "2026-11-01",
+  "note": "Own volume converted to the market-definition unit per SBU. Bag=50kg, Pieces=1kg assumed (net weight varies 1–50kg by item — an itemised net-weight join refines it). All-time cumulative.",
+  "sbus": [
+    {"sbu": "Ispat", "uom": "MT", "own_volume": 1795274.4},
+    {"sbu": "Ready Mix", "uom": "m3", "own_volume": 1873823.8},
+    {"sbu": "Essentials", "uom": "MT", "own_volume": 22384086.3},
+    {"sbu": "Nobayon", "uom": "MT", "own_volume": 340283.5},
+    {"sbu": "Asphalt", "uom": "MT", "own_volume": 227344.0},
+    {"sbu": "Commodities", "uom": "MT", "own_volume": 136239.0},
+    {"sbu": "Telecom", "uom": "pieces", "own_volume": 292492.0},
+    {"sbu": "Electronics", "uom": "pieces", "own_volume": 2217.0}
+  ]
+}
