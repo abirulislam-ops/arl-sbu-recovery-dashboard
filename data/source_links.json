@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-10-29T18:37:36",
+ "checked_at": "2026-11-01T10:02:18",
  "sbus": [
   {
    "sbu": "Essentials",
@@ -909,10 +909,10 @@
      "ask": 45.0,
      "function": "Marketing",
      "item": "Own volume by region — same definition as market size",
-     "label": "https://erp.peopledesk.io/sales-management/report/customerbalancedaysnlimit",
-     "url": "https://erp.peopledesk.io/sales-management/report/customerbalancedaysnlimit",
+     "label": "https://docs.google.com/spreadsheets/d/1XM3KomXsitUUjdHy3Ve3TThWlzFfGaowWFC4CRtcFP0/edit?usp=sharing",
+     "url": "https://docs.google.com/spreadsheets/d/1XM3KomXsitUUjdHy3Ve3TThWlzFfGaowWFC4CRtcFP0/edit?usp=sharing",
      "kind": "link",
-     "access": "link"
+     "access": "sheet-public"
     },
     {
      "ask": 47.0,
