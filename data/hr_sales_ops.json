@@ -1,0 +1,28 @@
+{
+  "collected_at": "2026-11-01",
+  "D1_org_structure": {
+    "source": "peopledesk_arl/saas.empEmployeeBasicInfo",
+    "total_employees": 19008,
+    "headcount_loss_sbus": {"Essentials": 2820, "Ready Mix": 2864, "Ispat": 1191, "LifeCare": 391, "Asphalt": 230}
+  },
+  "D2_kpi_target": {
+    "source": "oms.tblCustomerSalesTargetHeader + tblManpowerSalesTarget",
+    "customer_target_rows": {"Essentials": 32194, "Ispat": 5753, "Asphalt": 1909, "Ready Mix": 1146, "Commodities F&B": 36, "Infotech": 6, "Logistics": 4, "Next JobZ": 4, "Nobayon": 3}
+  },
+  "D5_beat_compliance": {
+    "source": "rtm.tblRoutePlanHeader + tblTourPlanHeader",
+    "route_plan": {"Essentials": 6695},
+    "tour_plan": 23
+  },
+  "D6_attrition": {
+    "source": "peopledesk_arl/saas.empEmployeeSeparation + empTransferNPromotion",
+    "separations": 2248,
+    "by_year": {"2026": 951, "2025": 796, "2024": 487, "2023": 14},
+    "transfers": 76
+  },
+  "G2_stock": {
+    "source": "wms.tblInventoryTransactionHeader",
+    "total_transactions": 3160845,
+    "loss_sbu_transactions": {"Ready Mix": 550354, "Essentials": 300371, "Ispat": 190356, "LifeCare": 114954, "Asphalt": 29114, "Nobayon": 12690, "Commodities F&B": 9374}
+  }
+}

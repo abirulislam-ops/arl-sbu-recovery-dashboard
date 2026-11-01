@@ -1,0 +1,31 @@
+{
+  "source": "sms.tblMarketShareSalesContribution + sms.tblMarketShareCompany (iBOSDDD)",
+  "collected_at": "2026-11-01",
+  "note": "Cement (BU 4) market-share survey. Real data only for 2018 and 2022; 2019-21 empty, 2024-26 very thin (Q1 FY27 = ~14 rows). Q1 FY27 vs Q4 FY26 comparison not possible (Q4 empty).",
+  "cement_share_2022": [
+    {"company": "Fresh", "qty": 4675482},
+    {"company": "Shah", "qty": 3747528},
+    {"company": "Premier", "qty": 2907144},
+    {"company": "Akij", "qty": 2791490},
+    {"company": "King", "qty": 2394688},
+    {"company": "Seven Rings", "qty": 2133362},
+    {"company": "Crown", "qty": 1969510},
+    {"company": "Bashundhara", "qty": 1849087},
+    {"company": "Holcim", "qty": 1415556},
+    {"company": "Five Rings", "qty": 1294438},
+    {"company": "Supercrete", "qty": 1263095},
+    {"company": "Metrocem", "qty": 997140},
+    {"company": "Scan", "qty": 994487},
+    {"company": "Insee", "qty": 967636},
+    {"company": "Bengal", "qty": 896568},
+    {"company": "Anchor", "qty": 868011},
+    {"company": "Aman Cem", "qty": 738551}
+  ],
+  "q1_fy27_share": [
+    {"company": "Aman Cem", "qty": 2080},
+    {"company": "Akij", "qty": 1783},
+    {"company": "Anchor", "qty": 52},
+    {"company": "A.R", "qty": 11},
+    {"company": "Anwar", "qty": 5}
+  ]
+}

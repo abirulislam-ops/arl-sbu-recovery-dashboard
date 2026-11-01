@@ -19,10 +19,10 @@ DATA = os.path.join(BASE, "data")
 RAW = os.path.join(DATA, "_raw")
 AS_OF = "2026-11-01"
 
-# Fixed cost (A9) per BU, Cr — fin.tblAccountingJournal GL 4110001+4510001+4610001, Q1 FY27.
-# Pulled 2026-11-01 via enterprise-api-gateway MCP (SUM(numAmount)/1e7). All 12 loss SBUs.
-FIXED_COST = {138: 1.42, 144: 65.19, 175: 10.74, 220: 2.47, 221: 4.30, 224: 12.03,
-              225: 2.42, 239: 4.99, 241: 0.71, 249: 1.81, 252: 0.95, 255: 6.83}
+# Fixed cost (A9) per BU, Cr — fin.tblAccountingJournal GL 4110001 (admin) + 4210001 (marketing)
+# + 4510001 (finance) + 4610001 (depreciation), Q1 FY27. Pulled 2026-11-01 via gateway MCP.
+FIXED_COST = {138: 1.42, 144: 70.77, 175: 11.59, 220: 3.14, 221: 4.32, 224: 17.56,
+              225: 2.44, 239: 5.11, 241: 0.81, 249: 1.90, 252: 3.09, 255: 7.07}
 
 SBU = {
     "AELOTH": {"name": "Essentials",             "bu": 144, "group": "Food"},
@@ -210,6 +210,16 @@ def main():
             "owner_text": s["owner"], "target_date": s["target_date"],
         })
     sbu_pnl.sort(key=lambda r: -(r["loss"] or 0))
+    # contribution margin % + break-even (fixed cost ÷ CM%) — variable cost = COGS + S&D + logistics
+    for r in sbu_pnl:
+        rev = r["erp_revenue_q1"] if r["erp_revenue_q1"] else (r["revenue"] or 0)
+        cogs = r["cogs"] or 0
+        sd = r["sd_cost"] or 0
+        fc = r["fixed_cost"]
+        contrib = rev - cogs - sd
+        cm = contrib / rev if rev else None
+        r["cm_pct"] = round(cm, 4) if cm is not None else None
+        r["breakeven_sales"] = round(fc / cm, 1) if (fc and cm and cm > 0) else None
 
     # ---------- loss_bridge : needs qty/price/mix (A2) — not available ----------
     loss_bridge = [{"sbu": r["sbu"], "q4_np": None, "volume": None, "price": None, "mix": None,
@@ -546,7 +556,7 @@ def main():
         "pending": {
             "C1": "Regional market size — only Cement arrives automatically; other SBUs need a parser per file format",
             "C2": "Competitor volume by region — owner Marketing/Strategy, 2026-11-02",
-            "C3": "Own volume aligned to market definition — Sales Ops, 2026-11-02",
+            "C3": "Own volume in oms.tblSalesOrderRow (8 BUs) — UOM alignment to market definition still needed",
             "D2": "KPI target vs achievement — Sales Ops, 2026-11-02",
             "D3": "CRM visit log — oms.tblViciDialApiCallLog connected but last call 28-Aug-2025 (none in Q1)",
             "D4": "Last contact with lost dealers — oms.tblViciDialFeedBack has 118 rows but none in Q1",
@@ -576,25 +586,25 @@ def main():
         "B5": ("Declining dealers", "oms orders (derivable)", "Partial", "Sales Ops", "—"),
         "B6": ("New dealers", "first order date", "Partial", "Sales Ops", "—"),
         "B7": ("Credit & receivables", "fin.tblAccountingJournal (GL 1120001 AR)", "OK", "Credit Control", "mcp"),
-        "B8": ("Unfulfilled orders", "oms undelivered value (pulled)", "Pulled — value shows a unit error (Essentials 93,745 Cr vs 555 Cr revenue)", "Supply Chain", "mcp"),
+        "B8": ("Unfulfilled orders", "oms.tblSalesOrderRow numUndeliveryValues (Q1-scoped)", "OK — Ispat 65.4 · Ready Mix 41.3 · Essentials 18.1 Cr short", "Supply Chain", "mcp"),
         "B9": ("Complaints/claims", "prt.tblSiteComplainInfo + tblSiteComplainInfoDetails", "Partial (Ready Mix only)", "QA", "auto"),
         "C1": ("Market size by region", "Marketing files: Cement + Ready Mix national", "Partial (2 of 8)", "Marketing Data Head", "auto"),
         "C2": ("Competitor volume by region", "Marketing files (brand volumes)", "Partial (national only)", "Marketing Data Head", "auto"),
-        "C3": ("Own volume (market definition)", "—", "MISSING", "Sales Ops", "—"),
+        "C3": ("Own volume (market definition)", "oms.tblSalesOrderRow numOrderQuantity + tblTerritory district", "Partial (8 of 13 BUs; UOM mix to align)", "Sales Ops", "mcp"),
         "C4": ("Dealer share-of-wallet", "—", "MISSING", "Sales", "—"),
         "C5": ("Distribution coverage", "rtm outlet + Retail Outlet file", "Partial", "Marketing", "auto"),
-        "D1": ("Org structure & vacancies", "PeopleDesk DB (72 tables)", "Available — not yet pulled", "HR", "mcp"),
-        "D2": ("KPI target vs achievement", "hr/kpi-target-achievement", "Available — not yet pulled", "Sales Ops", "mcp"),
+        "D1": ("Org structure & vacancies", "peopledesk_arl/saas.empEmployeeBasicInfo", "Pulled (19,008 employees)", "HR", "mcp"),
+        "D2": ("KPI target vs achievement", "oms.tblCustomerSalesTargetHeader + tblManpowerSalesTarget", "Pulled (Essentials 32,194 · Ispat 5,753)", "Sales Ops", "mcp"),
         "D3": ("CRM call & visit log", "oms.tblViciDialApiCallLog + tblCustomerVisit", "Delivered — empty for Q1 (last call 28-Aug-2025)", "Sales Ops/IT", "mcp"),
         "D4": ("Last contact with lost dealers", "oms.tblViciDialFeedBack", "Delivered — no Q1 records (last 15-Nov-2025)", "Sales Ops/IT", "mcp"),
-        "D5": ("Beat compliance", "rtm tour plan + sitevisit", "Available — not yet pulled", "Sales Ops", "mcp"),
-        "D6": ("Attrition & transfers", "PeopleDesk DB", "Available — not yet pulled", "HR", "mcp"),
+        "D5": ("Beat compliance", "rtm.tblRoutePlanHeader + tblTourPlanHeader", "Pulled (Essentials 6,695 routes)", "Sales Ops", "mcp"),
+        "D6": ("Attrition & transfers", "saas.empEmployeeSeparation + empTransferNPromotion", "Pulled (2,248 sep · 76 transfers)", "HR", "mcp"),
         "E1": ("Competitor price list", "Ready Mix benchmark (ASP by brand)", "Partial (1 SBU)", "Sales/Marketing", "auto"),
-        "E2": ("Competitor offers", "—", "MISSING", "Sales", "—"),
-        "E3": ("Lost dealer → competitor", "—", "MISSING", "Sales", "—"),
+        "E2": ("Competitor offers", "oms.tblCompetitorPriceHeader + Row (numAvgMarketOffer, numDP/TP/MRP)", "Partial (Essentials + Ispat + Cement, 2024-25)", "Sales", "mcp"),
+        "E3": ("Lost dealer → competitor", "farm.tblCompetitorDealerSetup + Row (feed business only)", "MISSING (loss SBUs)", "Sales", "—"),
         "F1": ("7P — own vs competitor", "Ready Mix 7P file", "Partial (1 SBU, 3 of 7 P evidenced)", "Marketing", "auto"),
         "F4": ("Promotion (own)", "Brand pack ATL/BTL mix", "Partial", "Marketing", "auto"),
-        "G2": ("Stock-outs", "wms stock + movement", "Available — not yet pulled", "Supply Chain", "mcp"),
+        "G2": ("Stock-outs", "wms.tblInventoryTransactionHeader", "Pulled (3.16M txns, 7 loss SBUs)", "Supply Chain", "mcp"),
         "G3": ("OTIF / fill rate", "oms order vs delivered qty (pulled)", "Pulled — but qty is mixed UOM (MT/bag/pc), so the % is not usable yet", "Supply Chain", "mcp"),
         "H1": ("Dealer exit interviews", "oms.tblViciDialFeedBack (call-center feedback)", "Partial (118 rows, none in Q1)", "Sales", "mcp"),
         "I1": ("Macro events", "SBU root-cause notes (qualitative)", "Partial", "Strategy", "manual"),

@@ -37,6 +37,7 @@ FILES = {
     "brand_audit": "brand_audit.json",
     "campaigns": "campaigns.json",
     "brand_share": "market_brand_share.json",
+    "lostreg": "lost_region_share.json",
     "lineage": "_lineage.json",
 }
 

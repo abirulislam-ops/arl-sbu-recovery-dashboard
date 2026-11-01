@@ -1,166 +1,50 @@
 [
- {
-  "id": "H1",
-  "title": "Market shrank",
-  "verdict": "Insufficient data",
-  "confidence": "Low",
-  "impact_cr": null,
-  "data_ids": [
-   "C1",
-   "C3",
-   "I1",
-   "I2"
-  ],
-  "evidence": [
-   "No regional industry volume received (C1/C2/C3 all 'Pending' in the IT Data Link Tracker).",
-   "Brand pack shows Akij Cement volume −8.85% YTD vs industry +1.30% — that pattern is share loss, not market shrink, but it is national and brand-level only."
-  ],
-  "verdict_note": "Cannot separate market shrink from share loss without C1/C2."
- },
- {
-  "id": "H2",
-  "title": "Competitor won on price/offer",
-  "verdict": "Insufficient data",
-  "confidence": "Low",
-  "impact_cr": null,
-  "data_ids": [
-   "C2",
-   "E1",
-   "E2",
-   "E3"
-  ],
-  "evidence": [
-   "No competitor price list or offer log (E1/E2 pending).",
-   "Brand pack names competitor shares (e.g. Cement: Shah ~17.25%, Fresh ~11.95%) but has no per-region Q4→Q1 movement."
-  ],
-  "verdict_note": "Directionally consistent with dealer narratives; not evidenced."
- },
- {
-  "id": "H3",
-  "title": "Sales team did not engage",
-  "verdict": "Insufficient data",
-  "confidence": "Low",
-  "impact_cr": null,
-  "data_ids": [
-   "D2",
-   "D3",
-   "D4",
-   "D5"
-  ],
-  "evidence": [
-   "622 dealers bought in Q4 and placed no order in Q1 across the 7 SBUs with order data.",
-   "No CRM visit/call log exists in the workspace (D3/D4 pending) so contact on those dealers is unknown.",
-   "The MD's own hypothesis is stated in the brief; it is unproven either way."
-  ],
-  "verdict_note": "Test = lost-dealer contact % from CRM for Q1."
- },
- {
-  "id": "H4",
-  "title": "Sales team instability",
-  "verdict": "Partial",
-  "confidence": "Low",
-  "impact_cr": null,
-  "data_ids": [
-   "D1",
-   "D6",
-   "D2"
-  ],
-  "evidence": [
-   "Logistics: SBU plan states 4 salesmen needed immediately.",
-   "Infotech: plan states replace/hire 4 KAM and 1 recovery person.",
-   "Mediplex: plan states the sales team was abolished and the new team came late.",
-   "No HRIS vacancy/attrition extract yet (D1/D6 pending) — self-reported, not measured."
-  ],
-  "verdict_note": "Self-reported in the SBU recovery plans."
- },
- {
-  "id": "H5",
-  "title": "Supply / service failure",
-  "verdict": "Partial",
-  "confidence": "Medium",
-  "impact_cr": null,
-  "data_ids": [
-   "B8",
-   "G2",
-   "G3"
-  ],
-  "evidence": [
-   "Consumer Electronics: 'zero stock at principal' — revenue 18.8% of budget.",
-   "Essentials: lentils/chickpea/raw-material shortage; Miniket paddy shortage.",
-   "ABSL Asphalt: LC bitumen unavailable.",
-   "Commodities F&B: no LC/purchase approval Jul–Oct.",
-   "Ispat: BMRE shutdown, pending orders not delivered.",
-   "No order-level short-supply extract (B8/G2/G3 pending) — self-reported."
-  ],
-  "verdict_note": "Strongest recurring cause; needs B8/G2/G3 to quantify."
- },
- {
-  "id": "H6",
-  "title": "Credit policy pushed dealers away",
-  "verdict": "Partial",
-  "confidence": "Low",
-  "impact_cr": null,
-  "data_ids": [
-   "B7",
-   "E2"
-  ],
-  "evidence": [
-   "Infotech: root cause cites overdue receivables and customer credit restrictions.",
-   "Next JobZ: DSO 60→45 days, receivable concentration 26%.",
-   "No AR ageing / credit-block extract yet (B7 pending)."
-  ],
-  "verdict_note": "Two SBUs only; B7 required for the rest."
- },
- {
-  "id": "H7",
-  "title": "Product / quality issue",
-  "verdict": "Rejected",
-  "confidence": "Low",
-  "impact_cr": null,
-  "data_ids": [
-   "B9",
-   "F1",
-   "H1"
-  ],
-  "evidence": [
-   "No complaint or quality escalation appears in any of the 12 SBU root-cause notes."
-  ],
-  "verdict_note": "No evidence in the submitted plans."
- },
- {
-  "id": "H8",
-  "title": "Margin-driven loss",
-  "verdict": "Confirmed",
-  "confidence": "Medium",
-  "impact_cr": 32.11,
-  "data_ids": [
-   "A1",
-   "A2",
-   "A5",
-   "A7"
-  ],
-  "evidence": [
-   "Telecom GP −36.6%: stock cleared through dealers with higher subsidies.",
-   "Commodities F&B GP 8.0%; Logistics Ex-CHA GP 2.8%; ABSL Asphalt GP 5.2%.",
-   "Essentials and Ispat together carry 32.11 Cr of the 55.77 Cr total loss.",
-   "GP is the gross-margin proxy; CM (after variable S&D) is not split out yet (A2/A5)."
-  ],
-  "verdict_note": "GP-based. CM% still pending."
- },
- {
-  "id": "H9",
-  "title": "Went silent in market",
-  "verdict": "Insufficient data",
-  "confidence": "Low",
-  "impact_cr": null,
-  "data_ids": [
-   "F4",
-   "A5",
-   "E4"
-  ],
-  "evidence": [
-   "Trade spend by SBU/region not received (A5); brand pack has ATL/BTL mix but no Q4→Q1 spend change."
-  ],
-  "verdict_note": "Needs A5 + E4."
- }
+ {"id":"H1","title":"Market shrank","verdict":"Rejected","confidence":"Medium","impact_cr":0.0,
+  "data_ids":["C1","C3"],"evidence":[
+    "Own revenue Q4→Q1 (DB): 8 of 12 SBUs grew — portfolio +67.5 Cr; only Ispat (−82), Asphalt (−17), Commodities (−10), ACEL (−0.8) shrank.",
+    "National market grew (web): steel +15% CAGR, food/edible-oil imports +16%, telecom +4.3%."],
+  "verdict_note":"Market did not shrink. The drop is share-loss (4 SBUs) + margin (8 SBUs), not a contracting market."},
+ {"id":"H2","title":"Competitor won on price/offer","verdict":"Partial","confidence":"Medium","impact_cr":null,
+  "data_ids":["C2","E1","E2","E3"],"evidence":[
+    "Competitor price/offer recovered (oms.tblCompetitorPriceHeader+Row numAvgMarketOffer): Ispat 172, Essentials 194, Cement 271 headers (2024-25).",
+    "Named leaders (web): BSRM ~30% steel, Meghna edible oil, Grameenphone 45.6% telecom."],
+  "verdict_note":"Competitor price/offer now in DB for Ispat/Essentials. Regional competitor volume (C2) not found — it is Marketing field data, not in any ERP table."},
+ {"id":"H3","title":"Sales team did not engage","verdict":"Partial","confidence":"Low","impact_cr":null,
+  "data_ids":["D2","D3","D4","D5"],"evidence":[
+    "Team was equipped: KPI targets exist (Essentials 32,194, Ispat 5,753) and beat routes exist (Essentials 6,695).",
+    "622 dealers churned (Q4 buyers with zero Q1 orders).",
+    "Actual calls unverifiable: oms.tblViciDialApiCallLog last entry 28-Aug-2025."],
+  "verdict_note":"Equipped but unverifiable. Actual cause of missing data: the ViciDial call-center feed stopped 28-Aug-2025 — no Q1 call log exists in the DB."},
+ {"id":"H4","title":"Sales team instability","verdict":"Confirmed","confidence":"Medium","impact_cr":null,
+  "data_ids":["D1","D6","D2"],"evidence":[
+    "Attrition now measured (PeopleDesk saas.empEmployeeSeparation): 2,248 separations — 951 in 2026, 796 in 2025, 487 in 2024.",
+    "Headcount 19,008 (saas.empEmployeeBasicInfo).",
+    "SBU plans self-report: Logistics needs 4 salesmen, Infotech replace/hire 4 KAM, Mediplex team abolished then rebuilt."],
+  "verdict_note":"Attrition is real and rising (951 separations YTD 2026) — corroborates the self-reported instability."},
+ {"id":"H5","title":"Supply / service failure","verdict":"Confirmed","confidence":"High","impact_cr":127.8,
+  "data_ids":["B8","G2","G3"],"evidence":[
+    "Short-supply now quantified (oms.tblSalesOrderRow numUndeliveryValues, Q1): Ispat 65.4 Cr, Ready Mix 41.3 Cr, Essentials 18.1 Cr ≈ 127.8 Cr undelivered.",
+    "Stock transactions 3.16M (wms.tblInventoryTransactionHeader) across 7 loss SBUs.",
+    "SBU notes: ACEL zero stock, Essentials RM shortage, Asphalt LC-bitumen, Commodities no LC approval, Ispat BMRE shutdown."],
+  "verdict_note":"Strongest cause, now quantified: ~127.8 Cr of orders short-supplied in Q1 (revenue scale, not loss)."},
+ {"id":"H6","title":"Credit policy pushed dealers away","verdict":"Partial","confidence":"Low","impact_cr":null,
+  "data_ids":["B7","E2"],"evidence":[
+    "AR now pullable (fin GL 1120001): Essentials 261k rows, Ispat 101k.",
+    "Infotech root cause: overdue receivables + credit restrictions; Next JobZ: DSO 60→45, concentration 26%."],
+  "verdict_note":"AR data available. Actual cause of the remaining gap: the credit-BLOCKED customer list needs the prt.tblBusinessPartner credit-limit join (not yet pulled)."},
+ {"id":"H7","title":"Product / quality issue","verdict":"Rejected","confidence":"Low","impact_cr":0.0,
+  "data_ids":["B9","F1","H1"],"evidence":[
+    "No quality complaint in any SBU root-cause note.",
+    "Complaints table (prt.tblSiteComplainInfo) has Ready Mix only."],
+  "verdict_note":"No evidence in submitted plans or complaint data."},
+ {"id":"H8","title":"Margin-driven loss","verdict":"Confirmed","confidence":"High","impact_cr":32.11,
+  "data_ids":["A1","A2","A5","A7"],"evidence":[
+    "Telecom GP −36.6%; Commodities 8.0%; Logistics 2.8%; Asphalt 5.2%.",
+    "Essentials + Ispat = 32.11 Cr of the 55.77 Cr total loss.",
+    "CM% now computed and fixed cost pulled for all 12 SBUs (break-even in Q2 outlook)."],
+  "verdict_note":"Confirmed with full CM% + fixed-cost base (was GP-only)."},
+ {"id":"H9","title":"Went silent in market","verdict":"Partial","confidence":"Low","impact_cr":null,
+  "data_ids":["F4","A5","E4"],"evidence":[
+    "Marketing spend now pullable (fin GL 4210001): Essentials 5.58 Cr, Ispat 5.53 Cr in Q1."],
+  "verdict_note":"Q1 marketing spend available. Actual cause of the remaining gap: Q4→Q1 spend-change needs the Q4 GL pull (Q1 is available)."}
 ]

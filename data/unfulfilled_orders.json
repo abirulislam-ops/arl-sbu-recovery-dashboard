@@ -1,0 +1,16 @@
+{
+  "collected_at": "2026-11-01",
+  "source": "oms.tblSalesOrderRow numUndeliveryValues (Q1 FY27 = Jul-Sep 2026, header-date scoped)",
+  "short_supply_cr": {
+    "Ispat": 65.44,
+    "Ready Mix": 41.34,
+    "Essentials": 18.08,
+    "Nobayon": 1.78,
+    "Asphalt": 1.26,
+    "Infotech": 0.25,
+    "Commodities F&B": 0.10,
+    "Telecom": 0.0
+  },
+  "short_supply_pct_of_orders": {"Ispat": 17.2, "Ready Mix": 26.9, "Essentials": 3.2, "Asphalt": 8.9},
+  "note": "The earlier '93,745 Cr' was an ALL-TIME sum (369,635 rows) plus a data-quality outlier — a 'Maida 50 kg' order with 400,001,704 bags = 930 bn taka phantom. Scoping to Q1 FY27 gives the correct values above."
+}

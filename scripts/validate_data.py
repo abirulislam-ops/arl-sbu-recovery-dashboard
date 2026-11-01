@@ -15,7 +15,7 @@ REQUIRED = {
     "market_share.json": ["sbu", "region", "period", "market_volume", "own_volume", "competitors", "source"],
     "market_diagnosis.json": ["sbu", "region", "pp_change", "market_change", "diagnosis"],
     "sales_kpi.json": ["sbu", "region", "employee_id", "vol_target", "vol_actual"],
-    "seven_p.json": ["p", "attribute", "own_q1"],
+    "seven_p.json": ["sbu", "p", "own", "comp", "note", "status"],
     "hypotheses.json": ["id", "title", "verdict", "evidence", "data_ids"],
     "recovery.json": ["lever", "sbu", "action", "owner", "np_impact_cr"],
     "se_commitment.json": ["bu", "commitment", "breakeven"],
