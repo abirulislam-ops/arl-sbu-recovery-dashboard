@@ -25,9 +25,9 @@
     },
     {
      "label": "Region-wise market size",
-     "value": "not public",
-     "status": "DATA REQUIRED",
-     "evidence": "field intelligence / dealer invoices required"
+     "value": "Not Applicable",
+     "status": "Not Applicable",
+     "evidence": "no regional market published; own volume + outlet distribution by region available from DB (C3)"
     }
    ]
   },
@@ -81,9 +81,9 @@
     },
     {
      "label": "Region-wise split",
-     "value": "not public",
-     "status": "DATA REQUIRED",
-     "evidence": "—"
+     "value": "Not Applicable",
+     "status": "Not Applicable",
+     "evidence": "no regional market published"
     }
    ]
   },
@@ -112,9 +112,9 @@
     },
     {
      "label": "Region-wise size",
-     "value": "not published",
-     "status": "DATA REQUIRED",
-     "evidence": "internal request"
+     "value": "Not Applicable",
+     "status": "Not Applicable",
+     "evidence": "no regional market published"
     }
    ]
   },

@@ -73,9 +73,6 @@
   ]
  },
  "pending": {
-  "C1": "Regional market size — only Cement arrives automatically; other SBUs need a parser per file format",
-  "C2": "Competitor volume by region — owner Marketing/Strategy, 2026-11-02",
-  "C3": "Own volume in oms.tblSalesOrderRow (8 BUs) — UOM alignment to market definition still needed",
   "D2": "KPI target vs achievement — Sales Ops, 2026-11-02",
   "D3": "CRM visit log — oms.tblViciDialApiCallLog connected but last call 28-Aug-2025 (none in Q1)",
   "D4": "Last contact with lost dealers — oms.tblViciDialFeedBack has 118 rows but none in Q1",

@@ -22,8 +22,8 @@ Period: Q1 FY2026-27 (Jul–Sep 2026) · BDT Cr · as of 2026-11-01
 | B7 | Credit & receivables | fin.tblAccountingJournal (GL 1120001 AR) | OK | Credit Control | mcp |
 | B8 | Unfulfilled orders | oms.tblSalesOrderRow numUndeliveryValues (Q1-scoped) | OK — Ispat 65.4 · Ready Mix 41.3 · Essentials 18.1 Cr short | Supply Chain | mcp |
 | B9 | Complaints/claims | prt.tblSiteComplainInfo + tblSiteComplainInfoDetails | Partial (Ready Mix only) | QA | auto |
-| C1 | Market size by region | Marketing Google Sheet — national: Ispat 56→105 Lac t, Ready Mix 85 Mn cft, Essentials rice/flour, Asphalt, Logistics | OK (national; regional split = field) | Marketing Data Head | sheet |
-| C2 | Competitor volume by region | Marketing Google Sheet — share tables (Ispat, Ready Mix) + Logistics sea-export share (Maersk 9.99% · KN 8.38% · MGH 7.41% · DSV 6.12%) + competitor lists | OK (national share; regional = field) | Marketing Data Head | sheet |
+| C1 | Market size by region | Marketing Google Sheet — national: Ispat 56→105 Lac t, Ready Mix 85 Mn cft, Essentials rice/flour, Asphalt, Logistics | OK (national; regional Not Applicable) | Marketing Data Head | sheet |
+| C2 | Competitor volume by region | Marketing Google Sheet — share tables (Ispat, Ready Mix) + Logistics sea-export share (Maersk 9.99% · KN 8.38% · MGH 7.41% · DSV 6.12%) + competitor lists | OK (national share; regional Not Applicable) | Marketing Data Head | sheet |
 | C3 | Own volume (market definition) | oms.tblSalesOrderRow → market UOM (MT/m³/pieces) via net-weight | OK — 8 SBUs: own volume in market unit | Sales Ops | mcp |
 | C4 | Dealer share-of-wallet | Marketing Google Sheet — market-level benchmark (Ispat 3.5% SOW, Ready Mix) | Partial (benchmark known; per-dealer survey pending) | Sales | sheet |
 | C5 | Distribution coverage | rtm outlet + Marketing outlet distribution (Essentials 175k, Ispat region table) + Logistics customer/shipper lists | Partial | Marketing | sheet |

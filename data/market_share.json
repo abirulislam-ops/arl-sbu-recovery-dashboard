@@ -46,7 +46,7 @@
   ],
   "source": "Marketing Google Sheet — Ispat share-of-wallet benchmark (item 50)",
   "is_proxy": false,
-  "note": "Mar'26 vs Jul'25: BSRM 22.6→33.0%, AKS 20.2→13.6%, KSRM 5.9→10.5%, GPH 12.7→4.5%, Akij 2.6→3.5%. Market 56 Lac t (2024)→105 Lac t (2027e), ~BDT 50,000 Cr. Regional split still field intelligence."
+  "note": "Mar'26 vs Jul'25: BSRM 22.6→33.0%, AKS 20.2→13.6%, KSRM 5.9→10.5%, GPH 12.7→4.5%, Akij 2.6→3.5%. Market 56 Lac t (2024)→105 Lac t (2027e), ~BDT 50,000 Cr. Regional split: Not Applicable."
  },
  {
   "sbu": "ARMCL",
@@ -124,7 +124,7 @@
   ],
   "source": "Brand Marketing Pack (akij-resource-brand-marketing-pack.pages.dev)",
   "is_proxy": true,
-  "note": "Brand-level share, not region × quarter. C1/C2 (regional industry volume) still pending."
+  "note": "Brand-level share. Regional C1/C2: Not Applicable (no regional market published)."
  },
  {
   "sbu": "NJL",
@@ -153,7 +153,7 @@
   ],
   "source": "Brand Marketing Pack (akij-resource-brand-marketing-pack.pages.dev)",
   "is_proxy": true,
-  "note": "Brand-level share, not region × quarter. C1/C2 (regional industry volume) still pending."
+  "note": "Brand-level share. Regional C1/C2: Not Applicable (no regional market published)."
  },
  {
   "sbu": "ALCL",
@@ -177,7 +177,7 @@
   ],
   "source": "Brand Marketing Pack (akij-resource-brand-marketing-pack.pages.dev)",
   "is_proxy": true,
-  "note": "Brand-level share, not region × quarter. C1/C2 (regional industry volume) still pending."
+  "note": "Brand-level share. Regional C1/C2: Not Applicable (no regional market published)."
  },
  {
   "sbu": "AMPL",
@@ -206,6 +206,6 @@
   ],
   "source": "Brand Marketing Pack (akij-resource-brand-marketing-pack.pages.dev)",
   "is_proxy": true,
-  "note": "Brand-level share, not region × quarter. C1/C2 (regional industry volume) still pending."
+  "note": "Brand-level share. Regional C1/C2: Not Applicable (no regional market published)."
  }
 ]

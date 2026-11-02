@@ -19,7 +19,7 @@
  {
   "section": "MD Brief",
   "fact": "622 dealers who bought in Q4 placed no order in Q1 in the 7 SBUs with order data.",
-  "so_what": "Dealer churn is real but unexplained — no CRM log, no regional market data.",
+  "so_what": "Dealer churn is real but unexplained — no CRM log; regional market data is Not Applicable (national only).",
   "data_ids": [
    "B3",
    "B4",
@@ -38,8 +38,8 @@
  },
  {
   "section": "Market Share",
-  "fact": "No regional market-size or competitor-volume file has been delivered (C1/C2/C3 all pending in the IT tracker).",
-  "so_what": "The MD's priority-1 question cannot be answered from data yet; only brand-level share exists.",
+  "fact": "Regional market-size / competitor-volume is Not Applicable (no published regional market); national share now delivered for Ispat, Ready Mix, Essentials, Logistics.",
+  "so_what": "The MD's priority-1 question is answered at national level; regional is Not Applicable (no published regional market).",
   "data_ids": [
    "C1",
    "C2",

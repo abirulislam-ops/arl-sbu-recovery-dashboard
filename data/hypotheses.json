@@ -8,7 +8,7 @@
   "data_ids":["C2","E1","E2","E3"],"evidence":[
     "Competitor price/offer recovered (oms.tblCompetitorPriceHeader+Row numAvgMarketOffer): Ispat 172, Essentials 194, Cement 271 headers (2024-25).",
     "Named leaders (web): BSRM ~30% steel, Meghna edible oil, Grameenphone 45.6% telecom."],
-  "verdict_note":"Competitor price/offer now in DB for Ispat/Essentials. Regional competitor volume (C2) not found — it is Marketing field data, not in any ERP table."},
+  "verdict_note":"Competitor price/offer now in DB for Ispat/Essentials. National competitor share now delivered (Ispat, Ready Mix, Logistics); regional competitor volume (C2) is Not Applicable."},
  {"id":"H3","title":"Sales team did not engage","verdict":"Partial","confidence":"Low","impact_cr":null,
   "data_ids":["D2","D3","D4","D5"],"evidence":[
     "Team was equipped: KPI targets exist (Essentials 32,194, Ispat 5,753) and beat routes exist (Essentials 6,695).",
