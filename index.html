@@ -593,7 +593,7 @@ function renderMenu(){
     <button class="menu-item" data-t="md" title="Direction per SBU + top 5 decisions"><span class="serial">★</span><span class="dot" style="background:#111827"></span><span class="nm">MD Brief</span></button>
     <button class="menu-item" data-t="overview" title="Portfolio overview"><span class="serial">▦</span><span class="dot" style="background:#94a3b8"></span><span class="nm">Overview</span></button>
     <button class="menu-item" data-t="market" title="Market share in lost-dealer regions"><span class="serial">◔</span><span class="dot" style="background:#7c3aed"></span><span class="nm">Market Share</span><span class="loss" style="color:#b45309">!</span></button>
-    <button class="menu-item" data-t="sales" title="Sales team KPI & dealer engagement"><span class="serial">◑</span><span class="dot" style="background:#0f766e"></span><span class="nm">Sales KPI</span><span class="loss" style="color:#b45309">!</span></button>
+    <button class="menu-item" data-t="sales" title="Sales team KPI & dealer engagement"><span class="serial">◑</span><span class="dot" style="background:#0f766e"></span><span class="nm">Sales KPI</span></button>
     <button class="menu-item" data-t="rootcause" title="Root-cause verdicts H1–H9"><span class="serial">✓</span><span class="dot" style="background:#dc2626"></span><span class="nm">Root Cause</span></button>
     <button class="menu-item" data-t="data" title="Data status by Data ID"><span class="serial">▤</span><span class="dot" style="background:#64748b"></span><span class="nm">Data Status</span></button>
     <div class="menu-label" style="margin-top:10px">Loss-making SBUs</div>`;
@@ -1220,7 +1220,7 @@ function renderSales(){
       <div style="overflow-x:auto"><table class="mini" style="background:transparent">
         <thead><tr><th>SBU</th><th class="num">Visits</th><th class="num">Leads</th><th class="num">Opportunities</th><th class="num">Service cases</th><th class="num">Overdue</th><th>Data window</th></tr></thead>
         <tbody>${(MD.crm?.coverage||[]).map(c=>`<tr><td><b>${c.sbu}</b></td><td class="num">${c.visits}</td><td class="num">${c.leads}</td><td class="num">${c.opps}</td><td class="num">${c.cases}</td><td class="num">${c.cases_overdue}</td><td>${c.window_from} → ${c.window_to}</td></tr>`).join('')}
-        <tr><td colspan="7" style="color:#78350f">The other 9 loss-making SBUs have <b>0 records of every type</b>.</td></tr></tbody>
+        <tr><td colspan="7" style="color:#78350f">Only <b>3 SBUs</b> hold records in the CRM DB — the other 9 have <b>0 records</b> across every type.</td></tr></tbody>
       </table></div>
       <div class="src">Source: ARL CRM API · 3 business units hold data · everything else empty.</div>
     </div>
@@ -1231,7 +1231,7 @@ function renderSales(){
       <div class="fact" style="display:block"><div class="fn" style="font-size:20px;color:#b91c1c">${r.cases_overdue||0}/${Object.values(r.case_categories||{}).reduce((a,b)=>a+b,0)}</div><div class="ft"><b>service cases are overdue.</b> ${r.case_categories?Object.entries(r.case_categories).map(([k,v])=>`${k} ${v}`).join(' · '):''} — this is the customer pain point, in the customer's own words.</div></div>
       <div class="fact" style="display:block"><div class="fn" style="font-size:20px;color:#0f766e">${r.pipeline_cr??'—'}</div><div class="ft"><b>Cr of real pipeline.</b> ${r.pipeline_note||''}</div></div>`;})()}
     </div>
-    <div class="dec-rec" style="margin-top:12px;background:#fef2f2;border-color:#fecaca;color:#7f1d1d"><b>Brutal fact.</b> Every CRM record starts in October 2026 — the system went live after Q1 closed. So "did we call the lost dealers in Q1?" cannot be answered by the CRM, by iBOS (its visit table has 6 rows), or by any other system. The question needs dealer exit interviews (H1), not a database.</div>
+    <div class="dec-rec" style="margin-top:12px;background:#eff6ff;border-color:#bfdbfe;color:#1e3a8a"><b>Problem → solution.</b> The CRM went live in October 2026, after Q1 closed, so "did we call the lost dealers in Q1?" is not answerable from CRM — or from iBOS, whose visit table holds 6 rows. <b>Solution:</b> settle it from dealer exit interviews (H1). For now we keep the ERP dealer-churn data we do have (7 SBUs); the other SBUs are zero.</div>
     <div class="sec-head" style="margin-top:18px"><span class="bar" style="background:#14b8a6"></span><div><h2>Dealer churn we can measure (B3 / B4)</h2><p>From ERP sales orders: dealers who bought in Q4 and placed zero orders in Q1. 7 SBUs only — the others do not sell through sales orders.</p></div></div>
     <div class="card"><div style="overflow-x:auto"><table class="mini">
       <thead><tr><th>SBU</th><th class="num">Q4 active dealers</th><th class="num">Q1 active dealers</th><th class="num">Lost (Q4 buyers, zero Q1)</th><th class="num">Churn %</th><th class="num">Q1 orders</th></tr></thead>
