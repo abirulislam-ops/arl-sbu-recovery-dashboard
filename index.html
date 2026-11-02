@@ -668,6 +668,7 @@ function sbuExtras(code,name){
   const decs=(MD.decisions||[]).filter(x=>x.sbu===code);
   const nat=(MD.national?.sbus||[]).find(x=>x.sbu===code);
   const lead=(MD.leadership||[]).filter(x=>x.sbu===code);
+  const bs=(MD.brand_share||[]).find(x=>x.sbu===code);
   const ctx=(MD.context?.sbus||[]).find(x=>x.sbu===code);
   const ch=(MD.churn||[]).find(x=>x.sbu===code);
   const crm=(MD.crm?.coverage||[]).find(x=>name&&x.sbu&&(x.sbu===name||name.startsWith(x.sbu)||x.sbu.startsWith(name)));
@@ -688,8 +689,13 @@ function sbuExtras(code,name){
       <tr><td>Leader</td><td>${(nat.rows||[])[0]?.brand||'—'} ${(nat.rows||[])[0]?.q1??''}%</td></tr>
       <tr><td>Biggest gainer</td><td>${gain.brand||'—'} ${gain.dpp!=null?(gain.dpp>0?'+':'')+gain.dpp.toFixed(2)+' pp':''}</td></tr>
       <tr><td>Basis</td><td>${nat.basis||''} · ${nat.file||''}</td></tr></tbody></table></div>`;
+  }else if(bs && (bs.ours!=null || bs.leader!=null)){
+    h+=`<div class="card"><table class="mini"><tbody>
+      <tr><td style="width:40%">Our share</td><td class="num"><b>${bs.ours!=null?bs.ours+'%':'—'}</b></td></tr>
+      <tr><td>Leader</td><td>${bs.leader||'—'}${bs.leader_share!=null?` ${bs.leader_share}%`:''}</td></tr>
+      <tr><td>Basis</td><td>${bs.basis||''}</td></tr></tbody></table></div>`;
   }else{
-    h+=`<div class="empty"><span class="dp">C1 · C2 · C3</span><br>No monthly market-share file parsed for this SBU yet.<br>Regional leader: Not Applicable — no regional competitor data published.</div>`;
+    h+=`<div class="empty"><span class="dp">C1 · C2</span><br>No published market share for this SBU — Not Applicable.</div>`;
   }
   if(ctx){
     h+=`<div class="card" style="margin-top:12px"><div class="sec-head" style="margin:0 0 6px"><span class="bar" style="background:#9333ea"></span><div><h3 style="font-size:13px;margin:0">Market context</h3></div></div><table class="mini"><tbody>${ctx.facts.map(f=>`<tr><td>${f.label}</td><td>${f.value}</td><td><span class="vtag ${f.status==='DATA REQUIRED'?'verdict-I':(f.status==='Not Applicable'?'verdict-N':'verdict-P')}">${f.status}</span></td></tr>`).join('')}</tbody></table></div>`;
