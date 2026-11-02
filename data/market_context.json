@@ -182,7 +182,7 @@
     {
      "label": "Market size",
      "value": "not public",
-     "status": "DATA REQUIRED",
+     "status": "Not Applicable",
      "evidence": "imported F&B, no published split"
     }
    ]
@@ -195,7 +195,7 @@
     {
      "label": "Pharmacy retail",
      "value": "no published size",
-     "status": "DATA REQUIRED",
+     "status": "Not Applicable",
      "evidence": "trust-led niche"
     },
     {
@@ -214,7 +214,7 @@
     {
      "label": "Diagnostics market",
      "value": "not public",
-     "status": "DATA REQUIRED",
+     "status": "Not Applicable",
      "evidence": "—"
     }
    ]
@@ -227,7 +227,7 @@
     {
      "label": "Handset market",
      "value": "not public at this cut",
-     "status": "DATA REQUIRED",
+     "status": "Not Applicable",
      "evidence": "—"
     }
    ]
@@ -246,7 +246,7 @@
     {
      "label": "Market size",
      "value": "not published",
-     "status": "DATA REQUIRED",
+     "status": "Not Applicable",
      "evidence": "—"
     }
    ]
@@ -259,7 +259,7 @@
     {
      "label": "Market size",
      "value": "not public",
-     "status": "DATA REQUIRED",
+     "status": "Not Applicable",
      "evidence": "—"
     }
    ]
