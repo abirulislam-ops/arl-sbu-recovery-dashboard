@@ -40,10 +40,20 @@ functions. Deployed on Vercel from `main`.
 
 ## Deploy
 
+**Always `git pull` first** — the manager's OpenCode and this agent work on the same repo at
+different times. Pull before you commit/push, or you will overwrite someone else's work.
+
 ```powershell
+git pull --no-edit
 git add index.html
 git commit -m "Update <SBU> …"
 git push origin main
 ```
 
 Vercel redeploys automatically. If `gh` auth is invalid: `"<PAT>" | gh auth login --with-token`.
+
+## Tradeoffs & decisions
+
+Read `TRADEOFFS.md` before changing any data label. It records why certain items are marked
+**"Not Applicable"** (not "missing") and the 4-state model (Delivered / Not Applicable /
+Pending / Blocked).
