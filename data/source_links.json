@@ -1,10 +1,10 @@
 {
- "checked_at": "2026-11-01T10:02:18",
+ "checked_at": "2026-11-02T16:34:31",
  "sbus": [
   {
    "sbu": "Essentials",
    "asks": 63,
-   "linked": 4,
+   "linked": 19,
    "rows": [
     {
      "ask": 19.0,
@@ -13,6 +13,74 @@
      "label": "PeopleDesk — Employee / Position / Transfer modules",
      "url": null,
      "kind": "named-file"
+    },
+    {
+     "ask": 44.0,
+     "function": "Marketing",
+     "item": "Market size by region — Q4 FY26 and Q1 FY27",
+     "label": "Data is not available",
+     "url": null,
+     "kind": "named-file"
+    },
+    {
+     "ask": 45.0,
+     "function": "Marketing",
+     "item": "Competitor volume by region — Q4 and Q1",
+     "label": "Data is not available",
+     "url": null,
+     "kind": "named-file"
+    },
+    {
+     "ask": 46.0,
+     "function": "Marketing",
+     "item": "Own volume by region — same definition as market size",
+     "label": "Data is not available",
+     "url": null,
+     "kind": "named-file"
+    },
+    {
+     "ask": 47.0,
+     "function": "Marketing",
+     "item": "Competitor price list (equivalent SKUs, change dates)",
+     "label": "Copy of Competitor's Comparison - Price & Trade Offer",
+     "url": "https://docs.google.com/spreadsheets/d/1A-V-EDhQ5dVvNuIKQ_Gazmlxo4pIwpuPVlRS5_c1oOg/edit?usp=sharing",
+     "kind": "link",
+     "access": "sheet-public"
+    },
+    {
+     "ask": 48.0,
+     "function": "Marketing",
+     "item": "Competitor offers & credit terms (scheme, discount, credit days)",
+     "label": "Copy of Competitor's Comparison - Price & Trade Offer",
+     "url": "https://docs.google.com/spreadsheets/d/11bsAUYw7eUWgGC4vN9pIY6RFeDyQCpbD46LXSG1qYbc/edit?usp=sharing",
+     "kind": "link",
+     "access": "sheet-public"
+    },
+    {
+     "ask": 49.0,
+     "function": "Marketing",
+     "item": "Dealer share-of-wallet (their total category purchase vs ours)",
+     "label": "Data is not available",
+     "url": null,
+     "kind": "named-file"
+    },
+    {
+     "ask": 50.0,
+     "function": "Marketing",
+     "item": "7P assessment — own Q4 vs Q1 vs competitors (1–5 with evidence)",
+     "label": "Copy of 7P assessment — own Q4 vs Q1 vs competitors ",
+     "url": "https://docs.google.com/spreadsheets/d/1ES7i7W4fEfzEVNjPuzY8xXA4nRElGYFSbAWZVONfGnM/edit?usp=sharing",
+     "kind": "link",
+     "access": "sheet-public"
+    },
+    {
+     "ask": 51.0,
+     "function": "Marketing",
+     "item": "Promotion / trade spend by region",
+     "label": "Copy of Competitor's Comparison - Price & Trade Offer",
+     "url": "https://docs.google.com/spreadsheets/d/1KkswEZEmL4Gd00Y9jHLaP_YMN4AbV0IlYFzmsL6vJS4/edit?usp=sharing",
+     "kind": "link",
+     "access": "sheet-public"
     },
     {
      "ask": 52.0,
@@ -24,11 +92,432 @@
      "access": "sheet-public"
     },
     {
+     "ask": 53.0,
+     "function": "Marketing",
+     "item": "Competitor capacity / new entrants",
+     "label": "Data is not available",
+     "url": null,
+     "kind": "named-file"
+    },
+    {
+     "ask": 54.0,
+     "function": "Marketing",
+     "item": "Lost dealer → competitor mapping",
+     "label": "Data is not available",
+     "url": null,
+     "kind": "named-file"
+    },
+    {
      "ask": 55.0,
      "function": "Marketing",
      "item": "Competitor promotion & launches",
      "label": "https://docs.google.com/spreadsheets/d/1V0eThH2PWdKtrg6AhCUO2g2-3o4789Vd/edit?gid=74069896#gid=74069896",
      "url": "https://docs.google.com/spreadsheets/d/1V0eThH2PWdKtrg6AhCUO2g2-3o4789Vd/edit?gid=74069896",
+     "kind": "link",
+     "access": "sheet-public"
+    },
+    {
+     "ask": 56.0,
+     "function": "Marketing",
+     "item": "Competitor service levels",
+     "label": "Data is not available",
+     "url": null,
+     "kind": "named-file"
+    },
+    {
+     "ask": 57.0,
+     "function": "Marketing",
+     "item": "Regional macro & disruption events",
+     "label": "Data is not available",
+     "url": null,
+     "kind": "named-file"
+    },
+    {
+     "ask": 58.0,
+     "function": "Marketing",
+     "item": "Seasonality pattern",
+     "label": "Data is not available",
+     "url": null,
+     "kind": "named-file"
+    },
+    {
+     "ask": 59.0,
+     "function": "Marketing",
+     "item": "Regulatory / tax changes",
+     "label": "Data is not available",
+     "url": null,
+     "kind": "named-file"
+    },
+    {
+     "ask": 60.0,
+     "function": "Marketing",
+     "item": "Regional demand pipeline (govt / private projects)",
+     "label": "Data is not available",
+     "url": null,
+     "kind": "named-file"
+    },
+    {
+     "ask": 61.0,
+     "function": "Marketing",
+     "item": "Import parity, FX and duty exposure",
+     "label": "Data is not available",
+     "url": null,
+     "kind": "named-file"
+    }
+   ]
+  },
+  {
+   "sbu": "LifeCare – Pharmacy",
+   "asks": 64,
+   "linked": 20,
+   "rows": [
+    {
+     "ask": 19.0,
+     "function": "Sales",
+     "item": "Sales org, territory assignment and vacancies",
+     "label": "PeopleDesk — Employee / Position / Transfer modules",
+     "url": null,
+     "kind": "named-file"
+    },
+    {
+     "ask": 45.0,
+     "function": "Marketing",
+     "item": "Market size by region — Q4 FY26 and Q1 FY27",
+     "label": "Copy of AKIJ Phamacy Market Share Details- Industry",
+     "url": "https://docs.google.com/spreadsheets/d/1yxpbdNeKYm9aqS_7-Y2IkV5sxWsAEl8VIJQEyvSX-nE/edit?usp=sharing",
+     "kind": "link",
+     "access": "sheet-public"
+    },
+    {
+     "ask": 46.0,
+     "function": "Marketing",
+     "item": "Competitor volume by region — Q4 and Q1",
+     "label": "Copy of AKIJ Phamacy Market Share Details- Industry",
+     "url": "https://docs.google.com/spreadsheets/d/1zKFAL3McwnqRJMg-wqpkzRTohOBxEVROZNHOTtik9fE/edit?usp=sharing",
+     "kind": "link",
+     "access": "sheet-public"
+    },
+    {
+     "ask": 47.0,
+     "function": "Marketing",
+     "item": "Own volume by region — same definition as market size",
+     "label": "01_Own_Volume_by_Region.xlsx",
+     "url": "https://docs.google.com/spreadsheets/d/1K0QuhRqPhBwqJX4mtneSoklqz1h-5hz_/edit?usp=sharing&ouid=111890807183697653808&rtpof=true&sd=true",
+     "kind": "link",
+     "access": "sheet-public"
+    },
+    {
+     "ask": 48.0,
+     "function": "Marketing",
+     "item": "Competitor price list (equivalent SKUs, change dates)",
+     "label": "02_Competitor_Price_List.xlsx",
+     "url": "https://docs.google.com/spreadsheets/d/1_jL03TGLN_31WtyglBE--RrGeTQh81L4/edit?usp=drive_link&ouid=111890807183697653808&rtpof=true&sd=true",
+     "kind": "link",
+     "access": "sheet-public"
+    },
+    {
+     "ask": 49.0,
+     "function": "Marketing",
+     "item": "Competitor offers & credit terms (scheme, discount, credit days)",
+     "label": "03_Competitor_Offers_Credit_Terms.xlsx",
+     "url": "https://docs.google.com/spreadsheets/d/1BFX_0TXNuhwOOc6osv4EAjmxt9zZk-Z7/edit?usp=drive_link&ouid=111890807183697653808&rtpof=true&sd=true",
+     "kind": "link",
+     "access": "sheet-public"
+    },
+    {
+     "ask": 50.0,
+     "function": "Marketing",
+     "item": "Dealer share-of-wallet (their total category purchase vs ours)",
+     "label": "04_Dealer_Share_of_Wallet.xlsx",
+     "url": "https://docs.google.com/spreadsheets/d/1zymKCCY-D9CJtUPsYfrjCTBdtRQxL7JD/edit?usp=drive_link&ouid=111890807183697653808&rtpof=true&sd=true",
+     "kind": "link",
+     "access": "sheet-public"
+    },
+    {
+     "ask": 51.0,
+     "function": "Marketing",
+     "item": "7P assessment — own Q4 vs Q1 vs competitors (1–5 with evidence)",
+     "label": "05_7P_Assessment.xlsx",
+     "url": "https://docs.google.com/spreadsheets/d/1jHC8MvH-_aNaFBVhwDC-Ncigj_7hqNOz/edit?usp=drive_link&ouid=111890807183697653808&rtpof=true&sd=true",
+     "kind": "link",
+     "access": "sheet-public"
+    },
+    {
+     "ask": 52.0,
+     "function": "Marketing",
+     "item": "Promotion / trade spend by region",
+     "label": "Copy of AKIJ Pharmacy Mkt Budget (26-27).xlsx",
+     "url": "https://docs.google.com/spreadsheets/d/1nzSjMCN2AIRNa-fsankkHNaTZgfaPb9C/edit?usp=sharing&ouid=108085485160337808070&rtpof=true&sd=true",
+     "kind": "link",
+     "access": "sheet-public"
+    },
+    {
+     "ask": 53.0,
+     "function": "Marketing",
+     "item": "Retail / outlet distribution",
+     "label": "07_Retail_Outlet_Distribution.xlsx",
+     "url": "https://docs.google.com/spreadsheets/d/1ZNR6BWZOEhbtSFCoelrDxeQE4mh7yzZA/edit?usp=drive_link&ouid=111890807183697653808&rtpof=true&sd=true",
+     "kind": "link",
+     "access": "sheet-public"
+    },
+    {
+     "ask": 54.0,
+     "function": "Marketing",
+     "item": "Competitor capacity / new entrants",
+     "label": "08_Competitor_Capacity_New_Entrants.xlsx",
+     "url": "https://docs.google.com/spreadsheets/d/17TLx7tsftnzzLOEd4FT333WTQczPgC4q/edit?usp=drive_link&ouid=111890807183697653808&rtpof=true&sd=true",
+     "kind": "link",
+     "access": "sheet-public"
+    },
+    {
+     "ask": 55.0,
+     "function": "Marketing",
+     "item": "Lost dealer → competitor mapping",
+     "label": "08_Competitor_Capacity_New_Entrants.xlsx",
+     "url": "https://docs.google.com/spreadsheets/d/17TLx7tsftnzzLOEd4FT333WTQczPgC4q/edit?usp=drive_link&ouid=111890807183697653808&rtpof=true&sd=true",
+     "kind": "link",
+     "access": "sheet-public"
+    },
+    {
+     "ask": 56.0,
+     "function": "Marketing",
+     "item": "Competitor promotion & launches",
+     "label": "10_Competitor_Promotion_Launches.xlsx",
+     "url": "https://docs.google.com/spreadsheets/d/1Dvw8lmEZ3-jHDP3AIyBLoRRSVNa0gr9b/edit?usp=drive_link&ouid=111890807183697653808&rtpof=true&sd=true",
+     "kind": "link",
+     "access": "sheet-public"
+    },
+    {
+     "ask": 57.0,
+     "function": "Marketing",
+     "item": "Competitor service levels",
+     "label": "Data is not available",
+     "url": null,
+     "kind": "named-file"
+    },
+    {
+     "ask": 58.0,
+     "function": "Marketing",
+     "item": "Regional macro & disruption events",
+     "label": "Data is not available",
+     "url": null,
+     "kind": "named-file"
+    },
+    {
+     "ask": 59.0,
+     "function": "Marketing",
+     "item": "Seasonality pattern",
+     "label": "AKIJ Pharmacy Sales-Revenue",
+     "url": "https://drive.google.com/drive/folders/1UVCUsrTkIqWHilVKL-EGpMu1eq31oU67?usp=sharing",
+     "kind": "link",
+     "access": "drive-public"
+    },
+    {
+     "ask": 60.0,
+     "function": "Marketing",
+     "item": "Regulatory / tax changes",
+     "label": "Data is not available",
+     "url": null,
+     "kind": "named-file"
+    },
+    {
+     "ask": 61.0,
+     "function": "Marketing",
+     "item": "Regional demand pipeline (govt / private projects)",
+     "label": "Data is not available",
+     "url": null,
+     "kind": "named-file"
+    },
+    {
+     "ask": 62.0,
+     "function": "Marketing",
+     "item": "Import parity, FX and duty exposure",
+     "label": "Data is not available",
+     "url": null,
+     "kind": "named-file"
+    },
+    {
+     "ask": 63.0,
+     "function": "HR",
+     "item": "Sales team attrition, transfers and vacancy days",
+     "label": "PeopleDesk — attrition / transfer / vacancy reports",
+     "url": null,
+     "kind": "named-file"
+    }
+   ]
+  },
+  {
+   "sbu": "Next JobZ",
+   "asks": 63,
+   "linked": 20,
+   "rows": [
+    {
+     "ask": 19.0,
+     "function": "Sales",
+     "item": "Sales org, territory assignment and vacancies",
+     "label": "PeopleDesk — Employee / Position / Transfer modules",
+     "url": null,
+     "kind": "named-file"
+    },
+    {
+     "ask": 44.0,
+     "function": "Marketing",
+     "item": "Market size by region — Q4 FY26 and Q1 FY27",
+     "label": "44 · Market size by region",
+     "url": "https://docs.google.com/spreadsheets/d/1_cJaRVGJNWOFlkTFNl_9t4nXXkT8Wb9H_tnfB3COCPw/edit#gid=890425813",
+     "kind": "link",
+     "access": "sheet-public"
+    },
+    {
+     "ask": 45.0,
+     "function": "Marketing",
+     "item": "Competitor volume by region — Q4 and Q1",
+     "label": "45 · Competitor volume by region",
+     "url": "https://docs.google.com/spreadsheets/d/1_cJaRVGJNWOFlkTFNl_9t4nXXkT8Wb9H_tnfB3COCPw/edit#gid=1043729260",
+     "kind": "link",
+     "access": "sheet-public"
+    },
+    {
+     "ask": 46.0,
+     "function": "Marketing",
+     "item": "Own volume by region — same definition as market size",
+     "label": "46 · Own volume by region",
+     "url": "https://docs.google.com/spreadsheets/d/1_cJaRVGJNWOFlkTFNl_9t4nXXkT8Wb9H_tnfB3COCPw/edit#gid=1450792904",
+     "kind": "link",
+     "access": "sheet-public"
+    },
+    {
+     "ask": 47.0,
+     "function": "Marketing",
+     "item": "Competitor price list (equivalent SKUs, change dates)",
+     "label": "47 · Competitor price list",
+     "url": "https://docs.google.com/spreadsheets/d/1_cJaRVGJNWOFlkTFNl_9t4nXXkT8Wb9H_tnfB3COCPw/edit#gid=662747339",
+     "kind": "link",
+     "access": "sheet-public"
+    },
+    {
+     "ask": 48.0,
+     "function": "Marketing",
+     "item": "Competitor offers & credit terms (scheme, discount, credit days)",
+     "label": "48 · Competitor offers & credit terms",
+     "url": "https://docs.google.com/spreadsheets/d/1_cJaRVGJNWOFlkTFNl_9t4nXXkT8Wb9H_tnfB3COCPw/edit#gid=814348661",
+     "kind": "link",
+     "access": "sheet-public"
+    },
+    {
+     "ask": 49.0,
+     "function": "Marketing",
+     "item": "Dealer share-of-wallet (their total category purchase vs ours)",
+     "label": "49 · Dealer share-of-wallet",
+     "url": "https://docs.google.com/spreadsheets/d/1_cJaRVGJNWOFlkTFNl_9t4nXXkT8Wb9H_tnfB3COCPw/edit#gid=740780965",
+     "kind": "link",
+     "access": "sheet-public"
+    },
+    {
+     "ask": 50.0,
+     "function": "Marketing",
+     "item": "7P assessment — own Q4 vs Q1 vs competitors (1–5 with evidence)",
+     "label": "50 · 7P assessment",
+     "url": "https://docs.google.com/spreadsheets/d/1_cJaRVGJNWOFlkTFNl_9t4nXXkT8Wb9H_tnfB3COCPw/edit#gid=350871875",
+     "kind": "link",
+     "access": "sheet-public"
+    },
+    {
+     "ask": 51.0,
+     "function": "Marketing",
+     "item": "Promotion / trade spend by region",
+     "label": "51 · Promotion / trade spend",
+     "url": "https://docs.google.com/spreadsheets/d/1_cJaRVGJNWOFlkTFNl_9t4nXXkT8Wb9H_tnfB3COCPw/edit#gid=166227747",
+     "kind": "link",
+     "access": "sheet-public"
+    },
+    {
+     "ask": 52.0,
+     "function": "Marketing",
+     "item": "Retail / outlet distribution",
+     "label": "52 · Retail / outlet distribution",
+     "url": "https://docs.google.com/spreadsheets/d/1_cJaRVGJNWOFlkTFNl_9t4nXXkT8Wb9H_tnfB3COCPw/edit#gid=1813216727",
+     "kind": "link",
+     "access": "sheet-public"
+    },
+    {
+     "ask": 53.0,
+     "function": "Marketing",
+     "item": "Competitor capacity / new entrants",
+     "label": "53 · Competitor capacity / new entrants",
+     "url": "https://docs.google.com/spreadsheets/d/1_cJaRVGJNWOFlkTFNl_9t4nXXkT8Wb9H_tnfB3COCPw/edit#gid=375472169",
+     "kind": "link",
+     "access": "sheet-public"
+    },
+    {
+     "ask": 54.0,
+     "function": "Marketing",
+     "item": "Lost dealer → competitor mapping",
+     "label": "54 · Lost dealer → competitor mapping",
+     "url": "https://docs.google.com/spreadsheets/d/1_cJaRVGJNWOFlkTFNl_9t4nXXkT8Wb9H_tnfB3COCPw/edit#gid=857164057",
+     "kind": "link",
+     "access": "sheet-public"
+    },
+    {
+     "ask": 55.0,
+     "function": "Marketing",
+     "item": "Competitor promotion & launches",
+     "label": "55 · Competitor promotion & launches",
+     "url": "https://docs.google.com/spreadsheets/d/1_cJaRVGJNWOFlkTFNl_9t4nXXkT8Wb9H_tnfB3COCPw/edit#gid=2057651860",
+     "kind": "link",
+     "access": "sheet-public"
+    },
+    {
+     "ask": 56.0,
+     "function": "Marketing",
+     "item": "Competitor service levels",
+     "label": "56 · Competitor service levels",
+     "url": "https://docs.google.com/spreadsheets/d/1_cJaRVGJNWOFlkTFNl_9t4nXXkT8Wb9H_tnfB3COCPw/edit#gid=1433522978",
+     "kind": "link",
+     "access": "sheet-public"
+    },
+    {
+     "ask": 57.0,
+     "function": "Marketing",
+     "item": "Regional macro & disruption events",
+     "label": "57 · Regional macro & disruption",
+     "url": "https://docs.google.com/spreadsheets/d/1_cJaRVGJNWOFlkTFNl_9t4nXXkT8Wb9H_tnfB3COCPw/edit#gid=1144780208",
+     "kind": "link",
+     "access": "sheet-public"
+    },
+    {
+     "ask": 58.0,
+     "function": "Marketing",
+     "item": "Seasonality pattern",
+     "label": "58 · Seasonality pattern",
+     "url": "https://docs.google.com/spreadsheets/d/1_cJaRVGJNWOFlkTFNl_9t4nXXkT8Wb9H_tnfB3COCPw/edit#gid=876789157",
+     "kind": "link",
+     "access": "sheet-public"
+    },
+    {
+     "ask": 59.0,
+     "function": "Marketing",
+     "item": "Regulatory / tax changes",
+     "label": "59 · Regulatory / tax changes",
+     "url": "https://docs.google.com/spreadsheets/d/1_cJaRVGJNWOFlkTFNl_9t4nXXkT8Wb9H_tnfB3COCPw/edit#gid=1479740140",
+     "kind": "link",
+     "access": "sheet-public"
+    },
+    {
+     "ask": 60.0,
+     "function": "Marketing",
+     "item": "Regional demand pipeline (govt / private projects)",
+     "label": "60 · Regional demand pipeline",
+     "url": "https://docs.google.com/spreadsheets/d/1_cJaRVGJNWOFlkTFNl_9t4nXXkT8Wb9H_tnfB3COCPw/edit#gid=218164563",
+     "kind": "link",
+     "access": "sheet-public"
+    },
+    {
+     "ask": 61.0,
+     "function": "Marketing",
+     "item": "Import parity, FX and duty exposure",
+     "label": "61 · Import parity, FX & duty",
+     "url": "https://docs.google.com/spreadsheets/d/1_cJaRVGJNWOFlkTFNl_9t4nXXkT8Wb9H_tnfB3COCPw/edit#gid=818104015",
      "kind": "link",
      "access": "sheet-public"
     },
@@ -43,9 +532,192 @@
    ]
   },
   {
+   "sbu": "Mediplex",
+   "asks": 63,
+   "linked": 20,
+   "rows": [
+    {
+     "ask": 19.0,
+     "function": "Sales",
+     "item": "Sales org, territory assignment and vacancies",
+     "label": "PeopleDesk — Employee / Position / Transfer modules",
+     "url": null,
+     "kind": "named-file"
+    },
+    {
+     "ask": 44.0,
+     "function": "Marketing",
+     "item": "Market size by region — Q4 FY26 and Q1 FY27",
+     "label": "https://docs.google.com/spreadsheets/d/1ALo5a5IYpzZUtwDIpYc-stWDWP0RImtO/edit?usp=sharing&ouid=108085485160337808070&rtp",
+     "url": "https://docs.google.com/spreadsheets/d/1ALo5a5IYpzZUtwDIpYc-stWDWP0RImtO/edit?usp=sharing&ouid=108085485160337808070&rtpof=true&sd=true",
+     "kind": "link",
+     "access": "sheet-public"
+    },
+    {
+     "ask": 45.0,
+     "function": "Marketing",
+     "item": "Competitor volume by region — Q4 and Q1",
+     "label": "https://docs.google.com/spreadsheets/d/1zlSj3uvmVgWwDIpXtMkY0UKVjyFVFOjk/edit?usp=sharing&ouid=108085485160337808070&rtp",
+     "url": "https://docs.google.com/spreadsheets/d/1zlSj3uvmVgWwDIpXtMkY0UKVjyFVFOjk/edit?usp=sharing&ouid=108085485160337808070&rtpof=true&sd=true",
+     "kind": "link",
+     "access": "sheet-public"
+    },
+    {
+     "ask": 46.0,
+     "function": "Marketing",
+     "item": "Own volume by region — same definition as market size",
+     "label": "https://docs.google.com/spreadsheets/d/18LZQiFPSNq98OQ-9YLEdF7xbVnnZoXAP/edit?usp=sharing&ouid=108085485160337808070&rtp",
+     "url": "https://docs.google.com/spreadsheets/d/18LZQiFPSNq98OQ-9YLEdF7xbVnnZoXAP/edit?usp=sharing&ouid=108085485160337808070&rtpof=true&sd=true",
+     "kind": "link",
+     "access": "sheet-public"
+    },
+    {
+     "ask": 47.0,
+     "function": "Marketing",
+     "item": "Competitor price list (equivalent SKUs, change dates)",
+     "label": "https://docs.google.com/spreadsheets/d/1OGMzcDoKC2iVg3yU9odU4IpSmYQFm4QWCbwR4jFqfSI/edit?usp=sharing",
+     "url": "https://docs.google.com/spreadsheets/d/1OGMzcDoKC2iVg3yU9odU4IpSmYQFm4QWCbwR4jFqfSI/edit?usp=sharing",
+     "kind": "link",
+     "access": "sheet-public"
+    },
+    {
+     "ask": 48.0,
+     "function": "Marketing",
+     "item": "Competitor offers & credit terms (scheme, discount, credit days)",
+     "label": "https://docs.google.com/document/d/1gQzGaB6UGeZmh-uWhHmxl7IdMWq-5UcwNbEzP2qXPI8/edit?usp=sharing",
+     "url": "https://docs.google.com/document/d/1gQzGaB6UGeZmh-uWhHmxl7IdMWq-5UcwNbEzP2qXPI8/edit?usp=sharing",
+     "kind": "link",
+     "access": "doc-public"
+    },
+    {
+     "ask": 49.0,
+     "function": "Marketing",
+     "item": "Dealer share-of-wallet (their total category purchase vs ours)",
+     "label": "Mediplex Dont have any kind of Dealer Partnership",
+     "url": null,
+     "kind": "named-file"
+    },
+    {
+     "ask": 50.0,
+     "function": "Marketing",
+     "item": "7P assessment — own Q4 vs Q1 vs competitors (1–5 with evidence)",
+     "label": "https://docs.google.com/document/d/17dCit1cqWbD5ZiglZgIQRmzE4FS7VLtGJoyWdNiW8bg/edit?usp=sharing",
+     "url": "https://docs.google.com/document/d/17dCit1cqWbD5ZiglZgIQRmzE4FS7VLtGJoyWdNiW8bg/edit?usp=sharing",
+     "kind": "link",
+     "access": "doc-public"
+    },
+    {
+     "ask": 51.0,
+     "function": "Marketing",
+     "item": "Promotion / trade spend by region",
+     "label": "https://docs.google.com/spreadsheets/d/1gWi9mv2y7FN8xL9qEqeyjD_yJK-BTsBh-Krvdp1OI1E/edit?usp=sharing",
+     "url": "https://docs.google.com/spreadsheets/d/1gWi9mv2y7FN8xL9qEqeyjD_yJK-BTsBh-Krvdp1OI1E/edit?usp=sharing",
+     "kind": "link",
+     "access": "sheet-public"
+    },
+    {
+     "ask": 52.0,
+     "function": "Marketing",
+     "item": "Retail / outlet distribution",
+     "label": "Mediplex Dont have any kind of Retail Businesss",
+     "url": null,
+     "kind": "named-file"
+    },
+    {
+     "ask": 53.0,
+     "function": "Marketing",
+     "item": "Competitor capacity / new entrants",
+     "label": "https://docs.google.com/document/d/1v57U0Im5piY87U3MrmViMt9uiVqAylwadb3VihPB3TU/edit?usp=sharing",
+     "url": "https://docs.google.com/document/d/1v57U0Im5piY87U3MrmViMt9uiVqAylwadb3VihPB3TU/edit?usp=sharing",
+     "kind": "link",
+     "access": "doc-public"
+    },
+    {
+     "ask": 54.0,
+     "function": "Marketing",
+     "item": "Lost dealer → competitor mapping",
+     "label": "https://docs.google.com/spreadsheets/d/1jzwzMwPGTM6ZNOSo3AWgKn3U2r0Ygt7VwnQg0dtJ0Rc/edit?usp=sharing",
+     "url": "https://docs.google.com/spreadsheets/d/1jzwzMwPGTM6ZNOSo3AWgKn3U2r0Ygt7VwnQg0dtJ0Rc/edit?usp=sharing",
+     "kind": "link",
+     "access": "sheet-public"
+    },
+    {
+     "ask": 55.0,
+     "function": "Marketing",
+     "item": "Competitor promotion & launches",
+     "label": "https://docs.google.com/document/d/1OqT8MTJOMpqzTvJIQ5unDjF8kqvG8Q-R7LU2PG3V_4E/edit?usp=sharing",
+     "url": "https://docs.google.com/document/d/1OqT8MTJOMpqzTvJIQ5unDjF8kqvG8Q-R7LU2PG3V_4E/edit?usp=sharing",
+     "kind": "link",
+     "access": "doc-public"
+    },
+    {
+     "ask": 56.0,
+     "function": "Marketing",
+     "item": "Competitor service levels",
+     "label": "https://docs.google.com/document/d/1m3-6lHunPn5jxMmAIi7ad6GstFcZWpbs6Y1kSJzqCCw/edit?usp=sharing",
+     "url": "https://docs.google.com/document/d/1m3-6lHunPn5jxMmAIi7ad6GstFcZWpbs6Y1kSJzqCCw/edit?usp=sharing",
+     "kind": "link",
+     "access": "doc-public"
+    },
+    {
+     "ask": 57.0,
+     "function": "Marketing",
+     "item": "Regional macro & disruption events",
+     "label": "https://docs.google.com/document/d/11hiKsDSRP9d7G3YpHnmNzreA6stNEyKWkU_UqTUVEYg/edit?usp=sharing",
+     "url": "https://docs.google.com/document/d/11hiKsDSRP9d7G3YpHnmNzreA6stNEyKWkU_UqTUVEYg/edit?usp=sharing",
+     "kind": "link",
+     "access": "doc-public"
+    },
+    {
+     "ask": 58.0,
+     "function": "Marketing",
+     "item": "Seasonality pattern",
+     "label": "https://docs.google.com/document/d/1Eqpl-TLdqHsUBD6dMmCxRw-CvarB5YdnIH2kasWpL-Q/edit?usp=sharing",
+     "url": "https://docs.google.com/document/d/1Eqpl-TLdqHsUBD6dMmCxRw-CvarB5YdnIH2kasWpL-Q/edit?usp=sharing",
+     "kind": "link",
+     "access": "doc-public"
+    },
+    {
+     "ask": 59.0,
+     "function": "Marketing",
+     "item": "Regulatory / tax changes",
+     "label": "https://docs.google.com/document/d/1Eqpl-TLdqHsUBD6dMmCxRw-CvarB5YdnIH2kasWpL-Q/edit?usp=sharing",
+     "url": "https://docs.google.com/document/d/1Eqpl-TLdqHsUBD6dMmCxRw-CvarB5YdnIH2kasWpL-Q/edit?usp=sharing",
+     "kind": "link",
+     "access": "doc-public"
+    },
+    {
+     "ask": 60.0,
+     "function": "Marketing",
+     "item": "Regional demand pipeline (govt / private projects)",
+     "label": "https://docs.google.com/document/d/1Eqpl-TLdqHsUBD6dMmCxRw-CvarB5YdnIH2kasWpL-Q/edit?usp=sharing",
+     "url": "https://docs.google.com/document/d/1Eqpl-TLdqHsUBD6dMmCxRw-CvarB5YdnIH2kasWpL-Q/edit?usp=sharing",
+     "kind": "link",
+     "access": "doc-public"
+    },
+    {
+     "ask": 61.0,
+     "function": "Marketing",
+     "item": "Import parity, FX and duty exposure",
+     "label": "https://docs.google.com/document/d/1Eqpl-TLdqHsUBD6dMmCxRw-CvarB5YdnIH2kasWpL-Q/edit?usp=sharing",
+     "url": "https://docs.google.com/document/d/1Eqpl-TLdqHsUBD6dMmCxRw-CvarB5YdnIH2kasWpL-Q/edit?usp=sharing",
+     "kind": "link",
+     "access": "doc-public"
+    },
+    {
+     "ask": 62.0,
+     "function": "HR",
+     "item": "Sales team attrition, transfers and vacancy days",
+     "label": "PeopleDesk — attrition / transfer / vacancy reports",
+     "url": null,
+     "kind": "named-file"
+    }
+   ]
+  },
+  {
    "sbu": "Ispat",
    "asks": 63,
-   "linked": 9,
+   "linked": 19,
    "rows": [
     {
      "ask": 20.0,
@@ -104,8 +776,17 @@
      "ask": 50.0,
      "function": "Marketing",
      "item": "Dealer share-of-wallet (their total category purchase vs ours)",
-     "label": "Akij Ispat_Sales Analysis Report_Oct'26 (FY 26-27)",
-     "url": "https://docs.google.com/spreadsheets/d/1Sg88ZGwdRIFXWWOvccJVA2gC8_CMJEfgS4G7L8gHM6s/edit?usp=sharing",
+     "label": "Copy of AKIJ ISPAT - Dealer Share-of-Wallet (FY26-27)",
+     "url": "https://docs.google.com/spreadsheets/d/1cpj0emU210lU49r-_zz7R8ZuS09Ok5HkOOavujVoVpw/edit?usp=sharing",
+     "kind": "link",
+     "access": "sheet-public"
+    },
+    {
+     "ask": 51.0,
+     "function": "Marketing",
+     "item": "7P assessment — own Q4 vs Q1 vs competitors (1–5 with evidence)",
+     "label": "Copy of AKIJ ISPAT - 7P Assessment (FY26-27)",
+     "url": "https://docs.google.com/spreadsheets/d/1MMoCmUOc6I1Q57ynZ5W0fNb8WcXw6TXEkZeWR5gOUPE/edit?usp=sharing",
      "kind": "link",
      "access": "sheet-public"
     },
@@ -113,8 +794,89 @@
      "ask": 52.0,
      "function": "Marketing",
      "item": "Promotion / trade spend by region",
-     "label": "Marketing Analysis",
-     "url": "https://docs.google.com/spreadsheets/d/1Od9OwW6V4HgN9pZWtsssawvoS7jOLLB3utFl8mCmGqM/edit?usp=sharing",
+     "label": "Copy of Marketing Analysis",
+     "url": "https://docs.google.com/spreadsheets/d/1LjHYbbZYRMS_9uYTv7ZaAXoKhEnbHmtxtKE3ew5riF8/edit?usp=sharing",
+     "kind": "link",
+     "access": "sheet-public"
+    },
+    {
+     "ask": 53.0,
+     "function": "Marketing",
+     "item": "Retail / outlet distribution",
+     "label": "Copy of AKIJ ISPAT - Market & Competitive Intelligence",
+     "url": "https://docs.google.com/spreadsheets/d/1w0vXV216CL-QmVp2logyeuskhbOuWDwDjgdCyxJpMtQ/edit?usp=sharing",
+     "kind": "link",
+     "access": "sheet-public"
+    },
+    {
+     "ask": 54.0,
+     "function": "Marketing",
+     "item": "Competitor capacity / new entrants",
+     "label": "Copy of AKIJ ISPAT - Market & Competitive Intelligence",
+     "url": "https://docs.google.com/spreadsheets/d/1w0vXV216CL-QmVp2logyeuskhbOuWDwDjgdCyxJpMtQ/edit?usp=sharing",
+     "kind": "link",
+     "access": "sheet-public"
+    },
+    {
+     "ask": 55.0,
+     "function": "Marketing",
+     "item": "Lost dealer → competitor mapping",
+     "label": "Copy of AKIJ ISPAT - Market & Competitive Intelligence",
+     "url": "https://docs.google.com/spreadsheets/d/1w0vXV216CL-QmVp2logyeuskhbOuWDwDjgdCyxJpMtQ/edit?usp=sharing",
+     "kind": "link",
+     "access": "sheet-public"
+    },
+    {
+     "ask": 56.0,
+     "function": "Marketing",
+     "item": "Competitor promotion & launches",
+     "label": "Copy of AKIJ ISPAT - Market & Competitive Intelligence",
+     "url": "https://docs.google.com/spreadsheets/d/1w0vXV216CL-QmVp2logyeuskhbOuWDwDjgdCyxJpMtQ/edit?usp=sharing",
+     "kind": "link",
+     "access": "sheet-public"
+    },
+    {
+     "ask": 57.0,
+     "function": "Marketing",
+     "item": "Competitor service levels",
+     "label": "Copy of AKIJ ISPAT - Market & Competitive Intelligence",
+     "url": "https://docs.google.com/spreadsheets/d/1w0vXV216CL-QmVp2logyeuskhbOuWDwDjgdCyxJpMtQ/edit?usp=sharing",
+     "kind": "link",
+     "access": "sheet-public"
+    },
+    {
+     "ask": 58.0,
+     "function": "Marketing",
+     "item": "Regional macro & disruption events",
+     "label": "Copy of AKIJ ISPAT - Market & Competitive Intelligence",
+     "url": "https://docs.google.com/spreadsheets/d/1w0vXV216CL-QmVp2logyeuskhbOuWDwDjgdCyxJpMtQ/edit?usp=sharing",
+     "kind": "link",
+     "access": "sheet-public"
+    },
+    {
+     "ask": 59.0,
+     "function": "Marketing",
+     "item": "Seasonality pattern",
+     "label": "Copy of AKIJ ISPAT - Market & Competitive Intelligence",
+     "url": "https://docs.google.com/spreadsheets/d/1w0vXV216CL-QmVp2logyeuskhbOuWDwDjgdCyxJpMtQ/edit?usp=sharing",
+     "kind": "link",
+     "access": "sheet-public"
+    },
+    {
+     "ask": 60.0,
+     "function": "Marketing",
+     "item": "Regulatory / tax changes",
+     "label": "Copy of AKIJ ISPAT - Market & Competitive Intelligence",
+     "url": "https://docs.google.com/spreadsheets/d/1w0vXV216CL-QmVp2logyeuskhbOuWDwDjgdCyxJpMtQ/edit?usp=sharing",
+     "kind": "link",
+     "access": "sheet-public"
+    },
+    {
+     "ask": 61.0,
+     "function": "Marketing",
+     "item": "Regional demand pipeline (govt / private projects)",
+     "label": "Copy of AKIJ ISPAT - Market & Competitive Intelligence",
+     "url": "https://docs.google.com/spreadsheets/d/1w0vXV216CL-QmVp2logyeuskhbOuWDwDjgdCyxJpMtQ/edit?usp=sharing",
      "kind": "link",
      "access": "sheet-public"
     },
@@ -129,9 +891,435 @@
    ]
   },
   {
+   "sbu": "Telecom",
+   "asks": 62,
+   "linked": 18,
+   "rows": [
+    {
+     "ask": 17.0,
+     "function": "Sales",
+     "item": "Sales KPI — target vs actual by person",
+     "label": "PeopleDesk — Employee / Position / Transfer modules",
+     "url": null,
+     "kind": "named-file"
+    },
+    {
+     "ask": 43.0,
+     "function": "Marketing",
+     "item": "Market size by region — Q4 FY26 and Q1 FY27",
+     "label": "Market size by region — Q4 FY26 and Q1 FY27",
+     "url": "https://docs.google.com/document/d/1tPA357bAIgV1DZkJY5eO2WjVsPVIjwFn0TCQDMINzrs/edit?usp=sharing",
+     "kind": "link",
+     "access": "doc-public"
+    },
+    {
+     "ask": 44.0,
+     "function": "Marketing",
+     "item": "Competitor volume by region — Q4 and Q1",
+     "label": "Competitor volume by region — Q4 and Q1",
+     "url": "https://docs.google.com/document/d/1j2Y91rEZfdt2QbLNsuKZWR2PMsa_caBbDE4ezVy59jM/edit?usp=sharing",
+     "kind": "link",
+     "access": "doc-public"
+    },
+    {
+     "ask": 45.0,
+     "function": "Marketing",
+     "item": "Own volume by region — same definition as market size",
+     "label": "Own volume by region ",
+     "url": "https://docs.google.com/document/d/16NqHwaTEj_MypEOhLb_Xwjyf3OC1EXZW81AUHtoJUAk/edit?usp=sharing",
+     "kind": "link",
+     "access": "doc-public"
+    },
+    {
+     "ask": 46.0,
+     "function": "Marketing",
+     "item": "Competitor price list (equivalent SKUs, change dates)",
+     "label": "com price list",
+     "url": "https://docs.google.com/document/d/1YiI-TMGD_-uyZWl-mZjukaR1kTSyHHknX9lik9j2zJY/edit?usp=sharing",
+     "kind": "link",
+     "access": "doc-public"
+    },
+    {
+     "ask": 47.0,
+     "function": "Marketing",
+     "item": "Competitor offers & credit terms (scheme, discount, credit days)",
+     "label": "Competitor offers and credit terms ",
+     "url": "https://docs.google.com/document/d/1ys3mufiUuuHKWmCH4xLLNlL7fCfAXr6t_Ana0nglJeE/edit?usp=sharing",
+     "kind": "link",
+     "access": "doc-public"
+    },
+    {
+     "ask": 48.0,
+     "function": "Marketing",
+     "item": "Dealer share-of-wallet (their total category purchase vs ours)",
+     "label": "Not more then 15% because we have so many quality issues of our previous product stock",
+     "url": null,
+     "kind": "named-file"
+    },
+    {
+     "ask": 49.0,
+     "function": "Marketing",
+     "item": "7P assessment — own Q4 vs Q1 vs competitors (1–5 with evidence)",
+     "label": "Akij Telecom 7P assessment",
+     "url": "https://docs.google.com/document/d/1G2GOIune_upwInvYewyiiDIvaITEH1Qoz5e6oFxKOpk/edit?usp=sharing",
+     "kind": "link",
+     "access": "doc-public"
+    },
+    {
+     "ask": 50.0,
+     "function": "Marketing",
+     "item": "Promotion / trade spend by region",
+     "label": "As we are stoppping our previous product lline and will start with product of our own brand enover we didnt spend ",
+     "url": null,
+     "kind": "named-file"
+    },
+    {
+     "ask": 51.0,
+     "function": "Marketing",
+     "item": "Retail / outlet distribution",
+     "label": "Active dealer list ",
+     "url": "https://docs.google.com/spreadsheets/d/1bYrjHx3WmMTsXbQP9FFIDU1w89uKKnfbIR9PqheaUjA/edit?usp=sharing",
+     "kind": "link",
+     "access": "sheet-public"
+    },
+    {
+     "ask": 52.0,
+     "function": "Marketing",
+     "item": "Competitor capacity / new entrants",
+     "label": "Competitor capacity / new entrants",
+     "url": "https://docs.google.com/document/d/1GAY5c06NnsBl5GAS8-oQ_b2zt5HUp5oCe3MLLruyLkk/edit?usp=sharing",
+     "kind": "link",
+     "access": "doc-public"
+    },
+    {
+     "ask": 53.0,
+     "function": "Marketing",
+     "item": "Lost dealer → competitor mapping",
+     "label": "we are connecting with more dealers now then before",
+     "url": null,
+     "kind": "named-file"
+    },
+    {
+     "ask": 54.0,
+     "function": "Marketing",
+     "item": "Competitor promotion & launches",
+     "label": "Competitor promotion & launches",
+     "url": "https://docs.google.com/document/d/1blaWvAhKbJyQYwOaqoFwjj_FhwWm18ZDwHli4pY7zFU/edit?usp=sharing",
+     "kind": "link",
+     "access": "doc-public"
+    },
+    {
+     "ask": 55.0,
+     "function": "Marketing",
+     "item": "Competitor service levels",
+     "label": "Competitor service levels",
+     "url": "https://docs.google.com/document/d/1-ZY0_-NYdeFVL4smyOMSe0_pF-pZzsGUCL-cBexDX44/edit?usp=sharing",
+     "kind": "link",
+     "access": "doc-public"
+    },
+    {
+     "ask": 57.0,
+     "function": "Marketing",
+     "item": "Seasonality pattern",
+     "label": "(our sales is increasing now)",
+     "url": null,
+     "kind": "named-file"
+    },
+    {
+     "ask": 58.0,
+     "function": "Marketing",
+     "item": "Regulatory / tax changes",
+     "label": " Income Tax",
+     "url": "https://docs.google.com/document/d/1xFHVYmU94gW23Cb_fEKh_f7msUfDqa0wshBru6mQKKE/edit?usp=sharing",
+     "kind": "link",
+     "access": "doc-public"
+    },
+    {
+     "ask": 59.0,
+     "function": "Marketing",
+     "item": "Regional demand pipeline (govt / private projects)",
+     "label": "Regional demand opportunity map",
+     "url": "https://docs.google.com/document/d/14zIkSEblUbzAK_lhcsqZLIvEea1-vsoe4BwNIvI5zUI/edit?usp=sharing",
+     "kind": "link",
+     "access": "doc-public"
+    },
+    {
+     "ask": 61.0,
+     "function": "HR",
+     "item": "Sales team attrition, transfers and vacancy days",
+     "label": "PeopleDesk — attrition / transfer / vacancy reports",
+     "url": null,
+     "kind": "named-file"
+    }
+   ]
+  },
+  {
+   "sbu": "Consumer Electronics",
+   "asks": 63,
+   "linked": 16,
+   "rows": [
+    {
+     "ask": 17.0,
+     "function": "Sales",
+     "item": "Sales KPI — target vs actual by person",
+     "label": "PeopleDesk — Employee / Position / Transfer modules",
+     "url": null,
+     "kind": "named-file"
+    },
+    {
+     "ask": 44.0,
+     "function": "Marketing",
+     "item": "Market size by region — Q4 FY26 and Q1 FY27",
+     "label": "Copy of ORCA_ACEL_Marketing_Data_v2_Retail.xlsx",
+     "url": "https://docs.google.com/spreadsheets/d/1zMEG1auJQI7dTawJH0Um7m88If92q72B/edit?usp=sharing&ouid=108085485160337808070&rtpof=true&sd=true",
+     "kind": "link",
+     "access": "sheet-public"
+    },
+    {
+     "ask": 45.0,
+     "function": "Marketing",
+     "item": "Competitor volume by region — Q4 and Q1",
+     "label": "Copy of ORCA_ACEL_Marketing_Data_v2_Retail.xlsx",
+     "url": "https://docs.google.com/spreadsheets/d/13vjYbb4fVvvhISG3-Cl3GApCIRT3dINA/edit?usp=sharing&ouid=108085485160337808070&rtpof=true&sd=true",
+     "kind": "link",
+     "access": "sheet-public"
+    },
+    {
+     "ask": 47.0,
+     "function": "Marketing",
+     "item": "Competitor price list (equivalent SKUs, change dates)",
+     "label": "Copy of ORCA_ACEL_Marketing_Data_v2_Retail.xlsx",
+     "url": "https://docs.google.com/spreadsheets/d/1UlAg9GlUdkxpSzu3kYl5MQPHtu_jtybS/edit?usp=sharing&ouid=108085485160337808070&rtpof=true&sd=true",
+     "kind": "link",
+     "access": "sheet-public"
+    },
+    {
+     "ask": 48.0,
+     "function": "Marketing",
+     "item": "Competitor offers & credit terms (scheme, discount, credit days)",
+     "label": "Copy of ORCA_ACEL_Marketing_Data_v2_Retail.xlsx",
+     "url": "https://docs.google.com/spreadsheets/d/1UlAg9GlUdkxpSzu3kYl5MQPHtu_jtybS/edit?usp=sharing&ouid=108085485160337808070&rtpof=true&sd=true",
+     "kind": "link",
+     "access": "sheet-public"
+    },
+    {
+     "ask": 50.0,
+     "function": "Marketing",
+     "item": "7P assessment — own Q4 vs Q1 vs competitors (1–5 with evidence)",
+     "label": "Copy of ORCA_ACEL_Marketing_Data_v2_Retail.xlsx",
+     "url": "https://docs.google.com/spreadsheets/d/1UlAg9GlUdkxpSzu3kYl5MQPHtu_jtybS/edit?usp=sharing&ouid=108085485160337808070&rtpof=true&sd=true",
+     "kind": "link",
+     "access": "sheet-public"
+    },
+    {
+     "ask": 52.0,
+     "function": "Marketing",
+     "item": "Retail / outlet distribution",
+     "label": "Copy of ORCA_ACEL_Marketing_Data_v2_Retail.xlsx",
+     "url": "https://docs.google.com/spreadsheets/d/1UlAg9GlUdkxpSzu3kYl5MQPHtu_jtybS/edit?usp=sharing&ouid=108085485160337808070&rtpof=true&sd=true",
+     "kind": "link",
+     "access": "sheet-public"
+    },
+    {
+     "ask": 53.0,
+     "function": "Marketing",
+     "item": "Competitor capacity / new entrants",
+     "label": "Copy of ORCA_ACEL_Marketing_Data_v2_Retail.xlsx",
+     "url": "https://docs.google.com/spreadsheets/d/1UlAg9GlUdkxpSzu3kYl5MQPHtu_jtybS/edit?usp=sharing&ouid=108085485160337808070&rtpof=true&sd=true",
+     "kind": "link",
+     "access": "sheet-public"
+    },
+    {
+     "ask": 54.0,
+     "function": "Marketing",
+     "item": "Lost Customer → competitor mapping",
+     "label": "ORCA doesn't have dealer channel yet ",
+     "url": null,
+     "kind": "named-file"
+    },
+    {
+     "ask": 55.0,
+     "function": "Marketing",
+     "item": "Competitor promotion & launches",
+     "label": "Copy of ORCA_ACEL_Marketing_Data_v2_Retail.xlsx",
+     "url": "https://docs.google.com/spreadsheets/d/1UlAg9GlUdkxpSzu3kYl5MQPHtu_jtybS/edit?usp=sharing&ouid=108085485160337808070&rtpof=true&sd=true",
+     "kind": "link",
+     "access": "sheet-public"
+    },
+    {
+     "ask": 56.0,
+     "function": "Marketing",
+     "item": "Competitor service levels",
+     "label": "Copy of ORCA_ACEL_Marketing_Data_v2_Retail.xlsx",
+     "url": "https://docs.google.com/spreadsheets/d/1UlAg9GlUdkxpSzu3kYl5MQPHtu_jtybS/edit?usp=sharing&ouid=108085485160337808070&rtpof=true&sd=true",
+     "kind": "link",
+     "access": "sheet-public"
+    },
+    {
+     "ask": 57.0,
+     "function": "Marketing",
+     "item": "Regional macro & disruption events",
+     "label": "Copy of ORCA_ACEL_Marketing_Data_v2_Retail.xlsx",
+     "url": "https://docs.google.com/spreadsheets/d/1UlAg9GlUdkxpSzu3kYl5MQPHtu_jtybS/edit?usp=sharing&ouid=108085485160337808070&rtpof=true&sd=true",
+     "kind": "link",
+     "access": "sheet-public"
+    },
+    {
+     "ask": 58.0,
+     "function": "Marketing",
+     "item": "Seasonality pattern",
+     "label": "Copy of ORCA_ACEL_Marketing_Data_v2_Retail.xlsx",
+     "url": "https://docs.google.com/spreadsheets/d/1UlAg9GlUdkxpSzu3kYl5MQPHtu_jtybS/edit?usp=sharing&ouid=108085485160337808070&rtpof=true&sd=true",
+     "kind": "link",
+     "access": "sheet-public"
+    },
+    {
+     "ask": 59.0,
+     "function": "Marketing",
+     "item": "Regulatory / tax changes",
+     "label": "Copy of ORCA_ACEL_Marketing_Data_v2_Retail.xlsx",
+     "url": "https://docs.google.com/spreadsheets/d/1UlAg9GlUdkxpSzu3kYl5MQPHtu_jtybS/edit?usp=sharing&ouid=108085485160337808070&rtpof=true&sd=true",
+     "kind": "link",
+     "access": "sheet-public"
+    },
+    {
+     "ask": 61.0,
+     "function": "Marketing",
+     "item": "Import parity, FX and duty exposure",
+     "label": "This data should come from procurement /finance team",
+     "url": null,
+     "kind": "named-file"
+    },
+    {
+     "ask": 62.0,
+     "function": "HR",
+     "item": "Sales team attrition, transfers and vacancy days",
+     "label": "PeopleDesk — attrition / transfer / vacancy reports",
+     "url": null,
+     "kind": "named-file"
+    }
+   ]
+  },
+  {
+   "sbu": "Infotech",
+   "asks": 62,
+   "linked": 13,
+   "rows": [
+    {
+     "ask": 17.0,
+     "function": "Sales",
+     "item": "Sales KPI — target vs actual by person",
+     "label": "PeopleDesk — Employee / Position / Transfer modules",
+     "url": null,
+     "kind": "named-file"
+    },
+    {
+     "ask": 43.0,
+     "function": "Marketing",
+     "item": "Market size by region — Q4 FY26 and Q1 FY27",
+     "label": "https://docs.google.com/spreadsheets/d/1WOI4HSWcFH3ekt0Haan8tYSrnHt5vDyGFBTE4PDsO7M/edit?usp=sharing",
+     "url": "https://docs.google.com/spreadsheets/d/1WOI4HSWcFH3ekt0Haan8tYSrnHt5vDyGFBTE4PDsO7M/edit?usp=sharing",
+     "kind": "link",
+     "access": "sheet-public"
+    },
+    {
+     "ask": 44.0,
+     "function": "Marketing",
+     "item": "Competitor volume by region — Q4 and Q1",
+     "label": "Data Not Available",
+     "url": null,
+     "kind": "named-file"
+    },
+    {
+     "ask": 45.0,
+     "function": "Marketing",
+     "item": "Own volume by region — same definition as market size",
+     "label": "https://docs.google.com/spreadsheets/d/1WOI4HSWcFH3ekt0Haan8tYSrnHt5vDyGFBTE4PDsO7M/edit?usp=sharing",
+     "url": "https://docs.google.com/spreadsheets/d/1WOI4HSWcFH3ekt0Haan8tYSrnHt5vDyGFBTE4PDsO7M/edit?usp=sharing",
+     "kind": "link",
+     "access": "sheet-public"
+    },
+    {
+     "ask": 46.0,
+     "function": "Marketing",
+     "item": "Competitor price list (equivalent SKUs, change dates)",
+     "label": "Sku wise Data not available",
+     "url": null,
+     "kind": "named-file"
+    },
+    {
+     "ask": 47.0,
+     "function": "Marketing",
+     "item": "Competitor offers & credit terms (scheme, discount, credit days)",
+     "label": "https://docs.google.com/spreadsheets/d/1WOI4HSWcFH3ekt0Haan8tYSrnHt5vDyGFBTE4PDsO7M/edit?usp=sharing",
+     "url": "https://docs.google.com/spreadsheets/d/1WOI4HSWcFH3ekt0Haan8tYSrnHt5vDyGFBTE4PDsO7M/edit?usp=sharing",
+     "kind": "link",
+     "access": "sheet-public"
+    },
+    {
+     "ask": 48.0,
+     "function": "Marketing",
+     "item": "Dealer share-of-wallet (their total category purchase vs ours)",
+     "label": "https://docs.google.com/spreadsheets/d/1WOI4HSWcFH3ekt0Haan8tYSrnHt5vDyGFBTE4PDsO7M/edit?usp=sharing",
+     "url": "https://docs.google.com/spreadsheets/d/1WOI4HSWcFH3ekt0Haan8tYSrnHt5vDyGFBTE4PDsO7M/edit?usp=sharing",
+     "kind": "link",
+     "access": "sheet-public"
+    },
+    {
+     "ask": 49.0,
+     "function": "Marketing",
+     "item": "7P assessment — own Q4 vs Q1 vs competitors (1–5 with evidence)",
+     "label": "Not Applicable",
+     "url": null,
+     "kind": "named-file"
+    },
+    {
+     "ask": 51.0,
+     "function": "Marketing",
+     "item": "Retail / outlet distribution",
+     "label": "AITL operates exclusively as a B2B business and does not have any retail or outlet distribution network.",
+     "url": null,
+     "kind": "named-file"
+    },
+    {
+     "ask": 52.0,
+     "function": "Marketing",
+     "item": "Competitor capacity / new entrants",
+     "label": "Not Applicable",
+     "url": null,
+     "kind": "named-file"
+    },
+    {
+     "ask": 53.0,
+     "function": "Marketing",
+     "item": "Lost dealer → competitor mapping",
+     "label": "Not Applicable",
+     "url": null,
+     "kind": "named-file"
+    },
+    {
+     "ask": 55.0,
+     "function": "Marketing",
+     "item": "Competitor service levels",
+     "label": "https://docs.google.com/spreadsheets/d/1WOI4HSWcFH3ekt0Haan8tYSrnHt5vDyGFBTE4PDsO7M/edit?usp=sharing",
+     "url": "https://docs.google.com/spreadsheets/d/1WOI4HSWcFH3ekt0Haan8tYSrnHt5vDyGFBTE4PDsO7M/edit?usp=sharing",
+     "kind": "link",
+     "access": "sheet-public"
+    },
+    {
+     "ask": 61.0,
+     "function": "HR",
+     "item": "Sales team attrition, transfers and vacancy days",
+     "label": "PeopleDesk — attrition / transfer / vacancy reports",
+     "url": null,
+     "kind": "named-file"
+    }
+   ]
+  },
+  {
    "sbu": "Ready Mix",
    "asks": 61,
-   "linked": 15,
+   "linked": 20,
    "rows": [
     {
      "ask": 19.0,
@@ -214,11 +1402,29 @@
      "access": "sheet-public"
     },
     {
+     "ask": 50.0,
+     "function": "Marketing",
+     "item": "Retail / outlet distribution",
+     "label": "https://docs.google.com/spreadsheets/d/1X5YGCNAPh3hPwJ-RH4lkWbzhVG4siQVZ8I0CvllngCY/edit?usp=sharing",
+     "url": "https://docs.google.com/spreadsheets/d/1X5YGCNAPh3hPwJ-RH4lkWbzhVG4siQVZ8I0CvllngCY/edit?usp=sharing",
+     "kind": "link",
+     "access": "sheet-public"
+    },
+    {
      "ask": 51.0,
      "function": "Marketing",
      "item": "Competitor capacity / new entrants",
      "label": "https://docs.google.com/spreadsheets/d/1K1Cw7qRMEx0gXxXyV9kGAE4tlVtuEnlxYhgVkhT68vM/edit?usp=sharing",
      "url": "https://docs.google.com/spreadsheets/d/1K1Cw7qRMEx0gXxXyV9kGAE4tlVtuEnlxYhgVkhT68vM/edit?usp=sharing",
+     "kind": "link",
+     "access": "sheet-public"
+    },
+    {
+     "ask": 52.0,
+     "function": "Marketing",
+     "item": "Lost dealer → competitor mapping",
+     "label": "https://docs.google.com/spreadsheets/d/1e40lYIGDrC5jbdyYwNZzPC-YlNzpSmgTcFHlpHFRpRA/edit?usp=sharing",
+     "url": "https://docs.google.com/spreadsheets/d/1e40lYIGDrC5jbdyYwNZzPC-YlNzpSmgTcFHlpHFRpRA/edit?usp=sharing",
      "kind": "link",
      "access": "sheet-public"
     },
@@ -232,13 +1438,22 @@
      "access": "sheet-public"
     },
     {
+     "ask": 54.0,
+     "function": "Marketing",
+     "item": "Competitor service levels",
+     "label": "https://docs.google.com/spreadsheets/d/1q_2T2OUixP0FLQ8IdX1ufqA36bFGoGnyy3Vh7P0heZw/edit?usp=sharing",
+     "url": "https://docs.google.com/spreadsheets/d/1q_2T2OUixP0FLQ8IdX1ufqA36bFGoGnyy3Vh7P0heZw/edit?usp=sharing",
+     "kind": "link",
+     "access": "sheet-public"
+    },
+    {
      "ask": 55.0,
      "function": "Marketing",
      "item": "Regional macro & disruption events",
      "label": "https://docs.google.com/presentation/d/1pUa-aCwDVQZUi_7qnR71-QhP6lws2Gey/edit?usp=sharing&ouid=108085485160337808070&rtp",
      "url": "https://docs.google.com/presentation/d/1pUa-aCwDVQZUi_7qnR71-QhP6lws2Gey/edit?usp=sharing&ouid=108085485160337808070&rtpof=true&sd=true",
      "kind": "link",
-     "access": "link"
+     "access": "doc-public"
     },
     {
      "ask": 56.0,
@@ -246,6 +1461,24 @@
      "item": "Seasonality pattern",
      "label": "https://docs.google.com/spreadsheets/d/1-CrTCtZ6eWkN0gecBOwKsIdBywG8b7C4pqNwc0IoSZA/edit?usp=sharing",
      "url": "https://docs.google.com/spreadsheets/d/1-CrTCtZ6eWkN0gecBOwKsIdBywG8b7C4pqNwc0IoSZA/edit?usp=sharing",
+     "kind": "link",
+     "access": "sheet-public"
+    },
+    {
+     "ask": 57.0,
+     "function": "Marketing",
+     "item": "Regulatory / tax changes",
+     "label": "https://docs.google.com/spreadsheets/d/1gp_WNliMCLOsqdNpHPOOikOsW3Xtqb3qlqwKw11h1RQ/edit?usp=sharing",
+     "url": "https://docs.google.com/spreadsheets/d/1gp_WNliMCLOsqdNpHPOOikOsW3Xtqb3qlqwKw11h1RQ/edit?usp=sharing",
+     "kind": "link",
+     "access": "sheet-public"
+    },
+    {
+     "ask": 58.0,
+     "function": "Marketing",
+     "item": "Regional demand pipeline (govt / private projects)",
+     "label": "https://docs.google.com/spreadsheets/d/1iEuN9XZdOBHiaMqzfRu7KLRvelfFfHjrv2V7t3aaOB8/edit?usp=sharing",
+     "url": "https://docs.google.com/spreadsheets/d/1iEuN9XZdOBHiaMqzfRu7KLRvelfFfHjrv2V7t3aaOB8/edit?usp=sharing",
      "kind": "link",
      "access": "sheet-public"
     },
@@ -269,77 +1502,9 @@
    ]
   },
   {
-   "sbu": "Mediplex",
-   "asks": 63,
-   "linked": 7,
-   "rows": [
-    {
-     "ask": 19.0,
-     "function": "Sales",
-     "item": "Sales org, territory assignment and vacancies",
-     "label": "PeopleDesk — Employee / Position / Transfer modules",
-     "url": null,
-     "kind": "named-file"
-    },
-    {
-     "ask": 44.0,
-     "function": "Marketing",
-     "item": "Market size by region — Q4 FY26 and Q1 FY27",
-     "label": "https://docs.google.com/spreadsheets/d/1ENQU3l4EfAWm0aQq0cSRU90Jr44EBSV1/edit?usp=sharing&ouid=113268988160989919167&rtp",
-     "url": "https://docs.google.com/spreadsheets/d/1ENQU3l4EfAWm0aQq0cSRU90Jr44EBSV1/edit?usp=sharing&ouid=113268988160989919167&rtpof=true&sd=true",
-     "kind": "link",
-     "access": "sheet-public"
-    },
-    {
-     "ask": 45.0,
-     "function": "Marketing",
-     "item": "Competitor volume by region — Q4 and Q1",
-     "label": "https://docs.google.com/spreadsheets/d/1Ewwp6aKK0OOrWMRFyD0RuKeGVsXRnplH/edit?usp=sharing&ouid=113268988160989919167&rtp",
-     "url": "https://docs.google.com/spreadsheets/d/1Ewwp6aKK0OOrWMRFyD0RuKeGVsXRnplH/edit?usp=sharing&ouid=113268988160989919167&rtpof=true&sd=true",
-     "kind": "link",
-     "access": "sheet-public"
-    },
-    {
-     "ask": 46.0,
-     "function": "Marketing",
-     "item": "Own volume by region — same definition as market size",
-     "label": "https://docs.google.com/spreadsheets/d/1dbE-uj_sZE0UasMp4Rykb5wkdMGeJ8RR/edit?usp=sharing&ouid=113268988160989919167&rtp",
-     "url": "https://docs.google.com/spreadsheets/d/1dbE-uj_sZE0UasMp4Rykb5wkdMGeJ8RR/edit?usp=sharing&ouid=113268988160989919167&rtpof=true&sd=true",
-     "kind": "link",
-     "access": "sheet-public"
-    },
-    {
-     "ask": 47.0,
-     "function": "Marketing",
-     "item": "Competitor price list (equivalent SKUs, change dates)",
-     "label": "https://docs.google.com/spreadsheets/d/1OGMzcDoKC2iVg3yU9odU4IpSmYQFm4QWCbwR4jFqfSI/edit?usp=sharing",
-     "url": "https://docs.google.com/spreadsheets/d/1OGMzcDoKC2iVg3yU9odU4IpSmYQFm4QWCbwR4jFqfSI/edit?usp=sharing",
-     "kind": "link",
-     "access": "sheet-public"
-    },
-    {
-     "ask": 51.0,
-     "function": "Marketing",
-     "item": "Promotion / trade spend by region",
-     "label": "https://docs.google.com/spreadsheets/d/1v5lb1Lq9XFsG3lfyzFVu4WEwUNL4hEbfS1LwOnXOyvg/edit?usp=sharing",
-     "url": "https://docs.google.com/spreadsheets/d/1v5lb1Lq9XFsG3lfyzFVu4WEwUNL4hEbfS1LwOnXOyvg/edit?usp=sharing",
-     "kind": "link",
-     "access": "sheet-public"
-    },
-    {
-     "ask": 62.0,
-     "function": "HR",
-     "item": "Sales team attrition, transfers and vacancy days",
-     "label": "PeopleDesk — attrition / transfer / vacancy reports",
-     "url": null,
-     "kind": "named-file"
-    }
-   ]
-  },
-  {
    "sbu": "Commodities – F&B",
    "asks": 63,
-   "linked": 3,
+   "linked": 20,
    "rows": [
     {
      "ask": 19.0,
@@ -359,6 +1524,159 @@
      "access": "sheet-public"
     },
     {
+     "ask": 45.0,
+     "function": "Marketing",
+     "item": "Competitor volume by region — Q4 and Q1",
+     "label": "ACL F&B — Market Intelligence & Competitive Tracker | Q4 FY26 vs Q1 FY27",
+     "url": "https://docs.google.com/spreadsheets/d/1UxTU5jw8KPOACJmRzFPhBBnxCghYG4s-b9O1xHAcM9c/edit?usp=sharing",
+     "kind": "link",
+     "access": "sheet-public"
+    },
+    {
+     "ask": 46.0,
+     "function": "Marketing",
+     "item": "Own volume by region — same definition as market size",
+     "label": "ACL F&B — Market Intelligence & Competitive Tracker | Q4 FY26 vs Q1 FY27",
+     "url": "https://docs.google.com/spreadsheets/d/1UxTU5jw8KPOACJmRzFPhBBnxCghYG4s-b9O1xHAcM9c/edit?usp=sharing",
+     "kind": "link",
+     "access": "sheet-public"
+    },
+    {
+     "ask": 47.0,
+     "function": "Marketing",
+     "item": "Competitor price list (equivalent SKUs, change dates)",
+     "label": "ACL F&B — Market Intelligence & Competitive Tracker | Q4 FY26 vs Q1 FY27",
+     "url": "https://docs.google.com/spreadsheets/d/1UxTU5jw8KPOACJmRzFPhBBnxCghYG4s-b9O1xHAcM9c/edit?usp=sharing",
+     "kind": "link",
+     "access": "sheet-public"
+    },
+    {
+     "ask": 48.0,
+     "function": "Marketing",
+     "item": "Competitor offers & credit terms (scheme, discount, credit days)",
+     "label": "ACL F&B — Market Intelligence & Competitive Tracker | Q4 FY26 vs Q1 FY27",
+     "url": "https://docs.google.com/spreadsheets/d/1UxTU5jw8KPOACJmRzFPhBBnxCghYG4s-b9O1xHAcM9c/edit?usp=sharing",
+     "kind": "link",
+     "access": "sheet-public"
+    },
+    {
+     "ask": 49.0,
+     "function": "Marketing",
+     "item": "Dealer share-of-wallet (their total category purchase vs ours)",
+     "label": "ACL F&B — Market Intelligence & Competitive Tracker | Q4 FY26 vs Q1 FY27",
+     "url": "https://docs.google.com/spreadsheets/d/1UxTU5jw8KPOACJmRzFPhBBnxCghYG4s-b9O1xHAcM9c/edit?usp=sharing",
+     "kind": "link",
+     "access": "sheet-public"
+    },
+    {
+     "ask": 50.0,
+     "function": "Marketing",
+     "item": "7P assessment — own Q4 vs Q1 vs competitors (1–5 with evidence)",
+     "label": "ACL F&B — Market Intelligence & Competitive Tracker | Q4 FY26 vs Q1 FY27",
+     "url": "https://docs.google.com/spreadsheets/d/1UxTU5jw8KPOACJmRzFPhBBnxCghYG4s-b9O1xHAcM9c/edit?usp=sharing",
+     "kind": "link",
+     "access": "sheet-public"
+    },
+    {
+     "ask": 51.0,
+     "function": "Marketing",
+     "item": "Promotion / trade spend by region",
+     "label": "ACL F&B — Market Intelligence & Competitive Tracker | Q4 FY26 vs Q1 FY27",
+     "url": "https://docs.google.com/spreadsheets/d/1UxTU5jw8KPOACJmRzFPhBBnxCghYG4s-b9O1xHAcM9c/edit?usp=sharing",
+     "kind": "link",
+     "access": "sheet-public"
+    },
+    {
+     "ask": 52.0,
+     "function": "Marketing",
+     "item": "Retail / outlet distribution",
+     "label": "ACL F&B — Market Intelligence & Competitive Tracker | Q4 FY26 vs Q1 FY27",
+     "url": "https://docs.google.com/spreadsheets/d/1UxTU5jw8KPOACJmRzFPhBBnxCghYG4s-b9O1xHAcM9c/edit?usp=sharing",
+     "kind": "link",
+     "access": "sheet-public"
+    },
+    {
+     "ask": 53.0,
+     "function": "Marketing",
+     "item": "Competitor capacity / new entrants",
+     "label": "ACL F&B — Market Intelligence & Competitive Tracker | Q4 FY26 vs Q1 FY27",
+     "url": "https://docs.google.com/spreadsheets/d/1UxTU5jw8KPOACJmRzFPhBBnxCghYG4s-b9O1xHAcM9c/edit?usp=sharing",
+     "kind": "link",
+     "access": "sheet-public"
+    },
+    {
+     "ask": 54.0,
+     "function": "Marketing",
+     "item": "Lost dealer → competitor mapping",
+     "label": "ACL F&B — Market Intelligence & Competitive Tracker | Q4 FY26 vs Q1 FY27",
+     "url": "https://docs.google.com/spreadsheets/d/1UxTU5jw8KPOACJmRzFPhBBnxCghYG4s-b9O1xHAcM9c/edit?usp=sharing",
+     "kind": "link",
+     "access": "sheet-public"
+    },
+    {
+     "ask": 55.0,
+     "function": "Marketing",
+     "item": "Competitor promotion & launches",
+     "label": "ACL F&B — Market Intelligence & Competitive Tracker | Q4 FY26 vs Q1 FY27",
+     "url": "https://docs.google.com/spreadsheets/d/1UxTU5jw8KPOACJmRzFPhBBnxCghYG4s-b9O1xHAcM9c/edit?usp=sharing",
+     "kind": "link",
+     "access": "sheet-public"
+    },
+    {
+     "ask": 56.0,
+     "function": "Marketing",
+     "item": "Competitor service levels",
+     "label": "ACL F&B — Market Intelligence & Competitive Tracker | Q4 FY26 vs Q1 FY27",
+     "url": "https://docs.google.com/spreadsheets/d/1UxTU5jw8KPOACJmRzFPhBBnxCghYG4s-b9O1xHAcM9c/edit?usp=sharing",
+     "kind": "link",
+     "access": "sheet-public"
+    },
+    {
+     "ask": 57.0,
+     "function": "Marketing",
+     "item": "Regional macro & disruption events",
+     "label": "ACL F&B — Market Intelligence & Competitive Tracker | Q4 FY26 vs Q1 FY27",
+     "url": "https://docs.google.com/spreadsheets/d/1UxTU5jw8KPOACJmRzFPhBBnxCghYG4s-b9O1xHAcM9c/edit?usp=sharing",
+     "kind": "link",
+     "access": "sheet-public"
+    },
+    {
+     "ask": 58.0,
+     "function": "Marketing",
+     "item": "Seasonality pattern",
+     "label": "ACL F&B — Market Intelligence & Competitive Tracker | Q4 FY26 vs Q1 FY27",
+     "url": "https://docs.google.com/spreadsheets/d/1UxTU5jw8KPOACJmRzFPhBBnxCghYG4s-b9O1xHAcM9c/edit?usp=sharing",
+     "kind": "link",
+     "access": "sheet-public"
+    },
+    {
+     "ask": 59.0,
+     "function": "Marketing",
+     "item": "Regulatory / tax changes",
+     "label": "ACL F&B — Market Intelligence & Competitive Tracker | Q4 FY26 vs Q1 FY27",
+     "url": "https://docs.google.com/spreadsheets/d/1UxTU5jw8KPOACJmRzFPhBBnxCghYG4s-b9O1xHAcM9c/edit?usp=sharing",
+     "kind": "link",
+     "access": "sheet-public"
+    },
+    {
+     "ask": 60.0,
+     "function": "Marketing",
+     "item": "Regional demand pipeline (govt / private projects)",
+     "label": "ACL F&B — Market Intelligence & Competitive Tracker | Q4 FY26 vs Q1 FY27",
+     "url": "https://docs.google.com/spreadsheets/d/1UxTU5jw8KPOACJmRzFPhBBnxCghYG4s-b9O1xHAcM9c/edit?usp=sharing",
+     "kind": "link",
+     "access": "sheet-public"
+    },
+    {
+     "ask": 61.0,
+     "function": "Marketing",
+     "item": "Import parity, FX and duty exposure",
+     "label": "ACL F&B — Market Intelligence & Competitive Tracker | Q4 FY26 vs Q1 FY27",
+     "url": "https://docs.google.com/spreadsheets/d/1UxTU5jw8KPOACJmRzFPhBBnxCghYG4s-b9O1xHAcM9c/edit?usp=sharing",
+     "kind": "link",
+     "access": "sheet-public"
+    },
+    {
      "ask": 62.0,
      "function": "HR",
      "item": "Sales team attrition, transfers and vacancy days",
@@ -369,56 +1687,170 @@
    ]
   },
   {
-   "sbu": "LifeCare – Pharmacy",
-   "asks": 64,
-   "linked": 6,
+   "sbu": "Sheet1",
+   "asks": 0,
+   "linked": 0,
+   "rows": []
+  },
+  {
+   "sbu": "Logistics – Ex-CHA",
+   "asks": 63,
+   "linked": 18,
    "rows": [
     {
-     "ask": 19.0,
+     "ask": 17.0,
      "function": "Sales",
-     "item": "Sales org, territory assignment and vacancies",
+     "item": "Sales KPI — target vs actual by person",
      "label": "PeopleDesk — Employee / Position / Transfer modules",
      "url": null,
      "kind": "named-file"
     },
     {
+     "ask": 44.0,
+     "function": "Marketing",
+     "item": "Market size by region — Q4 FY24 and Q1 FY25",
+     "label": "Copy of Market Size by Region — Q4 FY24 and Q1 FY25",
+     "url": "https://docs.google.com/spreadsheets/d/1UH7ZGGN8u71f0uw20EAvwnQy0GGjunjlF3bAJv4jBE8/edit?usp=sharing",
+     "kind": "link",
+     "access": "sheet-public"
+    },
+    {
      "ask": 45.0,
      "function": "Marketing",
-     "item": "Market size by region — Q4 FY26 and Q1 FY27",
-     "label": "Copy of AKIJ Phamacy Market Share Details- Industry",
-     "url": "https://docs.google.com/spreadsheets/d/1yxpbdNeKYm9aqS_7-Y2IkV5sxWsAEl8VIJQEyvSX-nE/edit?usp=sharing",
+     "item": "Competitor volume by region — Q4 and Q1",
+     "label": "Copy of Competitor volume by region — Q4 and Q1",
+     "url": "https://docs.google.com/spreadsheets/d/10YJYfijcrG9n2NdXDkl6xFDUAEKepL9mvYiH7RM4Woc/edit?usp=sharing",
      "kind": "link",
      "access": "sheet-public"
     },
     {
      "ask": 46.0,
      "function": "Marketing",
-     "item": "Competitor volume by region — Q4 and Q1",
-     "label": "Copy of AKIJ Phamacy Market Share Details- Industry",
-     "url": "https://docs.google.com/spreadsheets/d/1zKFAL3McwnqRJMg-wqpkzRTohOBxEVROZNHOTtik9fE/edit?usp=sharing",
+     "item": "Own volume by region — same definition as market size",
+     "label": "Copy of Own volume by region — same definition as market size",
+     "url": "https://docs.google.com/spreadsheets/d/1OFwGEZpTHjlcDg6wzreieom1zuZ3GTmuHclymg7DVZ0/edit?usp=sharing",
+     "kind": "link",
+     "access": "sheet-public"
+    },
+    {
+     "ask": 47.0,
+     "function": "Marketing",
+     "item": "Competitor price list (equivalent SKUs, change dates)",
+     "label": "Copy of Competitor_Price_List_and_Equivalent_SKUs.xlsx",
+     "url": "https://docs.google.com/spreadsheets/d/1xu2e7KY13824I4ABdFtHOSwB2H_EFGZO/edit?usp=sharing&ouid=108085485160337808070&rtpof=true&sd=true",
+     "kind": "link",
+     "access": "sheet-public"
+    },
+    {
+     "ask": 48.0,
+     "function": "Marketing",
+     "item": "Competitor offers & credit terms (scheme, discount, credit days)",
+     "label": "Copy of Competitor_Offers_and_Credit_Terms.xlsx",
+     "url": "https://docs.google.com/spreadsheets/d/1zz03E_xYq9avhW9_226_7PBlZsjq4Atb/edit?usp=sharing&ouid=108085485160337808070&rtpof=true&sd=true",
+     "kind": "link",
+     "access": "sheet-public"
+    },
+    {
+     "ask": 49.0,
+     "function": "Marketing",
+     "item": "Dealer share-of-wallet (their total category purchase vs ours)",
+     "label": "Copy of Dealer Share Wallet",
+     "url": "https://docs.google.com/spreadsheets/d/18vzkl5PZNs3srI80zIhmkuMMEryVNk8gmzRZ1TFLe3I/edit?usp=sharing",
+     "kind": "link",
+     "access": "sheet-public"
+    },
+    {
+     "ask": 50.0,
+     "function": "Marketing",
+     "item": "7P assessment — own Q4 vs Q1 vs competitors (1–5 with evidence)",
+     "label": "Copy of 7P_Assessment_Marketing_Q4_vs_Q1_Competitors.xlsx",
+     "url": "https://docs.google.com/spreadsheets/d/1p1aIqH406NGSivtevAnzm_IU-6WROS_C/edit?usp=sharing&ouid=108085485160337808070&rtpof=true&sd=true",
+     "kind": "link",
+     "access": "sheet-public"
+    },
+    {
+     "ask": 51.0,
+     "function": "Marketing",
+     "item": "Promotion / trade spend by region",
+     "label": "Copy of Akij_Logistics_Promotion_Trade_Spend_GL4210001.xlsx",
+     "url": "https://docs.google.com/spreadsheets/d/1ppPwuAGPynrDcvrfxF--bDdydvf82CUf/edit?usp=sharing&ouid=108085485160337808070&rtpof=true&sd=true",
      "kind": "link",
      "access": "sheet-public"
     },
     {
      "ask": 52.0,
      "function": "Marketing",
-     "item": "Promotion / trade spend by region",
-     "label": "AKIJ Pharmacy Mkt Budget (26-27).xlsx",
-     "url": "https://docs.google.com/spreadsheets/d/1gWDIyIq0VLUc-Sa-NZfuRVO8HYko0GGD/edit?usp=sharing&ouid=111890807183697653808&rtpof=true&sd=true",
+     "item": "Retail / outlet distribution",
+     "label": "Copy of Retail Outlet ",
+     "url": "https://docs.google.com/spreadsheets/d/1aJVfB-jPVvSMxRXoUHzxBZERRWuofT1ib1TGcKP8hQ0/edit?usp=sharing",
      "kind": "link",
      "access": "sheet-public"
     },
     {
-     "ask": 59.0,
+     "ask": 53.0,
+     "function": "Marketing",
+     "item": "Competitor capacity / new entrants",
+     "label": "Copy of Competitor capacity / new entrants",
+     "url": "https://docs.google.com/spreadsheets/d/1fxfZjC1EJF9FZZ4cPKq2nLracotM356Gz_QBcB0oJ-A/edit?usp=sharing",
+     "kind": "link",
+     "access": "sheet-public"
+    },
+    {
+     "ask": 54.0,
+     "function": "Marketing",
+     "item": "Lost Customer",
+     "label": "Copy of List of Lost Customer",
+     "url": "https://docs.google.com/spreadsheets/d/1mj3x5Fn3J3aeSx-qNlaSaiue3_XIgRZ808bKPOc6naw/edit?usp=sharing",
+     "kind": "link",
+     "access": "sheet-public"
+    },
+    {
+     "ask": 55.0,
+     "function": "Marketing",
+     "item": "Competitor promotion & launches",
+     "label": "hCopy of Competitor promotion & launches",
+     "url": "https://docs.google.com/spreadsheets/d/1UPI-zqSWKu-HU7WEmR9WEV_4sEy-zDCb1bTNaMVlePU/edit?usp=sharing",
+     "kind": "link",
+     "access": "sheet-public"
+    },
+    {
+     "ask": 56.0,
+     "function": "Marketing",
+     "item": "Competitor service levels",
+     "label": "Copy of Competitor Service-Level Benchmark",
+     "url": "https://docs.google.com/spreadsheets/d/1UwomI6IdcsqdXUDZFdd_LJFES3Lo0WcYZaLoBcFYNS0/edit?usp=sharing",
+     "kind": "link",
+     "access": "sheet-public"
+    },
+    {
+     "ask": 57.0,
+     "function": "Marketing",
+     "item": "Regional macro & disruption events",
+     "label": "Copy of Regional Macro & Disruption",
+     "url": "https://docs.google.com/spreadsheets/d/1hINcLPOinUJe1zmZuiP2zwm8Q-hcvLXfcPZxkksrKk4/edit?usp=sharing",
+     "kind": "link",
+     "access": "sheet-public"
+    },
+    {
+     "ask": 58.0,
      "function": "Marketing",
      "item": "Seasonality pattern",
-     "label": "Copy of AKIJ Pharmacy.xlsx",
-     "url": "https://docs.google.com/spreadsheets/d/1FHYJ8bxqhX194xVeJuHhJIiUyK8xAQOP/edit?usp=sharing&ouid=108085485160337808070&rtpof=true&sd=true",
+     "label": "Copy of Seasonality Pattern",
+     "url": "https://docs.google.com/spreadsheets/d/1DzY87zw6ghazJDAoV5ANgtsOli0IW8Egh_ZuyQXtkoo/edit?usp=sharing",
      "kind": "link",
      "access": "sheet-public"
     },
     {
-     "ask": 63.0,
+     "ask": 60.0,
+     "function": "Marketing",
+     "item": "Regional demand pipeline (govt / private projects)",
+     "label": "Copy of Regional Demand Pipeline",
+     "url": "https://docs.google.com/spreadsheets/d/10ZmG-6w-fEm3HkaZqpIBqCPzQYOSwxCU6kw1IcKzPro/edit?usp=sharing",
+     "kind": "link",
+     "access": "sheet-public"
+    },
+    {
+     "ask": 62.0,
      "function": "HR",
      "item": "Sales team attrition, transfers and vacancy days",
      "label": "PeopleDesk — attrition / transfer / vacancy reports",
@@ -444,8 +1876,8 @@
      "ask": 44.0,
      "function": "Marketing",
      "item": "Market size by region — Q4 FY26 and Q1 FY27",
-     "label": "ABSL 44 · Market size by region.xlsx",
-     "url": "https://docs.google.com/spreadsheets/d/1vJMBXFGqkp1czLGaRWfded8jMB_ErNBc/edit?usp=drive_link&ouid=109987202611692539318&rtpof=true&sd=true",
+     "label": "Copy of ABSL 44 · Market size by region.xlsx",
+     "url": "https://docs.google.com/spreadsheets/d/1pRFKEGxU6nl2F_oBAjzemA7UWPv8_OIq/edit?usp=sharing&ouid=108085485160337808070&rtpof=true&sd=true",
      "kind": "link",
      "access": "sheet-public"
     },
@@ -453,8 +1885,8 @@
      "ask": 45.0,
      "function": "Marketing",
      "item": "Competitor volume by region — Q4 and Q1",
-     "label": "ABSL 45 · Competitor volume by region.xlsx",
-     "url": "https://docs.google.com/spreadsheets/d/1MGUXXvwkkpCgWbh_15mXcUkCu2-nxKvG/edit?usp=drive_link&ouid=109987202611692539318&rtpof=true&sd=true",
+     "label": "Copy of ABSL 45 · Competitor volume by region.xlsx",
+     "url": "https://docs.google.com/spreadsheets/d/1V4bvLNDOqqlxqu7iPlZdsL911k0DJeFh/edit?usp=sharing&ouid=108085485160337808070&rtpof=true&sd=true",
      "kind": "link",
      "access": "sheet-public"
     },
@@ -462,8 +1894,8 @@
      "ask": 46.0,
      "function": "Marketing",
      "item": "Own volume by region — same definition as market size",
-     "label": "ABSL 46 · Own volume by region.xlsx",
-     "url": "https://docs.google.com/spreadsheets/d/15KvOvwSmSNX1jMKS5dvf-TM-jxlhRErA/edit?usp=drive_link&ouid=109987202611692539318&rtpof=true&sd=true",
+     "label": "Copy of ABSL 46 · Own volume by region.xlsx",
+     "url": "https://docs.google.com/spreadsheets/d/1CB4clr81KPHbp5B5aDL_1B9HlsoeHNPy/edit?usp=sharing&ouid=108085485160337808070&rtpof=true&sd=true",
      "kind": "link",
      "access": "sheet-public"
     },
@@ -471,8 +1903,8 @@
      "ask": 47.0,
      "function": "Marketing",
      "item": "Competitor price list (equivalent SKUs, change dates)",
-     "label": "ABSL 47 · Competitor price list.xlsx",
-     "url": "https://docs.google.com/spreadsheets/d/1MiEuQmtx5I8Opa9aYT0PPuKiBqi7f47K/edit?usp=drive_link&ouid=109987202611692539318&rtpof=true&sd=true",
+     "label": "Copy of ABSL 47 · Competitor price list.xlsx",
+     "url": "https://docs.google.com/spreadsheets/d/1zA4VWb1vMG2sV8SiYX23mplijBdYBYbk/edit?usp=sharing&ouid=108085485160337808070&rtpof=true&sd=true",
      "kind": "link",
      "access": "sheet-public"
     },
@@ -480,8 +1912,8 @@
      "ask": 48.0,
      "function": "Marketing",
      "item": "Competitor offers & credit terms (scheme, discount, credit days)",
-     "label": "ABSL 48 · Competitor offers & credit terms.xlsx",
-     "url": "https://docs.google.com/spreadsheets/d/1TdkCcMctCmAY1T7klpHC89L-npjZFge_/edit?usp=drive_link&ouid=109987202611692539318&rtpof=true&sd=true",
+     "label": "Copy of ABSL 48 · Competitor offers & credit terms.xlsx",
+     "url": "https://docs.google.com/spreadsheets/d/1nJZV6FOWcIDL0vX1uewomvSBCfJObtKL/edit?usp=sharing&ouid=108085485160337808070&rtpof=true&sd=true",
      "kind": "link",
      "access": "sheet-public"
     },
@@ -489,8 +1921,8 @@
      "ask": 49.0,
      "function": "Marketing",
      "item": "Dealer share-of-wallet (their total category purchase vs ours)",
-     "label": "ABSL 49 · Dealer share-of-wallet.xlsx",
-     "url": "https://docs.google.com/spreadsheets/d/1fv_k5-LXYKmnvLXOISa2b5367yECnbLM/edit?usp=drive_link&ouid=109987202611692539318&rtpof=true&sd=true",
+     "label": "Copy of ABSL 49 · Dealer share-of-wallet.xlsx",
+     "url": "https://docs.google.com/spreadsheets/d/1iGMeHN9K0jPujDmxwriKk2e5HP6eEZAz/edit?usp=sharing&ouid=108085485160337808070&rtpof=true&sd=true",
      "kind": "link",
      "access": "sheet-public"
     },
@@ -498,8 +1930,8 @@
      "ask": 50.0,
      "function": "Marketing",
      "item": "7P assessment — own Q4 vs Q1 vs competitors (1–5 with evidence)",
-     "label": "ABSL 50 · 7P assessment.xlsx",
-     "url": "https://docs.google.com/spreadsheets/d/1btCGSzI13TDEfiy9fj_qQBgN2dDg1ha8/edit?usp=drive_link&ouid=109987202611692539318&rtpof=true&sd=true",
+     "label": "Copy of ABSL 50 · 7P assessment.xlsx",
+     "url": "https://docs.google.com/spreadsheets/d/1p8gPUeyE_Uc24PIRmG1nJRSl0823Sydk/edit?usp=sharing&ouid=108085485160337808070&rtpof=true&sd=true",
      "kind": "link",
      "access": "sheet-public"
     },
@@ -507,8 +1939,8 @@
      "ask": 51.0,
      "function": "Marketing",
      "item": "Promotion / trade spend by region",
-     "label": "ABSL 51 · Promotion _ trade spend.xlsx",
-     "url": "https://docs.google.com/spreadsheets/d/1rI_wO6bw6lbu5vnMxJT6THqloBaC-BuN/edit?usp=drive_link&ouid=109987202611692539318&rtpof=true&sd=true",
+     "label": "Copy of ABSL 51 · Promotion _ trade spend.xlsx",
+     "url": "https://docs.google.com/spreadsheets/d/1Q4TWKf6nJ_gwstVebTkPK7cJlRe3gsqB/edit?usp=sharing&ouid=108085485160337808070&rtpof=true&sd=true",
      "kind": "link",
      "access": "sheet-public"
     },
@@ -516,8 +1948,8 @@
      "ask": 52.0,
      "function": "Marketing",
      "item": "Retail / outlet distribution",
-     "label": "ABSL 52 · Retail _ outlet distribution.xlsx",
-     "url": "https://docs.google.com/spreadsheets/d/1wKUMFB3XJg3EGX_WiqPdD6XUWyDPUL0i/edit?usp=drive_link&ouid=109987202611692539318&rtpof=true&sd=true",
+     "label": "Copy of ABSL 52 · Retail _ outlet distribution.xlsx",
+     "url": "https://docs.google.com/spreadsheets/d/1ncq6gyzdCkwzsO0GMaTtlogkc6GGruUa/edit?usp=sharing&ouid=108085485160337808070&rtpof=true&sd=true",
      "kind": "link",
      "access": "sheet-public"
     },
@@ -525,8 +1957,8 @@
      "ask": 53.0,
      "function": "Marketing",
      "item": "Competitor capacity / new entrants",
-     "label": "ABSL 53 · Competitor capacity _ new entrants.xlsx",
-     "url": "https://docs.google.com/spreadsheets/d/1IAGCmZ8lWR6_dkbYNUpT9hTGsnY4He3D/edit?usp=drive_link&ouid=109987202611692539318&rtpof=true&sd=true",
+     "label": "Copy of ABSL 53 · Competitor capacity _ new entrants.xlsx",
+     "url": "https://docs.google.com/spreadsheets/d/1MzEWOT_MxDTwJYkSzreCzGp2y-rX_ki2/edit?usp=sharing&ouid=108085485160337808070&rtpof=true&sd=true",
      "kind": "link",
      "access": "sheet-public"
     },
@@ -534,8 +1966,8 @@
      "ask": 54.0,
      "function": "Marketing",
      "item": "Lost dealer → competitor mapping",
-     "label": "ABSL 54 · Lost dealer → competitor mapping.xlsx",
-     "url": "https://docs.google.com/spreadsheets/d/1Ql7EBNByQjW-oPjvzBACEOYV86Bp_sx7/edit?usp=drive_link&ouid=109987202611692539318&rtpof=true&sd=true",
+     "label": "Copy of ABSL 54 · Lost dealer → competitor mapping.xlsx",
+     "url": "https://docs.google.com/spreadsheets/d/1-4Vf0lczgaOrLquyRDCiRtCVZYDLdkPZ/edit?usp=sharing&ouid=108085485160337808070&rtpof=true&sd=true",
      "kind": "link",
      "access": "sheet-public"
     },
@@ -543,8 +1975,8 @@
      "ask": 55.0,
      "function": "Marketing",
      "item": "Competitor promotion & launches",
-     "label": "ABSL 55 · Competitor promotion & launches.xlsx",
-     "url": "https://docs.google.com/spreadsheets/d/1eXORl5SojBHnuxQPrJ2foIys6owOh2mI/edit?usp=drive_link&ouid=109987202611692539318&rtpof=true&sd=true",
+     "label": "Copy of ABSL 55 · Competitor promotion & launches.xlsx",
+     "url": "https://docs.google.com/spreadsheets/d/1OH9o0Io1BrCxoAfMaE5X4cArR4PUAT4Y/edit?usp=sharing&ouid=108085485160337808070&rtpof=true&sd=true",
      "kind": "link",
      "access": "sheet-public"
     },
@@ -552,8 +1984,8 @@
      "ask": 56.0,
      "function": "Marketing",
      "item": "Competitor service levels",
-     "label": "ABSL 56 · Competitor service levels.xlsx",
-     "url": "https://docs.google.com/spreadsheets/d/1tv1nrxUM4jZkiDXgxxD9HddIf6-0_cZh/edit?usp=drive_link&ouid=109987202611692539318&rtpof=true&sd=true",
+     "label": "Copy of ABSL 56 · Competitor service levels.xlsx",
+     "url": "https://docs.google.com/spreadsheets/d/1MkkX5eOE2HVho-e0CfXrJDe2Gpb-i18D/edit?usp=sharing&ouid=108085485160337808070&rtpof=true&sd=true",
      "kind": "link",
      "access": "sheet-public"
     },
@@ -561,8 +1993,8 @@
      "ask": 57.0,
      "function": "Marketing",
      "item": "Regional macro & disruption events",
-     "label": "ABSL 57 · Regional macro & disruption events.xlsx",
-     "url": "https://docs.google.com/spreadsheets/d/1_qZ7Xb_1Yv2n-emJGaCqp3JuHh5NOLQr/edit?usp=drive_link&ouid=109987202611692539318&rtpof=true&sd=true",
+     "label": "Copy of ABSL 57 · Regional macro & disruption events.xlsx",
+     "url": "https://docs.google.com/spreadsheets/d/163ldk7RoUp636P0tQKSSGVLqBLNesKiT/edit?usp=sharing&ouid=108085485160337808070&rtpof=true&sd=true",
      "kind": "link",
      "access": "sheet-public"
     },
@@ -570,8 +2002,8 @@
      "ask": 58.0,
      "function": "Marketing",
      "item": "Seasonality pattern",
-     "label": "ABSL 58 · Seasonality pattern.xlsx",
-     "url": "https://docs.google.com/spreadsheets/d/1rotEwE5TcHYmbl5mZ6wSNXAZ2H3dztty/edit?usp=drive_link&ouid=109987202611692539318&rtpof=true&sd=true",
+     "label": "Copy of ABSL 58 · Seasonality pattern.xlsx",
+     "url": "https://docs.google.com/spreadsheets/d/1TjESKFnVhxWyCK-Tq1Ac33dWUu6e901L/edit?usp=sharing&ouid=108085485160337808070&rtpof=true&sd=true",
      "kind": "link",
      "access": "sheet-public"
     },
@@ -579,8 +2011,8 @@
      "ask": 59.0,
      "function": "Marketing",
      "item": "Regulatory / tax changes",
-     "label": "ABSL 59 · Regulatory _ tax changes.xlsx",
-     "url": "https://docs.google.com/spreadsheets/d/1aWuJGp7gf5dhTvojV-sXdyQ35XQHkXw6/edit?usp=drive_link&ouid=109987202611692539318&rtpof=true&sd=true",
+     "label": "Copy of ABSL 59 · Regulatory _ tax changes.xlsx",
+     "url": "https://docs.google.com/spreadsheets/d/1hmXAHujgEk60ne6QyOiH5bi-bMeqLYZB/edit?usp=sharing&ouid=108085485160337808070&rtpof=true&sd=true",
      "kind": "link",
      "access": "sheet-public"
     },
@@ -588,8 +2020,8 @@
      "ask": 60.0,
      "function": "Marketing",
      "item": "Import parity, FX and duty exposure",
-     "label": "ABSL 60 · Import parity, FX and duty exposure.xlsx",
-     "url": "https://docs.google.com/spreadsheets/d/1PFcE7E1NGkvmtCPcwA933OQZxlqYEOqX/edit?usp=drive_link&ouid=109987202611692539318&rtpof=true&sd=true",
+     "label": "Copy of ABSL 60 · Import parity, FX and duty exposure.xlsx",
+     "url": "https://docs.google.com/spreadsheets/d/113pp4j0OnfKk0cWJrERfj3Tkxgc9iYEj/edit?usp=sharing&ouid=108085485160337808070&rtpof=true&sd=true",
      "kind": "link",
      "access": "sheet-public"
     },
@@ -602,640 +2034,6 @@
      "kind": "named-file"
     }
    ]
-  },
-  {
-   "sbu": "Telecom",
-   "asks": 62,
-   "linked": 12,
-   "rows": [
-    {
-     "ask": 17.0,
-     "function": "Sales",
-     "item": "Sales KPI — target vs actual by person",
-     "label": "PeopleDesk — Employee / Position / Transfer modules",
-     "url": null,
-     "kind": "named-file"
-    },
-    {
-     "ask": 43.0,
-     "function": "Marketing",
-     "item": "Market size by region — Q4 FY26 and Q1 FY27",
-     "label": "Market size by region — Q4 FY26 and Q1 FY27",
-     "url": "https://docs.google.com/document/d/1tPA357bAIgV1DZkJY5eO2WjVsPVIjwFn0TCQDMINzrs/edit?usp=sharing",
-     "kind": "link",
-     "access": "link"
-    },
-    {
-     "ask": 44.0,
-     "function": "Marketing",
-     "item": "Competitor volume by region — Q4 and Q1",
-     "label": "Competitor volume by region — Q4 and Q1",
-     "url": "https://docs.google.com/document/d/1j2Y91rEZfdt2QbLNsuKZWR2PMsa_caBbDE4ezVy59jM/edit?usp=sharing",
-     "kind": "link",
-     "access": "link"
-    },
-    {
-     "ask": 45.0,
-     "function": "Marketing",
-     "item": "Own volume by region — same definition as market size",
-     "label": "Own volume by region ",
-     "url": "https://docs.google.com/document/d/16NqHwaTEj_MypEOhLb_Xwjyf3OC1EXZW81AUHtoJUAk/edit?usp=sharing",
-     "kind": "link",
-     "access": "link"
-    },
-    {
-     "ask": 46.0,
-     "function": "Marketing",
-     "item": "Competitor price list (equivalent SKUs, change dates)",
-     "label": "com price list",
-     "url": "https://docs.google.com/document/d/1YiI-TMGD_-uyZWl-mZjukaR1kTSyHHknX9lik9j2zJY/edit?usp=sharing",
-     "kind": "link",
-     "access": "link"
-    },
-    {
-     "ask": 47.0,
-     "function": "Marketing",
-     "item": "Competitor offers & credit terms (scheme, discount, credit days)",
-     "label": "Competitor offers and credit terms ",
-     "url": "https://docs.google.com/document/d/1ys3mufiUuuHKWmCH4xLLNlL7fCfAXr6t_Ana0nglJeE/edit?usp=sharing",
-     "kind": "link",
-     "access": "link"
-    },
-    {
-     "ask": 49.0,
-     "function": "Marketing",
-     "item": "7P assessment — own Q4 vs Q1 vs competitors (1–5 with evidence)",
-     "label": "Akij Telecom 7P assessment",
-     "url": "https://docs.google.com/document/d/1G2GOIune_upwInvYewyiiDIvaITEH1Qoz5e6oFxKOpk/edit?usp=sharing",
-     "kind": "link",
-     "access": "link"
-    },
-    {
-     "ask": 51.0,
-     "function": "Marketing",
-     "item": "Retail / outlet distribution",
-     "label": "Active dealer list ",
-     "url": "https://docs.google.com/spreadsheets/d/1bYrjHx3WmMTsXbQP9FFIDU1w89uKKnfbIR9PqheaUjA/edit?usp=sharing",
-     "kind": "link",
-     "access": "sheet-public"
-    },
-    {
-     "ask": 52.0,
-     "function": "Marketing",
-     "item": "Competitor capacity / new entrants",
-     "label": "Competitor capacity / new entrants",
-     "url": "https://docs.google.com/document/d/1GAY5c06NnsBl5GAS8-oQ_b2zt5HUp5oCe3MLLruyLkk/edit?usp=sharing",
-     "kind": "link",
-     "access": "link"
-    },
-    {
-     "ask": 54.0,
-     "function": "Marketing",
-     "item": "Competitor promotion & launches",
-     "label": "Competitor promotion & launches",
-     "url": "https://docs.google.com/document/d/1blaWvAhKbJyQYwOaqoFwjj_FhwWm18ZDwHli4pY7zFU/edit?usp=sharing",
-     "kind": "link",
-     "access": "link"
-    },
-    {
-     "ask": 55.0,
-     "function": "Marketing",
-     "item": "Competitor service levels",
-     "label": "Competitor service levels",
-     "url": "https://docs.google.com/document/d/1-ZY0_-NYdeFVL4smyOMSe0_pF-pZzsGUCL-cBexDX44/edit?usp=sharing",
-     "kind": "link",
-     "access": "link"
-    },
-    {
-     "ask": 61.0,
-     "function": "HR",
-     "item": "Sales team attrition, transfers and vacancy days",
-     "label": "PeopleDesk — attrition / transfer / vacancy reports",
-     "url": null,
-     "kind": "named-file"
-    }
-   ]
-  },
-  {
-   "sbu": "Next JobZ",
-   "asks": 63,
-   "linked": 20,
-   "rows": [
-    {
-     "ask": 19.0,
-     "function": "Sales",
-     "item": "Sales org, territory assignment and vacancies",
-     "label": "PeopleDesk — Employee / Position / Transfer modules",
-     "url": null,
-     "kind": "named-file"
-    },
-    {
-     "ask": 44.0,
-     "function": "Marketing",
-     "item": "Market size by region — Q4 FY26 and Q1 FY27",
-     "label": "44 · Market size by region",
-     "url": null,
-     "kind": "named-file"
-    },
-    {
-     "ask": 45.0,
-     "function": "Marketing",
-     "item": "Competitor volume by region — Q4 and Q1",
-     "label": "45 · Competitor volume by region",
-     "url": null,
-     "kind": "named-file"
-    },
-    {
-     "ask": 46.0,
-     "function": "Marketing",
-     "item": "Own volume by region — same definition as market size",
-     "label": "46 · Own volume by region",
-     "url": null,
-     "kind": "named-file"
-    },
-    {
-     "ask": 47.0,
-     "function": "Marketing",
-     "item": "Competitor price list (equivalent SKUs, change dates)",
-     "label": "47 · Competitor price list",
-     "url": null,
-     "kind": "named-file"
-    },
-    {
-     "ask": 48.0,
-     "function": "Marketing",
-     "item": "Competitor offers & credit terms (scheme, discount, credit days)",
-     "label": "48 · Competitor offers & credit terms",
-     "url": null,
-     "kind": "named-file"
-    },
-    {
-     "ask": 49.0,
-     "function": "Marketing",
-     "item": "Dealer share-of-wallet (their total category purchase vs ours)",
-     "label": "49 · Dealer share-of-wallet",
-     "url": null,
-     "kind": "named-file"
-    },
-    {
-     "ask": 50.0,
-     "function": "Marketing",
-     "item": "7P assessment — own Q4 vs Q1 vs competitors (1–5 with evidence)",
-     "label": "50 · 7P assessment",
-     "url": null,
-     "kind": "named-file"
-    },
-    {
-     "ask": 51.0,
-     "function": "Marketing",
-     "item": "Promotion / trade spend by region",
-     "label": "51 · Promotion / trade spend",
-     "url": null,
-     "kind": "named-file"
-    },
-    {
-     "ask": 52.0,
-     "function": "Marketing",
-     "item": "Retail / outlet distribution",
-     "label": "52 · Retail / outlet distribution",
-     "url": null,
-     "kind": "named-file"
-    },
-    {
-     "ask": 53.0,
-     "function": "Marketing",
-     "item": "Competitor capacity / new entrants",
-     "label": "53 · Competitor capacity / new entrants",
-     "url": null,
-     "kind": "named-file"
-    },
-    {
-     "ask": 54.0,
-     "function": "Marketing",
-     "item": "Lost dealer → competitor mapping",
-     "label": "54 · Lost dealer → competitor mapping",
-     "url": null,
-     "kind": "named-file"
-    },
-    {
-     "ask": 55.0,
-     "function": "Marketing",
-     "item": "Competitor promotion & launches",
-     "label": "55 · Competitor promotion & launches",
-     "url": null,
-     "kind": "named-file"
-    },
-    {
-     "ask": 56.0,
-     "function": "Marketing",
-     "item": "Competitor service levels",
-     "label": "56 · Competitor service levels",
-     "url": null,
-     "kind": "named-file"
-    },
-    {
-     "ask": 57.0,
-     "function": "Marketing",
-     "item": "Regional macro & disruption events",
-     "label": "57 · Regional macro & disruption",
-     "url": null,
-     "kind": "named-file"
-    },
-    {
-     "ask": 58.0,
-     "function": "Marketing",
-     "item": "Seasonality pattern",
-     "label": "58 · Seasonality pattern",
-     "url": null,
-     "kind": "named-file"
-    },
-    {
-     "ask": 59.0,
-     "function": "Marketing",
-     "item": "Regulatory / tax changes",
-     "label": "59 · Regulatory / tax changes",
-     "url": null,
-     "kind": "named-file"
-    },
-    {
-     "ask": 60.0,
-     "function": "Marketing",
-     "item": "Regional demand pipeline (govt / private projects)",
-     "label": "60 · Regional demand pipeline",
-     "url": null,
-     "kind": "named-file"
-    },
-    {
-     "ask": 61.0,
-     "function": "Marketing",
-     "item": "Import parity, FX and duty exposure",
-     "label": "61 · Import parity, FX & duty",
-     "url": null,
-     "kind": "named-file"
-    },
-    {
-     "ask": 62.0,
-     "function": "HR",
-     "item": "Sales team attrition, transfers and vacancy days",
-     "label": "PeopleDesk — attrition / transfer / vacancy reports",
-     "url": null,
-     "kind": "named-file"
-    }
-   ]
-  },
-  {
-   "sbu": "Infotech",
-   "asks": 62,
-   "linked": 6,
-   "rows": [
-    {
-     "ask": 17.0,
-     "function": "Sales",
-     "item": "Sales KPI — target vs actual by person",
-     "label": "PeopleDesk — Employee / Position / Transfer modules",
-     "url": null,
-     "kind": "named-file"
-    },
-    {
-     "ask": 43.0,
-     "function": "Marketing",
-     "item": "Market size by region — Q4 FY26 and Q1 FY27",
-     "label": "https://docs.google.com/spreadsheets/d/1XM3KomXsitUUjdHy3Ve3TThWlzFfGaowWFC4CRtcFP0/edit?usp=sharing",
-     "url": "https://docs.google.com/spreadsheets/d/1XM3KomXsitUUjdHy3Ve3TThWlzFfGaowWFC4CRtcFP0/edit?usp=sharing",
-     "kind": "link",
-     "access": "sheet-public"
-    },
-    {
-     "ask": 45.0,
-     "function": "Marketing",
-     "item": "Own volume by region — same definition as market size",
-     "label": "https://docs.google.com/spreadsheets/d/1XM3KomXsitUUjdHy3Ve3TThWlzFfGaowWFC4CRtcFP0/edit?usp=sharing",
-     "url": "https://docs.google.com/spreadsheets/d/1XM3KomXsitUUjdHy3Ve3TThWlzFfGaowWFC4CRtcFP0/edit?usp=sharing",
-     "kind": "link",
-     "access": "sheet-public"
-    },
-    {
-     "ask": 47.0,
-     "function": "Marketing",
-     "item": "Competitor offers & credit terms (scheme, discount, credit days)",
-     "label": "https://docs.google.com/spreadsheets/d/1XM3KomXsitUUjdHy3Ve3TThWlzFfGaowWFC4CRtcFP0/edit?usp=sharing",
-     "url": "https://docs.google.com/spreadsheets/d/1XM3KomXsitUUjdHy3Ve3TThWlzFfGaowWFC4CRtcFP0/edit?usp=sharing",
-     "kind": "link",
-     "access": "sheet-public"
-    },
-    {
-     "ask": 48.0,
-     "function": "Marketing",
-     "item": "Dealer share-of-wallet (their total category purchase vs ours)",
-     "label": "https://docs.google.com/spreadsheets/d/1XM3KomXsitUUjdHy3Ve3TThWlzFfGaowWFC4CRtcFP0/edit?usp=sharing",
-     "url": "https://docs.google.com/spreadsheets/d/1XM3KomXsitUUjdHy3Ve3TThWlzFfGaowWFC4CRtcFP0/edit?usp=sharing",
-     "kind": "link",
-     "access": "sheet-public"
-    },
-    {
-     "ask": 61.0,
-     "function": "HR",
-     "item": "Sales team attrition, transfers and vacancy days",
-     "label": "PeopleDesk — attrition / transfer / vacancy reports",
-     "url": null,
-     "kind": "named-file"
-    }
-   ]
-  },
-  {
-   "sbu": "Consumer Electronics",
-   "asks": 63,
-   "linked": 13,
-   "rows": [
-    {
-     "ask": 17.0,
-     "function": "Sales",
-     "item": "Sales KPI — target vs actual by person",
-     "label": "PeopleDesk — Employee / Position / Transfer modules",
-     "url": null,
-     "kind": "named-file"
-    },
-    {
-     "ask": 44.0,
-     "function": "Marketing",
-     "item": "Market size by region — Q4 FY26 and Q1 FY27",
-     "label": "Market Size",
-     "url": "https://docs.google.com/spreadsheets/d/1h9dJ7DswzdJzfUWpu1LAcXkm_zzsydb5/edit?usp=sharing&ouid=116482375932652474826&rtpof=true&sd=true",
-     "kind": "link",
-     "access": "sheet-public"
-    },
-    {
-     "ask": 45.0,
-     "function": "Marketing",
-     "item": "Competitor volume by region — Q4 and Q1",
-     "label": "Competitor Volume",
-     "url": "https://docs.google.com/spreadsheets/d/1h9dJ7DswzdJzfUWpu1LAcXkm_zzsydb5/edit?usp=sharing&ouid=116482375932652474826&rtpof=true&sd=true",
-     "kind": "link",
-     "access": "sheet-public"
-    },
-    {
-     "ask": 47.0,
-     "function": "Marketing",
-     "item": "Competitor price list (equivalent SKUs, change dates)",
-     "label": "Competitor Price",
-     "url": "https://docs.google.com/spreadsheets/d/1h9dJ7DswzdJzfUWpu1LAcXkm_zzsydb5/edit?usp=sharing&ouid=116482375932652474826&rtpof=true&sd=true",
-     "kind": "link",
-     "access": "sheet-public"
-    },
-    {
-     "ask": 48.0,
-     "function": "Marketing",
-     "item": "Competitor offers & credit terms (scheme, discount, credit days)",
-     "label": "Competitor Offer",
-     "url": "https://docs.google.com/spreadsheets/d/1h9dJ7DswzdJzfUWpu1LAcXkm_zzsydb5/edit?usp=sharing&ouid=116482375932652474826&rtpof=true&sd=true",
-     "kind": "link",
-     "access": "sheet-public"
-    },
-    {
-     "ask": 50.0,
-     "function": "Marketing",
-     "item": "7P assessment — own Q4 vs Q1 vs competitors (1–5 with evidence)",
-     "label": "Competitor 7p",
-     "url": "https://docs.google.com/spreadsheets/d/1h9dJ7DswzdJzfUWpu1LAcXkm_zzsydb5/edit?gid=227406197",
-     "kind": "link",
-     "access": "sheet-public"
-    },
-    {
-     "ask": 52.0,
-     "function": "Marketing",
-     "item": "Retail / outlet distribution",
-     "label": " Retail Distribution)",
-     "url": "https://docs.google.com/spreadsheets/d/1h9dJ7DswzdJzfUWpu1LAcXkm_zzsydb5/edit?usp=sharing&ouid=116482375932652474826&rtpof=true&sd=true",
-     "kind": "link",
-     "access": "sheet-public"
-    },
-    {
-     "ask": 53.0,
-     "function": "Marketing",
-     "item": "Competitor capacity / new entrants",
-     "label": "Competitor Capacity",
-     "url": "https://docs.google.com/spreadsheets/d/1h9dJ7DswzdJzfUWpu1LAcXkm_zzsydb5/edit?usp=sharing&ouid=116482375932652474826&rtpof=true&sd=true",
-     "kind": "link",
-     "access": "sheet-public"
-    },
-    {
-     "ask": 55.0,
-     "function": "Marketing",
-     "item": "Competitor promotion & launches",
-     "label": "Competitor Promotion",
-     "url": "https://docs.google.com/spreadsheets/d/1h9dJ7DswzdJzfUWpu1LAcXkm_zzsydb5/edit?usp=sharing&ouid=116482375932652474826&rtpof=true&sd=true",
-     "kind": "link",
-     "access": "sheet-public"
-    },
-    {
-     "ask": 56.0,
-     "function": "Marketing",
-     "item": "Competitor service levels",
-     "label": "Competitor Service Level",
-     "url": "https://docs.google.com/spreadsheets/d/1h9dJ7DswzdJzfUWpu1LAcXkm_zzsydb5/edit?usp=sharing&ouid=116482375932652474826&rtpof=true&sd=true",
-     "kind": "link",
-     "access": "sheet-public"
-    },
-    {
-     "ask": 57.0,
-     "function": "Marketing",
-     "item": "Regional macro & disruption events",
-     "label": "Disruption Events",
-     "url": "https://docs.google.com/spreadsheets/d/1h9dJ7DswzdJzfUWpu1LAcXkm_zzsydb5/edit?usp=sharing&ouid=116482375932652474826&rtpof=true&sd=true",
-     "kind": "link",
-     "access": "sheet-public"
-    },
-    {
-     "ask": 58.0,
-     "function": "Marketing",
-     "item": "Seasonality pattern",
-     "label": "Seasonality pattern",
-     "url": "https://docs.google.com/spreadsheets/d/1h9dJ7DswzdJzfUWpu1LAcXkm_zzsydb5/edit?usp=sharing&ouid=116482375932652474826&rtpof=true&sd=true",
-     "kind": "link",
-     "access": "sheet-public"
-    },
-    {
-     "ask": 62.0,
-     "function": "HR",
-     "item": "Sales team attrition, transfers and vacancy days",
-     "label": "PeopleDesk — attrition / transfer / vacancy reports",
-     "url": null,
-     "kind": "named-file"
-    }
-   ]
-  },
-  {
-   "sbu": "Logistics – Ex-CHA",
-   "asks": 63,
-   "linked": 18,
-   "rows": [
-    {
-     "ask": 17.0,
-     "function": "Sales",
-     "item": "Sales KPI — target vs actual by person",
-     "label": "PeopleDesk — Employee / Position / Transfer modules",
-     "url": null,
-     "kind": "named-file"
-    },
-    {
-     "ask": 44.0,
-     "function": "Marketing",
-     "item": "Market size by region — Q4 FY24 and Q1 FY25",
-     "label": "Market Size by Region — Q4 FY24 and Q1 FY25",
-     "url": "https://docs.google.com/spreadsheets/d/1UuFHW5grct3I5v56VIEmiSF2dWyWLHc1hDtkkpl2GDA/edit?usp=sharing",
-     "kind": "link",
-     "access": "sheet-public"
-    },
-    {
-     "ask": 45.0,
-     "function": "Marketing",
-     "item": "Competitor volume by region — Q4 and Q1",
-     "label": "Competitor volume by region — Q4 and Q1",
-     "url": "https://docs.google.com/spreadsheets/d/12kft8l3NhGIa0fFK51XivJRdIsTKmZa5ThI7IIGWGvA/edit?usp=drive_link",
-     "kind": "link",
-     "access": "sheet-public"
-    },
-    {
-     "ask": 46.0,
-     "function": "Marketing",
-     "item": "Own volume by region — same definition as market size",
-     "label": "Own volume by region — same definition as market size",
-     "url": "https://docs.google.com/spreadsheets/d/11gfP28qR5u5CYdRcVaDzc2XbVQjhyjBqwucOuvArAnA/edit?gid=0",
-     "kind": "link",
-     "access": "sheet-public"
-    },
-    {
-     "ask": 47.0,
-     "function": "Marketing",
-     "item": "Competitor price list (equivalent SKUs, change dates)",
-     "label": "Competitor_Price_List_and_Equivalent_SKUs.xlsx",
-     "url": "https://drive.google.com/open?id=1rlhikOofKMXEXoRFkK-RlxvqpjxANFUe&usp=drive_copy",
-     "kind": "link",
-     "access": "drive-public"
-    },
-    {
-     "ask": 48.0,
-     "function": "Marketing",
-     "item": "Competitor offers & credit terms (scheme, discount, credit days)",
-     "label": "Competitor_Offers_and_Credit_Terms.xlsx",
-     "url": "https://drive.google.com/open?id=13N-7V7ts2CM96WLjnB_RRdUNgZgzfQvA&usp=drive_copy",
-     "kind": "link",
-     "access": "drive-public"
-    },
-    {
-     "ask": 49.0,
-     "function": "Marketing",
-     "item": "Dealer share-of-wallet (their total category purchase vs ours)",
-     "label": "Dealer Share Wallet",
-     "url": "https://drive.google.com/open?id=1ApmVEOLondj31aBMWwz0pNSrdnzBpLTfcmRQDo0zH0U&usp=drive_copy",
-     "kind": "link",
-     "access": "drive-public"
-    },
-    {
-     "ask": 50.0,
-     "function": "Marketing",
-     "item": "7P assessment — own Q4 vs Q1 vs competitors (1–5 with evidence)",
-     "label": "7P_Assessment_Marketing_Q4_vs_Q1_Competitors.xlsx",
-     "url": "https://drive.google.com/open?id=1HRiWEGqjMTqXueIAdlP4Su0zvZzWKwX-&usp=drive_copy",
-     "kind": "link",
-     "access": "drive-public"
-    },
-    {
-     "ask": 51.0,
-     "function": "Marketing",
-     "item": "Promotion / trade spend by region",
-     "label": "Akij_Logistics_Promotion_Trade_Spend_GL4210001.xlsx",
-     "url": "https://drive.google.com/open?id=1rQF7r_lGCAAMiLVGw_TRLEYNUWy93NKs&usp=drive_copy",
-     "kind": "link",
-     "access": "drive-public"
-    },
-    {
-     "ask": 52.0,
-     "function": "Marketing",
-     "item": "Retail / outlet distribution",
-     "label": "Retail Outlet",
-     "url": "https://drive.google.com/open?id=1o_QN3-QT3wKkgzjHBYcyDmMT0ky0iY-TySGZQMVSdJo&usp=drive_copy",
-     "kind": "link",
-     "access": "drive-public"
-    },
-    {
-     "ask": 53.0,
-     "function": "Marketing",
-     "item": "Competitor capacity / new entrants",
-     "label": "Competitor capacity / new entrants",
-     "url": "https://drive.google.com/open?id=1w6Nlvogq93PetvEjFNyqB_X6kUhqhSq6HLNYhw7n-3c&usp=drive_copy",
-     "kind": "link",
-     "access": "drive-public"
-    },
-    {
-     "ask": 54.0,
-     "function": "Marketing",
-     "item": "Lost Customer",
-     "label": "List of Lost Customer",
-     "url": "https://drive.google.com/open?id=1xmSOxdlHCxidQ_70h06YMHLrm8iqwCxNC3V3n_rZZO4&usp=drive_copy",
-     "kind": "link",
-     "access": "drive-public"
-    },
-    {
-     "ask": 55.0,
-     "function": "Marketing",
-     "item": "Competitor promotion & launches",
-     "label": "Competitor promotion & launches",
-     "url": "https://docs.google.com/spreadsheets/d/1AHYHhOhHYzhJFpwK8RO0xBYblGQ5gz4kod30SZoq0uk/edit?usp=sharing",
-     "kind": "link",
-     "access": "sheet-public"
-    },
-    {
-     "ask": 56.0,
-     "function": "Marketing",
-     "item": "Competitor service levels",
-     "label": "Competitor Service-Level Benchmark",
-     "url": "https://drive.google.com/open?id=1JO1ZZNj_JHH6q6G5Bi5uHHBPqqNKpqFNnBjC7el98LE&usp=drive_copy",
-     "kind": "link",
-     "access": "drive-public"
-    },
-    {
-     "ask": 57.0,
-     "function": "Marketing",
-     "item": "Regional macro & disruption events",
-     "label": "Regional Macro & Disruption",
-     "url": "https://drive.google.com/open?id=1KZ_UHuR_PpRwvKijvVEpFtNa5ddOaq2ng2r_oC7yvIc&usp=drive_copy",
-     "kind": "link",
-     "access": "drive-public"
-    },
-    {
-     "ask": 58.0,
-     "function": "Marketing",
-     "item": "Seasonality pattern",
-     "label": "Seasonality Pattern",
-     "url": "https://drive.google.com/open?id=1sQPwOgI4u2atNwJByWAxRzJA8E1AYxz6rkPK-I9IRaI&usp=drive_copy",
-     "kind": "link",
-     "access": "drive-public"
-    },
-    {
-     "ask": 60.0,
-     "function": "Marketing",
-     "item": "Regional demand pipeline (govt / private projects)",
-     "label": "Regional Demand Pipeline",
-     "url": "https://drive.google.com/open?id=1y8tOHeNYWiVny_PUm3R4xXwY4yKwokglKaqIqoQSvi0&usp=drive_copy",
-     "kind": "link",
-     "access": "drive-public"
-    },
-    {
-     "ask": 62.0,
-     "function": "HR",
-     "item": "Sales team attrition, transfers and vacancy days",
-     "label": "PeopleDesk — attrition / transfer / vacancy reports",
-     "url": null,
-     "kind": "named-file"
-    }
-   ]
-  },
-  {
-   "sbu": "Sheet1",
-   "asks": 0,
-   "linked": 0,
-   "rows": []
   }
  ]
 }

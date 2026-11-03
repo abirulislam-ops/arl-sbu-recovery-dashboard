@@ -33,6 +33,20 @@ def probe(url):
             return "sheet-public"
         except Exception:
             return "sheet-private"
+    m = re.search(r"/document/d/([A-Za-z0-9\-_]+)", url)
+    if m:
+        try:
+            fetch("https://docs.google.com/document/d/%s/export?format=txt" % m.group(1), 40)
+            return "doc-public"
+        except Exception:
+            return "doc-private"
+    m = re.search(r"/presentation/d/([A-Za-z0-9\-_]+)", url)
+    if m:
+        try:
+            fetch("https://docs.google.com/presentation/d/%s/export?format=txt" % m.group(1), 40)
+            return "doc-public"
+        except Exception:
+            return "doc-private"
     if "drive.google.com" in url:
         try:
             fetch(url, 40)
@@ -44,7 +58,7 @@ def probe(url):
 
 def main():
     import openpyxl
-    wb = openpyxl.load_workbook(io.BytesIO(fetch("https://docs.google.com/spreadsheets/d/%s/export?format=xlsx" % SHEET)), data_only=True)
+    wb = openpyxl.load_workbook(io.BytesIO(fetch("https://docs.google.com/spreadsheets/d/%s/export?format=xlsx" % SHEET)), data_only=False)
     out = {"checked_at": None, "sbus": []}
     from datetime import datetime
     out["checked_at"] = datetime.now().isoformat(timespec="seconds")
@@ -57,7 +71,15 @@ def main():
         for r in range(10, ws.max_row + 1):
             cell = ws.cell(r, 6)
             target = cell.hyperlink.target if cell.hyperlink else None
-            label = cell.value if isinstance(cell.value, str) else None
+            raw = cell.value
+            label = None
+            if not target and isinstance(raw, str) and raw.startswith("=HYPERLINK"):
+                m = re.search(r'HYPERLINK\("([^"]+)"\s*,\s*"([^"]*)"\)', raw)
+                if m:
+                    target = m.group(1)
+                    label = m.group(2)
+            if label is None:
+                label = raw if isinstance(raw, str) else None
             ask = ws.cell(r, 1).value
             item = ws.cell(r, 3).value
             func = ws.cell(r, 2).value
