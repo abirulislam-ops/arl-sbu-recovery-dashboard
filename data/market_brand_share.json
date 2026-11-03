@@ -10,10 +10,10 @@
  {
   "sbu": "AELOTH",
   "name": "Essentials",
-  "ours": 24.62,
-  "leader": "Teer / Fresh",
+  "ours": null,
+  "leader": null,
   "leader_share": null,
-  "basis": "Table rice product line · FY26"
+  "basis": "Consumer Goods tab is a multi-block sheet (Chinigura, rice, flour, oil side by side); the SBU-level share could not be parsed. The 24.62% seen earlier was the table-rice product line only, not the Essentials SBU."
  },
  {
   "sbu": "AIL",
