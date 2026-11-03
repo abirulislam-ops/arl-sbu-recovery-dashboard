@@ -1,0 +1,28 @@
+{
+ "probed_at": "2026-11-03",
+ "source": "iBOSDDD via enterprise-api-gateway (read-only)",
+ "results": [
+  {
+   "gap": "A4",
+   "item": "Profit per dealer / region",
+   "verdict": "NOT AVAILABLE — blocked by missing COGS",
+   "evidence": "oms.tblSalesOrderRow.numCogs is 0 for almost every row: of the top 20 partners by gross profit, only VENUS HYPERMARKET (BU 144) carries any COGS (144.93 Cr against 2.41 Cr revenue, which is itself a sign/scale error). Dealer-level GP cannot be computed from the order table.",
+   "what_is_needed": "Finance allocation of COGS / standard cost per invoice, or A3 SKU costing joined at invoice line level."
+  },
+  {
+   "gap": "B7",
+   "item": "AR ageing by customer",
+   "verdict": "PARTIAL — ledger present but stale",
+   "evidence": "fin.tblAccountingJournal, GL 1120001: largest open items date from 2021-2022 (e.g. BU 144 M/S R.M. ENTERPRISE 75.78 Cr, oldest 2022-04-11). Ageing from these rows would describe legacy balances, not Q1 FY27 collections.",
+   "what_is_needed": "A current AR extract (invoices + due dates + receipts) from Credit Control, or confirmation that the AR ledger is maintained elsewhere (DWH)."
+  },
+  {
+   "gap": "D1 / D6",
+   "item": "Sales org, vacancies, attrition",
+   "verdict": "NOT PULLED — schema mapping missing",
+   "evidence": "PeopleDesk database is reachable (peopledesk_arl, 72 tables) but the employee/attendance tables need column mapping before a safe pull.",
+   "what_is_needed": "One hour with HR/IT to confirm the master employee table and the position/vacancy fields."
+  }
+ ],
+ "note": "Nothing was estimated. These three gaps stay visible on the dashboard as gaps rather than numbers."
+}

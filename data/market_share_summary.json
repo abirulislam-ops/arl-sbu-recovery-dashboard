@@ -1,0 +1,572 @@
+[
+ {
+  "tab": "Consumer Goods",
+  "sbu": "AELOTH",
+  "mapping_confidence": "medium",
+  "periods": [
+   "Apr'26",
+   "Aug'26",
+   "Dec'25",
+   "FY 2023-24",
+   "FY 2024-25",
+   "Feb'26",
+   "Jan'26",
+   "Jul'26",
+   "Jun'26",
+   "Mar'26",
+   "May'26",
+   "Nov'26",
+   "Oct'26",
+   "Sep'26"
+  ],
+  "companies": 15,
+  "total_row": true,
+  "partial_months": [
+   "Apr'26",
+   "Feb'26",
+   "Mar'26",
+   "Nov'26"
+  ],
+  "shifted_cells": 0,
+  "records": 403,
+  "share_q4_q1": {
+   "rows": [],
+   "ours": null,
+   "top_gainer": null,
+   "note": "average share over Apr-Jun 26 vs Jul-Sep 26; shifted cells excluded"
+  }
+ },
+ {
+  "tab": "South Asian Hajj & Air",
+  "sbu": "ALL",
+  "mapping_confidence": "low",
+  "periods": [
+   "Apr'26",
+   "Aug'26",
+   "Dec'25",
+   "FY 2023-24",
+   "FY 2024-25",
+   "Feb'26",
+   "Jan'26",
+   "Jul'26",
+   "Jun'26",
+   "Mar'26",
+   "May'26",
+   "Nov'26",
+   "Oct'26",
+   "Sep'26"
+  ],
+  "companies": 19,
+  "total_row": false,
+  "partial_months": [
+   "Apr'26",
+   "Aug'26",
+   "Jul'26",
+   "Jun'26",
+   "May'26"
+  ],
+  "shifted_cells": 152,
+  "records": 304,
+  "share_q4_q1": {
+   "rows": [
+    {
+     "company": "USB OTA Triplover",
+     "q4_share": 4.0,
+     "q1_share": 6.67,
+     "delta_pp": 2.67
+    },
+    {
+     "company": "USB OTA Firsttrip",
+     "q4_share": 3.0,
+     "q1_share": 5.0,
+     "delta_pp": 2.0
+    },
+    {
+     "company": "BE FRESH",
+     "q4_share": 6.0,
+     "q1_share": 4.0,
+     "delta_pp": -2.0
+    },
+    {
+     "company": "GOZAYAAN LIMITED",
+     "q4_share": 4.67,
+     "q1_share": 4.0,
+     "delta_pp": -0.67
+    },
+    {
+     "company": "SHARETRIP",
+     "q4_share": 4.67,
+     "q1_share": 3.67,
+     "delta_pp": -1.0
+    },
+    {
+     "company": "BDfare",
+     "q4_share": 4.33,
+     "q1_share": 3.0,
+     "delta_pp": -1.33
+    },
+    {
+     "company": "TRIP FINDY (Ticket Lagbe)",
+     "q4_share": 2.67,
+     "q1_share": 2.0,
+     "delta_pp": -0.67
+    },
+    {
+     "company": "AL-GAZI TRAVELS",
+     "q4_share": 4.0,
+     "q1_share": 1.33,
+     "delta_pp": -2.67
+    }
+   ],
+   "ours": {
+    "company": "Akij Air",
+    "q4_share": 1.0,
+    "q1_share": 0.67,
+    "delta_pp": -0.33
+   },
+   "top_gainer": {
+    "company": "USB OTA Triplover",
+    "q4_share": 4.0,
+    "q1_share": 6.67,
+    "delta_pp": 2.67
+   },
+   "note": "average share over Apr-Jun 26 vs Jul-Sep 26; shifted cells excluded"
+  }
+ },
+ {
+  "tab": "Ispat",
+  "sbu": "AIL",
+  "mapping_confidence": "high",
+  "periods": [
+   "Apr'26",
+   "Aug'26",
+   "Dec'25",
+   "Dec'26",
+   "FY 2023-24",
+   "FY 2024-25",
+   "Feb'26",
+   "Jan'26",
+   "Jul'26",
+   "Jun'26",
+   "Mar'26",
+   "May'26",
+   "Nov'26",
+   "Oct'26",
+   "Sep'26"
+  ],
+  "companies": 7,
+  "total_row": true,
+  "partial_months": [
+   "Dec'26",
+   "May'26",
+   "Nov'26",
+   "Oct'26"
+  ],
+  "shifted_cells": 0,
+  "records": 168,
+  "share_q4_q1": {
+   "rows": [
+    {
+     "company": "BSRM",
+     "q4_share": 26.57,
+     "q1_share": 28.27,
+     "delta_pp": 1.7
+    },
+    {
+     "company": "AKS",
+     "q4_share": 15.7,
+     "q1_share": 18.21,
+     "delta_pp": 2.51
+    },
+    {
+     "company": "KSRM",
+     "q4_share": 8.31,
+     "q1_share": 9.12,
+     "delta_pp": 0.81
+    },
+    {
+     "company": "RRM",
+     "q4_share": 3.83,
+     "q1_share": 5.44,
+     "delta_pp": 1.61
+    },
+    {
+     "company": "ANWAR ISPAT",
+     "q4_share": 3.28,
+     "q1_share": 4.14,
+     "delta_pp": 0.87
+    },
+    {
+     "company": "GPH",
+     "q4_share": 6.37,
+     "q1_share": 3.57,
+     "delta_pp": -2.8
+    },
+    {
+     "company": "AKIJ ISPAT",
+     "q4_share": 3.05,
+     "q1_share": 2.92,
+     "delta_pp": -0.13
+    }
+   ],
+   "ours": {
+    "company": "AKIJ ISPAT",
+    "q4_share": 3.05,
+    "q1_share": 2.92,
+    "delta_pp": -0.13
+   },
+   "top_gainer": {
+    "company": "AKS",
+    "q4_share": 15.7,
+    "q1_share": 18.21,
+    "delta_pp": 2.51
+   },
+   "note": "average share over Apr-Jun 26 vs Jul-Sep 26; shifted cells excluded"
+  }
+ },
+ {
+  "tab": "Akij Air",
+  "sbu": "ALL",
+  "mapping_confidence": "low",
+  "periods": [
+   "Apr'26",
+   "Aug'26",
+   "Feb'26",
+   "Jul'26",
+   "Jun'26",
+   "Mar'26",
+   "May'26",
+   "Nov'26",
+   "Oct'26",
+   "Sep'26"
+  ],
+  "companies": 13,
+  "total_row": false,
+  "partial_months": [],
+  "shifted_cells": 0,
+  "records": 72,
+  "share_q4_q1": {
+   "rows": [
+    {
+     "company": "USB OTA Triplover",
+     "q4_share": 4.0,
+     "q1_share": 6.67,
+     "delta_pp": 2.67
+    },
+    {
+     "company": "USB OTA Firsttrip",
+     "q4_share": 3.0,
+     "q1_share": 5.0,
+     "delta_pp": 2.0
+    },
+    {
+     "company": "BE FRESH",
+     "q4_share": 6.0,
+     "q1_share": 4.0,
+     "delta_pp": -2.0
+    },
+    {
+     "company": "GOZAYAAN LIMITED",
+     "q4_share": 4.67,
+     "q1_share": 4.0,
+     "delta_pp": -0.67
+    },
+    {
+     "company": "SHARETRIP",
+     "q4_share": 4.67,
+     "q1_share": 3.67,
+     "delta_pp": -1.0
+    },
+    {
+     "company": "BDfare",
+     "q4_share": 4.33,
+     "q1_share": 3.0,
+     "delta_pp": -1.33
+    },
+    {
+     "company": "TRIP FINDY (Ticket Lagbe)",
+     "q4_share": 2.67,
+     "q1_share": 2.0,
+     "delta_pp": -0.67
+    },
+    {
+     "company": "AL-GAZI TRAVELS",
+     "q4_share": 4.0,
+     "q1_share": 1.33,
+     "delta_pp": -2.67
+    }
+   ],
+   "ours": {
+    "company": "Akij Air",
+    "q4_share": 1.0,
+    "q1_share": 0.67,
+    "delta_pp": -0.33
+   },
+   "top_gainer": {
+    "company": "USB OTA Triplover",
+    "q4_share": 4.0,
+    "q1_share": 6.67,
+    "delta_pp": 2.67
+   },
+   "note": "average share over Apr-Jun 26 vs Jul-Sep 26; shifted cells excluded"
+  }
+ },
+ {
+  "tab": "Lube Oil",
+  "sbu": "ABSLASP",
+  "mapping_confidence": "wrong-proxy",
+  "periods": [
+   "Apr'26",
+   "Aug'26",
+   "Dec'25",
+   "FY 2023-24",
+   "FY 2024-25",
+   "Feb'26",
+   "Jan'26",
+   "Jul'26",
+   "Jun'26",
+   "Mar'26",
+   "May'26",
+   "Nov'26",
+   "Oct'26",
+   "Sep'26"
+  ],
+  "companies": 27,
+  "total_row": true,
+  "partial_months": [],
+  "shifted_cells": 118,
+  "records": 322,
+  "share_q4_q1": {
+   "rows": [
+    {
+     "company": "Caltex",
+     "q4_share": 1.0,
+     "q1_share": 1.0,
+     "delta_pp": 0.0
+    },
+    {
+     "company": "Petronas",
+     "q4_share": 0.0,
+     "q1_share": 0.0,
+     "delta_pp": 0.0
+    },
+    {
+     "company": "Valvoline",
+     "q4_share": 0.0,
+     "q1_share": 0.0,
+     "delta_pp": 0.0
+    }
+   ],
+   "ours": null,
+   "top_gainer": {
+    "company": "Caltex",
+    "q4_share": 1.0,
+    "q1_share": 1.0,
+    "delta_pp": 0.0
+   },
+   "note": "average share over Apr-Jun 26 vs Jul-Sep 26; shifted cells excluded"
+  }
+ },
+ {
+  "tab": "Pharmacy",
+  "sbu": "ALCL",
+  "mapping_confidence": "high",
+  "periods": [
+   "Apr'26",
+   "Aug'26",
+   "Dec'25",
+   "Feb'26",
+   "Jul'26",
+   "Jun'26",
+   "Mar'26",
+   "May'26",
+   "Nov'26",
+   "Oct'26",
+   "Sep'26"
+  ],
+  "companies": 6,
+  "total_row": true,
+  "partial_months": [],
+  "shifted_cells": 33,
+  "records": 69,
+  "share_q4_q1": {
+   "rows": [],
+   "ours": null,
+   "top_gainer": null,
+   "note": "average share over Apr-Jun 26 vs Jul-Sep 26; shifted cells excluded"
+  }
+ },
+ {
+  "tab": "Consumer Electronics",
+  "sbu": "ACEL",
+  "mapping_confidence": "high",
+  "periods": [
+   "Apr'26",
+   "Aug'26",
+   "Dec'26",
+   "FY 2023-24",
+   "FY 2024-25",
+   "Jul'26",
+   "Jun'26",
+   "May'26",
+   "Nov'26",
+   "Oct'26",
+   "Sep'26"
+  ],
+  "companies": 8,
+  "total_row": true,
+  "partial_months": [
+   "Dec'26",
+   "Nov'26"
+  ],
+  "shifted_cells": 216,
+  "records": 448,
+  "share_q4_q1": {
+   "rows": [],
+   "ours": null,
+   "top_gainer": null,
+   "note": "average share over Apr-Jun 26 vs Jul-Sep 26; shifted cells excluded"
+  }
+ },
+ {
+  "tab": "Ready Mix",
+  "sbu": "ARMCL",
+  "mapping_confidence": "high",
+  "periods": [
+   "Dec'25",
+   "Jan'26"
+  ],
+  "companies": 0,
+  "total_row": false,
+  "partial_months": [],
+  "shifted_cells": 0,
+  "records": 0,
+  "share_q4_q1": {
+   "rows": [],
+   "ours": null,
+   "top_gainer": null,
+   "note": "average share over Apr-Jun 26 vs Jul-Sep 26; shifted cells excluded"
+  }
+ },
+ {
+  "tab": "Diagnostic Center",
+  "sbu": "AMPL",
+  "mapping_confidence": "high",
+  "periods": [
+   "Apr'26",
+   "Aug'26",
+   "Dec'25",
+   "Feb'26",
+   "Jan'26",
+   "Jul'26",
+   "Jun'26",
+   "Mar'26",
+   "May'26",
+   "Nov'26",
+   "Oct'26",
+   "Sep'26"
+  ],
+  "companies": 5,
+  "total_row": false,
+  "partial_months": [
+   "Nov'26"
+  ],
+  "shifted_cells": 0,
+  "records": 55,
+  "share_q4_q1": {
+   "rows": [],
+   "ours": null,
+   "top_gainer": null,
+   "note": "average share over Apr-Jun 26 vs Jul-Sep 26; shifted cells excluded"
+  }
+ },
+ {
+  "tab": "Fruits,F&B",
+  "sbu": "ACL",
+  "mapping_confidence": "medium",
+  "periods": [
+   "Apr'26",
+   "Aug'26",
+   "Dec'25",
+   "Dec'26",
+   "FY 2023-24",
+   "FY 2024-25",
+   "Feb'26",
+   "Jan'26",
+   "Jul'26",
+   "Jun'26",
+   "Mar'26",
+   "May'26",
+   "Nov'26",
+   "Oct'26",
+   "Sep'26"
+  ],
+  "companies": 16,
+  "total_row": false,
+  "partial_months": [
+   "Aug'26",
+   "Dec'26",
+   "Jul'26",
+   "Jun'26",
+   "May'26",
+   "Nov'26",
+   "Sep'26"
+  ],
+  "shifted_cells": 74,
+  "records": 238,
+  "share_q4_q1": {
+   "rows": [
+    {
+     "company": "IDC",
+     "q4_share": 17.0,
+     "q1_share": 20.0,
+     "delta_pp": 3.0
+    },
+    {
+     "company": "FAIR DISTRIBUTION LTD",
+     "q4_share": 12.0,
+     "q1_share": 12.0,
+     "delta_pp": 0.0
+    },
+    {
+     "company": "TRANSCOM",
+     "q4_share": 9.67,
+     "q1_share": 10.0,
+     "delta_pp": 0.33
+    },
+    {
+     "company": "FOODEX INTERNATIONAL",
+     "q4_share": 8.33,
+     "q1_share": 9.0,
+     "delta_pp": 0.67
+    },
+    {
+     "company": "UNIVERSAL",
+     "q4_share": 8.0,
+     "q1_share": 8.0,
+     "delta_pp": 0.0
+    },
+    {
+     "company": "TR TRADING",
+     "q4_share": 5.33,
+     "q1_share": 3.0,
+     "delta_pp": -2.33
+    },
+    {
+     "company": "BEST TRADING",
+     "q4_share": 2.67,
+     "q1_share": 2.0,
+     "delta_pp": -0.67
+    }
+   ],
+   "ours": null,
+   "top_gainer": {
+    "company": "IDC",
+    "q4_share": 17.0,
+    "q1_share": 20.0,
+    "delta_pp": 3.0
+   },
+   "note": "average share over Apr-Jun 26 vs Jul-Sep 26; shifted cells excluded"
+  }
+ }
+]

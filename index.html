@@ -317,6 +317,9 @@
       <section id="pane-market" class="pane"></section>
       <section id="pane-sales" class="pane"></section>
       <section id="pane-rootcause" class="pane"></section>
+      <section id="pane-loss" class="pane"></section>
+      <section id="pane-game" class="pane"></section>
+      <section id="pane-sim" class="pane"></section>
       <section id="pane-data" class="pane"></section>
       <section id="pane-overview" class="pane"></section>
       <div id="sbu-panes"></div>
@@ -596,6 +599,10 @@ function renderMenu(){
     <button class="menu-item" data-t="market" title="Market share & lost-dealer regions"><span class="serial">◔</span><span class="dot" style="background:#7c3aed"></span><span class="nm">Market Share</span></button>
     <button class="menu-item" data-t="sales" title="Sales team KPI & dealer engagement"><span class="serial">◑</span><span class="dot" style="background:#0f766e"></span><span class="nm">Sales KPI</span></button>
     <button class="menu-item" data-t="rootcause" title="Root-cause verdicts H1–H9"><span class="serial">✓</span><span class="dot" style="background:#dc2626"></span><span class="nm">Root Cause</span></button>
+    
+    <button class="menu-item" data-t="loss" title="Budget to actual loss bridge"><span class="serial">▤</span><span class="dot" style="background:#dc2626"></span><span class="nm">Loss Bridge</span></button>
+    <button class="menu-item" data-t="game" title="2x2 payoff vs the main gainer"><span class="serial">◈</span><span class="dot" style="background:#4f46e5"></span><span class="nm">Competitive Game</span></button>
+    <button class="menu-item" data-t="sim" title="Price, volume and COGS simulator"><span class="serial">△</span><span class="dot" style="background:#0891b2"></span><span class="nm">Simulator</span></button>
     <button class="menu-item" data-t="data" title="Data status by Data ID"><span class="serial">▤</span><span class="dot" style="background:#64748b"></span><span class="nm">Data Status</span></button>
     <div class="menu-label" style="margin-top:10px">Loss-making SBUs</div>`;
   const items=SBUS.map((s,i)=>{
@@ -613,7 +620,7 @@ function renderMenu(){
     btn.textContent=sb.classList.contains('collapsed')?'»':'«';
   });
 }
-const FIXED_PAGES=['md','overview','market','sales','rootcause','data'];
+const FIXED_PAGES=['md','overview','market','sales','rootcause','loss','game','sim','data'];
 function switchPage(k){
   document.querySelectorAll('.menu-item').forEach(b=>b.classList.toggle('active',b.dataset.t===k));
   const target=FIXED_PAGES.includes(k)?'pane-'+k:'pane-sbu-'+k;
@@ -864,20 +871,7 @@ function renderSbu(){
         <div class="sbustat"><div class="l">New Customers (Q1)</div><div class="v">${m.newCust||'—'}</div></div>
       </div>
 
-      <div class="sec-head" style="margin-top:18px"><span class="bar"></span><div><h2>Internal problems</h2><p>From iBOSDDD + SBU input.</p></div></div>
-      <div class="grid g4">
-        ${prob(s.problems.acquisition,ICONS.acquisition,'Acquisition',SEV[s.problems.acquisition.sev].color)}
-        ${prob(s.problems.sales,ICONS.sales,'Conversion',SEV[s.problems.sales.sev].color)}
-        ${prob(s.dealers,ICONS.dealers,'Retention',SEV[s.dealers.sev].color)}
-        ${prob(s.problems.degression,ICONS.degression,'Business degression',SEV[s.problems.degression.sev].color)}
-      </div>
-
-      <div class="sec-head" style="margin-top:18px"><span class="bar" style="background:#7c3aed"></span><div><h2>External problems</h2><p>Market / regulatory / macro factors — from the root-cause notes and current web context.</p></div></div>
-      <div class="grid">
-        ${prob(s.external,ICONS.external,'External problems','#7c3aed')}
-      </div>
-
-      <div class="sec-head" style="margin-top:16px"><span class="bar" style="background:#0f766e"></span><div><h2>Loss demarcation — region · district · thana</h2><p>Where Q1 revenue fell vs the prior quarter (Apr–Jun). Only loss-making areas; click a node to expand to the right.</p></div></div>
+      uarter (Apr–Jun). Only loss-making areas; click a node to expand to the right.</p></div></div>
       <div class="card">${demarcHTML(s)}</div>
 
       <div class="card" style="margin-top:14px">
@@ -898,7 +892,20 @@ function renderSbu(){
 
       <div class="verdict ${s.q2.tone}" style="margin-top:14px"><h3>Can it make profit in Q2 with the Q1 recovery?</h3><p>${s.q2.detail}</p></div>
 
-      <div class="sec-head" style="margin-top:16px"><span class="bar"></span><div><h2>Recovery plan</h2></div></div>
+      <div class="sec-head" style="margin-top:18px"><span class="bar"></span><div><h2>Internal problems</h2><p>From iBOSDDD + SBU input.</p></div></div>
+      <div class="grid g4">
+        ${prob(s.problems.acquisition,ICONS.acquisition,'Acquisition',SEV[s.problems.acquisition.sev].color)}
+        ${prob(s.problems.sales,ICONS.sales,'Conversion',SEV[s.problems.sales.sev].color)}
+        ${prob(s.dealers,ICONS.dealers,'Retention',SEV[s.dealers.sev].color)}
+        ${prob(s.problems.degression,ICONS.degression,'Business degression',SEV[s.problems.degression.sev].color)}
+      </div>
+
+      <div class="sec-head" style="margin-top:18px"><span class="bar" style="background:#7c3aed"></span><div><h2>External problems</h2><p>Market / regulatory / macro factors — from the root-cause notes and current web context.</p></div></div>
+      <div class="grid">
+        ${prob(s.external,ICONS.external,'External problems','#7c3aed')}
+      </div>
+
+      <div class="sec-head" style="margin-top:16px"><span class="bar" style="background:#0f766e"></span><div><h2>Loss demarcation — region · district · thana</h2><p>Where Q1 revenue fell vs the prior q<div class="sec-head" style="margin-top:16px"><span class="bar"></span><div><h2>Recovery plan</h2></div></div>
       <div class="plan">${s.planShort}</div>
 
       <div class="sec-head" style="margin-top:16px"><span class="bar" style="background:#0e7490"></span><div><h2>Commitment &amp; accountability</h2><p>Top-line &amp; bottom-line commitment · action owner · People / Process / Technology.</p></div></div>
@@ -1153,6 +1160,11 @@ function renderMD(){
     <div class="sec-head" style="margin-top:20px"><span class="bar" style="background:#0f172a"></span><div><h2>3 · Three brutal facts</h2><p>Confront the facts first — no vanity metrics.</p></div></div>
     ${factHtml}
 
+    <div class="sec-head" style="margin-top:20px"><span class="bar" style="background:#f59e0b"></span><div><h2>4 · Decisions waiting for data</h2><p>These decisions cannot be taken yet. The blocker is a Data ID and an owner — this is whom to push.</p></div></div>
+    ${waitHtml||'<div class="empty">None.</div>'}
+
+    <div class="sec-head" style="margin-top:20px"><span class="bar" style="background:#0891b2"></span><div><h2>5 · Q2 outlook</h2><p>Does the plan reach break-even inside Q2 (Oct–Dec 2026)?</p></div></div>
+    ${(()=>{const pnl=MD.pnl||[];const rows=pnl.map(r=>{const be=r.breakeven_sales;const rev=r.erp_revenue_q1||r.revenue||0;const cm=r.cm_pct;const neg=cm==null||cm<=0;const above=be!=null&&rev>=be;return `<tr><td><b>${r.name}</b></td><td class="num">${rev.toFixed(0)}</td><td class="num">${cm!=null?(cm*100).toFixed(0)+'%':'—'}</td><td class="num">${r.fixed_cost!=null?r.fixed_cost.toFixed(1):'—'}</td><td class="num">${be!=null?be.toFixed(0):'—'}</td><td>${neg?'<span class="vtag verdict-I">negative CM</span>':(above?'<span class="vtag verdict-C">above BE</span>':'<span class="vtag verdict-P">below BE</span>')}</td></tr>`;}).join('');return `<div class="card"><div style="overflow-x:auto"><table class="mini"><thead><tr><th>SBU</th><th class="num">Q1 rev Cr</th><th class="num">CM%</th><th class="num">Fixed cost</th><th class="num">Break-even Cr/q</th><th>vs Q1</th></tr></thead><tbody>${rows}</tbody></table></div><div class="src">Source: fin.tblAccountingJournal — fixed GL 4110001/4210001/4510001/4610001, variable 4810001/4310001/4410001 · Q1 FY27 · approximate (excludes other/tax/provisions).</div></div>`;})()}
     <div class="sec-head" style="margin-top:20px"><span class="bar" style="background:#0891b2"></span><div><h2>Customer &amp; brand health (enterprise)</h2><p>The only customer-voice data that exists today: two CBDO KPIs, monthly. Not split by SBU or dealer.</p></div></div>
     <div class="card">
       <div style="overflow-x:auto"><table class="mini">
@@ -1171,11 +1183,6 @@ function renderMD(){
       <div class="src">Source: CBDO KPI &amp; Tracking FY2026-27 · as of ${MD.as_of} · enterprise level (no SBU/dealer split; dealer exit interviews H1 and NPS H2 still pending).</div>
     </div>
 
-    <div class="sec-head" style="margin-top:20px"><span class="bar" style="background:#f59e0b"></span><div><h2>4 · Decisions waiting for data</h2><p>These decisions cannot be taken yet. The blocker is a Data ID and an owner — this is whom to push.</p></div></div>
-    ${waitHtml||'<div class="empty">None.</div>'}
-
-    <div class="sec-head" style="margin-top:20px"><span class="bar" style="background:#0891b2"></span><div><h2>5 · Q2 outlook</h2><p>Does the plan reach break-even inside Q2 (Oct–Dec 2026)?</p></div></div>
-    ${(()=>{const pnl=MD.pnl||[];const rows=pnl.map(r=>{const be=r.breakeven_sales;const rev=r.erp_revenue_q1||r.revenue||0;const cm=r.cm_pct;const neg=cm==null||cm<=0;const above=be!=null&&rev>=be;return `<tr><td><b>${r.name}</b></td><td class="num">${rev.toFixed(0)}</td><td class="num">${cm!=null?(cm*100).toFixed(0)+'%':'—'}</td><td class="num">${r.fixed_cost!=null?r.fixed_cost.toFixed(1):'—'}</td><td class="num">${be!=null?be.toFixed(0):'—'}</td><td>${neg?'<span class="vtag verdict-I">negative CM</span>':(above?'<span class="vtag verdict-C">above BE</span>':'<span class="vtag verdict-P">below BE</span>')}</td></tr>`;}).join('');return `<div class="card"><div style="overflow-x:auto"><table class="mini"><thead><tr><th>SBU</th><th class="num">Q1 rev Cr</th><th class="num">CM%</th><th class="num">Fixed cost</th><th class="num">Break-even Cr/q</th><th>vs Q1</th></tr></thead><tbody>${rows}</tbody></table></div><div class="src">Source: fin.tblAccountingJournal — fixed GL 4110001/4210001/4510001/4610001, variable 4810001/4310001/4410001 · Q1 FY27 · approximate (excludes other/tax/provisions).</div></div>`;})()}
     <div class="dec-rec" style="margin-top:14px"><b>So what → Direction → Decision.</b> Two SBUs (Essentials, Ispat) carry 58% of the loss and both are supply/price fixable this month — those are decisions 1 and 2. Telecom is structurally loss-making and needs an exit review, not another volume plan. Dealer churn (622 dealers) is real but unexplained: the market-share and CRM answers are blocked on C1–C3 and D2–D5.</div>`;
 }
 
@@ -1189,6 +1196,17 @@ function renderMarket(){
   document.getElementById('pane-market').innerHTML=`
     <div class="sec-head"><span class="bar" style="background:#7c3aed"></span><div><h2>Market share — lost-dealer regions (MD priority 1)</h2><p>Own revenue by region, Q4 FY2025-26 → Q1 FY2026-27 — where our sales actually dropped. Competitor share by region: Not Applicable (no regional market published).</p></div><button class="hint" data-tip="C1 — market size by region&#10;C2 — competitor volume by region&#10;C3 — own volume&#10;pp — percentage points&#10;dpp — Q1 share − Q4 share&#10;Diagnosis — 'Share lost' vs 'Stable' (own revenue Q4→Q1 vs national market)&#10;Regional C1/C2 — Not Applicable">${ICONS.info}</button></div>
     ${(()=>{const lr=MD.lostreg||{};const regs=lr.top_lost_regions||[];const rows=regs.map(r=>`<tr><td><b>${r.sbu}</b></td><td>${r.region}</td><td class="num">${r.q4}</td><td class="num">${r.q1}</td><td class="num" style="color:#b91c1c;font-weight:700">−${r.drop}</td></tr>`).join('');const ctx=(lr.market_context||[]).map(c=>`<div class="card" style="margin-top:10px"><div class="sec-head" style="margin:0 0 4px"><div><h3 style="font-size:13px;margin:0">${c.sbu} — market context</h3></div></div><div style="font-size:12.5px;color:var(--muted)"><b>${c.market_size}</b> · leader <b>${c.leader}</b><br>competitors: ${c.competitors}<br>${c.note}</div></div>`).join('');return `<div class="card"><div style="overflow-x:auto"><table class="mini"><thead><tr><th>SBU</th><th>Region</th><th class="num">FY 25-26 Q4 Cr</th><th class="num">FY 26-27 Q1 Cr</th><th class="num">Drop Cr</th></tr></thead><tbody>${rows}</tbody></table></div><div class="src">Source: oms.tblSalesOrderHeader (own revenue by territory, Q4→Q1) · ${lr.own_q4_vs_q1?lr.own_q4_vs_q1.read:''} · territory names from rtm.tblTerritoryInfo.</div></div>${ctx}`;})()}
+    <div class="sec-head" style="margin-top:18px"><span class="bar" style="background:#7c3aed"></span><div><h2>Brand share — all 12 SBUs</h2><p>One line per SBU: where we stand against the leader, and on what basis.</p></div></div>
+    <div class="card"><div style="overflow-x:auto"><table class="mini">
+      <thead><tr><th>SBU</th><th class="num">Our share %</th><th>Leader</th><th class="num">Leader share %</th><th>Basis</th></tr></thead>
+      <tbody>${(MD.brand_share||[]).map(x=>`<tr>
+        <td><b>${x.name||x.sbu}</b></td>
+        <td class="num" style="font-weight:700;color:${x.ours==null?'#94a3b8':(x.ours>=10?'#166534':'#b45309')}">${x.ours!=null?x.ours:'—'}</td>
+        <td>${x.leader||'—'}</td>
+        <td class="num">${x.leader_share!=null?x.leader_share:'—'}</td>
+        <td style="max-width:44ch;color:var(--muted)">${x.ours==null?'no share file — regional Not Applicable':x.basis}</td></tr>`).join('')}</tbody>
+    </table></div><div class="src">Sources: product market-share file, Ready Mix benchmark, brand pack. Regional split: Not Applicable (national only).</div></div>
+
     <div class="sec-head" style="margin-top:18px"><span class="bar" style="background:#a78bfa"></span><div><h2>What we do have — national share</h2><p>National, latest available. Regional split is Not Applicable — no regional market is published.</p></div></div>
     <div class="card"><div style="overflow-x:auto"><table class="mini">
       <thead><tr><th>SBU</th><th>Own share</th><th>Named competitors</th><th>What it says</th></tr></thead><tbody>${rows||'<tr><td colspan="4">—</td></tr>'}</tbody></table></div>
@@ -1231,17 +1249,6 @@ function renderMarket(){
         <td style="color:var(--muted2)">${f.evidence}</td></tr>`).join('')}</tbody>
       </table></div>
       <div class="src">Source: ${c.source} · auto-refreshed with the Data Request sheet.</div></div>`).join('')}
-    <div class="sec-head" style="margin-top:18px"><span class="bar" style="background:#7c3aed"></span><div><h2>Brand share — all 12 SBUs</h2><p>One line per SBU: where we stand against the leader, and on what basis.</p></div></div>
-    <div class="card"><div style="overflow-x:auto"><table class="mini">
-      <thead><tr><th>SBU</th><th class="num">Our share %</th><th>Leader</th><th class="num">Leader share %</th><th>Basis</th></tr></thead>
-      <tbody>${(MD.brand_share||[]).map(x=>`<tr>
-        <td><b>${x.name||x.sbu}</b></td>
-        <td class="num" style="font-weight:700;color:${x.ours==null?'#94a3b8':(x.ours>=10?'#166534':'#b45309')}">${x.ours!=null?x.ours:'—'}</td>
-        <td>${x.leader||'—'}</td>
-        <td class="num">${x.leader_share!=null?x.leader_share:'—'}</td>
-        <td style="max-width:44ch;color:var(--muted)">${x.ours==null?'no share file — regional Not Applicable':x.basis}</td></tr>`).join('')}</tbody>
-    </table></div><div class="src">Sources: product market-share file, Ready Mix benchmark, brand pack. Regional split: Not Applicable (national only).</div></div>
-
     <div class="sec-head" style="margin-top:18px"><span class="bar" style="background:#0f172a"></span><div><h2>Market leadership by region</h2><p>Not Applicable — no regional competitor data is published for any SBU. National leadership is shown in "Brand share — all 12 SBUs" above.</p></div>
       <button class="hint" data-tip="Contestable — (leader share − our share) ≤ 5 pp&#10;Leader benchmark — price index (ours = 100) · credit days · numeric distribution % · scheme spend % of sales · service lead time">${ICONS.info}</button></div>
     <div class="mdb-top" style="margin:6px 0 10px">
@@ -1352,6 +1359,126 @@ function setHeaderBadges(){
 }
 
 
+
+/* ---- Loss Bridge / Competitive Game / Simulator ---- */
+function mdRows(){
+  return (MD.pnl||[]).slice().sort((a,b)=>(b.loss||0)-(a.loss||0)).map(p=>{
+    const rev=p.revenue||0, bRev=p.budget_revenue||0, gp=(p.gp_pct||0)*100;
+    const revEff=(bRev-rev)*gp/100;
+    const gap=(p.budget_np!=null&&p.net_profit!=null)?p.budget_np-p.net_profit:null;
+    const resid=gap!=null?gap-revEff:null;
+    return {p,revEff,gap,resid,driver:(gap!=null&&Math.abs(revEff)>=Math.abs(gap)*0.5)?'market':'internal'};
+  });
+}
+function renderLoss(){
+  const rows=mdRows();
+  const max=Math.max(...rows.map(r=>Math.abs(r.p.loss||0)),1);
+  const body=rows.map(r=>`<tr>
+    <td><b>${r.p.name}</b><div class="code">${r.p.sbu}</div></td>
+    <td class="num" style="color:#b91c1c">${(r.p.loss||0).toFixed(2)}</td>
+    <td><div style="background:#fee2e2;border-radius:4px;min-width:120px"><div style="width:${Math.abs(r.p.loss||0)/max*100}%;height:9px;background:#dc2626;border-radius:4px"></div></div></td>
+    <td class="num">${r.gap==null?'\u2014':r.gap.toFixed(2)}</td>
+    <td class="num">${r.revEff.toFixed(2)}</td>
+    <td class="num">${r.resid==null?'\u2014':r.resid.toFixed(2)}</td>
+    <td><span class="vtag ${r.driver==='market'?'verdict-P':'verdict-I'}">${r.driver}</span></td></tr>`).join('');
+  const tot=rows.reduce((s,r)=>s+(r.p.loss||0),0);
+  document.getElementById('pane-loss').innerHTML=`
+    <div class="sec-head"><span class="bar" style="background:#dc2626"></span><div><h2>Where the ${tot.toFixed(2)} Cr went</h2><p>Q1 EAT loss by SBU, and the budget-to-actual gap split into revenue shortfall vs everything else.</p></div></div>
+    <div class="card"><div style="overflow-x:auto"><table class="mini">
+      <thead><tr><th>SBU</th><th class="num">Q1 EAT</th><th>Loss</th><th class="num">NP gap</th><th class="num">Revenue effect</th><th class="num">Residual</th><th>Driver</th></tr></thead>
+      <tbody>${body}</tbody></table></div>
+      <div class="src">Revenue effect = (budget revenue \u2212 actual) \u00d7 actual GP%. Residual = cost, finance and mix \u2014 not decomposed because budget GP% and unit data are missing.</div></div>
+    
+<div class="dec-rec" style="margin-top:12px"><b>So what \u2192 Direction \u2192 Decision.</b> ${rows.filter(r=>r.driver==='market').length} of ${rows.length} SBUs are market-driven: price or volume, not cost. Those are the ones where a share or pricing decision can move money this quarter.</div>`;
+}
+function gameCell(rev,cogs,eat,pMove,theirCut){
+  const el=-1.2, match=0.6;
+  const vol=1+(pMove*el)/100;
+  const rel=1+(pMove-(theirCut?-5*match:0))/100;
+  const cm=(rev-Math.abs(cogs||0))/rev;
+  return (rev*vol*cm*rel - rev*vol*cm) + eat;
+}
+function renderGame(){
+  const body=(MD.pnl||[]).map(p=>{
+    const rev=p.revenue||0, cogs=p.cogs||0, eat=p.net_profit||0;
+    const hh=gameCell(rev,cogs,eat,0,false), hc=gameCell(rev,cogs,eat,0,true);
+    const ch=gameCell(rev,cogs,eat,-5,false), cc=gameCell(rev,cogs,eat,-5,true);
+    const best=Math.max(hh,hc)>=Math.max(ch,cc)?'hold':'cut';
+    const cell=(v,eq)=>`<td class="num" style="${eq?'background:#eff6ff;font-weight:800;border:1px solid #93c5fd':''}">${v.toFixed(2)}</td>`;
+    return `<tr><td><b>${p.name}</b><div class="code">${p.sbu}</div></td>
+      ${cell(hh,best==='hold')}${cell(hc,false)}${cell(ch,false)}${cell(cc,best==='cut')}
+      <td><span class="vtag ${best==='hold'?'verdict-C':'verdict-P'}">${best==='hold'?'hold price':'cut price'}</span></td></tr>`;
+  }).join('');
+  document.getElementById('pane-game').innerHTML=`
+    <div class="sec-head"><span class="bar" style="background:#4f46e5"></span><div><h2>Competitive game \u2014 our move vs the main gainer</h2><p>Payoff in BDT Cr EAT for the quarter. Highlighted cell = best response.</p></div></div>
+    <div class="card"><div style="overflow-x:auto"><table class="mini">
+      <thead><tr><th>SBU</th><th class="num">We hold / they hold</th><th class="num">We hold / they cut</th><th class="num">We cut / they hold</th><th class="num">We cut / they cut</th><th>Best</th></tr></thead>
+      <tbody>${body}</tbody></table></div>
+      <div class="src">Illustrative: price elasticity \u22121.2, rival matches 60% of any cut. Replace with observed elasticities when available.</div></div>
+    <div class="dec-rec" style="margin-top:12px"><b>So what \u2192 Direction \u2192 Decision.</b> Commodity SBUs (cement, rebar, RMC) sit in a price-war structure: cutting first moves EAT down for everyone. Hold price and compete on delivery and credit where the rival is weakest.</div>`;
+}
+function renderSim(){
+  const opts=(MD.pnl||[]).map(p=>`<option value="${p.sbu}">${p.name}</option>`).join('');
+  document.getElementById('pane-sim').innerHTML=`
+    <div class="sec-head"><span class="bar" style="background:#0891b2"></span><div><h2>Simulator</h2><p>Defaults are Q1 actuals. Move a slider to see the EAT effect.</p></div></div>
+    <div class="card">
+      <div class="mdb-top"><span class="tag">SBU <select id="simSbu" style="border:0;background:transparent;font:inherit;font-weight:700">${opts}</select></span></div>
+      <div style="display:grid;gap:6px;margin:8px 0">
+        <label style="font-size:12px">Price change <input id="simP" type="range" min="-15" max="15" value="0" step="1"> <b id="simPV">0%</b></label>
+        <label style="font-size:12px">Volume change <input id="simV" type="range" min="-30" max="30" value="0" step="1"> <b id="simVV">0%</b></label>
+        <label style="font-size:12px">COGS change <input id="simC" type="range" min="-15" max="15" value="0" step="1"> <b id="simCV">0%</b></label>
+      </div>
+      <div class="grid g4">
+        <div class="sbustat"><div class="l">New EAT</div><div class="v" id="simEat">\u2014</div></div>
+        <div class="sbustat"><div class="l">Pickup</div><div class="v" id="simDelta">\u2014</div></div>
+        <div class="sbustat"><div class="l">Break-even sales</div><div class="v" id="simBe">\u2014</div></div>
+      </div>
+      <div class="src">EAT = revenue \u00d7 (1+price) \u00d7 (1+volume) \u2212 COGS \u00d7 (1+cost) \u00d7 (1+volume) + other income and fixed costs held at Q1 level.</div>
+    </div>`;
+  const run=()=>{
+    const code=document.getElementById('simSbu').value;
+    const p=(MD.pnl||[]).find(x=>x.sbu===code); if(!p) return;
+    const dp=+document.getElementById('simP').value, dv=+document.getElementById('simV').value, dc=+document.getElementById('simC').value;
+    document.getElementById('simPV').textContent=dp+'%';document.getElementById('simVV').textContent=dv+'%';document.getElementById('simCV').textContent=dc+'%';
+    const rev=(p.revenue||0)*(1+dp/100)*(1+dv/100);
+    const cogs=Math.abs(p.cogs||0)*(1+dc/100)*(1+dv/100);
+    const other=(p.net_profit||0)-((p.revenue||0)-Math.abs(p.cogs||0));
+    const eat=rev-cogs+other;
+    document.getElementById('simEat').textContent=eat.toFixed(2)+' Cr';
+    document.getElementById('simDelta').textContent=(eat-(p.net_profit||0)>=0?'+':'')+(eat-(p.net_profit||0)).toFixed(2)+' Cr';
+    const cm=(rev-cogs)/rev;
+    document.getElementById('simBe').textContent=(cm>0&&other<0)?(-other/cm).toFixed(1)+' Cr':'\u2014';
+  };
+  ['simSbu','simP','simV','simC'].forEach(id=>{const e=document.getElementById(id); if(e){e.oninput=run; e.onchange=run;}});
+  run();
+}
+
+function renderPeople(){
+  const rows=(MD.pnl||[]).map(p=>{
+    const ppl=(MD.people||[]).find(x=>x.sbu===p.sbu)||{};
+    const gp=(p.revenue||0)*(p.gp_pct||0);
+    const ctcYr=(ppl.monthly_ctc_cr||0)*12;
+    const gpYr=gp*4;
+    return {name:p.name, code:p.sbu, hc:ppl.headcount, ctc:ppl.monthly_ctc_cr,
+      ctcGp: gpYr>0 ? (ctcYr/gpYr*100) : null,
+      eatHc: ppl.headcount ? (p.net_profit||0)*4/ppl.headcount : null,
+      revHc: ppl.headcount ? (p.revenue||0)*4/ppl.headcount : null};
+  }).filter(r=>r.hc).sort((a,b)=>(b.ctcGp||0)-(a.ctcGp||0));
+  const body=rows.map(r=>`<tr>
+    <td><b>${r.name}</b><div class="code">${r.code}</div></td>
+    <td class="num">${r.hc}</td><td class="num">${r.ctc.toFixed(2)}</td>
+    <td class="num" style="color:${r.ctcGp>80?'#b91c1c':r.ctcGp>40?'#b45309':'#166534'};font-weight:700">${r.ctcGp==null?'\u2014':r.ctcGp.toFixed(0)+'%'}</td>
+    <td class="num" style="color:${(r.eatHc||0)<0?'#b91c1c':'#166534'}">${r.eatHc==null?'\u2014':(r.eatHc*1e7/1e5).toFixed(1)}</td>
+    <td class="num">${r.revHc==null?'\u2014':(r.revHc*1e7/1e5).toFixed(1)}</td></tr>`).join('');
+  const host=document.getElementById('pane-loss');
+  if(host) host.insertAdjacentHTML('beforeend', `
+    <div class="sec-head" style="margin-top:18px"><span class="bar" style="background:#4f46e5"></span><div><h2>People cost vs the margin it produces</h2><p>Annualised CTC as a share of annualised gross margin, and output per head.</p></div></div>
+    <div class="card"><div style="overflow-x:auto"><table class="mini">
+      <thead><tr><th>SBU</th><th class="num">Headcount</th><th class="num">CTC Cr/month</th><th class="num">CTC as % of GP</th><th class="num">EAT per head (Lac)</th><th class="num">Revenue per head (Lac)</th></tr></thead>
+      <tbody>${body}</tbody></table></div>
+      <div class="src">Source: ctc-mcp payroll summary and the Q1 scorecard, annualised (CTC x 12, GP x 4). Above 100% means the workforce costs more than the entire gross margin it generates.</div></div>`);
+}
+
 function renderFooter(){
   document.getElementById('footer').innerHTML=`
     <div class="foot-grid">
@@ -1369,7 +1496,7 @@ function renderFooter(){
 renderMenu();
 renderOverview();
 renderSbu();initDemarc();renderFooter();
-renderMD();renderMarket();renderSales();renderRootCause();renderData();setHeaderBadges();
+renderMD();renderMarket();renderLoss();renderPeople();renderGame();renderSim();renderSales();renderRootCause();renderData();setHeaderBadges();
 initTips();
 switchPage('md');
 </script>
