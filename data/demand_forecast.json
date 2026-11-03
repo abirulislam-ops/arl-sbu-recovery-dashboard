@@ -1,0 +1,21 @@
+{
+  "collected_at": "2026-11-03",
+  "source": "IBP demand file (per-SBU tabs) + ERP oms.tblSalesOrderHeader (monthly net order value)",
+  "sbus": [
+    {
+      "sbu": "AELOTH", "name": "Essentials", "uom": "MT",
+      "history": {"months": ["Jan-26","Feb-26","Mar-26","Apr-26","May-26","Jun-26","Jul-26","Aug-26","Sep-26","Oct-26"], "value_cr": [403.0, 328.7, 263.8, 215.0, 115.6, 143.0, 185.9, 243.8, 127.9, 142.7]},
+      "forecast": {"months": ["Nov-26","Dec-26","Jan-27"], "qty": [6451, 6764, 7101], "value_cr": [42.1, 44.0, 47.0]}
+    },
+    {
+      "sbu": "AIL", "name": "Ispat", "uom": "MT",
+      "history": {"months": ["Jan-26","Feb-26","Mar-26","Apr-26","May-26","Jun-26","Jul-26","Aug-26","Sep-26","Oct-26"], "value_cr": [183.9, 173.3, 160.9, 165.1, 104.0, 163.8, 86.9, 121.2, 176.9, 90.2]},
+      "forecast": {"months": ["Nov-26","Dec-26","Jan-27"], "qty": [14000, 17000, 21000], "value_cr": [126.0, 144.8, 172.9]}
+    },
+    {
+      "sbu": "ACL", "name": "Commodities", "uom": "Pc",
+      "history": {"months": ["Jan-26","Feb-26","Mar-26","Apr-26","May-26","Jun-26","Jul-26","Aug-26","Sep-26","Oct-26"], "value_cr": [33.7, 67.0, 63.1, 34.6, 4.7, 8.3, 23.0, 5.2, 8.3, 1.9]},
+      "forecast": {"months": ["Nov-26","Dec-26","Jan-27"], "qty": [53243, 109578, 120126], "value_cr": [1.2, 2.0, 2.5]}
+    }
+  ]
+}
