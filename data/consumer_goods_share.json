@@ -1,0 +1,341 @@
+[
+ {
+  "sbu": "AELOTH",
+  "name": "Essentials",
+  "source": "Marketing tracker · Consumer Goods sheet (1DIO4tXgaimF9jr6W1_--zJAasGDGE5Pi, gid 1391907820)",
+  "products": [
+   {
+    "name": "Chinigura (aromatic rice)",
+    "unit": "MT",
+    "latest": "May26",
+    "market_size": 4570.0,
+    "ours": "Essential",
+    "ours_share": 4.43,
+    "leader": "Chashi",
+    "leader_share": 20.49,
+    "brands": [
+     {
+      "name": "Chashi",
+      "share": 20.49,
+      "sales": 1250.0
+     },
+     {
+      "name": "PRAN",
+      "share": 13.11,
+      "sales": 800.0
+     },
+     {
+      "name": "Rupchanda",
+      "share": 9.02,
+      "sales": 550.0
+     },
+     {
+      "name": "Fresh",
+      "share": 9.02,
+      "sales": 550.0
+     },
+     {
+      "name": "Others",
+      "share": 8.2,
+      "sales": 500.0
+     },
+     {
+      "name": "Teer",
+      "share": 5.74,
+      "sales": 350.0
+     },
+     {
+      "name": "ACI",
+      "share": 4.92,
+      "sales": 300.0
+     },
+     {
+      "name": "Essential",
+      "share": 4.43,
+      "sales": 270.0
+     }
+    ]
+   },
+   {
+    "name": "Table rice",
+    "unit": "MT",
+    "latest": "May26",
+    "market_size": 1590.0,
+    "ours": "Essential",
+    "ours_share": 9.0,
+    "leader": "ACI",
+    "leader_share": 33.0,
+    "brands": [
+     {
+      "name": "ACI",
+      "share": 33.0,
+      "sales": 520.0
+     },
+     {
+      "name": "Others",
+      "share": 31.0,
+      "sales": 500.0
+     },
+     {
+      "name": "Pran",
+      "share": 11.0,
+      "sales": 170.0
+     },
+     {
+      "name": "Rupchanda",
+      "share": 9.0,
+      "sales": 150.0
+     },
+     {
+      "name": "Essential",
+      "share": 9.0,
+      "sales": 150.0
+     },
+     {
+      "name": "Erfan",
+      "share": 3.0,
+      "sales": 50.0
+     },
+     {
+      "name": "Fresh",
+      "share": 3.0,
+      "sales": 50.0
+     }
+    ]
+   },
+   {
+    "name": "Flour / AMS (consumer)",
+    "unit": "MT",
+    "latest": "Oct26",
+    "market_size": 44984.0,
+    "ours": "Essential",
+    "ours_share": 4.0,
+    "leader": "Fresh",
+    "leader_share": 19.0,
+    "brands": [
+     {
+      "name": "Others",
+      "share": 34.0,
+      "sales": 15100.0
+     },
+     {
+      "name": "Fresh",
+      "share": 19.0,
+      "sales": 8336.0
+     },
+     {
+      "name": "Pusti",
+      "share": 16.0,
+      "sales": 7215.0
+     },
+     {
+      "name": "Teer",
+      "share": 12.0,
+      "sales": 5244.0
+     },
+     {
+      "name": "ACI",
+      "share": 9.0,
+      "sales": 4258.0
+     },
+     {
+      "name": "Sunshine",
+      "share": 7.0,
+      "sales": 3137.0
+     },
+     {
+      "name": "Essential",
+      "share": 4.0,
+      "sales": 1694.0
+     }
+    ]
+   },
+   {
+    "name": "Mustard oil",
+    "unit": "MT",
+    "latest": "May26",
+    "market_size": 2608.0,
+    "ours": "AKIJ Essential",
+    "ours_share": 2.22,
+    "leader": "Radhuni",
+    "leader_share": 26.84,
+    "brands": [
+     {
+      "name": "Others",
+      "share": 38.34,
+      "sales": 1000.0
+     },
+     {
+      "name": "Radhuni",
+      "share": 26.84,
+      "sales": 700.0
+     },
+     {
+      "name": "Pran",
+      "share": 13.42,
+      "sales": 350.0
+     },
+     {
+      "name": "Fresh",
+      "share": 8.05,
+      "sales": 210.0
+     },
+     {
+      "name": "Teer",
+      "share": 6.52,
+      "sales": 170.0
+     },
+     {
+      "name": "ACI",
+      "share": 4.6,
+      "sales": 120.0
+     },
+     {
+      "name": "AKIJ Essential",
+      "share": 2.22,
+      "sales": 58.0
+     }
+    ]
+   },
+   {
+    "name": "Bulk rice",
+    "unit": "MT",
+    "latest": "Jan26",
+    "market_size": 1504405.0,
+    "ours": "AKIJ Essential",
+    "ours_share": 0.32,
+    "leader": "Mozammel",
+    "leader_share": 1.02,
+    "brands": [
+     {
+      "name": "Others",
+      "share": 95.67,
+      "sales": 1429400.0
+     },
+     {
+      "name": "Mozammel",
+      "share": 1.02,
+      "sales": 14500.0
+     },
+     {
+      "name": "Teer",
+      "share": 0.45,
+      "sales": 6840.0
+     },
+     {
+      "name": "Nabil",
+      "share": 0.38,
+      "sales": 5760.0
+     },
+     {
+      "name": "Erfan",
+      "share": 0.36,
+      "sales": 5350.0
+     },
+     {
+      "name": "Monjur",
+      "share": 0.34,
+      "sales": 5050.0
+     },
+     {
+      "name": "AKIJ Essential",
+      "share": 0.32,
+      "sales": 4770.0
+     },
+     {
+      "name": "Eshan",
+      "share": 0.31,
+      "sales": 4720.0
+     },
+     {
+      "name": "Fresh",
+      "share": 0.27,
+      "sales": 4080.0
+     },
+     {
+      "name": "ACI",
+      "share": 0.26,
+      "sales": 3880.0
+     },
+     {
+      "name": "Ekattor",
+      "share": 0.25,
+      "sales": 3720.0
+     },
+     {
+      "name": "Anwar",
+      "share": 0.22,
+      "sales": 3360.0
+     },
+     {
+      "name": "Pusti",
+      "share": 0.1,
+      "sales": 1430.0
+     },
+     {
+      "name": "Shagor",
+      "share": 0.03,
+      "sales": 5425.0
+     },
+     {
+      "name": "Majumder",
+      "share": 0.03,
+      "sales": 6120.0
+     }
+    ]
+   },
+   {
+    "name": "Flour / AMS (bulk)",
+    "unit": "MT",
+    "latest": "Oct26",
+    "market_size": 500528.0,
+    "ours": "Essential",
+    "ours_share": 2.0,
+    "leader": "Pushti",
+    "leader_share": 13.0,
+    "brands": [
+     {
+      "name": "Others",
+      "share": 44.0,
+      "sales": 221018.0
+     },
+     {
+      "name": "Pushti",
+      "share": 13.0,
+      "sales": 66305.0
+     },
+     {
+      "name": "TEER",
+      "share": 11.0,
+      "sales": 55991.0
+     },
+     {
+      "name": "Fresh",
+      "share": 11.0,
+      "sales": 54518.0
+     },
+     {
+      "name": "Nabil",
+      "share": 9.0,
+      "sales": 47150.0
+     },
+     {
+      "name": "KBC",
+      "share": 6.0,
+      "sales": 28732.0
+     },
+     {
+      "name": "Sunshine",
+      "share": 4.0,
+      "sales": 18860.0
+     },
+     {
+      "name": "Essential",
+      "share": 2.0,
+      "sales": 7954.0
+     }
+    ]
+   }
+  ]
+ }
+]
